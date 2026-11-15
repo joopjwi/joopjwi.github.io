@@ -27,6 +27,7 @@ import json
 import os
 import re
 import time
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -34,41 +35,60 @@ from pathlib import Path
 DOMAIN = "https://api-gateway.coupang.com"
 BEST_PATH = "/v2/providers/affiliate_open_api/apis/openapi/v1/products/bestcategories/{cid}"
 
-# 쿠팡파트너스 카테고리 ID -> (줍쥐 탭, 세부 분류)
+# 쿠팡파트너스 카테고리 ID -> (줍쥐 탭, 세부 분류)  [베스트 API 1회씩]
 CATEGORIES = {
     1012: ("식품·간식", "식품"),
     1024: ("식품·간식", "건강식품"),
     1014: ("생필품", "생활용품"),
     1011: ("생필품", "출산·유아"),
-    1020: ("신기한템", "완구·취미"),
-    1021: ("신기한템", "문구·오피스"),
-    1017: ("신기한템", "스포츠·레저"),
     1013: ("주방·살림", "주방용품"),
     1015: ("청소·수납", "홈인테리어"),
     1016: ("디지털·차량", "가전디지털"),
     1018: ("디지털·차량", "자동차용품"),
     1010: ("뷰티·패션", "뷰티"),
-    1001: ("뷰티·패션", "여성패션"),
-    1002: ("뷰티·패션", "남성패션"),
+    1001: ("뷰티·패션", "패션"),
+    1019: ("도서", "도서"),
+    1020: ("문구·취미", "완구·취미"),
+    1021: ("문구·취미", "문구·오피스"),
+    1017: ("문구·취미", "스포츠·레저"),
     1029: ("반려동물", "반려동물"),
 }
+
+# 키워드 검색 API (1회 최대 10개). 매일 쓰는 템은 고정+순환, 궁금한 템은 순환.
+EVERYDAY_FIXED = [("물티슈", "생필품"), ("생수", "식품·간식")]
+EVERYDAY_POOL = [
+    ("삼다수", "식품·간식"), ("화장지", "생필품"), ("키친타월", "주방·살림"), ("세탁세제", "청소·수납"),
+    ("칫솔", "생필품"), ("치약", "생필품"), ("쓰레기봉투", "생필품"), ("주방세제", "주방·살림"),
+    ("즉석밥", "식품·간식"), ("라면", "식품·간식"), ("샴푸", "뷰티·패션"), ("핸드크림", "뷰티·패션"),
+    ("건전지", "디지털·차량"), ("섬유유연제", "청소·수납"),
+]
+CURIOUS_POOL = [
+    "아이디어 상품", "자취 꿀템", "신기한 생활용품", "정리 꿀템", "주방 꿀템", "욕실 꿀템",
+    "차량 꿀템", "캠핑 꿀템", "사무실 꿀템", "겨울 꿀템", "다용도 정리함", "틈새 수납",
+]
+EVERYDAY_PER_DAY, CURIOUS_PER_DAY = 2, 4   # 고정 2 + 순환 2 + 궁금 4 = 검색 8회
+SEARCH_PATH = "/v2/providers/affiliate_open_api/apis/openapi/v1/products/search"
 
 # 생활용품 중 청소·수납 성격이 뚜렷한 상품은 청소·수납 탭으로 옮김 (상품명 기준)
 CLEAN_RE = re.compile(r"수납|정리함|정리대|청소|걸레|밀대|먼지|클리너|선반|바구니|후크|행거|옷걸이|제습|탈취|빗자루|물티슈 케이스|틈새")
 
 # 탭 순서 + 그룹별 기본 자리 수 (합계 100). '오늘의 득템'은 사이트에서 조건으로 묶는 탭이라 여기엔 없음.
 GROUP_QUOTA = {
-    "식품·간식": 18,
-    "생필품": 16,
-    "신기한템": 10,
-    "주방·살림": 14,
-    "청소·수납": 12,
-    "디지털·차량": 10,
-    "뷰티·패션": 12,
-    "반려동물": 8,
+    "식품·간식": 15,
+    "생필품": 15,
+    "신기한템": 14,
+    "주방·살림": 10,
+    "청소·수납": 9,
+    "디지털·차량": 8,
+    "뷰티·패션": 9,
+    "도서": 8,
+    "문구·취미": 7,
+    "반려동물": 5,
 }
 GROUP_ORDER = list(GROUP_QUOTA)
 GROUP_BONUS = {"식품·간식": 0.08, "생필품": 0.08}
+EVERYDAY_BONUS, CURIOUS_BONUS = 0.12, 0.10
+API_COOLDOWN_MIN = 65   # 직전 API 실행 후 이 시간 안에는 다시 호출하지 않음 (시간당 30회 제한 보호)
 PICK_GROUPS = {"식품·간식", "생필품", "주방·살림", "청소·수납", "신기한템"}
 
 MAX_PRICE = int(os.environ.get("MAX_PRICE", "10000"))
@@ -82,9 +102,9 @@ DATA = ROOT / "site" / "data"
 KST = timezone(timedelta(hours=9))
 
 RANKING_RULE = (
-    "줍쥐 인기순은 쿠팡이 제공하는 카테고리별 베스트 순위를 기본으로, "
-    "어제보다 가격이 내린 상품과 식품·생필품에 가산점을 더해 매일 아침 자동으로 정해요. "
-    "판매량이나 리뷰 수는 반영하지 않아요."
+    "줍쥐 인기순은 쿠팡이 제공하는 카테고리별 베스트 순위와 키워드 검색 순위를 기본으로, "
+    "매일 쓰는 템(물티슈·생수 등)과 궁금한 꿀템, 어제보다 가격이 내린 상품, 식품·생필품에 가산점을 더해 "
+    "매일 아침 자동으로 정해요. 판매량이나 리뷰 수는 반영하지 않아요."
 )
 
 
@@ -97,26 +117,35 @@ def auth_header(method, path, query, access, secret):
             f"signed-date={signed_date}, signature={signature}")
 
 
+def call_api(path, query, access, secret):
+    req = urllib.request.Request(
+        f"{DOMAIN}{path}?{query}",
+        headers={"Authorization": auth_header("GET", path, query, access, secret),
+                 "Content-Type": "application/json;charset=UTF-8"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as res:
+        body = json.loads(res.read().decode("utf-8"))
+    if str(body.get("rCode")) != "0":
+        raise RuntimeError(f"{path}: {body.get('rMessage')}")
+    return body.get("data")
+
+
 def fetch_best(cid, access, secret):
-    path = BEST_PATH.format(cid=cid)
-    query = f"limit=100&subId={SUB_ID}"
-    last = None
-    for attempt in range(2):
-        try:
-            req = urllib.request.Request(
-                f"{DOMAIN}{path}?{query}",
-                headers={"Authorization": auth_header("GET", path, query, access, secret),
-                         "Content-Type": "application/json;charset=UTF-8"},
-            )
-            with urllib.request.urlopen(req, timeout=30) as res:
-                body = json.loads(res.read().decode("utf-8"))
-            if str(body.get("rCode")) != "0":
-                raise RuntimeError(f"{cid}: {body.get('rMessage')}")
-            return body.get("data") or []
-        except Exception as e:  # 한 번 재시도
-            last = e
-            time.sleep(3)
-    raise last
+    return call_api(BEST_PATH.format(cid=cid), f"limit=100&subId={SUB_ID}", access, secret) or []
+
+
+def fetch_search(keyword, access, secret):
+    q = "keyword=" + urllib.parse.quote(keyword) + f"&limit=10&subId={SUB_ID}"
+    data = call_api(SEARCH_PATH, q, access, secret) or {}
+    items = data.get("productData") if isinstance(data, dict) else data
+    return items or []
+
+
+def todays_keywords(day_index):
+    """요일·날짜에 따라 순환. 매일 쓰는 템 고정 2 + 순환 2, 궁금한 템 4."""
+    ev = [EVERYDAY_POOL[(day_index * EVERYDAY_PER_DAY + i) % len(EVERYDAY_POOL)] for i in range(EVERYDAY_PER_DAY)]
+    cu = [CURIOUS_POOL[(day_index * CURIOUS_PER_DAY + i) % len(CURIOUS_POOL)] for i in range(CURIOUS_PER_DAY)]
+    return EVERYDAY_FIXED + ev, cu
 
 
 # ---------- 검증 ----------
@@ -158,6 +187,10 @@ def score(p):
     s = 1 - (p["catRank"] - 1) / 100
     s += min(p.get("dropPct", 0), 30) / 100
     s += GROUP_BONUS.get(p["group"], 0)
+    if p.get("everyday"):
+        s += EVERYDAY_BONUS
+    if p.get("curious"):
+        s += CURIOUS_BONUS
     return round(s, 4)
 
 
@@ -194,33 +227,73 @@ def main():
     prev_days = sorted(d for d in ranks if d < today)
     prev_rank = ranks[prev_days[-1]] if prev_days else {}
 
+    # 0) 호출 제한 보호: 직전 API 실행 후 65분 안이면 이번엔 건너뜀
+    state = load_json(DATA / "api_state.json", {})
+    last = state.get("lastApiRun")
+    if last:
+        last_dt = datetime.fromisoformat(last)
+        if (now - last_dt).total_seconds() < API_COOLDOWN_MIN * 60:
+            print(f"직전 API 실행({last}) 후 {API_COOLDOWN_MIN}분이 안 지나서 이번엔 갱신을 건너뜀")
+            return
+    calls = 0
+
     # 1) 수집 + 기본 검증 + 중복 제거
     seen = {}
+
+    def add(it, group, sub, extra=None):
+        if not valid_item(it):
+            return
+        pid = str(it["productId"])
+        name = it["productName"].strip()
+        if pid in seen:
+            if extra:  # 같은 상품이 검색에도 나오면 표시만 추가
+                seen[pid].update(extra)
+            return
+        g = group
+        if group == "생필품" and CLEAN_RE.search(name):
+            g = "청소·수납"
+        seen[pid] = {
+            "id": pid, "name": name, "price": int(it["productPrice"]),
+            "image": it.get("productImage", ""), "url": it["productUrl"],
+            "rocket": bool(it.get("isRocket")), "freeShip": bool(it.get("isFreeShipping")),
+            "group": g, "sub": sub, "catRank": int(it.get("rank") or 100),
+            "checkedAt": checked_at, **(extra or {}),
+        }
+
+    day_index = (now.date() - datetime(2026, 1, 1).date()).days
+    everyday_kw, curious_kw = todays_keywords(day_index)
+    for kw, group in everyday_kw:
+        try:
+            calls += 1
+            for i, it in enumerate(fetch_search(kw, access, secret), 1):
+                it.setdefault("rank", i)
+                add(it, group, kw, {"everyday": True, "kw": kw})
+        except Exception as e:
+            print("검색 실패:", kw, e)
+        time.sleep(1.5)
+    for kw in curious_kw:
+        try:
+            calls += 1
+            for i, it in enumerate(fetch_search(kw, access, secret), 1):
+                it.setdefault("rank", i)
+                add(it, "신기한템", kw, {"curious": True, "kw": kw})
+        except Exception as e:
+            print("검색 실패:", kw, e)
+        time.sleep(1.5)
+
     for cid, (group, sub) in CATEGORIES.items():
         try:
+            calls += 1
             items = fetch_best(cid, access, secret)
         except Exception as e:
             print("카테고리 실패:", e)
             continue
         for it in items:
-            if not valid_item(it):
-                continue
-            pid = str(it["productId"])
-            if pid in seen:
-                continue
-            name = it["productName"].strip()
-            g = group
-            if group == "생필품" and CLEAN_RE.search(name):
-                g = "청소·수납"
-            seen[pid] = {
-                "id": pid, "name": name, "price": int(it["productPrice"]),
-                "image": it.get("productImage", ""), "url": it["productUrl"],
-                "rocket": bool(it.get("isRocket")), "freeShip": bool(it.get("isFreeShipping")),
-                "group": g, "sub": sub, "catRank": int(it.get("rank") or 100),
-                "checkedAt": checked_at,
-            }
+            add(it, group, sub)
         time.sleep(1)
-    print(f"수집: {len(seen)}개 (가격 {MAX_PRICE}원 이하)")
+    save_json(DATA / "api_state.json", {"lastApiRun": now.isoformat(), "calls": calls,
+                                         "keywords": [k for k, _ in everyday_kw] + curious_kw})
+    print(f"API 호출 {calls}회 / 수집: {len(seen)}개 (가격 {MAX_PRICE}원 이하)")
 
     # 2) 이미지 유효성 확인 (확인 자체가 대부분 실패하면 네트워크 문제로 보고 거르지 않음)
     with cf.ThreadPoolExecutor(16) as ex:

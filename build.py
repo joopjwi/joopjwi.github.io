@@ -140,7 +140,7 @@ def product_page(pid, meta, live_map, hist, live, checked_at):
 <h1 class="clamp2" data-clamp>{e(name)}</h1><button class="more-btn" hidden>더 보기</button>
 {price_block}{stale}
 <div class="ctas" style="display:flex;gap:8px;margin:14px 0">
-<a class="btn" href="{e(go)}" target="_blank" rel="sponsored nofollow noopener" data-go="{e(pid)}" data-place="detail">쿠팡에서 상품 보기</a>
+<a class="btn" href="{e(go)}" target="_blank" rel="sponsored nofollow noopener" data-go="{e(pid)}" data-place="detail">자세히 보기</a>
 <button class="btn ghost" style="flex:0 0 auto" onclick="shareItem('{e(url)}', document.title)">공유</button></div>
 <p style="font-size:14.5px;color:#3b3550">{e(desc)}</p>
 {chart(hist)}
@@ -177,7 +177,7 @@ def pick_page(pk, live_map, live):
 <div class="clamp2" data-clamp style="font-size:14px;color:#6d6680;margin:12px 0 0">{e(pk['name'])}</div><button class="more-btn" hidden>더 보기</button>
 {price_html}
 <div style="display:flex;gap:8px;margin:14px 0">
-<a class="btn" href="{e(go)}" target="_blank" rel="sponsored nofollow noopener" data-go="{e(pid)}" data-place="pick-page">쿠팡에서 상품 보기</a>
+<a class="btn" href="{e(go)}" target="_blank" rel="sponsored nofollow noopener" data-go="{e(pid)}" data-place="pick-page">자세히 보기</a>
 <button class="btn ghost" style="flex:0 0 auto" onclick="shareItem('{e(url)}', document.title)">공유</button></div>
 {related(pid, pk['group'], live, n=4)}
 </main>"""

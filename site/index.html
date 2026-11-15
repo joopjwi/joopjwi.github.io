@@ -124,7 +124,7 @@
 
 <script src="assets/common.js"></script>
 <script>
-const TABS = ["전체 TOP 100","식품·간식","생필품","신기한템","오늘의 득템","주방·살림","청소·수납","디지털·차량","뷰티·패션","반려동물"];
+const TABS = ["전체 TOP 100","식품·간식","생필품","매일 쓰는 템","신기한템","오늘의 득템","주방·살림","청소·수납","디지털·차량","뷰티·패션","도서","문구·취미","반려동물"];
 const PRICE = [[0,"전체"],[3000,"3천원 이하"],[5000,"5천원 이하"],[10000,"1만원 이하"]];
 const DEAL_RULE = "가격이 내렸거나 3천원 이하인 인기템";
 let D = null, ALL = [], BYID = {};
@@ -145,6 +145,8 @@ function move(p){
 }
 function badges(p){
   let b = "";
+  if (p.everyday) b += '<span class="bd">매일 쓰는 템</span>';
+  else if (p.curious) b += '<span class="bd">궁금한 템</span>';
   if (p.allTimeLow) b += '<span class="bd low">기록상 최저가</span>';
   if (p.dropPct > 0) b += `<span class="bd drop">▼ ${p.dropPct}%</span>`;
   return `<div class="badges">${b}</div>`;
@@ -168,6 +170,7 @@ function card(p, place, bigRank){
 function listRows(){
   let rows = ALL;
   if (st.tab === "오늘의 득템") rows = rows.filter(isDeal);
+  else if (st.tab === "매일 쓰는 템") rows = rows.filter(p => p.everyday);
   else if (st.tab !== "전체 TOP 100") rows = rows.filter(p => p.group === st.tab);
   if (st.q){
     const q = st.q.toLowerCase().replace(/\s+/g,"");
@@ -190,7 +193,8 @@ function renderList(){
   $("#listTitle").style.fontFamily = st.q ? "var(--sans)" : "";  // 검색어는 장식 폰트 서브셋에 없을 수 있음
   $("#listSub").textContent = st.q ? `${rows.length}개를 찾았쥐!` :
     home ? "만원 이하 인기템, 싹 주워왔쥐!" :
-    st.tab === "오늘의 득템" ? `${DEAL_RULE} ${rows.length}개` : `오늘 TOP 100 중 ${rows.length}개`;
+    st.tab === "오늘의 득템" ? `${DEAL_RULE} ${rows.length}개` :
+    st.tab === "매일 쓰는 템" ? `물티슈·생수처럼 매일 쓰는 것만 ${rows.length}개` : `오늘 TOP 100 중 ${rows.length}개`;
   $("#grid").innerHTML = rows.length ? rows.map(p => card(p,"list")).join("")
     : `<div class="empty" style="grid-column:1/-1">${st.q ? "검색 결과가 없쥐… 다른 단어로 찾아볼까?" : "오늘은 이 조건에 맞는 상품이 없어요."}</div>`;
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("on", t.dataset.t === st.tab));
