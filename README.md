@@ -2,7 +2,7 @@
 
 매일 아침 6시쯤 쿠팡파트너스 API로 1만원 이하 인기템 TOP 100을 갱신하는 쇼핑 큐레이션 사이트.
 
-- 사이트: https://kthdive-creator.github.io/ochunpick/
+- 사이트: https://joopjwi.github.io/
 - 인스타그램: @joopjwi
 
 ## 구성
