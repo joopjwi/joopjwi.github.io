@@ -137,7 +137,7 @@ def product_page(pid, meta, live_map, hist, live, checked_at):
     body = f"""<main class="detail">
 <div class="crumb"><a href="../">줍쥐</a> › {e(meta['group'])}</div>
 <div class="hero-img"><img src="{e(meta['image'])}" alt="{e(name)}"></div>
-<h1>{e(name)}</h1>
+<h1 class="clamp2" data-clamp>{e(name)}</h1><button class="more-btn" hidden>더 보기</button>
 {price_block}{stale}
 <div class="ctas" style="display:flex;gap:8px;margin:14px 0">
 <a class="btn" href="{e(go)}" target="_blank" rel="sponsored nofollow noopener" data-go="{e(pid)}" data-place="detail">쿠팡에서 상품 보기</a>
@@ -174,7 +174,7 @@ def pick_page(pk, live_map, live):
 <p style="font-size:16px;line-height:1.7">{e(pk['story'])}</p>
 <div class="pick" style="border:0;margin:6px 0 0"><div class="body" style="padding:0"><ul>{points}</ul></div></div>
 {usage}
-<div style="font-size:14px;color:#6d6680;margin:12px 0 4px">{e(pk['name'])}</div>
+<div class="clamp2" data-clamp style="font-size:14px;color:#6d6680;margin:12px 0 0">{e(pk['name'])}</div><button class="more-btn" hidden>더 보기</button>
 {price_html}
 <div style="display:flex;gap:8px;margin:14px 0">
 <a class="btn" href="{e(go)}" target="_blank" rel="sponsored nofollow noopener" data-go="{e(pid)}" data-place="pick-page">쿠팡에서 상품 보기</a>

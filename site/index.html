@@ -147,7 +147,7 @@ function badges(p){
   let b = "";
   if (p.allTimeLow) b += '<span class="bd low">기록상 최저가</span>';
   if (p.dropPct > 0) b += `<span class="bd drop">▼ ${p.dropPct}%</span>`;
-  return b ? `<div class="badges">${b}</div>` : "";
+  return `<div class="badges">${b}</div>`;
 }
 function card(p, place, bigRank){
   const href = `p/${p.id}.html`;
@@ -159,7 +159,7 @@ function card(p, place, bigRank){
     <a class="nm" href="${href}" data-detail="${p.id}">${esc(p.name)}</a>
     ${badges(p)}
     <div class="price">${won(p.price)}${p.dropPct>0?`<s>${won(p.prevPrice)}</s>`:""}</div>
-    ${ship(p)?`<div class="ship">${ship(p)}</div>`:""}
+    <div class="ship">${ship(p)}</div>
     <div class="checked">${hm(p.checkedAt)} 가격 확인</div>
     <div class="act"><a class="btn sm" href="${esc(p.url)}" target="_blank" rel="sponsored nofollow noopener" data-go="${p.id}" data-place="${place}">쿠팡에서 보기</a></div>
   </div>`;
@@ -210,7 +210,7 @@ function renderHome(pick, past){
       <a class="ph" href="pick/${pick.date}.html"><img src="${esc(pick.image)}" alt="${esc(pick.name)}"></a>
       <div class="body">
         <h3 style="margin-top:0">${esc(pick.title)}</h3>
-        <p class="story">${esc(pick.story)}</p>
+        <p class="story clamp3" data-clamp style="margin-bottom:2px">${esc(pick.story)}</p><button class="more-btn" hidden>더 보기</button><div style="height:10px"></div>
         ${pick.points && pick.points.length ? `<ul>${pick.points.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>` : ""}
         <div class="pname">${esc(pick.name)}</div>
         <div class="price">${won(price)}</div>
@@ -292,6 +292,7 @@ async function main(){
   }catch(e){}
   renderHome(pick, past);
   renderList();
+  requestAnimationFrame(() => window.initClamp && initClamp());
   if (y) requestAnimationFrame(()=>window.scrollTo(0,y));
 }
 main();

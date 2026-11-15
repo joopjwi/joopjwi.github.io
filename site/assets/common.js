@@ -34,6 +34,19 @@
     } else { prompt("아래 링크를 복사하세요", url); }
   };
 
+  // 긴 글 말줄임: 실제로 잘린 경우에만 '더 보기' 버튼 표시
+  window.initClamp = function(){
+    document.querySelectorAll("[data-clamp]:not([data-ready])").forEach(function(el){
+      el.setAttribute("data-ready", "1");
+      var btn = el.nextElementSibling;
+      if (!btn || !btn.classList.contains("more-btn")) return;
+      if (el.scrollHeight <= el.clientHeight + 2) { btn.remove(); return; }
+      btn.hidden = false;
+      btn.onclick = function(ev){ ev.preventDefault(); var open = el.classList.toggle("open"); btn.textContent = open ? "접기" : "더 보기"; };
+    });
+  };
+  window.addEventListener("load", function(){ initClamp(); });
+
   // 쿠팡 이동 클릭 추적 (data-go 속성이 있는 링크)
   document.addEventListener("click", function(e){
     var a = e.target.closest && e.target.closest("[data-go]");

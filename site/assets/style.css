@@ -164,3 +164,21 @@ footer b{color:var(--ink)}
 .crumb{font-size:13px;color:var(--sub);margin:14px 0 0}
 .crumb a{color:var(--purple);font-weight:700}
 .toast{position:fixed;left:50%;bottom:calc(var(--nav-h) + 20px);transform:translateX(-50%);background:var(--deep);color:#fff;padding:10px 16px;border-radius:20px;font-size:13px;z-index:60;display:none}
+
+/* ---- 정렬 고정: 카드 높이·줄 수 통일, 긴 글은 말줄임 ---- */
+.grid,.row{align-items:stretch}
+.card{height:100%}
+.card .nm{min-height:calc(1.38em * 2)}
+.card .badges{min-height:19px;margin:2px 0 3px}
+.card .price{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .ship,.card .checked{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:1.45em}
+.card .act{margin-top:auto;padding-top:8px}
+.clamp2,.clamp3{display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+.clamp2{-webkit-line-clamp:2}.clamp3{-webkit-line-clamp:3}
+.clamp2.open,.clamp3.open{-webkit-line-clamp:unset;display:block}
+.more-btn{border:0;background:none;padding:2px 0;font-size:13px;font-weight:700;color:var(--purple);cursor:pointer}
+.pick h3{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.pick .pname{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.arch b{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden}
+.arch span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.arch div{min-width:0}
