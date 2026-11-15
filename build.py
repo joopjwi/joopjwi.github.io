@@ -34,7 +34,8 @@ def ship(p):
     parts = []
     if p.get("rocket"):
         parts.append("로켓배송")
-    parts.append("무료배송" if p.get("freeShip") else "배송비 쿠팡에서 확인")
+    if p.get("freeShip"):
+        parts.append("무료배송")
     return " · ".join(parts)
 
 
@@ -99,7 +100,7 @@ def chart(hist):
 def mini_card(p, depth=1):
     up = "../" * depth
     return f"""<div class="card"><a class="ph" href="{up}p/{e(p['id'])}.html"><img src="{e(p['image'])}" alt="{e(p['name'])}" loading="lazy"><span class="rank">{p['rank']}</span></a>
-<a class="nm" href="{up}p/{e(p['id'])}.html">{e(p['name'])}</a><div class="price">{won(p['price'])}</div><div class="ship">{e(ship(p))}</div></div>"""
+<a class="nm" href="{up}p/{e(p['id'])}.html">{e(p['name'])}</a><div class="price">{won(p['price'])}</div>{f'<div class="ship">{e(ship(p))}</div>' if ship(p) else ''}</div>"""
 
 
 def related(pid, group, live, n=4, depth=1):
@@ -116,7 +117,7 @@ def product_page(pid, meta, live_map, hist, live, checked_at):
     name = meta["name"]
     if p:
         price_block = f"""<div class="price">{won(p['price'])}{f"<s>{won(p['prevPrice'])}</s>" if p.get('dropPct') else ''}</div>
-<div class="info"><div><span>배송</span><b>{e(ship(p))}</b></div>
+<div class="info">{f'<div><span>배송</span><b>{e(ship(p))}</b></div>' if ship(p) else ''}
 <div><span>가격 확인</span><b>{e(p['checkedAt'])}</b></div>
 <div><span>오늘 줍쥐 순위</span><b>{p['rank']}위 · {e(p['group'])}</b></div>
 <div><span>쿠팡 카테고리 베스트</span><b>{e(p['sub'])} {p['catRank']}위</b></div>
@@ -155,7 +156,7 @@ def pick_page(pk, live_map, live):
     url = f"{BASE}/pick/{pk['date']}.html"
     if p:
         price_html = f"""<div class="price">{won(p['price'])}</div>
-<div class="info"><div><span>배송</span><b>{e(ship(p))}</b></div><div><span>가격 확인</span><b>{e(p['checkedAt'])}</b></div></div>"""
+<div class="info">{f'<div><span>배송</span><b>{e(ship(p))}</b></div>' if ship(p) else ''}<div><span>가격 확인</span><b>{e(p['checkedAt'])}</b></div></div>"""
         go = p["url"]
     else:
         price_html = f"""<div class="info"><div><span>선정 당시 가격</span><b>{won(pk['price'])}</b></div>

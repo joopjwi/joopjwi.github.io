@@ -134,7 +134,7 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const won = n => Number(n).toLocaleString("ko-KR") + "원";
 const hm = s => (s||"").slice(11,16);
-const ship = p => [p.rocket ? "로켓배송" : "", p.freeShip ? "무료배송" : "배송비 쿠팡에서 확인"].filter(Boolean).join(" · ");
+const ship = p => [p.rocket ? "로켓배송" : "", p.freeShip ? "무료배송" : ""].filter(Boolean).join(" · ");
 const isDeal = p => p.dropPct > 0 || p.allTimeLow || p.price <= 3000;
 
 function move(p){
@@ -159,7 +159,7 @@ function card(p, place, bigRank){
     <a class="nm" href="${href}" data-detail="${p.id}">${esc(p.name)}</a>
     ${badges(p)}
     <div class="price">${won(p.price)}${p.dropPct>0?`<s>${won(p.prevPrice)}</s>`:""}</div>
-    <div class="ship">${ship(p)}</div>
+    ${ship(p)?`<div class="ship">${ship(p)}</div>`:""}
     <div class="checked">${hm(p.checkedAt)} 가격 확인</div>
     <div class="act"><a class="btn sm" href="${esc(p.url)}" target="_blank" rel="sponsored nofollow noopener" data-go="${p.id}" data-place="${place}">쿠팡에서 보기</a></div>
   </div>`;
@@ -214,7 +214,7 @@ function renderHome(pick, past){
         ${pick.points && pick.points.length ? `<ul>${pick.points.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>` : ""}
         <div class="pname">${esc(pick.name)}</div>
         <div class="price">${won(price)}</div>
-        <div class="ship">${ship(live||pick)}</div>
+        ${ship(live||pick)?`<div class="ship">${ship(live||pick)}</div>`:""}
         <div class="checked">${esc(checked)} 가격 확인</div>
         <div class="ctas">
           <a class="btn" href="pick/${pick.date}.html">오늘 이건 줍쥐!</a>
