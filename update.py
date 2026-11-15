@@ -22,17 +22,30 @@ from pathlib import Path
 DOMAIN = "https://api-gateway.coupang.com"
 BEST_PATH = "/v2/providers/affiliate_open_api/apis/openapi/v1/products/bestcategories/{cid}"
 
-# 다이소 느낌에 맞는 카테고리 (쿠팡파트너스 카테고리 ID)
+# 쿠팡파트너스 카테고리 ID -> (사이트 그룹, 세부 분류)
 CATEGORIES = {
-    1013: "주방",
-    1014: "생활",
-    1015: "인테리어·수납",
-    1021: "문구·오피스",
-    1010: "뷰티",
-    1018: "차량용품",
-    1029: "반려동물",
-    1020: "완구·취미",
+    1012: ("식품", "식품"),
+    1024: ("식품", "건강식품"),
+    1014: ("생필품", "생활용품"),
+    1011: ("생필품", "출산·유아"),
+    1010: ("생필품", "뷰티·위생"),
+    1013: ("주방·수납", "주방"),
+    1015: ("주방·수납", "인테리어·수납"),
+    1021: ("문구·취미", "문구·오피스"),
+    1020: ("문구·취미", "완구·취미"),
+    1018: ("기타", "차량용품"),
+    1029: ("기타", "반려동물"),
 }
+
+# 화면에 보이는 순서 + 그룹별 기본 자리 수 (합계 100)
+GROUP_QUOTA = {
+    "식품": 25,
+    "생필품": 25,
+    "주방·수납": 20,
+    "문구·취미": 15,
+    "기타": 15,
+}
+GROUP_ORDER = list(GROUP_QUOTA)
 
 MAX_PRICE = int(os.environ.get("MAX_PRICE", "5000"))
 SUB_ID = os.environ.get("COUPANG_SUB_ID", "ochunpick")
@@ -94,7 +107,7 @@ def main():
     history = load_json(DATA / "history.json", {})
     seen = {}
 
-    for cid, label in CATEGORIES.items():
+    for cid, (group, label) in CATEGORIES.items():
         try:
             items = fetch_best(cid, access, secret)
         except Exception as e:  # 한 카테고리 실패해도 나머지는 진행
@@ -115,7 +128,8 @@ def main():
                 "url": it.get("productUrl", ""),
                 "rocket": bool(it.get("isRocket")),
                 "freeShip": bool(it.get("isFreeShipping")),
-                "category": label,
+                "category": group,
+                "sub": label,
                 "rank": int(it.get("rank") or 100),
             }
         time.sleep(1)  # API 호출 간격
@@ -141,14 +155,30 @@ def main():
         if not history[pid]:
             del history[pid]
 
-    ranked = sorted(seen.values(), key=score, reverse=True)[:TOP_N]
-    for i, p in enumerate(ranked, 1):
-        p["top"] = i
+    # 그룹별로 인기순 정렬 후 정해진 자리 수만큼 뽑고, 모자라면 남은 인기 상품으로 채움
+    by_group = {g: sorted([p for p in seen.values() if p["category"] == g], key=score, reverse=True)
+                for g in GROUP_ORDER}
+    picked = []
+    for g in GROUP_ORDER:
+        picked += by_group[g][:GROUP_QUOTA[g]]
+    if len(picked) < TOP_N:
+        ids = {p["id"] for p in picked}
+        rest = sorted([p for p in seen.values() if p["id"] not in ids], key=score, reverse=True)
+        picked += rest[:TOP_N - len(picked)]
+
+    # 최종 순서: 그룹 순서(식품 → 생필품 → ...) 안에서 인기순
+    ranked = []
+    for g in GROUP_ORDER:
+        items = sorted([p for p in picked if p["category"] == g], key=score, reverse=True)
+        for i, p in enumerate(items, 1):
+            p["top"] = i
+        ranked += items
 
     DATA.mkdir(parents=True, exist_ok=True)
     out = {
         "updatedAt": datetime.now(KST).strftime("%Y-%m-%d %H:%M"),
         "maxPrice": MAX_PRICE,
+        "groups": GROUP_ORDER,
         "products": ranked,
     }
     (DATA / "products.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
