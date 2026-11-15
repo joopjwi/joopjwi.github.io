@@ -1,29 +1,28 @@
-# 오천픽 — 5천원 이하 인기템 TOP 100
+# 줍쥐 JOOPJWI — 이게 만원도 안 한다고?
 
-매일 아침 6시쯤 쿠팡파트너스 API에서 카테고리별 베스트 상품을 가져와
-5천원 이하만 골라 TOP 100을 만들고, 가격 기록으로 "역대 최저가", "▼ 할인%" 뱃지를 붙입니다.
+매일 아침 6시쯤 쿠팡파트너스 API로 1만원 이하 인기템 TOP 100을 갱신하는 쇼핑 큐레이션 사이트.
 
-## 파일 구성
-- `site/index.html` — 사이트 화면 (데이터가 없으면 샘플로 표시)
-- `update.py` — 쿠팡 API 호출 + 가격 기록 + TOP 100 생성
-- `.github/workflows/update.yml` — 매일 자동 실행 + GitHub Pages 배포
+- 사이트: https://kthdive-creator.github.io/ochunpick/
+- 인스타그램: @joopjwi
 
-## 처음 한 번 세팅 (약 10분)
-1. GitHub에서 새 저장소를 만들고 이 파일들을 그대로 올립니다.
-2. 저장소 **Settings → Secrets and variables → Actions → New repository secret**에서 추가:
-   - `COUPANG_ACCESS_KEY` — 쿠팡파트너스 Access Key
-   - `COUPANG_SECRET_KEY` — 쿠팡파트너스 Secret Key
-   - `COUPANG_SUB_ID` — (선택) 채널 구분용 이름, 예: `ochunpick`
-3. **Settings → Pages → Source**를 `GitHub Actions`로 바꿉니다.
-4. **Actions 탭 → "오늘의 TOP 100 갱신" → Run workflow**를 눌러 첫 실행.
-5. 끝나면 `https://<아이디>.github.io/<저장소이름>/`에서 사이트가 열립니다.
-6. 쿠팡파트너스 **활동 페이지**에 이 주소를 등록하세요.
+## 구성
+- `update.py` — 쿠팡 API 호출, 검증(가격·링크·이미지), 가격/순위 기록, TOP 5, 데일리 픽 후보
+- `build.py` — 상품 상세(`p/`), 데일리 픽(`pick/`), sitemap, robots 생성 (API 호출 없음)
+- `site/` — 홈페이지, 공통 스타일·스크립트, 데이터(`site/data/`)
+- `.github/workflows/update.yml` — 매일 갱신 + 코드 변경 시 재배포
 
-## 바꾸고 싶을 때
-- 가격 상한: `update.py`의 `MAX_PRICE` (기본 5000)
-- 카테고리: `update.py`의 `CATEGORIES`
-- 갱신 시간: `update.yml`의 `cron` (UTC 기준, 현재 한국시간 06:07)
+## 데이터
+- `site/data/products.json` 오늘의 TOP 100
+- `site/data/top5.json` 홈페이지 TOP 5 = 릴스 TOP 5 (같은 파일)
+- `site/data/picks/<날짜>.json` 오늘 이건 줍쥐! (copySource: template → ai)
 
-## 참고
-- 페이지 맨 위 대가성 문구는 지우지 마세요(공정위 지침).
-- 플로팅 배너·강제 클릭 유도는 쿠팡 정책 위반이라 넣지 않았습니다.
+## 브랜드 캐릭터
+`site/assets/character.png`(배경 투명 PNG)를 넣으면 헤더 로고와 메인 배너에 자동으로 표시됩니다.
+
+## 분석
+`site/config.js`의 `ga4`에 GA4 측정 ID를 넣으면 쿠팡 이동·상품 보기·공유·검색 이벤트가 기록됩니다.
+
+## 폰트
+- Pretendard (CDN)
+- 여기어때 잘난체: 사이트 문구에 쓰인 글자만 잘라 `site/assets/fonts/jalnan-subset.woff2`로 포함.
+  배너·섹션 제목 문구를 바꾸면 서브셋을 다시 만들어야 합니다.

@@ -1,0 +1,6 @@
+# build.py가 배포할 때마다 새로 만드는 파일
+site/p/
+site/pick/
+site/sitemap.xml
+site/robots.txt
+__pycache__/

@@ -2,177 +2,299 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>오천픽 · 5천원 이하 인기템 TOP 100</title>
-<meta name="description" content="쿠팡 5천원 이하 인기템 TOP 100을 매일 아침 갱신합니다. 역대 최저가, 가격 하락 상품을 한눈에.">
-<style>
-  :root{
-    --bg:#fffaf0; --ink:#1f1a14; --sub:#7a6f62; --line:#efe4d2;
-    --red:#e8452c; --yellow:#ffd23f; --green:#1f9d55; --blue:#2f6fed; --card:#fff;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;}
-  a{color:inherit;text-decoration:none}
-  .disclose{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:7px 12px;line-height:1.4}
-  header{padding:22px 16px 8px;max-width:1080px;margin:0 auto}
-  .brand{display:flex;align-items:center;gap:10px}
-  .logo{width:46px;height:46px;border-radius:14px;background:var(--red);color:#fff;
-    display:grid;place-items:center;font-weight:900;font-size:15px;line-height:1;transform:rotate(-6deg);
-    box-shadow:3px 3px 0 var(--ink)}
-  .brand h1{margin:0;font-size:26px;letter-spacing:-1px}
-  .brand h1 span{color:var(--red)}
-  .tag{margin:10px 0 0;color:var(--sub);font-size:14px}
-  .tag b{color:var(--ink);background:var(--yellow);padding:0 4px}
-  .updated{font-size:12px;color:var(--sub);margin-top:6px}
-  nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-  .chips{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;max-width:1080px;margin:0 auto;scrollbar-width:none}
-  .chips::-webkit-scrollbar{display:none}
-  .chip{flex:none;border:1.5px solid var(--ink);background:#fff;border-radius:999px;padding:7px 13px;
-    font-size:13px;font-weight:700;cursor:pointer}
-  .chip.on{background:var(--ink);color:#fff}
-  .sortbar{display:flex;gap:6px;justify-content:flex-end;max-width:1080px;margin:10px auto 0;padding:0 16px;font-size:13px}
-  .sortbar button{border:0;background:none;color:var(--sub);cursor:pointer;font-weight:600;padding:4px 6px}
-  .sortbar button.on{color:var(--red)}
-  main{max-width:1080px;margin:0 auto;padding:6px 12px 40px}
-  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-  @media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
-  @media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr);gap:14px}}
-  .sec{margin-top:18px}
-  .sec h2{display:flex;align-items:center;gap:8px;margin:0 4px 10px;font-size:19px;letter-spacing:-.5px}
-  .sec h2 small{font-size:12px;color:var(--sub);font-weight:600}
-  .sec h2 .more{margin-left:auto;font-size:12px;color:var(--red);font-weight:700;cursor:pointer;background:none;border:0}
-  .card{background:var(--card);border:1.5px solid var(--line);border-radius:14px;overflow:hidden;
-    display:flex;flex-direction:column;position:relative;transition:transform .12s}
-  .card:active{transform:scale(.98)}
-  .rank{position:absolute;top:8px;left:8px;background:var(--ink);color:#fff;font-weight:900;
-    font-size:13px;min-width:28px;height:28px;border-radius:8px;display:grid;place-items:center;padding:0 6px}
-  .rank.top3{background:var(--red)}
-  .thumb{aspect-ratio:1;background:#f6efe3;display:grid;place-items:center;font-size:52px}
-  .thumb img{width:100%;height:100%;object-fit:cover}
-  .info{padding:10px 10px 12px;display:flex;flex-direction:column;gap:6px;flex:1}
-  .badges{display:flex;flex-wrap:wrap;gap:4px;min-height:18px}
-  .b{font-size:10.5px;font-weight:800;padding:2px 6px;border-radius:5px}
-  .b.low{background:var(--red);color:#fff}
-  .b.drop{background:#ffe7e2;color:var(--red)}
-  .b.rocket{background:#e6efff;color:var(--blue)}
-  .name{font-size:13px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-  .price{margin-top:auto;display:flex;align-items:baseline;gap:6px}
-  .price strong{font-size:18px;font-weight:900;letter-spacing:-.5px}
-  .price s{font-size:12px;color:var(--sub)}
-  .cat{font-size:11px;color:var(--sub)}
-  .empty{grid-column:1/-1;text-align:center;color:var(--sub);padding:40px 0}
-  .sample{max-width:1080px;margin:8px auto 0;padding:0 16px}
-  .sample div{background:#fff3c4;border:1px dashed #d9b400;font-size:12px;padding:8px 10px;border-radius:8px}
-  footer{max-width:1080px;margin:0 auto;padding:20px 16px 40px;font-size:12px;color:var(--sub);line-height:1.6;border-top:1px solid var(--line)}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>줍쥐 · 이게 만원도 안 한다고? 1만원 이하 인기템 TOP 100</title>
+<meta name="description" content="싸다고 다 줍쥐 않쥐! 매일 아침 갱신되는 1만원 이하 가성비 인기템 TOP 100과 오늘의 줍쥐픽.">
+<meta name="theme-color" content="#6625E8">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="줍쥐">
+<meta property="og:title" content="줍쥐 · 이게 만원도 안 한다고?">
+<meta property="og:description" content="싸다고 다 줍쥐 않쥐! 매일 새롭게 발견하는 1만원 이하 가성비템 TOP 100">
+<meta property="og:image" content="https://kthdive-creator.github.io/ochunpick/assets/og.png">
+<meta property="og:url" content="https://kthdive-creator.github.io/ochunpick/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://kthdive-creator.github.io/ochunpick/">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.css">
+<link rel="stylesheet" href="assets/style.css">
+<script src="config.js"></script>
 </head>
 <body>
-<div class="disclose">이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+<div class="notice">이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
 
-<header>
-  <div class="brand">
-    <div class="logo">5천</div>
-    <h1>오천<span>픽</span></h1>
+<div class="top" id="top">
+  <div class="wrap">
+    <div class="hdr">
+      <a class="logo" href="./" aria-label="줍쥐 홈">
+        <img src="assets/character.png" alt="" onerror="this.remove()">
+        <b>줍쥐</b><small>JOOPJWI</small>
+      </a>
+      <span class="sp"></span>
+      <button class="icon-btn" id="searchBtn" aria-label="검색"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn" data-menu aria-label="메뉴"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <label class="search"><span class="sr">상품 검색</span>
+      <input id="q" type="search" placeholder="오늘은 뭐 주워볼까?" autocomplete="off" enterkeyhint="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    </label>
+    <nav class="tabs" id="tabs" aria-label="카테고리"></nav>
   </div>
-  <p class="tag">쿠팡에서 <b>5천원 이하</b>로 제일 많이 담는 물건, 매일 아침 TOP 100</p>
-  <div class="updated" id="updated"></div>
-</header>
-
-<nav><div class="chips" id="chips"></div></nav>
-<div class="sample" id="sampleNote" hidden><div>지금 보이는 상품은 화면 확인용 <b>샘플 데이터</b>예요. API를 연결하면 실제 상품으로 바뀝니다.</div></div>
-<div class="sortbar">
-  <button data-sort="top" class="on">인기순</button>
-  <button data-sort="drop">할인순</button>
-  <button data-sort="low">낮은가격순</button>
 </div>
-<main id="list"></main>
 
-<footer>
-  가격은 매일 아침 갱신 시점 기준이며, 쿠팡에서 실시간으로 바뀔 수 있어요. 구매 전 쿠팡 상품 페이지에서 최종 가격을 확인해 주세요.<br>
-  ‘역대 최저가’는 오천픽이 기록을 시작한 이후의 최저가입니다.
-</footer>
+<main class="wrap">
+  <div id="err"></div>
 
+  <section class="hero home-only" aria-label="줍쥐 소개">
+    <h1>이게 만원도<br>안 한다고?</h1>
+    <div class="sub">싸다고 다 줍쥐 않쥐!</div>
+    <div class="meta">매일 새롭게 발견하는 가성비템 TOP 100</div>
+    <img class="char" src="assets/character.png" alt="" onerror="this.remove()">
+  </section>
+
+  <section class="sec home-only" id="pickSec" hidden>
+    <div class="sec-h"><div><span class="kicker">JOOPJWI'S DAILY PICK</span>
+      <h2 style="margin-top:8px">오늘 이건 줍쥐!</h2><p>매일 딱 하나, 줍쥐가 골라왔쥐.</p></div></div>
+    <div id="pick"></div>
+  </section>
+
+  <section class="sec home-only" id="top5Sec" hidden>
+    <div class="sec-h"><div><h2>오늘의 줍쥐 TOP 5</h2><p>오늘 가장 탐나는 5개만 골랐쥐!</p></div></div>
+    <div class="row wide" id="top5"></div>
+  </section>
+
+  <section class="sec" id="top100">
+    <div class="sec-h"><div><h2 id="listTitle">오늘의 줍쥐 TOP 100</h2><p id="listSub">만원 이하 인기템, 싹 주워왔쥐!</p></div></div>
+    <div class="toolbar">
+      <div class="chips" id="priceChips"></div>
+      <select class="sel" id="sort" aria-label="정렬">
+        <option value="rank">줍쥐 인기순</option>
+        <option value="low">낮은 가격순</option>
+        <option value="drop">가격 하락순</option>
+        <option value="new">신규 등록순</option>
+      </select>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="sec home-only" id="drops" hidden>
+    <div class="sec-h"><div><h2>가격 떨어졌쥐!</h2><p>어제 기록보다 실제로 가격이 내린 상품만 모았어요.</p></div></div>
+    <div class="row" id="dropRow"></div>
+  </section>
+
+  <section class="sec home-only" id="newSec" hidden>
+    <div class="sec-h"><div><h2>새로 주웠쥐!</h2><p>오늘 처음 TOP 100에 들어온 상품이에요.</p></div></div>
+    <div class="row" id="newRow"></div>
+  </section>
+
+  <div id="catRecs" class="home-only"></div>
+
+  <section class="sec home-only" id="archSec" hidden>
+    <div class="sec-h"><div><h2>지난 줍쥐픽</h2><p>가격은 선정 당시 기준이에요. 지금 가격은 쿠팡에서 확인해 주세요.</p></div></div>
+    <div id="arch"></div>
+  </section>
+
+  <footer>
+    <p><b>쿠팡 파트너스 고지</b><br>이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 구매 가격에는 영향이 없어요.</p>
+    <p><b>가격 안내</b><br>가격은 표시된 확인 시각 기준이며 쿠팡에서 수시로 바뀔 수 있어요. 품절 여부와 최종 가격·배송비는 쿠팡 상품 페이지에서 확인해 주세요.</p>
+    <p><b>순위 기준</b><br><span id="rule">쿠팡 카테고리 베스트 순위를 바탕으로 매일 자동 산정해요.</span></p>
+    <p>© 줍쥐 JOOPJWI · <a href="https://www.instagram.com/joopjwi/" target="_blank" rel="noopener">@joopjwi</a></p>
+  </footer>
+</main>
+
+<div class="sheet" id="sheet" aria-hidden="true">
+  <div class="panel">
+    <button class="icon-btn" data-close aria-label="닫기" style="float:right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <h3>줍쥐 메뉴</h3>
+    <a href="#top100" data-close>오늘의 TOP 100</a>
+    <a href="#drops" data-close>가격 떨어졌쥐!</a>
+    <a href="#archSec" data-close>지난 줍쥐픽</a>
+    <a href="https://www.instagram.com/joopjwi/" target="_blank" rel="noopener">인스타그램 @joopjwi</a>
+    <p id="ruleSheet"></p>
+  </div>
+</div>
+
+<nav class="bnav" aria-label="하단 메뉴">
+  <a href="#top" class="on" data-nav="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>홈</a>
+  <a href="#top100" data-nav="top100"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 20V10M12 20V4M18 20v-7"/></svg>TOP 100</a>
+  <a href="#top" data-nav="cats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg>카테고리</a>
+  <a href="#drops" data-nav="drops"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l6 6 4-4 6 6"/><path d="M20 9v5h-5"/></svg>가격하락</a>
+  <a href="https://www.instagram.com/joopjwi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg>인스타</a>
+</nav>
+
+<script src="assets/common.js"></script>
 <script>
-const SAMPLE = {updatedAt:"샘플", products:[
-  ["즉석 컵밥 1개","식품",2900,3900,1,"🍚"],["견과류 한줌 5봉","식품",4480,4980,0,"🥜"],
-  ["욕실 배수구 거름망 30매","생필품",2980,3500,1,"🛁"],["양면 테이프 클리너","생필품",2500,2500,0,"🧻"],
-  ["실리콘 냄비받침 2P","주방·수납",2900,3900,0,"🍳"],["접이식 미니 수납박스","주방·수납",1990,2490,1,"📦"],
-  ["무지 스프링 노트 3권","문구·취미",3900,3900,0,"📒"],["형광펜 6색 세트","문구·취미",3200,3200,0,"🖍️"],
-  ["차량용 컵홀더 정리함","기타",4200,4900,0,"🚗"],["강아지 배변봉투 120매","기타",4500,4500,0,"🐶"]
-].map((r,i)=>({id:"s"+i,name:r[0],category:r[1],price:r[2],prevPrice:r[3],
-  drop_pct:r[3]>r[2]?Math.round((r[3]-r[2])/r[3]*100):0,allTimeLow:!!r[4],rocket:i%3!==2,
-  emoji:r[5],url:"#",top:i%2+1}))};
+const TABS = ["전체 TOP 100","식품·간식","생필품","신기한템","오늘의 득템","주방·살림","청소·수납","디지털·차량","뷰티·패션","반려동물"];
+const PRICE = [[0,"전체"],[3000,"3천원 이하"],[5000,"5천원 이하"],[10000,"1만원 이하"]];
+const DEAL_RULE = "가격이 내렸거나 3천원 이하인 인기템";
+let D = null, ALL = [], BYID = {};
+let st = { tab:"전체 TOP 100", sort:"rank", maxp:0, q:"" };
 
-const GROUP_ICON={"식품":"🍙","생필품":"🧻","주방·수납":"🍳","문구·취미":"✏️","기타":"🚗"};
-const PREVIEW=8; // 전체 보기에서 그룹별로 먼저 보여줄 개수
-let all=[], groups=[], cat="전체", sort="top";
-const won=n=>n.toLocaleString("ko-KR")+"원";
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const won = n => Number(n).toLocaleString("ko-KR") + "원";
+const hm = s => (s||"").slice(11,16);
+const ship = p => [p.rocket ? "로켓배송" : "", p.freeShip ? "무료배송" : "배송비 쿠팡에서 확인"].filter(Boolean).join(" · ");
+const isDeal = p => p.dropPct > 0 || p.allTimeLow || p.price <= 3000;
 
-function sorted(rows){
-  if(sort==="drop") return [...rows].sort((a,b)=>(b.drop_pct||0)-(a.drop_pct||0)||a.top-b.top);
-  if(sort==="low") return [...rows].sort((a,b)=>a.price-b.price);
-  return [...rows].sort((a,b)=>a.top-b.top);
+function move(p){
+  if (p.isNew) return '<span class="mv new">NEW</span>';
+  if (p.prevRank && p.prevRank > p.rank) return `<span class="mv up">▲${p.prevRank - p.rank}</span>`;
+  if (p.prevRank && p.prevRank < p.rank) return `<span class="mv down">▼${p.rank - p.prevRank}</span>`;
+  return "";
+}
+function badges(p){
+  let b = "";
+  if (p.allTimeLow) b += '<span class="bd low">기록상 최저가</span>';
+  if (p.dropPct > 0) b += `<span class="bd drop">▼ ${p.dropPct}%</span>`;
+  return b ? `<div class="badges">${b}</div>` : "";
+}
+function card(p, place, bigRank){
+  const href = `p/${p.id}.html`;
+  return `<div class="card">
+    <a class="ph" href="${href}" data-detail="${p.id}">
+      <img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" decoding="async">
+      <span class="rank ${bigRank?"big":""}">${p.rank}</span>${move(p)}
+    </a>
+    <a class="nm" href="${href}" data-detail="${p.id}">${esc(p.name)}</a>
+    ${badges(p)}
+    <div class="price">${won(p.price)}${p.dropPct>0?`<s>${won(p.prevPrice)}</s>`:""}</div>
+    <div class="ship">${ship(p)}</div>
+    <div class="checked">${hm(p.checkedAt)} 가격 확인</div>
+    <div class="act"><a class="btn sm" href="${esc(p.url)}" target="_blank" rel="sponsored nofollow noopener" data-go="${p.id}" data-place="${place}">쿠팡에서 보기</a></div>
+  </div>`;
 }
 
-function section(g, rows, preview){
-  const shown = preview ? rows.slice(0,PREVIEW) : rows;
-  return `<section class="sec"><h2>${GROUP_ICON[g]||"🛒"} ${esc(g)} <small>${rows.length}개</small>
-    ${preview&&rows.length>PREVIEW?`<button class="more" data-g="${esc(g)}">전체보기 ›</button>`:""}</h2>
-    <div class="grid">${shown.length?shown.map(card).join(""):'<div class="empty">오늘은 상품이 없어요.</div>'}</div></section>`;
+function listRows(){
+  let rows = ALL;
+  if (st.tab === "오늘의 득템") rows = rows.filter(isDeal);
+  else if (st.tab !== "전체 TOP 100") rows = rows.filter(p => p.group === st.tab);
+  if (st.q){
+    const q = st.q.toLowerCase().replace(/\s+/g,"");
+    rows = rows.filter(p => (p.name + p.group + p.sub).toLowerCase().replace(/\s+/g,"").includes(q));
+  }
+  if (st.maxp) rows = rows.filter(p => p.price <= st.maxp);
+  const s = [...rows];
+  if (st.sort === "low") s.sort((a,b) => a.price - b.price || a.rank - b.rank);
+  else if (st.sort === "drop") s.sort((a,b) => (b.dropPct||0) - (a.dropPct||0) || a.rank - b.rank);
+  else if (st.sort === "new") s.sort((a,b) => (b.firstSeen||"").localeCompare(a.firstSeen||"") || a.rank - b.rank);
+  else s.sort((a,b) => a.rank - b.rank);
+  return s;
 }
 
-function render(){
-  const list=document.getElementById("list");
-  if(cat==="전체"){
-    list.innerHTML = groups.map(g=>section(g, sorted(all.filter(p=>p.category===g)), true)).join("");
-  } else {
-    list.innerHTML = section(cat, sorted(all.filter(p=>p.category===cat)), false);
+function renderList(){
+  const home = st.tab === "전체 TOP 100" && !st.q;
+  document.querySelectorAll(".home-only").forEach(el => el.style.display = home ? "" : "none");
+  const rows = listRows();
+  $("#listTitle").textContent = st.q ? `“${st.q}” 검색 결과` : (home ? "오늘의 줍쥐 TOP 100" : st.tab);
+  $("#listTitle").style.fontFamily = st.q ? "var(--sans)" : "";  // 검색어는 장식 폰트 서브셋에 없을 수 있음
+  $("#listSub").textContent = st.q ? `${rows.length}개를 찾았쥐!` :
+    home ? "만원 이하 인기템, 싹 주워왔쥐!" :
+    st.tab === "오늘의 득템" ? `${DEAL_RULE} ${rows.length}개` : `오늘 TOP 100 중 ${rows.length}개`;
+  $("#grid").innerHTML = rows.length ? rows.map(p => card(p,"list")).join("")
+    : `<div class="empty" style="grid-column:1/-1">${st.q ? "검색 결과가 없쥐… 다른 단어로 찾아볼까?" : "오늘은 이 조건에 맞는 상품이 없어요."}</div>`;
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("on", t.dataset.t === st.tab));
+  document.querySelectorAll("#priceChips .chip").forEach(c => c.classList.toggle("on", +c.dataset.p === st.maxp));
+  $("#sort").value = st.sort;
+  save();
+}
+
+function renderHome(pick, past){
+  // 오늘 이건 줍쥐!
+  if (pick){
+    const live = BYID[pick.id];
+    const price = live ? live.price : pick.price;
+    const checked = live ? live.checkedAt : pick.checkedAt;
+    const url = live ? live.url : pick.url;
+    $("#pick").innerHTML = `<article class="pick">
+      <a class="ph" href="pick/${pick.date}.html"><img src="${esc(pick.image)}" alt="${esc(pick.name)}"></a>
+      <div class="body">
+        <h3 style="margin-top:0">${esc(pick.title)}</h3>
+        <p class="story">${esc(pick.story)}</p>
+        ${pick.points && pick.points.length ? `<ul>${pick.points.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+        <div class="pname">${esc(pick.name)}</div>
+        <div class="price">${won(price)}</div>
+        <div class="ship">${ship(live||pick)}</div>
+        <div class="checked">${esc(checked)} 가격 확인</div>
+        <div class="ctas">
+          <a class="btn" href="pick/${pick.date}.html">오늘 이건 줍쥐!</a>
+          <a class="btn lime" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener" data-go="${pick.id}" data-place="pick">쿠팡에서 보기</a>
+        </div>
+      </div></article>`;
+    $("#pickSec").hidden = false;
+  }
+  // TOP 5
+  const t5 = (D.top5||[]).map(id => BYID[id]).filter(Boolean);
+  if (t5.length){ $("#top5").innerHTML = t5.map((p,i) => card({...p, rank:i+1}, "top5", true)).join(""); $("#top5Sec").hidden = false; }
+  // 가격 하락 (실제 이전 기록이 있는 것만)
+  const drops = ALL.filter(p => p.dropPct > 0 && p.prevPrice).sort((a,b)=>b.dropPct-a.dropPct).slice(0,12);
+  if (drops.length){ $("#dropRow").innerHTML = drops.map(p=>card(p,"drops")).join(""); $("#drops").hidden = false; }
+  // 신규 진입
+  const fresh = ALL.filter(p => p.isNew).slice(0,12);
+  if (fresh.length){ $("#newRow").innerHTML = fresh.map(p=>card(p,"new")).join(""); $("#newSec").hidden = false; }
+  // 카테고리별 추천 (상품 많은 순, 빈 카테고리 제외)
+  const groups = (D.groups||[]).map(g => [g, ALL.filter(p=>p.group===g)]).filter(([,r])=>r.length).sort((a,b)=>b[1].length-a[1].length);
+  $("#catRecs").innerHTML = groups.map(([g,r]) => `<section class="sec">
+    <div class="sec-h"><div><h2>${esc(g)}</h2><p>오늘 ${r.length}개 주웠쥐</p></div><button class="more" data-tab="${esc(g)}">전체보기 ›</button></div>
+    <div class="row">${r.slice(0,8).map(p=>card(p,"cat")).join("")}</div></section>`).join("");
+  // 지난 줍쥐픽
+  if (past.length){
+    $("#arch").innerHTML = past.map(x => `<a class="arch" href="pick/${x.date}.html">
+      ${x.image?`<img src="${esc(x.image)}" alt="" loading="lazy">`:""}<div><b>${esc(x.title)}</b>
+      <span>${esc(x.date)} · ${esc(x.name||"")}${x.price?` · 선정 당시 ${won(x.price)}`:""}</span></div></a>`).join("");
+    $("#archSec").hidden = false;
   }
 }
 
-function pick(c){
-  cat=c;
-  document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x.textContent===c));
-  render(); window.scrollTo({top:0});
+function setTab(t){ st.tab = t; st.q = ""; $("#q").value = ""; renderList(); window.scrollTo({top:0}); track("select_category",{category:t}); }
+
+function save(){ try{ sessionStorage.setItem("jj", JSON.stringify({...st, y: window.scrollY})); }catch(e){} }
+function restore(){ try{ const s = JSON.parse(sessionStorage.getItem("jj")||"null"); if (s){ const {y, ...rest} = s; Object.assign(st, rest); return y||0; } }catch(e){} return 0; }
+
+function bind(){
+  $("#tabs").innerHTML = TABS.map(t => `<button class="tab" data-t="${t}">${t}</button>`).join("");
+  $("#priceChips").innerHTML = PRICE.map(([v,l]) => `<button class="chip" data-p="${v}">${l}</button>`).join("");
+  $("#tabs").onclick = e => { const b = e.target.closest(".tab"); if (b) setTab(b.dataset.t); };
+  $("#priceChips").onclick = e => { const b = e.target.closest(".chip"); if (b){ st.maxp = +b.dataset.p; renderList(); } };
+  $("#sort").onchange = e => { st.sort = e.target.value; renderList(); };
+  let tm; $("#q").oninput = e => { clearTimeout(tm); tm = setTimeout(()=>{ st.q = e.target.value.trim(); renderList(); if (st.q) track("search",{search_term:st.q}); }, 200); };
+  $("#searchBtn").onclick = () => { $("#q").focus(); };
+  document.addEventListener("click", e => {
+    const m = e.target.closest("[data-tab]"); if (m){ setTab(m.dataset.tab); }
+    const n = e.target.closest("[data-nav]");
+    if (n){ document.querySelectorAll(".bnav a").forEach(a=>a.classList.toggle("on",a===n));
+      if (n.dataset.nav !== "home" && (st.tab !== "전체 TOP 100" || st.q)) setTab("전체 TOP 100");
+      if (n.dataset.nav === "cats"){ e.preventDefault(); window.scrollTo({top:0}); $("#tabs").scrollIntoView({block:"nearest"}); } }
+    const d = e.target.closest("[data-detail]"); if (d) track("select_item",{item_id:d.dataset.detail});
+  });
+  addEventListener("pagehide", save);
 }
 
-function card(p){ return `
-    <a class="card" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">
-      <div class="rank ${p.top<=3?"top3":""}">${p.top}</div>
-      <div class="thumb">${p.image?`<img src="${esc(p.image)}" alt="" loading="lazy">`:(p.emoji||"🛒")}</div>
-      <div class="info">
-        <div class="badges">
-          ${p.allTimeLow?'<span class="b low">역대 최저가</span>':""}
-          ${p.drop_pct>0?`<span class="b drop">▼ ${p.drop_pct}%</span>`:""}
-          ${p.rocket?'<span class="b rocket">로켓배송</span>':""}
-        </div>
-        <div class="name">${esc(p.name)}</div>
-        <div class="cat">${esc(p.sub||p.category)}</div>
-        <div class="price"><strong>${won(p.price)}</strong>${p.prevPrice&&p.prevPrice>p.price?`<s>${won(p.prevPrice)}</s>`:""}</div>
-      </div>
-    </a>`; }
-
-function setup(data, isSample){
-  all=data.products;
-  const present=new Set(all.map(p=>p.category));
-  groups=(data.groups||["식품","생필품","주방·수납","문구·취미","기타"]).filter(g=>present.has(g));
-  present.forEach(g=>{ if(!groups.includes(g)) groups.push(g); });
-  document.getElementById("updated").textContent = isSample ? "" : `${data.updatedAt} 갱신`;
-  document.getElementById("sampleNote").hidden = !isSample;
-  const chips=document.getElementById("chips");
-  chips.innerHTML=["전체",...groups].map(c=>`<button class="chip ${c===cat?"on":""}">${esc(c)}</button>`).join("");
-  chips.onclick=e=>{const b=e.target.closest(".chip"); if(b) pick(b.textContent);};
-  document.getElementById("list").onclick=e=>{const b=e.target.closest(".more"); if(b){e.preventDefault(); pick(b.dataset.g);}};
-  document.querySelector(".sortbar").onclick=e=>{const b=e.target.closest("button"); if(!b)return; sort=b.dataset.sort;
-    document.querySelectorAll(".sortbar button").forEach(x=>x.classList.toggle("on",x===b)); render();};
-  render();
+async function main(){
+  bind();
+  const y = restore();
+  try{
+    D = await fetch("data/products.json", {cache:"no-cache"}).then(r => { if(!r.ok) throw 0; return r.json(); });
+  }catch(e){
+    $("#err").innerHTML = '<div class="err">상품 정보를 불러오지 못했어요. 잠시 후 새로고침해 주세요.</div>';
+    return;
+  }
+  ALL = D.products || []; ALL.forEach(p => BYID[p.id] = p);
+  $("#rule").textContent = D.rankingRule || ""; $("#ruleSheet").textContent = "순위 기준: " + (D.rankingRule || "");
+  let pick = null, past = [];
+  try{
+    const idx = await fetch("data/picks/index.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]);
+    if (idx.length){
+      pick = await fetch(`data/picks/${idx[0].date}.json`,{cache:"no-cache"}).then(r=>r.ok?r.json():null);
+      const olds = idx.slice(1, 11);
+      past = (await Promise.all(olds.map(x => fetch(`data/picks/${x.date}.json`).then(r=>r.ok?r.json():x).catch(()=>x)))).filter(Boolean);
+    }
+  }catch(e){}
+  renderHome(pick, past);
+  renderList();
+  if (y) requestAnimationFrame(()=>window.scrollTo(0,y));
 }
-
-fetch("data/products.json").then(r=>{if(!r.ok)throw 0;return r.json()})
-  .then(d=>d.products&&d.products.length?setup(d,false):setup(SAMPLE,true))
-  .catch(()=>setup(SAMPLE,true));
+main();
 </script>
 </body>
 </html>
