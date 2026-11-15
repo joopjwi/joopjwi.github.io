@@ -27,7 +27,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: 쿠팡 API로 상품 갱신
+        id: update
         if: github.event_name != 'push'
+        continue-on-error: true   # 실패해도 오류 상태를 저장·배포한 뒤 마지막에 실패 처리
         env:
           COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
           COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
@@ -38,12 +40,12 @@ jobs:
         run: |
           git config user.name "joopjwi-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add site/data
+          git add site/data site/api
           git diff --cached --quiet || git commit -m "줍쥐 TOP 100 갱신 $(TZ=Asia/Seoul date +%F)"
           git pull --rebase origin main
           git push
       - name: 릴스용 상품 사진 저장 (media 브랜치, 매일 덮어씀)
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && steps.update.outcome == 'success'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -78,3 +80,9 @@ jobs:
         with:
           path: site
       - uses: actions/deploy-pages@v4
+      - name: 갱신 실패 알림 (GitHub가 실패 메일을 보냄)
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo "쿠팡 데이터 갱신 실패 - site/api/status.json 확인"
+          cat site/api/status.json || true
+          exit 1

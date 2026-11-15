@@ -213,7 +213,7 @@ def main():
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"<url><loc>{e(u)}</loc>{f'<lastmod>{today}</lastmod>' if today else ''}</url>\n" for u in urls)
         + "</urlset>\n", encoding="utf-8")
-    (SITE / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
+    (SITE / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /data/\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
     print(f"페이지 생성: 상품 {len(catalog)}개, 픽 {len(picks_index)}개, 사이트맵 {len(urls)}개 URL")
 
 

@@ -26,6 +26,7 @@ import hmac
 import json
 import os
 import re
+import sys
 import time
 import urllib.parse
 import urllib.request
@@ -88,7 +89,8 @@ GROUP_QUOTA = {
 GROUP_ORDER = list(GROUP_QUOTA)
 GROUP_BONUS = {"식품·간식": 0.08, "생필품": 0.08}
 EVERYDAY_BONUS, CURIOUS_BONUS = 0.12, 0.10
-API_COOLDOWN_MIN = 65   # 직전 API 실행 후 이 시간 안에는 다시 호출하지 않음 (시간당 30회 제한 보호)
+API_COOLDOWN_MIN = 65   # 직전 API 실행 후 이 시간 안에는 다시 호출하지 않음 (시간당 호출 제한 보호)
+MIN_PRODUCTS = 60       # 검증 통과 상품이 이보다 적으면 실패로 처리
 PICK_GROUPS = {"식품·간식", "생필품", "주방·살림", "청소·수납", "신기한템"}
 
 MAX_PRICE = int(os.environ.get("MAX_PRICE", "10000"))
@@ -234,7 +236,7 @@ def main():
         last_dt = datetime.fromisoformat(last)
         if (now - last_dt).total_seconds() < API_COOLDOWN_MIN * 60:
             print(f"직전 API 실행({last}) 후 {API_COOLDOWN_MIN}분이 안 지나서 이번엔 갱신을 건너뜀")
-            return
+            return "skipped"
     calls = 0
 
     # 1) 수집 + 기본 검증 + 중복 제거
@@ -303,9 +305,15 @@ def main():
         bad = [pid for pid, ok in results.items() if not ok]
         for pid in bad:
             del seen[pid]
+        for p in seen.values():
+            p["imageCheck"] = "ok"
         print(f"이미지 확인 실패로 제외: {len(bad)}개")
     else:
+        for p in seen.values():
+            p["imageCheck"] = "unchecked"
         print(f"이미지 확인 성공률 {ok_ratio:.0%} - 확인 단계 건너뜀")
+    if len(seen) < MIN_PRODUCTS:
+        raise RuntimeError(f"검증을 통과한 상품이 {len(seen)}개뿐이라 갱신을 중단함 (최소 {MIN_PRODUCTS}개)")
 
     # 3) 가격 기록 + 하락률 (실제 이전 기록이 있을 때만)
     for pid, p in seen.items():
@@ -340,9 +348,17 @@ def main():
         p["prevRank"] = prev_rank.get(p["id"]) if has_prev else None
         p["isNew"] = has_prev and p["id"] not in prev_rank
 
-    # 5) TOP 5: 상위 순서대로, 같은 탭은 최대 2개 (릴스와 공유)
+    # 5) TOP 5: 그날 릴스용으로 직접 고른 목록(site/data/reels/<오늘>.json)이 있으면 그 순서,
+    #    없으면 상위 순서대로 같은 탭 최대 2개. 홈페이지·릴스·공개 JSON이 모두 이 목록을 씀.
     top5, per_group = [], {}
-    for p in ranked:
+    reel = load_json(DATA / "reels" / f"{today}.json", None)
+    if reel:
+        top5 = [seen[x["id"]] for x in reel.get("items", []) if x.get("id") in seen][:5]
+        if len(top5) < 5:
+            print("릴스 지정 상품 중 오늘 검증을 통과하지 못한 것이 있어 자동 선정으로 대체")
+            top5 = []
+    top5_source = "curated" if top5 else "auto"
+    for p in ([] if top5 else ranked):
         if per_group.get(p["group"], 0) >= 2:
             continue
         top5.append(p)
@@ -399,8 +415,108 @@ def main():
     save_json(DATA / "history.json", history, indent=None)
     save_json(DATA / "catalog.json", catalog, indent=None)
     save_json(DATA / "ranks.json", ranks, indent=None)
+    write_api(ranked, top5, top5_source, now, checked_at, calls)
     print(f"완료: TOP {len(ranked)} / TOP5 {len(top5)} ({checked_at})")
+    return "ok"
+
+
+# ---------- 공개 JSON (site/api/) ----------
+API = ROOT / "site" / "api"
+API_VERSION = 1
+POLICY_NOTE = ("쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. "
+               "가격·재고는 updatedAt 기준이며 쿠팡에서 바뀔 수 있음. 이미지 저작권은 판매자에게 있음.")
+
+
+def api_item(p, rank, updated_iso):
+    return {
+        "rank": rank,
+        "productId": p["id"],
+        "productName": p["name"],
+        "price": p["price"],
+        "imageUrl": p["image"],
+        "affiliateUrl": p["url"],
+        "category": p["group"],
+        "updatedAt": updated_iso,
+        # 아래는 선택 필드
+        "overallRank": p.get("rank"),
+        "subCategory": p.get("sub"),
+        "shipping": {
+            "isRocket": p.get("rocket", False),
+            "isFreeShipping": p.get("freeShip", False),
+            "shippingFee": None,  # 쿠팡 API가 배송비 금액을 주지 않음
+        },
+        "popularity": {
+            "source": "coupang_keyword_search" if p.get("kw") else "coupang_best_category",
+            "coupangRank": p.get("catRank"),  # 쿠팡이 준 카테고리/검색 내 순위 (판매량 아님)
+            "keyword": p.get("kw"),
+            "joopjwiScore": p.get("score"),
+        },
+        "price_history": {
+            "previousPrice": p.get("prevPrice"),
+            "previousPriceDate": p.get("prevPriceDate"),
+            "dropPercent": p.get("dropPct", 0),
+        },
+        "tags": [t for t, on in (("매일 쓰는 템", p.get("everyday")), ("궁금한 템", p.get("curious"))) if on],
+        "validation": {
+            "price": "ok",                      # 1~10,000원 정수 확인
+            "affiliateUrl": "ok",               # link.coupang.com 제휴 링크 확인
+            "image": p.get("imageCheck", "unchecked"),
+            "imageReuseRights": "unverified",   # 판매자 이미지 재사용 권한은 API로 확인 불가
+            "stock": "unverified",              # 품절 여부는 API로 확인 불가
+        },
+    }
+
+
+def write_api(ranked, top5, top5_source, now, checked_at, calls):
+    API.mkdir(parents=True, exist_ok=True)
+    updated_iso = now.replace(microsecond=0).isoformat()
+    date = now.strftime("%Y-%m-%d")
+    expires = (now + timedelta(days=1)).replace(hour=9, minute=0, second=0, microsecond=0).isoformat()
+    meta = {"apiVersion": API_VERSION, "status": "ok", "dataDate": date, "updatedAt": updated_iso,
+            "expiresAt": expires, "maxPrice": MAX_PRICE, "currency": "KRW", "disclosure": POLICY_NOTE}
+    save_json(API / "top100.json", {**meta, "count": len(ranked),
+              "items": [api_item(p, p["rank"], updated_iso) for p in ranked]})
+    save_json(API / "top5.json", {**meta, "selection": top5_source, "count": len(top5),
+              "items": [api_item(p, i, updated_iso) for i, p in enumerate(top5, 1)]})
+    save_json(API / "status.json", {"apiVersion": API_VERSION, "status": "ok", "dataDate": date,
+              "lastSuccessAt": updated_iso, "lastAttemptAt": updated_iso, "apiCalls": calls, "error": None})
+
+
+def mark_failure(err, now):
+    """실패 시: 기존 데이터는 그대로 두되 '오래된 데이터'로 표시하고 오류를 기록."""
+    when = now.replace(microsecond=0).isoformat()
+    status = load_json(API / "status.json", {})
+    status.update({"apiVersion": API_VERSION, "status": "error", "lastAttemptAt": when, "error": str(err)[:300]})
+    save_json(API / "status.json", status)
+    for name in ("top100.json", "top5.json"):
+        d = load_json(API / name, None)
+        if d:
+            d["status"] = "stale"
+            d["staleSince"] = when
+            d["error"] = "오늘 갱신에 실패했어요. dataDate 날짜의 데이터예요."
+            save_json(API / name, d)
+    prod = load_json(DATA / "products.json", None)
+    if prod:
+        prod["status"] = "stale"
+        prod["staleSince"] = when
+        save_json(DATA / "products.json", prod)
+
+
+def note_skip(now):
+    when = now.replace(microsecond=0).isoformat()
+    status = load_json(API / "status.json", {})
+    status.update({"lastAttemptAt": when, "lastAttemptResult": "skipped_cooldown"})
+    save_json(API / "status.json", status)
 
 
 if __name__ == "__main__":
-    main()
+    import traceback
+    start = datetime.now(KST)
+    try:
+        result = main()
+        if result == "skipped":
+            note_skip(start)
+    except Exception as exc:
+        traceback.print_exc()
+        mark_failure(exc, start)
+        sys.exit(1)

@@ -1,0 +1,194 @@
+{
+ "apiVersion": 1,
+ "status": "ok",
+ "dataDate": "2026-11-15",
+ "updatedAt": "2026-11-15T22:58:00+09:00",
+ "expiresAt": "2026-11-16T09:00:00+09:00",
+ "maxPrice": 10000,
+ "currency": "KRW",
+ "disclosure": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 updatedAt 기준이며 쿠팡에서 바뀔 수 있음. 이미지 저작권은 판매자에게 있음.",
+ "selection": "auto",
+ "count": 5,
+ "items": [
+  {
+   "rank": 1,
+   "productId": "7230779632",
+   "productName": "신선한 대란",
+   "price": 7990,
+   "imageUrl": "https://image3.coupangcdn.com/image/1025_amir_coupang_oct_80k/316d/6262fa64e13b4344cf33980399519eb5c7b2d25baac2bd9a33b7a5a7c762.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7230779632&itemId=18347032018&vendorItemId=85491095723&traceid=V0-113-f5bb636e7db07a4a&pt=0&slot=1",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-15T22:58:00+09:00",
+   "overallRank": 1,
+   "subCategory": "식품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 1,
+    "keyword": null,
+    "joopjwiScore": 1.08
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 2,
+   "productId": "6528172171",
+   "productName": "흙대파",
+   "price": 2490,
+   "imageUrl": "https://image5.coupangcdn.com/image/retail/images/4063320789843989-2f070b18-3886-4b8c-871b-2403227cfec9.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6528172171&itemId=5911958170&vendorItemId=73210037048&traceid=V0-113-ea3e109dddeaf065&pt=0&slot=2",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-15T22:58:00+09:00",
+   "overallRank": 2,
+   "subCategory": "식품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 2,
+    "keyword": null,
+    "joopjwiScore": 1.07
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 3,
+   "productId": "9407932009",
+   "productName": "베르데리필 리필 매직캔 호환 리필 쓰레기 봉투 베이비 파우더향 250",
+   "price": 9900,
+   "imageUrl": "https://img4a.coupangcdn.com/image/retail/images/165492334828407-2ce18342-1128-4205-acdf-f762714e9f20.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9407932009&itemId=27950939446&vendorItemId=94909139289&traceid=V0-113-7400437e6acda69d&pt=0&slot=2",
+   "category": "생필품",
+   "updatedAt": "2026-11-15T22:58:00+09:00",
+   "overallRank": 3,
+   "subCategory": "생활용품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 2,
+    "keyword": null,
+    "joopjwiScore": 1.07
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 4,
+   "productId": "8520281997",
+   "productName": "프로그 향기나는 기저귀봉투 베이비파우더향 100p",
+   "price": 5560,
+   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/845662615684342-71e8e3ea-eed1-4cd9-a597-ed0bc1075465.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8520281997&itemId=154765889&vendorItemId=3361346762&traceid=V0-113-fd869e24ac667329&pt=0&slot=5",
+   "category": "생필품",
+   "updatedAt": "2026-11-15T22:58:00+09:00",
+   "overallRank": 7,
+   "subCategory": "생활용품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 5,
+    "keyword": null,
+    "joopjwiScore": 1.04
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 5,
+   "productId": "9670451408",
+   "productName": "코멧 포켓형 손난로 핫팩 100g",
+   "price": 8500,
+   "imageUrl": "https://img2a.coupangcdn.com/image/retail/images/119453090079539-087e1c6e-1952-4850-88fe-651d3b6a038c.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9670451408&itemId=27014813784&vendorItemId=93983447578&traceid=V0-113-8846e86e0c9b47df&pt=0&slot=1",
+   "category": "신기한템",
+   "updatedAt": "2026-11-15T22:58:00+09:00",
+   "overallRank": 14,
+   "subCategory": "스포츠·레저",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 1,
+    "keyword": null,
+    "joopjwiScore": 1.0
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  }
+ ]
+}
