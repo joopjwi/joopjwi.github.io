@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오천픽 · 5천원 이하 인기템 TOP 100</title>
+<meta name="description" content="쿠팡 5천원 이하 인기템 TOP 100을 매일 아침 갱신합니다. 역대 최저가, 가격 하락 상품을 한눈에.">
+<style>
+  :root{
+    --bg:#fffaf0; --ink:#1f1a14; --sub:#7a6f62; --line:#efe4d2;
+    --red:#e8452c; --yellow:#ffd23f; --green:#1f9d55; --blue:#2f6fed; --card:#fff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;}
+  a{color:inherit;text-decoration:none}
+  .disclose{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:7px 12px;line-height:1.4}
+  header{padding:22px 16px 8px;max-width:1080px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:10px}
+  .logo{width:46px;height:46px;border-radius:14px;background:var(--red);color:#fff;
+    display:grid;place-items:center;font-weight:900;font-size:15px;line-height:1;transform:rotate(-6deg);
+    box-shadow:3px 3px 0 var(--ink)}
+  .brand h1{margin:0;font-size:26px;letter-spacing:-1px}
+  .brand h1 span{color:var(--red)}
+  .tag{margin:10px 0 0;color:var(--sub);font-size:14px}
+  .tag b{color:var(--ink);background:var(--yellow);padding:0 4px}
+  .updated{font-size:12px;color:var(--sub);margin-top:6px}
+  nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;max-width:1080px;margin:0 auto;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:none;border:1.5px solid var(--ink);background:#fff;border-radius:999px;padding:7px 13px;
+    font-size:13px;font-weight:700;cursor:pointer}
+  .chip.on{background:var(--ink);color:#fff}
+  .sortbar{display:flex;gap:6px;justify-content:flex-end;max-width:1080px;margin:10px auto 0;padding:0 16px;font-size:13px}
+  .sortbar button{border:0;background:none;color:var(--sub);cursor:pointer;font-weight:600;padding:4px 6px}
+  .sortbar button.on{color:var(--red)}
+  main{max-width:1080px;margin:0 auto;padding:6px 12px 40px;
+    display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  @media(min-width:640px){main{grid-template-columns:repeat(3,1fr)}}
+  @media(min-width:900px){main{grid-template-columns:repeat(4,1fr);gap:14px}}
+  .card{background:var(--card);border:1.5px solid var(--line);border-radius:14px;overflow:hidden;
+    display:flex;flex-direction:column;position:relative;transition:transform .12s}
+  .card:active{transform:scale(.98)}
+  .rank{position:absolute;top:8px;left:8px;background:var(--ink);color:#fff;font-weight:900;
+    font-size:13px;min-width:28px;height:28px;border-radius:8px;display:grid;place-items:center;padding:0 6px}
+  .rank.top3{background:var(--red)}
+  .thumb{aspect-ratio:1;background:#f6efe3;display:grid;place-items:center;font-size:52px}
+  .thumb img{width:100%;height:100%;object-fit:cover}
+  .info{padding:10px 10px 12px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .badges{display:flex;flex-wrap:wrap;gap:4px;min-height:18px}
+  .b{font-size:10.5px;font-weight:800;padding:2px 6px;border-radius:5px}
+  .b.low{background:var(--red);color:#fff}
+  .b.drop{background:#ffe7e2;color:var(--red)}
+  .b.rocket{background:#e6efff;color:var(--blue)}
+  .name{font-size:13px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .price{margin-top:auto;display:flex;align-items:baseline;gap:6px}
+  .price strong{font-size:18px;font-weight:900;letter-spacing:-.5px}
+  .price s{font-size:12px;color:var(--sub)}
+  .cat{font-size:11px;color:var(--sub)}
+  .empty{grid-column:1/-1;text-align:center;color:var(--sub);padding:40px 0}
+  .sample{max-width:1080px;margin:8px auto 0;padding:0 16px}
+  .sample div{background:#fff3c4;border:1px dashed #d9b400;font-size:12px;padding:8px 10px;border-radius:8px}
+  footer{max-width:1080px;margin:0 auto;padding:20px 16px 40px;font-size:12px;color:var(--sub);line-height:1.6;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="disclose">이 사이트는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</div>
+
+<header>
+  <div class="brand">
+    <div class="logo">5천</div>
+    <h1>오천<span>픽</span></h1>
+  </div>
+  <p class="tag">쿠팡에서 <b>5천원 이하</b>로 제일 많이 담는 물건, 매일 아침 TOP 100</p>
+  <div class="updated" id="updated"></div>
+</header>
+
+<nav><div class="chips" id="chips"></div></nav>
+<div class="sample" id="sampleNote" hidden><div>지금 보이는 상품은 화면 확인용 <b>샘플 데이터</b>예요. API를 연결하면 실제 상품으로 바뀝니다.</div></div>
+<div class="sortbar">
+  <button data-sort="top" class="on">인기순</button>
+  <button data-sort="drop">할인순</button>
+  <button data-sort="low">낮은가격순</button>
+</div>
+<main id="list"></main>
+
+<footer>
+  가격은 매일 아침 갱신 시점 기준이며, 쿠팡에서 실시간으로 바뀔 수 있어요. 구매 전 쿠팡 상품 페이지에서 최종 가격을 확인해 주세요.<br>
+  ‘역대 최저가’는 오천픽이 기록을 시작한 이후의 최저가입니다.
+</footer>
+
+<script>
+const SAMPLE = {updatedAt:"샘플", products:[
+  ["실리콘 냄비받침 2P","주방",2900,3900,1,"🍳"],["극세사 주방 행주 5매","주방",3480,3480,0,"🧽"],
+  ["접이식 미니 수납박스","인테리어·수납",1990,2490,1,"📦"],["양면 테이프 클리너","생활",2500,2500,0,"🧻"],
+  ["차량용 컵홀더 정리함","차량용품",4200,4900,0,"🚗"],["무지 스프링 노트 3권","문구·오피스",3900,3900,0,"📒"],
+  ["욕실 배수구 거름망 30매","생활",2980,3500,1,"🛁"],["강아지 배변봉투 120매","반려동물",4500,4500,0,"🐶"],
+  ["립 케어 밤 2개입","뷰티",4900,5900,0,"💄"],["형광펜 6색 세트","문구·오피스",3200,3200,0,"🖍️"],
+  ["전자레인지 덮개","주방",3990,4500,0,"♨️"],["다용도 S자 고리 10개","인테리어·수납",1500,1500,0,"🪝"]
+].map((r,i)=>({id:"s"+i,name:r[0],category:r[1],price:r[2],prevPrice:r[3],
+  drop_pct:r[3]>r[2]?Math.round((r[3]-r[2])/r[3]*100):0,allTimeLow:!!r[4],rocket:i%3!==2,
+  emoji:r[5],url:"#",top:i+1}))};
+
+let all=[], cat="전체", sort="top";
+const won=n=>n.toLocaleString("ko-KR")+"원";
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function render(){
+  let rows = all.filter(p=>cat==="전체"||p.category===cat);
+  if(sort==="drop") rows=[...rows].sort((a,b)=>(b.drop_pct||0)-(a.drop_pct||0));
+  if(sort==="low") rows=[...rows].sort((a,b)=>a.price-b.price);
+  document.getElementById("list").innerHTML = rows.length ? rows.map(p=>`
+    <a class="card" href="${esc(p.url)}" target="_blank" rel="sponsored noopener">
+      <div class="rank ${p.top<=3?"top3":""}">${p.top}</div>
+      <div class="thumb">${p.image?`<img src="${esc(p.image)}" alt="" loading="lazy">`:(p.emoji||"🛒")}</div>
+      <div class="info">
+        <div class="badges">
+          ${p.allTimeLow?'<span class="b low">역대 최저가</span>':""}
+          ${p.drop_pct>0?`<span class="b drop">▼ ${p.drop_pct}%</span>`:""}
+          ${p.rocket?'<span class="b rocket">로켓배송</span>':""}
+        </div>
+        <div class="name">${esc(p.name)}</div>
+        <div class="cat">${esc(p.category)}</div>
+        <div class="price"><strong>${won(p.price)}</strong>${p.prevPrice&&p.prevPrice>p.price?`<s>${won(p.prevPrice)}</s>`:""}</div>
+      </div>
+    </a>`).join("") : '<div class="empty">이 카테고리엔 오늘 상품이 없어요.</div>';
+}
+
+function setup(data, isSample){
+  all=data.products;
+  document.getElementById("updated").textContent = isSample ? "" : `${data.updatedAt} 갱신`;
+  document.getElementById("sampleNote").hidden = !isSample;
+  const cats=["전체",...new Set(all.map(p=>p.category))];
+  const chips=document.getElementById("chips");
+  chips.innerHTML=cats.map(c=>`<button class="chip ${c===cat?"on":""}">${esc(c)}</button>`).join("");
+  chips.onclick=e=>{const b=e.target.closest(".chip"); if(!b)return; cat=b.textContent;
+    chips.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===b)); render();};
+  document.querySelector(".sortbar").onclick=e=>{const b=e.target.closest("button"); if(!b)return; sort=b.dataset.sort;
+    document.querySelectorAll(".sortbar button").forEach(x=>x.classList.toggle("on",x===b)); render();};
+  render();
+}
+
+fetch("data/products.json").then(r=>{if(!r.ok)throw 0;return r.json()})
+  .then(d=>d.products&&d.products.length?setup(d,false):setup(SAMPLE,true))
+  .catch(()=>setup(SAMPLE,true));
+</script>
+</body>
+</html>
