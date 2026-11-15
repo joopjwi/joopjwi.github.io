@@ -161,7 +161,7 @@ function card(p, place, bigRank){
     <div class="price">${won(p.price)}${p.dropPct>0?`<s>${won(p.prevPrice)}</s>`:""}</div>
     <div class="ship">${ship(p)}</div>
     <div class="checked">${hm(p.checkedAt)} 가격 확인</div>
-    <div class="act"><a class="btn sm" href="${esc(p.url)}" target="_blank" rel="sponsored nofollow noopener" data-go="${p.id}" data-place="${place}">쿠팡에서 보기</a></div>
+    <div class="act"><a class="btn sm" href="${esc(p.url)}" target="_blank" rel="sponsored nofollow noopener" data-go="${p.id}" data-place="${place}">자세히 보기</a></div>
   </div>`;
 }
 
@@ -218,7 +218,7 @@ function renderHome(pick, past, reel){
         <div class="checked">${esc(checked)} 가격 확인</div>
         <div class="ctas">
           <a class="btn" href="pick/${pick.date}.html">오늘 이건 줍쥐!</a>
-          <a class="btn lime" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener" data-go="${pick.id}" data-place="pick">쿠팡에서 보기</a>
+          <a class="btn lime" href="${esc(url)}" target="_blank" rel="sponsored nofollow noopener" data-go="${pick.id}" data-place="pick">자세히 보기</a>
         </div>
       </div></article>`;
     $("#pickSec").hidden = false;
