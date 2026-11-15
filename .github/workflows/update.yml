@@ -42,6 +42,36 @@ jobs:
           git diff --cached --quiet || git commit -m "줍쥐 TOP 100 갱신 $(TZ=Asia/Seoul date +%F)"
           git pull --rebase origin main
           git push
+      - name: 릴스용 상품 사진 저장 (media 브랜치, 매일 덮어씀)
+        if: github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/media/img
+          python - <<'EOF'
+          import json, urllib.request, concurrent.futures as cf, re
+          d = json.load(open("site/data/products.json"))
+          def get(p):
+              url = p["image"]
+              # 쿠팡 썸네일 경로에 크기가 들어 있으면 큰 사이즈로 요청
+              big = re.sub(r"/thumbnails/remote/\d+x\d+ex/", "/thumbnails/remote/1000x1000ex/", url)
+              for u in (big, url):
+                  try:
+                      req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"})
+                      data = urllib.request.urlopen(req, timeout=15).read()
+                      if len(data) > 2000:
+                          open(f"/tmp/media/img/{p['id']}.jpg", "wb").write(data); return 1
+                  except Exception:
+                      pass
+              return 0
+          with cf.ThreadPoolExecutor(12) as ex:
+              n = sum(ex.map(get, d["products"]))
+          print("이미지 저장:", n)
+          EOF
+          cp site/data/products.json site/data/top5.json /tmp/media/
+          cd /tmp/media && git init -q -b media && git add -A
+          git -c user.name=joopjwi-bot -c user.email=actions@users.noreply.github.com commit -qm "media $(TZ=Asia/Seoul date +%F)"
+          git push -fq "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" media
       - name: 상품·픽 페이지 생성
         run: python build.py
       - uses: actions/upload-pages-artifact@v3
