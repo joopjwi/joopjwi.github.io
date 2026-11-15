@@ -59,7 +59,7 @@
   </section>
 
   <section class="sec home-only" id="top5Sec" hidden>
-    <div class="sec-h"><div><h2>오늘의 줍쥐 TOP 5</h2><p>오늘 가장 탐나는 5개만 골랐쥐!</p></div></div>
+    <div class="sec-h"><div><h2>오늘의 줍쥐 TOP 5</h2><p>오늘 가장 탐나는 5개만 골랐쥐! <span id="top5Note"></span></p></div></div>
     <div class="row wide" id="top5"></div>
   </section>
 
@@ -199,7 +199,7 @@ function renderList(){
   save();
 }
 
-function renderHome(pick, past){
+function renderHome(pick, past, reel){
   // 오늘 이건 줍쥐!
   if (pick){
     const live = BYID[pick.id];
@@ -223,9 +223,17 @@ function renderHome(pick, past){
       </div></article>`;
     $("#pickSec").hidden = false;
   }
-  // TOP 5
-  const t5 = (D.top5||[]).map(id => BYID[id]).filter(Boolean);
-  if (t5.length){ $("#top5").innerHTML = t5.map((p,i) => card({...p, rank:i+1}, "top5", true)).join(""); $("#top5Sec").hidden = false; }
+  // TOP 5: 그날 릴스에 나간 5개가 있으면 그 번호 그대로 (릴스 '번호로 찾아쥐'와 일치)
+  let t5 = (D.top5||[]).map(id => BYID[id]).filter(Boolean), reelNote = "";
+  if (reel && reel.items && reel.items.length){
+    t5 = reel.items.map(x => BYID[x.id] ? {...BYID[x.id]} : {...x, checkedAt: reel.checkedAt, stale:true});
+    reelNote = `${reel.dateLabel} 릴스 속 번호 그대로예요.`;
+  }
+  if (t5.length){
+    $("#top5").innerHTML = t5.map((p,i) => card({...p, rank:i+1}, "top5", true)).join("");
+    if (reelNote) $("#top5Note").textContent = reelNote;
+    $("#top5Sec").hidden = false;
+  }
   // 가격 하락 (실제 이전 기록이 있는 것만)
   const drops = ALL.filter(p => p.dropPct > 0 && p.prevPrice).sort((a,b)=>b.dropPct-a.dropPct).slice(0,12);
   if (drops.length){ $("#dropRow").innerHTML = drops.map(p=>card(p,"drops")).join(""); $("#drops").hidden = false; }
@@ -281,7 +289,11 @@ async function main(){
   }
   ALL = D.products || []; ALL.forEach(p => BYID[p.id] = p);
   $("#rule").textContent = D.rankingRule || ""; $("#ruleSheet").textContent = "순위 기준: " + (D.rankingRule || "");
-  let pick = null, past = [];
+  let pick = null, past = [], reel = null;
+  try{
+    const ri = await fetch("data/reels/index.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]);
+    if (ri.length) reel = await fetch(`data/reels/${ri[0].date}.json`,{cache:"no-cache"}).then(r=>r.ok?r.json():null);
+  }catch(e){}
   try{
     const idx = await fetch("data/picks/index.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]);
     if (idx.length){
@@ -290,7 +302,7 @@ async function main(){
       past = (await Promise.all(olds.map(x => fetch(`data/picks/${x.date}.json`).then(r=>r.ok?r.json():x).catch(()=>x)))).filter(Boolean);
     }
   }catch(e){}
-  renderHome(pick, past);
+  renderHome(pick, past, reel);
   renderList();
   requestAnimationFrame(() => window.initClamp && initClamp());
   if (y) requestAnimationFrame(()=>window.scrollTo(0,y));
