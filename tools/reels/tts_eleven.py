@@ -47,16 +47,35 @@ def main(req_path, out_dir):
     dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                                          "-of", "csv=p=0", str(raw)]).strip())
 
-    # 1) 남길 구간 계산: 말소리(공백 아닌 글자) 사이 정적이 0.2초를 넘으면 가운데를 잘라 0.2초로
-    idx = [i for i, ch in enumerate(chars) if ch.strip()]
-    keep = []
-    seg_start = max(0.0, st[idx[0]] - LEAD)
-    for a, b in zip(idx, idx[1:]):
-        gap = st[b] - en[a]
-        if gap > MAX_GAP:
-            keep.append((seg_start, en[a] + MAX_GAP / 2))
-            seg_start = st[b] - MAX_GAP / 2
-    keep.append((seg_start, min(dur, en[idx[-1]] + TAIL)))
+    # 1) 잘라낼 정적 구간 찾기 (두 가지를 합침)
+    #  - 글자 타이밍: 문장부호(?!.,…)는 말소리가 아니므로 제외하고, 글자 사이 간격
+    #  - 실제 파형: -38dB 이하 무음 구간
+    PUNCT = set(" \t\n.,!?…·~\"'()[]")
+    idx = [i for i, ch in enumerate(chars) if ch not in PUNCT]
+    gaps = [(en[a], st[b]) for a, b in zip(idx, idx[1:]) if st[b] - en[a] > MAX_GAP]
+    sd = subprocess.run(["ffmpeg", "-i", str(raw), "-af", f"silencedetect=n=-38dB:d={MAX_GAP}", "-f", "null", "-"],
+                        capture_output=True, text=True).stderr
+    s0 = None
+    for line in sd.splitlines():
+        if "silence_start:" in line:
+            s0 = float(line.split("silence_start:")[1].split()[0])
+        elif "silence_end:" in line and s0 is not None:
+            gaps.append((s0, float(line.split("silence_end:")[1].split()[0])))
+            s0 = None
+    first, last = st[idx[0]], en[idx[-1]]
+    gaps = sorted((max(a, first), min(b, last)) for a, b in gaps if b > first and a < last)
+    merged = []
+    for a, b in gaps:
+        if merged and a <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], b))
+        else:
+            merged.append((a, b))
+    keep, cur = [], max(0.0, first - LEAD)
+    for a, b in merged:
+        if b - a > MAX_GAP:
+            keep.append((cur, a + MAX_GAP / 2))
+            cur = b - MAX_GAP / 2
+    keep.append((cur, min(dur, last + TAIL)))
 
     def remap(t):
         """원본 시각 -> 커트 후 시각"""
