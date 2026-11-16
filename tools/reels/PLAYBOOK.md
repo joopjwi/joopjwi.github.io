@@ -63,9 +63,9 @@
 - 게시 시각: **오늘 08:30 (Asia/Seoul)**. 이미 지났으면 지금부터 15분 뒤.
 - media: `https://joopjwi.github.io/reels/<오늘>.mp4`
 - 인스타그램 (별도 게시물): providers instagram, instagramData `{"type":"REEL","showReelOnFeed":true}`, `videoThumbnailUrl` = `https://joopjwi.github.io/reels/<오늘>.jpg`
-- 유튜브 (별도 게시물, 표지 넣지 않음): youtubeData `{"title":"만 원도 안 하는 오늘의 득템 TOP 5 🐭 <M월 D일> #shorts","type":"short","privacy":"public","madeForKids":false,"category":"HOWTO_STYLE","tags":["줍쥐","만원이하","득템","생활꿀템","쿠팡추천"]}`
+- 유튜브 (별도 게시물, 표지 넣지 않음): youtubeData `{"title":"만원도 안 하는 오늘의 득템 TOP 5 🐭 <M월 D일> #shorts","type":"short","privacy":"public","madeForKids":false,"category":"HOWTO_STYLE","tags":["줍쥐","만원이하","득템","생활꿀템","쿠팡추천"]}`
 - autoPublish true.
-- 유튜브 제목은 `만 원도 안 하는 오늘의 득템 TOP 5 🐭 <M월 D일> #shorts` 형식.
+- 유튜브 제목은 `만원도 안 하는 오늘의 득템 TOP 5 🐭 <M월 D일> #shorts` 형식.
 - 캡션은 **아주 짧고 가볍게**. 광고 문구·#광고·[광고]는 넣지 않는다 (대표 지시: 홈페이지에 쿠팡 파트너스 고지가 있음).
   - 인스타: `팔로우 해놓고 매일 특가 확인하쥐 🐭` + 줄바꿈 + `#줍쥐 #만원이하 #득템 #생활꿀템`
   - 유튜브 설명: `팔로우 해놓고 매일 특가 확인하쥐 🐭` + 줄바꿈 + `👉 번호로 찾기: https://joopjwi.github.io/` + 줄바꿈 + `#줍쥐 #만원이하 #득템`
