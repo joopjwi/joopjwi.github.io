@@ -18,7 +18,7 @@ LEAD, TAIL = 0.05, 0.35
 
 def call_eleven(text, voice_id, settings, model):
     key = os.environ["ELEVENLABS_API_KEY"]
-    url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps?output_format=mp3_44100_192"
+    url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps?output_format=mp3_44100_128"
     body = json.dumps({"text": text, "model_id": model, "voice_settings": settings}).encode()
     req = urllib.request.Request(url, data=body, method="POST",
                                  headers={"xi-api-key": key, "Content-Type": "application/json"})
