@@ -1,0 +1,69 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "줍쥐 TOP 5 데이터",
+  "version": "1.0.0",
+  "description": "매일 갱신되는 줍쥐 1만원 이하 TOP 5/TOP 100 상품 데이터 (읽기 전용, 인증 없음)"
+ },
+ "servers": [
+  {
+   "url": "https://joopjwi.github.io"
+  }
+ ],
+ "paths": {
+  "/api/top5.json": {
+   "get": {
+    "operationId": "getTop5",
+    "summary": "오늘의 TOP 5 상품",
+    "responses": {
+     "200": {
+      "description": "TOP 5",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/top100.json": {
+   "get": {
+    "operationId": "getTop100",
+    "summary": "오늘의 TOP 100 상품",
+    "responses": {
+     "200": {
+      "description": "TOP 100",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/status.json": {
+   "get": {
+    "operationId": "getStatus",
+    "summary": "갱신 상태",
+    "responses": {
+     "200": {
+      "description": "상태",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
