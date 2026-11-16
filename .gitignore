@@ -4,3 +4,4 @@ site/pick/
 site/sitemap.xml
 site/robots.txt
 __pycache__/
+site/api/*.html

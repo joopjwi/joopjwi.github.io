@@ -184,6 +184,28 @@ def pick_page(pk, live_map, live):
     return head(f"{pk['title']} | 오늘 이건 줍쥐!", pk["story"][:110], url, pk["image"]) + body + foot()
 
 
+def write_api_pages():
+    """AI 도구가 읽기 쉬운 HTML 버전: /api/top5.html, /api/top100.html (JSON 원문 포함)."""
+    api = SITE / "api"
+    for name, title in (("top5", "줍쥐 오늘의 TOP 5 데이터"), ("top100", "줍쥐 오늘의 TOP 100 데이터")):
+        d = load(api / f"{name}.json", None)
+        if not d:
+            continue
+        rows = "".join(
+            f"<li><b>{it['rank']}. {e(it['productName'])}</b> — {won(it['price'])} · {e(it['category'])}"
+            f"<br>이미지: {e(it['imageUrl'])}<br>제휴링크: {e(it['affiliateUrl'])}</li>" for it in d.get("items", []))
+        raw = e(json.dumps(d, ensure_ascii=False, indent=1))
+        (api / f"{name}.html").write_text(f"""<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>{title}</title><meta name="robots" content="noindex"></head>
+<body style="font-family:sans-serif;line-height:1.5;padding:16px;max-width:900px;margin:auto">
+<h1>{title}</h1>
+<p>status: <b>{e(d.get('status',''))}</b> · dataDate: <b>{e(d.get('dataDate',''))}</b> · updatedAt: {e(d.get('updatedAt',''))} · selection: {e(d.get('selection','-'))}</p>
+<p>{e(d.get('disclosure',''))}</p>
+<ol style="list-style:none;padding:0">{rows}</ol>
+<h2>JSON 원문</h2><pre style="white-space:pre-wrap;word-break:break-all;background:#f4f1fa;padding:12px">{raw}</pre>
+</body></html>""", encoding="utf-8")
+
+
 def main():
     prod = load(DATA / "products.json", {})
     live = prod.get("products", [])
@@ -213,7 +235,14 @@ def main():
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"<url><loc>{e(u)}</loc>{f'<lastmod>{today}</lastmod>' if today else ''}</url>\n" for u in urls)
         + "</urlset>\n", encoding="utf-8")
-    (SITE / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /data/\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
+    (SITE / "robots.txt").write_text(
+        "# ChatGPT 등 AI 도구가 /api/ 데이터를 읽을 수 있게 허용\n"
+        "User-agent: ChatGPT-User\nAllow: /\n\n"
+        "User-agent: OAI-SearchBot\nAllow: /\n\n"
+        "User-agent: Claude-User\nAllow: /\n\n"
+        "User-agent: Perplexity-User\nAllow: /\n\n"
+        f"User-agent: *\nAllow: /\nDisallow: /data/\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
+    write_api_pages()
     print(f"페이지 생성: 상품 {len(catalog)}개, 픽 {len(picks_index)}개, 사이트맵 {len(urls)}개 URL")
 
 

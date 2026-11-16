@@ -229,10 +229,7 @@ function renderHome(pick, past, reel){
   }
   // TOP 5: 그날 릴스에 나간 5개가 있으면 그 번호 그대로 (릴스 '번호로 찾아쥐'와 일치)
   let t5 = (D.top5||[]).map(id => BYID[id]).filter(Boolean), reelNote = "";
-  if (reel && reel.items && reel.items.length && reel.date === D.date){
-    t5 = reel.items.map(x => BYID[x.id] ? {...BYID[x.id]} : {...x, checkedAt: reel.checkedAt, stale:true});
-    reelNote = `${reel.dateLabel} 릴스 속 번호 그대로예요.`;
-  }
+  if (D.top5Selection === "curated") reelNote = "릴스 속 번호 그대로예요.";
   if (t5.length){
     $("#top5").innerHTML = t5.map((p,i) => card({...p, rank:i+1}, "top5", true)).join("");
     if (reelNote) $("#top5Note").textContent = reelNote;

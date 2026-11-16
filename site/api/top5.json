@@ -88,82 +88,6 @@
   },
   {
    "rank": 3,
-   "productId": "9725928327",
-   "productName": "제주삼다수 그린 무라벨",
-   "price": 6450,
-   "imageUrl": "https://ads-partners.coupang.com/image1/MVJDeDTHfdTodYIJMf-aBPtpx6PwM7dmyuSt7LN0I53_yeS4qCiItdZf-sLWgyHN3tZaRa3xyGnbvaM7vpCVydUguic3YKo7Vp1U67gSkKkFZh2Ef4jZIEzje-COknOMSsqCTmAFII0NpEErvO8xC05ConA-tufv3czjwJ-lkoRvNg6yKVVASNgTuBMd9aolPdFeFg9Mrb8wW-TfHPNKR5mOiJfqesc_A1GxK2F0Y9HAfLmw1x5Ruw-11x2LKFSFz6AVkRnd-vbI7EFD2N3-EHMUv_NeMSHyHqv3D_vYsuze5J9Gwv8tfGzkFBppRdNYzcgGUI4AZNzUV5VFhnLVkaxFivbdV9PyF70yXHeO9Sq5b_ti8xLqSajyPGWIpYzmYlCLpVJAR-icehxEVOXXlmYk1uTm49vo0LQvEBX4j2XLbvwN240S_hUYOfN--BsSYRu_5A2QVsFy-3FoTF2pVuHbrZ9e1qNyWGT-gcXqhbjc-_syty6X8MGzXO4DtAElGbH8B9B2ZriDi79i4An0jeGBzIXIWHinFR6h3Rrhd1Nkv7191l7vo_3kW9ZwuvSmAWxWneM2V2ThST5PHA==",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9725928327&itemId=29105043162&vendorItemId=86430112499&traceid=V0-153-586f4f926c107687&requestid=20261116064159079284289137&token=31850C%7CMIXED&pt=0&slot=8",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-16T06:41:56+09:00",
-   "overallRank": 3,
-   "subCategory": "생수",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 8,
-    "keyword": "생수",
-    "joopjwiScore": 1.13
-   },
-   "price_history": {
-    "previousPrice": 6450,
-    "previousPriceDate": "2026-11-15",
-    "dropPercent": 0
-   },
-   "tags": [
-    "매일 쓰는 템"
-   ],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 4,
-   "productId": "9320256369",
-   "productName": "블루나 본 퓨어 저자극 물티슈 캡형",
-   "price": 7080,
-   "imageUrl": "https://ads-partners.coupang.com/image1/xkIj0Tl6a7U4tEtvxlPhtYQ4lJ5CAIqedfwJofCqrr882aadaeD84XPaUF0anNS-0kh7MyjkJGVAXfQOGeRdDJFwXuAJjYkAJypyTlyRgJ9mwsb3xkXmfxZH8vQegWzGh3zo2UtQT8Hs4sBmXp5WNrJhtribOO1Ik-eV-IHaksCLBmH4mWa3qre0jbWwQ6ZKvyQGPbULwgYOHjP5m75iC1MJfdHFAGfdsxGVgYQ6Hz_SUzjwQHgUvSBttgcZP6HGyT7maqbR5IBtx98xfZFxxyIBR-dgpYILglARGZFdg7Ar_9wks0I4acbWbEA0vtrLRYBKUqZfievqUcXUuqh1WHYsG5ri40A6sRZH3hFYu53JuniIQ-L90mQslfxzkus2PUNV6aH3UsprfYPYxEVU154CBuibiqCLJGo50YkPuMMyBQxDI4eEd8wMQZI7WDWUK8nLGf4xeK2533Y4aDNM5TkrUxnAGKIwzxPueKzqBJoY53SItooHlbxjSRofK4NGM2M7LQftd_KdDprQmBl_eVgDvR2iUvfcvY7DE9KeP-vaHf12D5kxZhTnvNbf7c1wDFcfdRev-WGyTHbbxX8=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9320256369&itemId=27623848954&vendorItemId=94586776590&traceid=V0-153-f229860d401386f6&requestid=20261116064157193239462698&token=31850C%7CMIXED&pt=0&slot=8",
-   "category": "생필품",
-   "updatedAt": "2026-11-16T06:41:56+09:00",
-   "overallRank": 4,
-   "subCategory": "물티슈",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 8,
-    "keyword": "물티슈",
-    "joopjwiScore": 1.13
-   },
-   "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
-    "dropPercent": 0
-   },
-   "tags": [
-    "매일 쓰는 템"
-   ],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 5,
    "productId": "7351033593",
    "productName": "탐사 뽑아쓰는 일회용 세제 수세미",
    "price": 7310,
@@ -192,6 +116,80 @@
    "tags": [
     "궁금한 템"
    ],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 4,
+   "productId": "9505899212",
+   "productName": "후딱 제자리 수건걸이 릴 와이어 타입",
+   "price": 6780,
+   "imageUrl": "https://ads-partners.coupang.com/image1/qu71Fx0lkRxX7-nMqj1f3GS_etRBRw5KDGdCFyCE-Hv7soJ9ULl4NO4S9S-1JMEH9djNHqH3eDuzZuGI-kLs2I5f5EkLjWuPJsOovB--hTJR0l7nM4pzAhJZHAgWEEoF10Ff-mSGdmVfKnc-bMxKyrwuI6Y5b5m4nB5UbVXgZAtknPvTFxI1KSyuGRWgfwKl0lizgQsyRYsDAct_1suGCoqc-vGPwkfffSUX0PW_lgMmrtzraPElront1tndLtNXsWe5zHQNHoMOq3aqI7FT63n0fRPvEB_f89UOZqKMG6FHJ3WIOnHJDp_mqepW-jvz-WiOReyTX7gT2JjcWxGUY14_qKrTI-OFDMQ1xnXr2GQ1sMTwndc5ozOapGAPQ5566UCE-wBtQF5-2HHmudoBLhZAsPDxRfG1WRoplCf_VCicSTJWheE1-_5GxeQM_xfxJNJjD1j6s8WpeyRyJnveExpVSUVibLO1aGj9v6AIkKFH24CT7mCA8KZaLoD1kKsn5sUmNSX1v99BEIm0LHoDSIaS",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9505899212&itemId=28323798873&vendorItemId=95276314546&traceid=V0-153-342323f6aac3f368&requestid=20261116064206517244892320&token=31850C%7CMIXED&pt=0&slot=2",
+   "category": "신기한템",
+   "updatedAt": "2026-11-16T06:41:56+09:00",
+   "overallRank": 8,
+   "subCategory": "욕실 꿀템",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_keyword_search",
+    "coupangRank": 2,
+    "keyword": "욕실 꿀템",
+    "joopjwiScore": 1.09
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [
+    "궁금한 템"
+   ],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 5,
+   "productId": "7230779632",
+   "productName": "신선한 대란",
+   "price": 7990,
+   "imageUrl": "https://image8.coupangcdn.com/image/1025_amir_coupang_oct_80k/316d/6262fa64e13b4344cf33980399519eb5c7b2d25baac2bd9a33b7a5a7c762.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7230779632&itemId=18347032018&vendorItemId=85491095723&traceid=V0-113-f5bb636e7db07a4a&pt=0&slot=1",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-16T06:41:56+09:00",
+   "overallRank": 11,
+   "subCategory": "식품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 1,
+    "keyword": null,
+    "joopjwiScore": 1.08
+   },
+   "price_history": {
+    "previousPrice": 7990,
+    "previousPriceDate": "2026-11-15",
+    "dropPercent": 0
+   },
+   "tags": [],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",

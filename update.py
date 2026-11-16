@@ -358,13 +358,21 @@ def main():
             print("릴스 지정 상품 중 오늘 검증을 통과하지 못한 것이 있어 자동 선정으로 대체")
             top5 = []
     top5_source = "curated" if top5 else "auto"
-    for p in ([] if top5 else ranked):
-        if per_group.get(p["group"], 0) >= 2:
-            continue
-        top5.append(p)
-        per_group[p["group"]] = per_group.get(p["group"], 0) + 1
-        if len(top5) == 5:
-            break
+    if not top5:
+        # 자동 선정: 같은 탭 최대 2개, 매일 쓰는 템 최대 2개, 궁금한 템은 1개 이상 (있으면)
+        ev = 0
+        for p in ranked:
+            if per_group.get(p["group"], 0) >= 2 or (p.get("everyday") and ev >= 2):
+                continue
+            top5.append(p)
+            per_group[p["group"]] = per_group.get(p["group"], 0) + 1
+            ev += 1 if p.get("everyday") else 0
+            if len(top5) == 5:
+                break
+        if not any(p.get("curious") for p in top5):
+            cur = next((p for p in ranked if p.get("curious") and p not in top5), None)
+            if cur:
+                top5[-1] = cur
     top5_ids = [p["id"] for p in top5]
 
     # 6) 데일리 픽: 오늘 파일이 없을 때만 후보를 정해 기본 문구로 생성 (AI 카피가 나중에 덮어씀)
@@ -399,7 +407,7 @@ def main():
     out = {
         "brand": "줍쥐", "checkedAt": checked_at, "date": today, "maxPrice": MAX_PRICE,
         "groups": GROUP_ORDER, "rankingRule": RANKING_RULE,
-        "top5": top5_ids, "products": ranked,
+        "top5": top5_ids, "top5Selection": top5_source, "products": ranked,
     }
     save_json(DATA / "products.json", out)
     save_json(DATA / "top5.json", {
