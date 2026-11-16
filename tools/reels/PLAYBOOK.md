@@ -59,8 +59,9 @@
 ## 5. (예비) GitHub 렌더링이 안 될 때만
 - Creative Claw 방식(예전 방식)은 쓰지 않는다. 실패하면 억지로 올리지 말고 원인을 보고한다.
 
-## 6. 업로드 (Metricool, 브랜드 joopjwi, blogId `7441991`)
-- **유튜브 채널 확인 먼저**: `getBrandSettings`에서 joopjwi 브랜드의 `youtubeData`가 `UC7xhaO7a-ZWyeIo4H4XT4Lw`(근황한컷 채널, 잘못 연결된 것)이면 **유튜브는 올리지 말고** 인스타만 올린 뒤 "유튜브가 아직 근황한컷 채널에 연결돼 있어 건너뜀"이라고 보고한다.
+## 6. 업로드 (Metricool)
+- **인스타그램 → 브랜드 joopjwi, blogId `7441991`** (이 브랜드의 유튜브는 근황한컷 채널이라 절대 쓰지 않는다)
+- **유튜브 → 브랜드 "줍쥐유튜브", blogId `8147337`** (채널 ID `UCiuxsAOSjBWHEbnBeQjYUfw`). 올리기 전 `getBrandSettings`로 이 브랜드의 youtubeData가 위 ID인지 확인하고, 다르면 유튜브는 건너뛰고 보고한다.
 - 게시 시각: **오늘 08:30 (Asia/Seoul)**. 이미 지났으면 지금부터 15분 뒤.
 - media: `https://joopjwi.github.io/reels/<오늘>.mp4`
 - 인스타그램 (별도 게시물): providers instagram, instagramData `{"type":"REEL","showReelOnFeed":true}`, `videoThumbnailUrl` = `https://joopjwi.github.io/reels/<오늘>.jpg`
