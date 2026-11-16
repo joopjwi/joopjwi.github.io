@@ -1,0 +1,207 @@
+{
+ "date": "2026-11-17",
+ "dateLabel": "11월 17일 (화)",
+ "dataCheckedAt": "2026-11-17 06:27",
+ "intro": "베개커버를 뽑아 쓴다고? 만원도 안 하는 오늘의 꿀템 다섯 개!",
+ "outro": "가격은 바뀔 수 있으니까, 프로필 링크에서 번호로 바로 줍쥐!",
+ "items": [
+  {
+   "id": "9453346482",
+   "short": "뽑아쓰는 베개커버",
+   "script": "1번! 베개커버 빨기 귀찮을 때! 한 장씩 뽑아 쓰는 일회용 숙면패드 베개커버가 칠천팔백원!"
+  },
+  {
+   "id": "8366678245",
+   "short": "수능시계",
+   "script": "2번! 수능 앞두고 시계 챙기셨나요? 소리 적고 숫자 큰 수능용 아날로그 시계, 칠천사백구십원!"
+  },
+  {
+   "id": "9670451408",
+   "short": "손난로 핫팩",
+   "script": "3번! 출근길에 손 시리죠? 주머니에 쏙 넣는 포켓형 손난로 핫팩, 팔천오백원!"
+  },
+  {
+   "id": "317523753",
+   "short": "수면치마담요",
+   "script": "4번! 앉아 있으면 다리 시릴 때, 입는 담요예요. 극세사 밍크 수면치마담요가 팔천팔백원!"
+  },
+  {
+   "id": "169280610",
+   "short": "키친타월",
+   "script": "5번! 매일 쓰는 키친타월도 쟁여 둬야죠. 코멧 천연펄프 두 겹 키친타월, 육천구백구십원!"
+  }
+ ],
+ "chunks": [
+  {
+   "scene": "intro",
+   "display": "베개커버를 뽑아 쓴다고?",
+   "spoken": "베개커버를 뽑아 쓴다고?"
+  },
+  {
+   "scene": "intro",
+   "display": "만원도 안 하는",
+   "spoken": "만원도 안 하는"
+  },
+  {
+   "scene": "intro",
+   "display": "오늘의 꿀템 다섯 개!",
+   "spoken": "오늘의 꿀템 다섯 개!"
+  },
+  {
+   "scene": 1,
+   "display": "1번!",
+   "spoken": "일번!"
+  },
+  {
+   "scene": 1,
+   "display": "베개커버 빨기 귀찮을 때!",
+   "spoken": "베개커버 빨기 귀찮을 때!"
+  },
+  {
+   "scene": 1,
+   "display": "한 장씩 뽑아 쓰는",
+   "spoken": "한 장씩 뽑아 쓰는"
+  },
+  {
+   "scene": 1,
+   "display": "일회용 숙면패드 베개커버가",
+   "spoken": "일회용 숙면패드 베개커버가"
+  },
+  {
+   "scene": 1,
+   "display": "7,800원!",
+   "spoken": "칠천팔백원!"
+  },
+  {
+   "scene": 2,
+   "display": "2번!",
+   "spoken": "이번!"
+  },
+  {
+   "scene": 2,
+   "display": "수능 앞두고",
+   "spoken": "수능 앞두고"
+  },
+  {
+   "scene": 2,
+   "display": "시계 챙기셨나요?",
+   "spoken": "시계 챙기셨나요?"
+  },
+  {
+   "scene": 2,
+   "display": "소리 적고 숫자 큰",
+   "spoken": "소리 적고 숫자 큰"
+  },
+  {
+   "scene": 2,
+   "display": "수능용 아날로그 시계",
+   "spoken": "수능용 아날로그 시계,"
+  },
+  {
+   "scene": 2,
+   "display": "7,490원!",
+   "spoken": "칠천사백구십원!"
+  },
+  {
+   "scene": 3,
+   "display": "3번!",
+   "spoken": "삼번!"
+  },
+  {
+   "scene": 3,
+   "display": "출근길에 손 시리죠?",
+   "spoken": "출근길에 손 시리죠?"
+  },
+  {
+   "scene": 3,
+   "display": "주머니에 쏙 넣는",
+   "spoken": "주머니에 쏙 넣는"
+  },
+  {
+   "scene": 3,
+   "display": "포켓형 손난로 핫팩",
+   "spoken": "포켓형 손난로 핫팩,"
+  },
+  {
+   "scene": 3,
+   "display": "8,500원!",
+   "spoken": "팔천오백원!"
+  },
+  {
+   "scene": 4,
+   "display": "4번!",
+   "spoken": "사번!"
+  },
+  {
+   "scene": 4,
+   "display": "앉아 있으면 다리 시릴 때",
+   "spoken": "앉아 있으면 다리 시릴 때,"
+  },
+  {
+   "scene": 4,
+   "display": "입는 담요예요",
+   "spoken": "입는 담요예요."
+  },
+  {
+   "scene": 4,
+   "display": "극세사 밍크 수면치마담요가",
+   "spoken": "극세사 밍크 수면치마담요가"
+  },
+  {
+   "scene": 4,
+   "display": "8,800원!",
+   "spoken": "팔천팔백원!"
+  },
+  {
+   "scene": 5,
+   "display": "5번!",
+   "spoken": "오번!"
+  },
+  {
+   "scene": 5,
+   "display": "매일 쓰는 키친타월도",
+   "spoken": "매일 쓰는 키친타월도"
+  },
+  {
+   "scene": 5,
+   "display": "쟁여 둬야죠",
+   "spoken": "쟁여 둬야죠."
+  },
+  {
+   "scene": 5,
+   "display": "코멧 천연펄프 2겹 키친타월",
+   "spoken": "코멧 천연펄프 두 겹 키친타월,"
+  },
+  {
+   "scene": 5,
+   "display": "6,990원!",
+   "spoken": "육천구백구십원!"
+  },
+  {
+   "scene": "outro",
+   "display": "가격은 바뀔 수 있으니까",
+   "spoken": "가격은 바뀔 수 있으니까,"
+  },
+  {
+   "scene": "outro",
+   "display": "프로필 링크에서",
+   "spoken": "프로필 링크에서"
+  },
+  {
+   "scene": "outro",
+   "display": "번호로 바로 줍쥐!",
+   "spoken": "번호로 바로 줍쥐!"
+  }
+ ],
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ }
+}
