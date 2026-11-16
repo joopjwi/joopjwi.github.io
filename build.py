@@ -52,6 +52,7 @@ def head(title, desc, url, image, depth=1):
 <link rel="icon" href="{up}assets/favicon.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard-dynamic-subset.css">
 <link rel="stylesheet" href="{up}assets/style.css"><script src="{up}config.js"></script>
+<script>function loadScript(a){{var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/app/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}}loadScript(function(){{beTracker.t({{hash:"8846943123fa01df9118bec76e6f7219"}})}});</script>
 </head><body>
 <div class="notice">{DISCLOSURE}</div>
 <div class="top"><div class="wrap"><div class="hdr">

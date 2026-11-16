@@ -8,7 +8,20 @@
   - `media/products.json`의 `checkedAt` 날짜가 **오늘(한국시간)** 이 아니면 아무것도 만들지 말고 "오늘 데이터 갱신이 안 됐어요"라고 보고하고 끝낸다.
   - 오늘 릴스가 이미 있으면(`site/data/reels/<오늘>.json` 존재) 중복 제작하지 말고 끝낸다.
 
+## 0-1. 성과 분석 → 오늘 기획에 반영 (매일, 상품 고르기 전에)
+- Metricool `getAnalyticsDataByMetrics` 로 최근 7일 성과를 가져온다.
+  - 인스타 릴스 (brandId `7441991`): `IGRE02`(일시) `IGRE06`(URL) `IGRE23`(조회수) `IGRE11`(도달) `IGRE24`(평균 시청 시간) `IGRE27`(유지율) `IGRE30`(3초 내 이탈률) `IGRE12`(저장) `IGRE21`(공유)
+  - 유튜브 쇼츠 (brandId `8147337`): `YTVP02`(일시) `YTVP17`(제목) `YTVP06`(조회수) `YTVP08`(평균 시청 시간) `YTVP09`(좋아요) `YTVP12`(공유)
+  - 데이터가 비어 있으면(게시 직후 등) 분석은 건너뛰고 원칙대로 진행.
+- `site/data/reels/<날짜>.json` 의 상품·대본과 성과를 맞춰 보고 패턴을 찾는다:
+  - 조회수·유지율이 높았던 날의 **1번 상품 종류, 인트로 문구, 카테고리 조합**
+  - 3초 이탈률이 높으면 → 인트로/1번 상품 후킹을 더 세게 (궁금증·충격 가격)
+  - 저장·공유가 많은 상품 유형 → 비슷한 유형을 더 자주
+- 배운 점을 `tools/reels/LEARNINGS.md` 맨 위 "기록"에 1~2줄 추가하고, "현재 적용 중인 원칙"을 필요하면 고친다. 근거 없는 추측은 쓰지 않는다 (수치와 함께).
+- **게시 시각**: `getBestTimeToPostByNetwork` (instagram: 7441991, youtube: 8147337, 오늘 하루)로 **07:45~09:00 사이 가장 좋은 시각**을 골라 6단계 게시 시각으로 쓴다. 데이터가 없으면 08:30.
+
 ## 1. 상품 5개 고르기 (가장 중요)
+- `tools/reels/LEARNINGS.md` 의 "현재 적용 중인 원칙"을 먼저 읽고 따른다.
 - `python3 tools/reels/candidates.py /home/claude/media site/data/reels/index.json <오늘>` 로 후보를 본다. 최근 6일 릴스 상품은 자동 제외됨.
 - **상위 순위 5개가 아니라 바이럴될 만한 5개**를 고른다.
   - 사람들이 "이게 뭐지?" 궁금해할 물건 2~3개 + 매일 쓰는 생필품(물티슈·생수·휴지 등) 1~2개
@@ -62,7 +75,7 @@
 ## 6. 업로드 (Metricool)
 - **인스타그램 → 브랜드 joopjwi, blogId `7441991`** (이 브랜드의 유튜브는 근황한컷 채널이라 절대 쓰지 않는다)
 - **유튜브 → 브랜드 "줍쥐유튜브", blogId `8147337`** (채널 ID `UCiuxsAOSjBWHEbnBeQjYUfw`). 올리기 전 `getBrandSettings`로 이 브랜드의 youtubeData가 위 ID인지 확인하고, 다르면 유튜브는 건너뛰고 보고한다.
-- 게시 시각: **오늘 08:30 (Asia/Seoul)**. 이미 지났으면 지금부터 15분 뒤.
+- 게시 시각: 0-1단계에서 고른 시각 (기본 08:30, Asia/Seoul). 이미 지났으면 지금부터 15분 뒤.
 - media: `https://joopjwi.github.io/reels/<오늘>.mp4`
 - 인스타그램 (별도 게시물): providers instagram, instagramData `{"type":"REEL","showReelOnFeed":true}`, `videoThumbnailUrl` = `https://joopjwi.github.io/reels/<오늘>.jpg`
 - 유튜브 (별도 게시물, 표지 넣지 않음): youtubeData `{"title":"만원도 안 하는 오늘의 득템 TOP 5 🐭 <M월 D일> #shorts","type":"short","privacy":"public","madeForKids":false,"category":"HOWTO_STYLE","tags":["줍쥐","만원이하","득템","생활꿀템","쿠팡추천"]}`
@@ -93,5 +106,6 @@ PY
 - 커밋 메시지 "줍쥐 릴스 <오늘>" 로 main에 push (push하면 사이트가 자동 재배포됨).
 
 ## 8. 보고 (한국어, 5줄 이내)
+- 어제까지 성과 한 줄(조회수 등, 있으면) + 오늘 반영한 점 한 줄
 - 오늘 고른 5개(요약 이름·가격), 영상 길이, 게시 예정 시각.
 - 문제가 있었으면(자막 단어 수 불일치, 렌더링 실패 등) 한 줄로 알린다.
