@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "37 20 * * *"  # 매일 한국시간 오전 5:37 시작 (GitHub 예약 지연을 감안해 늦어도 6시대 초반 완료)
   workflow_dispatch:        # 수동 실행 버튼 (상품 갱신 포함)
+    inputs:
+      build_only:
+        description: "상품 갱신 없이 페이지만 다시 배포"
+        type: boolean
+        default: false
   push:                     # 코드·디자인·데일리픽 문구가 바뀌면 페이지만 다시 만들어 배포
     branches: [main]
 
@@ -28,7 +33,7 @@ jobs:
           python-version: "3.12"
       - name: 쿠팡 API로 상품 갱신
         id: update
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && inputs.build_only != true
         continue-on-error: true   # 실패해도 오류 상태를 저장·배포한 뒤 마지막에 실패 처리
         env:
           COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
@@ -36,7 +41,7 @@ jobs:
           COUPANG_SUB_ID: ${{ secrets.COUPANG_SUB_ID }}
         run: python update.py
       - name: 데이터 저장
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && inputs.build_only != true
         run: |
           git config user.name "joopjwi-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -45,7 +50,7 @@ jobs:
           git pull --rebase origin main
           git push
       - name: 릴스용 상품 사진 저장 (media 브랜치, 매일 덮어씀)
-        if: github.event_name != 'push' && steps.update.outcome == 'success'
+        if: github.event_name != 'push' && inputs.build_only != true && steps.update.outcome == 'success'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -74,8 +79,12 @@ jobs:
           cd /tmp/media && git init -q -b media && git add -A
           git -c user.name=joopjwi-bot -c user.email=actions@users.noreply.github.com commit -qm "media $(TZ=Asia/Seoul date +%F)"
           git push -fq "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" media
-      - name: 상품·픽 페이지 생성
-        run: python build.py
+      - name: 상품·픽 페이지 생성 (+ 릴스 영상 포함)
+        run: |
+          python build.py
+          mkdir -p site/reels
+          git clone -q --depth 1 -b reels-out https://github.com/${{ github.repository }}.git /tmp/ro 2>/dev/null && cp /tmp/ro/*.mp4 /tmp/ro/*.jpg /tmp/ro/*.json site/reels/ 2>/dev/null || true
+          ls site/reels
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

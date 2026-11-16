@@ -1,0 +1,79 @@
+name: 줍쥐 릴스 렌더링
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/data/reels/requests/**"]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "요청 날짜 (site/data/reels/requests/<date>.json)"
+        required: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: joopjwi-reel
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/checkout@v4
+        with:
+          ref: media
+          path: media
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 준비
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q pillow
+      - name: 요청 찾기
+        id: req
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            F="site/data/reels/requests/${{ github.event.inputs.date }}.json"
+          else
+            F=$(git diff --name-only HEAD~1 HEAD -- site/data/reels/requests/ | grep '\.json$' | tail -1)
+          fi
+          echo "file=$F" >> "$GITHUB_OUTPUT"
+          echo "요청: $F"
+      - name: 음성(ElevenLabs) + 0.2초 커트 + 영상·표지 렌더링
+        id: build
+        continue-on-error: true
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: tools/reels/build_reel.sh "${{ steps.req.outputs.file }}" media out
+      - name: 실패 기록
+        if: steps.build.outcome == 'failure'
+        run: |
+          mkdir -p out
+          D=$(python3 -c "import json;print(json.load(open('${{ steps.req.outputs.file }}'))['date'])")
+          echo "{\"date\":\"$D\",\"status\":\"error\"}" > out/$D.json
+      - name: 결과를 reels-out 브랜치에 저장 (최근 7일만 유지)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git clone -q --depth 1 -b reels-out "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" ro 2>/dev/null || (mkdir ro && cd ro && git init -q -b reels-out)
+          cp out/* ro/
+          cd ro
+          ls *.json 2>/dev/null | sort | head -n -7 | sed 's/\.json$//' | while read d; do rm -f "$d".*; done
+          rm -rf .git && git init -q -b reels-out && git add -A
+          git -c user.name=joopjwi-bot -c user.email=actions@users.noreply.github.com commit -qm "reels $(TZ=Asia/Seoul date +%F)"
+          git push -fq "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" reels-out
+      - name: 사이트 재배포 (영상 주소 공개)
+        if: steps.build.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update.yml -R ${{ github.repository }} -f build_only=true
+      - name: 실패 알림
+        if: steps.build.outcome == 'failure'
+        run: exit 1

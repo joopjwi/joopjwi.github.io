@@ -1,0 +1,212 @@
+{
+ "date": "2026-11-16",
+ "dateLabel": "11월 16일 (월)",
+ "dataCheckedAt": "2026-11-16 06:41",
+ "intro": "만 원도 안 하는 오늘의 생활 꿀템, 다섯 개 바로 갑니다!",
+ "outro": "가격은 바뀔 수 있으니까, 프로필 링크에서 번호로 바로 줍쥐!",
+ "items": [
+  {
+   "id": "7136860724",
+   "short": "계란 보관함",
+   "script": "1번! 계란 한 판 사 오면 냉장고에 둘 데가 없죠? 30구가 3단으로 쏙 들어가는 계란 보관함이 육천오백오십 원이에요."
+  },
+  {
+   "id": "9505899212",
+   "short": "릴 수건걸이",
+   "script": "2번! 수건 걸 데가 마땅치 않다면 이거예요. 와이어를 당겨서 쓰는 릴 타입 수건걸이, 육천칠백팔십 원!"
+  },
+  {
+   "id": "9615573045",
+   "short": "발 씻는 매트",
+   "script": "3번! 욕실 바닥에 깔고 발을 문질러 씻는 풋브러쉬 매트예요. 이게 사천구백 원밖에 안 해요."
+  },
+  {
+   "id": "9725928327",
+   "short": "삼다수 생수",
+   "script": "4번! 생수는 떨어지기 전에 미리 쟁여 둬야죠. 제주삼다수 그린 무라벨이 육천사백오십 원이에요."
+  },
+  {
+   "id": "305672892",
+   "short": "물티슈",
+   "script": "5번! 매일 쓰는 물티슈도 빠질 수 없죠. 탐사 클래식 캡형 물티슈, 칠천팔백구십 원!"
+  }
+ ],
+ "chunks": [
+  {
+   "scene": "intro",
+   "display": "만 원도 안 하는",
+   "spoken": "만 원도 안 하는"
+  },
+  {
+   "scene": "intro",
+   "display": "오늘의 생활 꿀템,",
+   "spoken": "오늘의 생활 꿀템,"
+  },
+  {
+   "scene": "intro",
+   "display": "다섯 개 바로 갑니다!",
+   "spoken": "다섯 개 바로 갑니다!"
+  },
+  {
+   "scene": 1,
+   "display": "1번!",
+   "spoken": "일번!"
+  },
+  {
+   "scene": 1,
+   "display": "계란 한 판 사 오면",
+   "spoken": "계란 한 판 사 오면"
+  },
+  {
+   "scene": 1,
+   "display": "냉장고에 둘 데가 없죠?",
+   "spoken": "냉장고에 둘 데가 없죠?"
+  },
+  {
+   "scene": 1,
+   "display": "30구 계란이 3단으로 쏙 들어가는",
+   "spoken": "삼십 구 계란이 삼 단으로 쏙 들어가는"
+  },
+  {
+   "scene": 1,
+   "display": "계란 보관함이",
+   "spoken": "계란 보관함이"
+  },
+  {
+   "scene": 1,
+   "display": "6,550원이에요",
+   "spoken": "육천오백오십 원이에요."
+  },
+  {
+   "scene": 2,
+   "display": "2번!",
+   "spoken": "이번!"
+  },
+  {
+   "scene": 2,
+   "display": "수건 걸 데가 마땅치 않다면",
+   "spoken": "수건 걸 데가 마땅치 않다면"
+  },
+  {
+   "scene": 2,
+   "display": "이거예요",
+   "spoken": "이거예요."
+  },
+  {
+   "scene": 2,
+   "display": "와이어를 당겨서 쓰는",
+   "spoken": "와이어를 당겨서 쓰는"
+  },
+  {
+   "scene": 2,
+   "display": "릴 타입 수건걸이",
+   "spoken": "릴 타입 수건걸이,"
+  },
+  {
+   "scene": 2,
+   "display": "6,780원!",
+   "spoken": "육천칠백팔십 원!"
+  },
+  {
+   "scene": 3,
+   "display": "3번!",
+   "spoken": "삼번!"
+  },
+  {
+   "scene": 3,
+   "display": "욕실 바닥에 깔고",
+   "spoken": "욕실 바닥에 깔고"
+  },
+  {
+   "scene": 3,
+   "display": "발을 문질러 씻는",
+   "spoken": "발을 문질러 씻는"
+  },
+  {
+   "scene": 3,
+   "display": "풋브러쉬 매트예요",
+   "spoken": "풋브러쉬 매트예요."
+  },
+  {
+   "scene": 3,
+   "display": "이게 4,900원밖에 안 해요",
+   "spoken": "이게 사천구백 원밖에 안 해요."
+  },
+  {
+   "scene": 4,
+   "display": "4번!",
+   "spoken": "사번!"
+  },
+  {
+   "scene": 4,
+   "display": "생수는 떨어지기 전에",
+   "spoken": "생수는 떨어지기 전에"
+  },
+  {
+   "scene": 4,
+   "display": "미리 쟁여 둬야죠",
+   "spoken": "미리 쟁여 둬야죠."
+  },
+  {
+   "scene": 4,
+   "display": "제주삼다수 그린 무라벨이",
+   "spoken": "제주삼다수 그린 무라벨이"
+  },
+  {
+   "scene": 4,
+   "display": "6,450원이에요",
+   "spoken": "육천사백오십 원이에요."
+  },
+  {
+   "scene": 5,
+   "display": "5번!",
+   "spoken": "오번!"
+  },
+  {
+   "scene": 5,
+   "display": "매일 쓰는 물티슈도",
+   "spoken": "매일 쓰는 물티슈도"
+  },
+  {
+   "scene": 5,
+   "display": "빠질 수 없죠",
+   "spoken": "빠질 수 없죠."
+  },
+  {
+   "scene": 5,
+   "display": "탐사 클래식 캡형 물티슈",
+   "spoken": "탐사 클래식 캡형 물티슈,"
+  },
+  {
+   "scene": 5,
+   "display": "7,890원!",
+   "spoken": "칠천팔백구십 원!"
+  },
+  {
+   "scene": "outro",
+   "display": "가격은 바뀔 수 있으니까",
+   "spoken": "가격은 바뀔 수 있으니까,"
+  },
+  {
+   "scene": "outro",
+   "display": "프로필 링크에서",
+   "spoken": "프로필 링크에서"
+  },
+  {
+   "scene": "outro",
+   "display": "번호로 바로 줍쥐!",
+   "spoken": "번호로 바로 줍쥐!"
+  }
+ ],
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ }
+}
