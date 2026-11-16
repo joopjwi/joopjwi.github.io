@@ -28,7 +28,7 @@
 ```json
 {"date":"YYYY-MM-DD","dateLabel":"11월 16일 (월)","dataCheckedAt":"<checkedAt>",
  "items":[{"id":"...","short":"계란 보관함","script":"..."}, ... 5개],
- "chunks":[{"scene":"intro","display":"만 원도 안 하는","spoken":"만 원도 안 하는"},
+ "chunks":[{"scene":"intro","display":"만원도 안 하는","spoken":"만원도 안 하는"},
            {"scene":1,"display":"1번!","spoken":"일번!"}, ... ,
            {"scene":"outro","display":"번호로 바로 줍쥐!","spoken":"번호로 바로 줍쥐!"}]}
 ```
