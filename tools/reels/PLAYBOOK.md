@@ -16,7 +16,7 @@
   - 상품 사진이 무엇인지 한눈에 보이는 것 (`media/img/<id>.jpg`를 직접 열어 확인).
 - 각 상품의 **요약 이름**(화면 표시용, 2~8자 정도): 예) "탐사 클래식 물티슈 캡형" → "물티슈", "자동 오픈 계란 한판 보관함 3단 30구" → "계란 보관함".
 
-## 2. 대본 (상품당 7~10초, 전체 55초 이하, 목표 45~50초)
+## 2. 대본 (상품당 7~10초, 전체 55초 이하, 쉼 커트 후 40~50초)
 - 구조: 인트로 1문장 → 1번~5번 (번호 + 상황 공감 1문장 + 상품 소개 + 가격) → 아웃트로 1문장
 - 인트로 예: "만 원도 안 하는 오늘의 생활 꿀템, 다섯 개 바로 갑니다!" (매일 조금씩 바꿔도 됨)
 - 아웃트로 예: "가격은 바뀔 수 있으니까, 프로필 링크에서 번호로 바로 줍쥐!"
@@ -34,29 +34,34 @@
   - chunk 하나 = 화면 자막 한 줄 (16자 안팎). scene은 "intro", 1~5, "outro".
   - TTS 텍스트 = 모든 chunk의 spoken을 공백으로 이어 붙인 것.
 
-## 3. 음성 (Creative Claw)
-- `generate_speech`: model `speech/elevenlabs-v4`, voice_id `PDoCXqBQFGsvfO0hNkEs`(Chris, 한국어 남성), 맨 앞에 `[excited] `, extras `{"language_code":"ko","voice_settings":{"stability":0.4,"similarity_boost":0.75},"output_format":"mp3_44100_192"}`
-- `check_job`으로 완료 대기 → 음성 URL 확보.
-- 길이 확인: `transcribe`(audio_url, language_code "ko") → 결과의 Duration(초). 55초를 넘으면 대본을 줄여 다시 만든다.
-
-## 4. 영상 만들기
+## 3. 제작 요청 보내기 (음성·영상은 GitHub가 만든다)
+- 위 spec에 아래 `tts` 블록을 그대로 넣어 `site/data/reels/requests/<오늘>.json` 으로 저장한다.
+```json
+"tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm", "model": "eleven_multilingual_v2",
+        "voiceSettings": {"stability": 0.45, "similarity_boost": 0.8, "style": 0.25, "use_speaker_boost": true, "speed": 1.08}}
 ```
-cd /home/claude/jj/tools/reels
-python3 est_timings.py /home/claude/reel_<오늘>.json <길이> /home/claude/timings.json
-python3 make_reel_v2.py /home/claude/reel_<오늘>.json /home/claude/media duration=<길이> /home/claude/timings.json none /home/claude/silent.mp4
-python3 make_cover.py /home/claude/reel_<오늘>.json /home/claude/media /home/claude/cover.jpg
-```
-- 프레임 3~4장(0초, 인트로, 상품 1개, 아웃트로)을 ffmpeg로 뽑아 직접 보고 글자 겹침·잘림이 없는지 확인한다.
+  - 목소리: 대표 본인 ElevenLabs 계정의 **SK (Friendly & Mid-High Pitch)**. 다른 목소리로 바꾸지 않는다.
+- 이 파일을 main에 push하면 GitHub Actions "줍쥐 릴스 렌더링"이 자동으로:
+  ElevenLabs TTS 생성 → **문장 사이 쉼·호흡 0.2초로 커트** → 단어 타이밍으로 자막 싱크 → 영상·표지 렌더링 → 배경음악 믹스 → `reels-out` 브랜치 저장 → 사이트 재배포.
+- 7단계(기록·TOP 5 맞추기) 파일도 같은 커밋에 넣어도 된다.
 
-## 5. 음성·배경음악 합치기 (Creative Claw)
-- `get_upload_url`(video/mp4) → curl PUT → `confirm_upload` 로 silent.mp4 업로드
-- `add_audio_to_video`: video=업로드 URL, audio=**BGM** `https://cdn.creativeclaw.co/u/8e4a1e1b/audio/ac8109bd-e1e8-46eb-8c15-5c80989d68a4.mp3`, audio_mode `mix`, added_volume `0.12`
-- 그 결과 영상에 다시 `add_audio_to_video`: audio=음성 URL, audio_mode `mix`, added_volume `1`
-- 표지 cover.jpg도 `get_upload_url`(image/jpeg)로 올린다.
+## 4. 결과 기다리기·검수
+- 30초 간격으로 최대 15분: `git ls-remote https://github.com/joopjwi/joopjwi.github.io reels-out` 후
+  `git clone --depth 1 -b reels-out https://github.com/joopjwi/joopjwi.github.io /home/claude/ro` 해서 `<오늘>.json` 의 `status` 확인.
+  - `"error"`면: `gh api repos/joopjwi/joopjwi.github.io/actions/workflows/reel.yml/runs?per_page=1` 로 실행 ID를 찾고 로그를 확인해 원인을 보고하고 끝낸다 (ElevenLabs 크레딧 부족 등).
+  - `tts.words` 와 `tts.expectedWords` 가 다르면 자막이 조금 어긋날 수 있음을 보고에 적는다.
+  - `duration` 이 55초를 넘으면 대본을 줄여 요청을 다시 보낸다.
+- `/home/claude/ro/<오늘>.mp4` 에서 프레임 3~4장(0초, 상품 1개, 아웃트로)을 ffmpeg로 뽑아 직접 보고 글자 겹침·잘림이 없는지 확인한다.
+- 사이트 재배포 완료 확인: `gh api "repos/joopjwi/joopjwi.github.io/actions/workflows/update.yml/runs?per_page=1"` 가 요청 이후 시각에 `completed/success` 인지 본다 (최대 10분 대기).
+  - 영상 주소: `https://joopjwi.github.io/reels/<오늘>.mp4`, 표지: `https://joopjwi.github.io/reels/<오늘>.jpg`
+
+## 5. (예비) GitHub 렌더링이 안 될 때만
+- Creative Claw 방식(예전 방식)은 쓰지 않는다. 실패하면 억지로 올리지 말고 원인을 보고한다.
 
 ## 6. 업로드 (Metricool, 브랜드 joopjwi, blogId `7441991`)
 - 게시 시각: **오늘 08:30 (Asia/Seoul)**. 이미 지났으면 지금부터 15분 뒤.
-- 인스타그램 (별도 게시물): providers instagram, instagramData `{"type":"REEL","showReelOnFeed":true}`, `videoThumbnailUrl` = 표지 URL
+- media: `https://joopjwi.github.io/reels/<오늘>.mp4`
+- 인스타그램 (별도 게시물): providers instagram, instagramData `{"type":"REEL","showReelOnFeed":true}`, `videoThumbnailUrl` = `https://joopjwi.github.io/reels/<오늘>.jpg`
 - 유튜브 (별도 게시물, 표지 넣지 않음): youtubeData `{"title":"만 원도 안 하는 오늘의 득템 TOP 5 🐭 <M월 D일> #shorts","type":"short","privacy":"public","madeForKids":false,"category":"HOWTO_STYLE","tags":["줍쥐","만원이하","득템","생활꿀템","쿠팡추천"]}`
 - autoPublish true.
 - 유튜브 제목은 `만 원도 안 하는 오늘의 득템 TOP 5 🐭 <M월 D일> #shorts` 형식.
@@ -85,5 +90,5 @@ PY
 - 커밋 메시지 "줍쥐 릴스 <오늘>" 로 main에 push (push하면 사이트가 자동 재배포됨).
 
 ## 8. 보고 (한국어, 5줄 이내)
-- 오늘 고른 5개(요약 이름·가격), 영상 길이, 게시 예정 시각, 남은 Creative Claw 크레딧.
-- 크레딧이 25 미만이면 "크레딧 충전이 필요해요"라고 꼭 알린다. 부족해서 못 만들면 억지로 진행하지 말고 그 사실만 보고한다.
+- 오늘 고른 5개(요약 이름·가격), 영상 길이, 게시 예정 시각.
+- 문제가 있었으면(자막 단어 수 불일치, 렌더링 실패 등) 한 줄로 알린다.
