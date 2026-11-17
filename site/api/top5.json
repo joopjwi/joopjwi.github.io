@@ -1,26 +1,26 @@
 {
  "apiVersion": 1,
  "status": "ok",
- "dataDate": "2026-11-17",
- "updatedAt": "2026-11-17T06:27:14+09:00",
- "expiresAt": "2026-11-18T09:00:00+09:00",
+ "dataDate": "2026-11-18",
+ "updatedAt": "2026-11-18T06:28:31+09:00",
+ "expiresAt": "2026-11-19T09:00:00+09:00",
  "maxPrice": 10000,
  "currency": "KRW",
  "disclosure": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 updatedAt 기준이며 쿠팡에서 바뀔 수 있음. 이미지 저작권은 판매자에게 있음.",
- "selection": "curated",
+ "selection": "auto",
  "count": 5,
  "items": [
   {
    "rank": 1,
-   "productId": "9453346482",
-   "productName": "바른피부연구소 뽑아쓰는 일회용 숙면패드 베개커버",
-   "price": 7800,
-   "imageUrl": "https://ads-partners.coupang.com/image1/doGg5fFBfzqNxD7cdjzVYuRAv59dOObh-BwaRaNLOcAQA8MktAK1Fzn1keUS_YM4qf70UF6Z-9t-WxfPAdf6WZhEwpCUgFdNrzBCkqGA7cLnDU-BIpIPO1Y08Uca6jxJ1vF4pyszh9uJdxkK8yycPq83u_rjYaNQpHYm0eRISGsnLgDEQeVfS9lctcW4XYScx9BxlDpxNnwfHKzDvFNPN0X-bFN0YyTmehiw0t_pQvhpQxNidt1vKNA76A4baEqkORq8pdyzW8TfkIWEimYWNW_G6ECEPOdzI0m936fAk0DkV5c4d9yAQVe4lt063-0PI-oX0tx3123vBU5ILP_LgOfmzacWSZG70DQDwxV9M9sfG8v4Bz8JuTx59xX4Nno-P9Dc0RyVkC0vjyDpotkuowxGBeJaTfVI8s3zj0hUgEHJqM6z65NXTr0tWYVFjT_4LygFKyTuOd8Da0dFbakFsBuPnC3uaaPS9w-UAWC3GlF2jIcpk3mp16EfLS1k0h25OxXyT-aV3ZZwfu3aNj8RgGqw2l5vOhJZUZ0Utm4WxlqTuGg=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9453346482&itemId=28124272749&vendorItemId=95080003578&traceid=V0-153-cbd087af407b519b&requestid=20261117062724315298054784&token=31850C%7CMIXED&pt=0&slot=7",
-   "category": "신기한템",
-   "updatedAt": "2026-11-17T06:27:14+09:00",
-   "overallRank": 24,
-   "subCategory": "겨울 꿀템",
+   "productId": "8258156663",
+   "productName": "순창샘물 생수 무라벨, 24개, 1L",
+   "price": 9990,
+   "imageUrl": "https://ads-partners.coupang.com/image1/Jw1-knsE8eDLqcMTJ5Y-u5xa799DRF1Y8UYYCipUCSciX1K0QvkkbUPZFCvwgFQfEe-jDRpnj4r2XicVYqUa_-mt19-dI9rEUJZHR8aXe2OsoikOS6-02ZYvVm3ntKoWoUCgZL5_3HV_w0oGwPmCt2Ox2N695ghTnCJ2WQV5Ffx5GeJCsWMvTyDIs6S-paOuXSPblhSEffWiJFOVEN-EEu80FZ6PJmYXEe5bY5qP-ccpy3t5Be0V1OINMoFIcBTYkLLw8yCC0oVuoaobKD09oPxdd_etdj9jHzIz164ZaJrZaZho5bu0QRdtK6WXbooAaICGkwXZk00sOmevIwF15Kp78St10lvdvme76N3ABBuABi5L0y8KrO1YurC8ij0tdc4UM3D7dFKpviuBNFoAW0YVSTJQPRqZGVZrjbZiXIbbCAcOcJ60JliLhkjO63doj18F3XYbbFE4bvddFDx48SRpjiNpizU-wm6t15zg2kO6_Nv3UQDIx1AHW1_hDUk-H2zQlGcfoZOMF0OSBWmf3G4MLKBWpdEE6FkdsSmlZJt0DAMdJpjGxxS3Fadc-wzEMGkrHjYV",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8258156663&itemId=28888286012&vendorItemId=95820948842&traceid=V0-153-3bc387aea35ddac1&clickBeacon=d7cf0dc0-e2cd-11f1-b9d1-731457d9fe31%7E3&requestid=20261118062834171125423062&token=31850C%7CMIXED&pt=1&slot=5",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-18T06:28:31+09:00",
+   "overallRank": 1,
+   "subCategory": "생수",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -28,17 +28,17 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 7,
-    "keyword": "겨울 꿀템",
-    "joopjwiScore": 1.04
+    "coupangRank": 5,
+    "keyword": "생수",
+    "joopjwiScore": 1.16
    },
    "price_history": {
-    "previousPrice": 7800,
-    "previousPriceDate": "2026-11-16",
+    "previousPrice": null,
+    "previousPriceDate": null,
     "dropPercent": 0
    },
    "tags": [
-    "궁금한 템"
+    "매일 쓰는 템"
    ],
    "validation": {
     "price": "ok",
@@ -50,32 +50,34 @@
   },
   {
    "rank": 2,
-   "productId": "8366678245",
-   "productName": "슈페르바 저소음 큰숫자 학생 수능 아날로그 손목 시계 수능시계",
-   "price": 7490,
-   "imageUrl": "https://img4c.coupangcdn.com/image/vendor_inventory/4cab/7c77123e3ad5e7c8478ba537d53d89b5647a38a22c9387617ab72483c63a.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8366678245&itemId=24174016730&vendorItemId=91192078657&traceid=V0-113-91a1919b344f73db&pt=0&slot=1",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-17T06:27:14+09:00",
-   "overallRank": 43,
-   "subCategory": "패션",
+   "productId": "305672892",
+   "productName": "탐사 클래식 물티슈 캡형",
+   "price": 7890,
+   "imageUrl": "https://ads-partners.coupang.com/image1/KIER2qPRrQQZ7CMAKNucN7KVY9PjNcyfxblYY_EXjApVHIfFUpt2ub22xo_iMvGAUpHJAbQPDZ91l1Q6DC9vTymyyibUgEAXlSlA5Q5fqe-bMWJQ1cd_pjGy0WnmE2QZAzQq109vTnOJBu5fP-L3dz4Zv-8YgQ6SW-VpWlJcSSzIiHh89a7sed0onU87mCPUAhcJF2iW54K_nRogHfmV-hvSq6MBi7gfLKuKQmv6YNp8_-IlJMqJwGwgoqRVi9qoDYgL8eDbVMNz9N55dlAVuxDcdSNggOnPnorjKXOf2ToEeQs-H5Mzhbz4ELhihhjnQV6g708aQKa9isMVzYgEf44vbyqkIVqEj9IcSuh39iNO8CLFfYaY_SfisZsz6agBUHpka98ywIHo-fYEpZvH6ickbM_6QJXY8Y-Gf_qImGX7-PGOtsIhtK1fjFhpx7R11YygX30UHiNmlU9VtjD8RsKCk3_5roZ4VlOw3rhUnoNx32UVakYKwHMNqFl-tf_-KHBnLA5Jrt_k8FuIYw3MdaDaMlwtq_vJONwO1HLPX-rw7u10r-H55KjVwYWgDidSCsFBttT9wk1mhjvs0Hc=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=305672892&itemId=963428194&vendorItemId=5366452533&traceid=V0-153-df6e481d96579701&requestid=20261118062832037178749146&token=31850C%7CMIXED&pt=0&slot=6",
+   "category": "생필품",
+   "updatedAt": "2026-11-18T06:28:31+09:00",
+   "overallRank": 2,
+   "subCategory": "물티슈",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 1,
-    "keyword": null,
-    "joopjwiScore": 1.0
+    "source": "coupang_keyword_search",
+    "coupangRank": 6,
+    "keyword": "물티슈",
+    "joopjwiScore": 1.15
    },
    "price_history": {
-    "previousPrice": 7490,
-    "previousPriceDate": "2026-11-16",
+    "previousPrice": 7890,
+    "previousPriceDate": "2026-11-17",
     "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "매일 쓰는 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -86,30 +88,30 @@
   },
   {
    "rank": 3,
-   "productId": "9670451408",
-   "productName": "코멧 포켓형 손난로 핫팩 100g",
-   "price": 8500,
-   "imageUrl": "https://image12.coupangcdn.com/image/retail/images/119453090079539-087e1c6e-1952-4850-88fe-651d3b6a038c.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9670451408&itemId=27014813784&vendorItemId=93983447578&traceid=V0-113-8846e86e0c9b47df&pt=0&slot=5",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-17T06:27:14+09:00",
-   "overallRank": 60,
-   "subCategory": "홈인테리어",
+   "productId": "2233944921",
+   "productName": "국내산 백오이",
+   "price": 2640,
+   "imageUrl": "https://static.coupangcdn.com/image/retail/images/7220705008763344-8e1e5f5b-cc82-4027-bd50-23deda6a92b9.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=2233944921&itemId=12311272628&vendorItemId=79581434699&traceid=V0-113-c6e3f57a4f6a376e&pt=0&slot=7",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-18T06:28:31+09:00",
+   "overallRank": 3,
+   "subCategory": "식품",
    "shipping": {
-    "isRocket": true,
+    "isRocket": false,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 5,
+    "coupangRank": 7,
     "keyword": null,
-    "joopjwiScore": 0.96
+    "joopjwiScore": 1.14
    },
    "price_history": {
-    "previousPrice": 8500,
+    "previousPrice": 2990,
     "previousPriceDate": "2026-11-16",
-    "dropPercent": 0
+    "dropPercent": 12
    },
    "tags": [],
    "validation": {
@@ -122,29 +124,29 @@
   },
   {
    "rank": 4,
-   "productId": "317523753",
-   "productName": "[판매자추천] 겨울철 필수템 수면치마담요 극세사 밍크치마담요",
-   "price": 8800,
-   "imageUrl": "https://ads-partners.coupang.com/image1/X9sSGWsvV4lKCTfdX3qa2KWPPWph1btWG2jxQXgjh14oIdU9odEXRIYwG3XVCL8XEggrqhO6BC1c2juCBruxppbWjrXsTOhOrY7qHOT3dPvWt0Xp2GGKwXeoO89g1zkwKnAtqPKvqHgu-wIfyyqkGt1S1jaqywpOT2yUfksSK4Yvtp080Sw1LWQ2htcjZ5jSjMU0HSUOePSNLDsshIGOyGKjfrG1EoA6cE-BrWGuz90whDZlP-diVhkY3rGKqtAYO94zOC6rQpBmloslfXyrYWHXR-hg1XPAUHDt5b6pQ--1WeebdbpX9PgqswEa_hq5SJJRHmqqSqTYduz7H86WRdpNHIdtP00-pSpyKQ_jOZOeTA4y9nI_h9cRNTZsFD_-oLWE7xNsC1pY5c0xsPjYMZMsHZ_mUb10MtYtVj9HB14pORA5Akpni0Hd4Y4JnyADiTOFOr8XZy425FuMsiWtKubnVgBqU5h2ca4K3ehY45_MFROmPO54cL50C7cQKTf7-qiUqb4sng9qW3IwZdMzvYP40-pEOh9cRf_8LWUUnG6V",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=317523753&itemId=1012801181&vendorItemId=5446924989&traceid=V0-153-8d62300c448cdfb4&requestid=20261117062724315298054784&token=31850C%7CMIXED&pt=0&slot=8",
+   "productId": "9262665527",
+   "productName": "펀토피아 차량용 썬바이저 카드포켓 안경거치대 지폐수납, 그레이, 1개",
+   "price": 7150,
+   "imageUrl": "https://ads-partners.coupang.com/image1/bSDWgS_Il2NHTvh5bdh76dbVTXN_Y7Ra37dRFF8SEesjrosC8Edp_2R1uaK3CYcnv76CAdYhK-cmQbMpL4aodtGDC8CApH_qJQMUMpciGuYP_X2PsPE9rwUWbsuBr9SPNNUsxeHrRuFkhdGUKwSZL8ZqBCT9AGhzqyp6b_GF7nIKNYw1mo3wlwJlR_Nu1xbGiodO4L5EadYVt7iZGNBeLT8sR2Jp5GBJrGVfPamMXZZ0aArRJkmtUTd8kAj4mcHNDWwkwoW7fuuBe50zih_rTwjd-nPiIdy0bZxQpz_FhEKTz-xDMVh0mYGinBUW2RGLjHT8xNscLkoVQ_rAunQuT2aR0acdn0Cq8jMRSzZN-KLt4fRGNAPK14tQE4AA6WZ84gobZ8t80Nhe24JRKC5MPH3vj4ACFFSQbmLDVRB-BsCCHVqn53R6KLhk-nY7IxdxPVSmjiZg2qBBvWms1cmKtEbJ_hNPnhi1F-XqanhrqAm5Uf97kn0sCDYmivps_mIijmgCRFvQyXd5RS04p_K-TVHxfuqkWf8=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9262665527&itemId=27415352449&vendorItemId=94513488635&traceid=V0-153-caa72f05968b140f&clickBeacon=dbb548a0-e2cd-11f1-a4b7-58bdfb1e8444%7E3&requestid=20261118062840721010442520&token=31850C%7CMIXED&pt=1&slot=1",
    "category": "신기한템",
-   "updatedAt": "2026-11-17T06:27:14+09:00",
-   "overallRank": 28,
-   "subCategory": "겨울 꿀템",
+   "updatedAt": "2026-11-18T06:28:31+09:00",
+   "overallRank": 7,
+   "subCategory": "아이디어 상품",
    "shipping": {
-    "isRocket": false,
-    "isFreeShipping": true,
+    "isRocket": true,
+    "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 8,
-    "keyword": "겨울 꿀템",
-    "joopjwiScore": 1.03
+    "coupangRank": 1,
+    "keyword": "아이디어 상품",
+    "joopjwiScore": 1.1
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 7150,
+    "previousPriceDate": "2026-11-16",
     "dropPercent": 0
    },
    "tags": [
@@ -160,32 +162,34 @@
   },
   {
    "rank": 5,
-   "productId": "169280610",
-   "productName": "코멧 깨끗한 천연펄프 2겹 키친타월 150매",
-   "price": 6990,
-   "imageUrl": "https://img5a.coupangcdn.com/image/retail/images/77501536142093-e3d45edd-9f61-4817-9073-b527fca4280f.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=169280610&itemId=484461411&vendorItemId=4220116848&traceid=V0-113-4ae8b097aa58b84c&pt=0&slot=1",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-17T06:27:14+09:00",
-   "overallRank": 39,
-   "subCategory": "주방용품",
+   "productId": "9468621015",
+   "productName": "홈싹 프리미엄 빨아쓰는 규조토 발매트",
+   "price": 5990,
+   "imageUrl": "https://ads-partners.coupang.com/image1/U02wofwybM5IcxodUxyV8SpVeAU_m9eMpfWOA5zO9pq7Yy5wopuzxY7WcIAFH2NffbJs0QK_nW5I32EqXpit-M9KKCATOk0KcG_gCT7IVfp1GLOu19aZ_EGZFK5_RR59NDilTY5cje0kcG8uzihFGJQEOsjb3StSPuK7GBNrx4VYFzyiOFs7W9yR_WnUcuaC8-1kEmq9_BJXLfePWx_sATtrg2MA5TpVqmX8r9qBsWVYbi0Wz00t0LJLfahz6vGhDSWGkRxU21_S2PjCJdoo0oTIWwU2wrrFf2aZOVEiGK38vqj3k722JJvQEVEV7tAvRBeyiePfAP9psjPIuzTOdluAzmkZyZiLKbcnUfsBbZ_KNEs-Z9sRvJgjxBrAxY1-O8Y0TzKdFXFQ4tcP5HsG1uH7l9MH7O2meGt-9M0izcRPvfOFfRT5M-qUjbj4XgbiLpDM0v-8ysoiD-bKVoRKwbEG3dpDe2KfvScusloKmInHFMy2vC4jM6I-aQN4qKgWYzuWldDdAhwFi31Ci6xDAr_1eYH4Z7bMqeRaHfj962Y-",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9468621015&itemId=28180795981&vendorItemId=95135410109&traceid=V0-153-bce38c001fc23c50&requestid=20261118062843051149649147&token=31850C%7CGM&pt=0&slot=1",
+   "category": "신기한템",
+   "updatedAt": "2026-11-18T06:28:31+09:00",
+   "overallRank": 8,
+   "subCategory": "자취 꿀템",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
+    "source": "coupang_keyword_search",
     "coupangRank": 1,
-    "keyword": null,
-    "joopjwiScore": 1.0
+    "keyword": "자취 꿀템",
+    "joopjwiScore": 1.1
    },
    "price_history": {
-    "previousPrice": 6990,
-    "previousPriceDate": "2026-11-16",
+    "previousPrice": null,
+    "previousPriceDate": null,
     "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "궁금한 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
