@@ -5,7 +5,8 @@ python make_reel_v2.py <spec.json> <media 폴더> <tts.mp3> <tts_timings.json> <
 레이아웃 (고정):
   상단 검정 밴드  : 날짜 / "10,000원 이하 꿀템" / "오늘의 특가 TOP 5"
   가운데 흰 영역  : 상품 이미지 박스(효과는 박스 안에서만) / TTS 자막 줄 / 요약 상품명 + 가격
-  하단 검정 밴드  : ★프로필 링크 클릭★ / 매일 업데이트되는 / 생활 특가템 득템하쥐
+  하단 검정 밴드  : ★프로필 링크 확인★ / 매일 업데이트
+  (모바일 상단 UI에 날짜가 가리지 않도록 전체를 DY만큼 아래로 내림, 대표 지시 11/18)
 """
 import json
 import math
@@ -25,10 +26,11 @@ DOH = lambda s: ImageFont.truetype(str(F / "BMDoHyeon.ttf"), s)
 PB = lambda s: ImageFont.truetype(str(F / "Pretendard-Bold.otf"), s)
 PX = lambda s: ImageFont.truetype(str(F / "Pretendard-ExtraBold.otf"), s)
 
-TOP_H, BOT_Y = 400, 1520
-BOX = (60, 440, 1020, 1150)          # 상품 이미지 박스 (효과는 이 안에서만)
-SUB_Y = 1218                          # 자막 줄 중심
-NAME_Y = 1372                         # 요약 상품명 + 가격 중심
+DY = 140                              # 전체 디자인을 아래로 내린 양
+TOP_H, BOT_Y = 400 + DY, 1520 + DY
+BOX = (60, 440 + DY, 1020, 1150 + DY)  # 상품 이미지 박스 (효과는 이 안에서만)
+SUB_Y = 1218 + DY                     # 자막 줄 중심
+NAME_Y = 1372 + DY                        # 요약 상품명 + 가격 중심
 
 
 def fit_font(d, text, fn, size, maxw):
@@ -47,24 +49,18 @@ def base_layer(date_label):
     d = ImageDraw.Draw(im)
     # 상단
     d.rectangle((0, 0, W, TOP_H), fill=BLACK)
-    d.text((W / 2, 92), date_label, font=PB(46), fill=WHITE, anchor="mm")
-    d.text((W / 2, 196), "10,000원 이하 꿀템", font=DOH(104), fill=LIME, anchor="mm")
+    d.text((W / 2, 92 + DY), date_label, font=PB(46), fill=WHITE, anchor="mm")
+    d.text((W / 2, 196 + DY), "10,000원 이하 꿀템", font=DOH(104), fill=LIME, anchor="mm")
     a, b = "오늘의 특가 ", "TOP 5"
     f = DOH(104)
     wa, wb = d.textlength(a, font=f), d.textlength(b, font=f)
     x0 = W / 2 - (wa + wb) / 2
-    d.text((x0, 312), a, font=f, fill=WHITE, anchor="lm")
-    d.text((x0 + wa, 312), b, font=f, fill=YELLOW, anchor="lm")
+    d.text((x0, 312 + DY), a, font=f, fill=WHITE, anchor="lm")
+    d.text((x0 + wa, 312 + DY), b, font=f, fill=YELLOW, anchor="lm")
     # 하단
     d.rectangle((0, BOT_Y, W, H), fill=BLACK)
-    d.text((W / 2, 1610), "★프로필 링크 클릭★", font=PX(60), fill=WHITE, anchor="mm")
-    a, b = "매일 업데이트", "되는"
-    f = DOH(72)
-    wa, wb = d.textlength(a, font=f), d.textlength(b, font=f)
-    x0 = W / 2 - (wa + wb) / 2
-    d.text((x0, 1712), a, font=f, fill=LIME, anchor="lm")
-    d.text((x0 + wa, 1712), b, font=f, fill=WHITE, anchor="lm")
-    d.text((W / 2, 1806), "생활 특가템 득템하쥐", font=DOH(72), fill=WHITE, anchor="mm")
+    d.text((W / 2, BOT_Y + 78), "★프로필 링크 확인★", font=PX(60), fill=WHITE, anchor="mm")
+    d.text((W / 2, BOT_Y + 178), "매일 업데이트", font=DOH(84), fill=LIME, anchor="mm")
     return im
 
 
