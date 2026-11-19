@@ -1,0 +1,84 @@
+{
+ "id": "goldfish-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "욕실 수도꼭지에 기다란 투명 호스를 연결하고, 그 안에 금붕어 한 마리를 쏙 넣었습니다."
+  },
+  {
+   "seg": "B",
+   "spoken": "물을 틀자 물살을 타고 출발한 금붕어는 욕실 문턱을 넘어 거실 바닥으로 미끄러져 나가는데요,"
+  },
+  {
+   "seg": "C",
+   "spoken": "거실 한가운데를 빙글빙글 감아 도는 호스를 따라 마치 워터슬라이드를 타듯 쭉쭉 나아갑니다."
+  },
+  {
+   "seg": "D",
+   "spoken": "의자 밑을 지나고, 삼각대를 타고 올라갔다가 다시 내려오고,"
+  },
+  {
+   "seg": "E",
+   "spoken": "서랍장과 탁자 위를 넘어 바구니까지 넘더니,"
+  },
+  {
+   "seg": "F",
+   "spoken": "마지막으로 향한 곳은 다름 아닌 베란다 창문."
+  },
+  {
+   "seg": "G",
+   "spoken": "그런데 호스가 아파트 난간 밖으로 이어져 있어요. 이대로 떨어지는 걸까요?"
+  },
+  {
+   "seg": "H",
+   "spoken": "다행히 호스 끝에서 기다리고 있던 건 넓은 새 어항이었습니다. 근데.. 이 금붕어, 집으로는 어떻게 돌아갈까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "splash",
+   "prompt": "small water splash, fish dropped into water tube",
+   "seconds": 0.8
+  },
+  {
+   "name": "whoosh",
+   "prompt": "quick cartoon whoosh transition swish",
+   "seconds": 0.7
+  },
+  {
+   "name": "slide",
+   "prompt": "water slide swoosh, playful, flowing water through a tube",
+   "seconds": 1.5
+  },
+  {
+   "name": "suspense",
+   "prompt": "comedic cartoon suspense sting, plucked strings, short dun dun dun",
+   "seconds": 1.6
+  },
+  {
+   "name": "ding",
+   "prompt": "cute cartoon success sparkle ding",
+   "seconds": 0.8
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "playful adventurous comedic background music, light pizzicato strings, ukulele and glockenspiel, journey feeling, steady bouncy tempo, sparse arrangement for voice-over, no vocals",
+  "seconds": 50
+ }
+}
