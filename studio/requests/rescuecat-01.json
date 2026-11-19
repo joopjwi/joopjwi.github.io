@@ -1,0 +1,78 @@
+{
+ "id": "rescuecat-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.05
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "어두운 콘크리트 틈 아래, 잔뜩 겁을 먹은 아기 고양이 한 마리가 있습니다. 사람만 보면 이렇게 하악질부터 하는데요,"
+  },
+  {
+   "seg": "B",
+   "spoken": "주변은 물웅덩이와 쓰레기뿐인 축축한 바닥. 버려진 건지, 길에서 태어난 건지 모를 이 작은 고양이는 여기서 혼자 버텨왔던 것 같아요."
+  },
+  {
+   "seg": "C",
+   "spoken": "조심스럽게 다가가 보지만 아이는 벽 쪽으로 몸을 바짝 붙인 채 계속 경계하고,"
+  },
+  {
+   "seg": "D",
+   "spoken": "구조자는 서두르지 않고 천천히 손을 내밀어 봅니다. 처음엔 움찔하던 고양이도 조금씩 손길을 허락하기 시작하는데요,"
+  },
+  {
+   "seg": "E",
+   "spoken": "간식을 내밀자, 그제야 경계를 풀고 허겁지겁 먹기 시작합니다."
+  },
+  {
+   "seg": "F",
+   "spoken": "그렇게 구조된 고양이는 눈곱을 닦고, 꼬질꼬질했던 몸을 깨끗하게 씻은 뒤,"
+  },
+  {
+   "seg": "G",
+   "spoken": "보송보송한 수건에 싸여 몸을 말리고,"
+  },
+  {
+   "seg": "H",
+   "spoken": "따뜻한 밥까지 한 그릇 뚝딱 비웁니다."
+  },
+  {
+   "seg": "I",
+   "spoken": "하악질하던 그 고양이는 어디 가고, 이제는 이렇게 편안한 얼굴이 됐네요. 근데.. 이 아이에게 어떤 이름을 지어주면 좋을까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "hiss",
+   "prompt": "small kitten hissing, short",
+   "seconds": 1.0
+  },
+  {
+   "name": "drip",
+   "prompt": "water dripping in a damp alley, short ambience",
+   "seconds": 2.0
+  },
+  {
+   "name": "sparkle",
+   "prompt": "soft magical sparkle twinkle",
+   "seconds": 1.2
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "emotional gentle piano background music that starts sad and lonely then gradually turns warm and hopeful, soft strings, animal rescue story mood, sparse for voice-over, no vocals",
+  "seconds": 60
+ }
+}
