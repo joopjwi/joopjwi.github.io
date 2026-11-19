@@ -27,13 +27,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: 준비
+      - name: 준비 (ffmpeg)
         timeout-minutes: 6
         run: |
-          for i in 1 2 3; do
-            timeout 120 sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null && break
-            timeout 120 sudo apt-get update -qq || true
-          done
+          if ! command -v ffmpeg >/dev/null; then
+            timeout 150 sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null 2>&1 || true
+          fi
+          if ! command -v ffmpeg >/dev/null; then
+            curl -sSL -o /tmp/ff.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+            mkdir -p /tmp/ff && tar -xJf /tmp/ff.tar.xz -C /tmp/ff --strip-components=1
+            sudo cp /tmp/ff/ffmpeg /tmp/ff/ffprobe /usr/local/bin/
+          fi
           ffmpeg -version | head -1
       - name: 요청 찾기
         id: req
