@@ -4,6 +4,7 @@ python make_audio.py <request.json> <출력 폴더>
 환경변수: ELEVENLABS_API_KEY
 - 나레이션: tools/reels/tts_eleven.py 재사용 (쉼 0.2초 커트 + 단어 타이밍)
 - 효과음: request["sfx"] = [{"name", "prompt", "seconds"}]
+- 외부 음원: request["fetch"] = [{"url", "name"}]
 - BGM: request["music"] = {"prompt", "seconds"} (실패해도 계속 진행, status.json에 기록)
 """
 import json
@@ -31,8 +32,20 @@ def main(req_path, out_dir):
     spec = json.load(open(req_path, encoding="utf-8"))
     status = {"id": spec["id"], "tts": "pending", "sfx": {}, "music": "skipped"}
 
-    tts_eleven.main(req_path, str(out))
-    status["tts"] = "ok"
+    if spec.get("chunks"):
+        tts_eleven.main(req_path, str(out))
+        status["tts"] = "ok"
+    else:
+        status["tts"] = "skipped"
+
+    # 외부 음원(예: Creative Claw로 만든 BGM) 내려받기
+    for f in spec.get("fetch", []):
+        try:
+            with urllib.request.urlopen(f["url"], timeout=120) as r:
+                (out / f["name"]).write_bytes(r.read())
+            status.setdefault("fetch", {})[f["name"]] = "ok"
+        except Exception as e:  # noqa: BLE001
+            status.setdefault("fetch", {})[f["name"]] = f"error: {str(e)[:200]}"
 
     for s in spec.get("sfx", []):
         try:
