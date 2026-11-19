@@ -1,0 +1,75 @@
+{
+ "id": "hydrodip-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "물이 가득 찬 커다란 수조 위에, 한 남자가 얇은 필름 한 장을 조심스럽게 펼칩니다."
+  },
+  {
+   "seg": "B",
+   "spoken": "물 위에 둥둥 뜬 이 필름에는 카본 무늬가 인쇄돼 있는데요,"
+  },
+  {
+   "seg": "C",
+   "spoken": "여기에 특수 약품을 골고루 뿌려주면, 필름이 녹으면서 무늬만 물 위에 얇게 남게 됩니다."
+  },
+  {
+   "seg": "D",
+   "spoken": "그리고 이번엔 아무 무늬도 없는 회색 플라스틱 부품을 들고 와서, 천천히 물속으로 담그는데요,"
+  },
+  {
+   "seg": "E",
+   "spoken": "손으로 꾹꾹 눌러 끝까지 밀어 넣고,"
+  },
+  {
+   "seg": "F",
+   "spoken": "다시 꺼내 보니.. 회색이던 부품이 감쪽같이 새까만 카본 무늬로 바뀌어 있습니다."
+  },
+  {
+   "seg": "G",
+   "spoken": "이 기술의 이름은 수전사, 하이드로 디핑이라고 하는데요. 근데.. 이렇게 만든 걸 진짜 카본이라고 팔면 사기일까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "whoosh",
+   "prompt": "quick cartoon whoosh transition swish",
+   "seconds": 0.7
+  },
+  {
+   "name": "spray",
+   "prompt": "spray gun hissing mist spray, short burst",
+   "seconds": 1.5
+  },
+  {
+   "name": "dip",
+   "prompt": "object slowly dipped into water, gentle splash and bubbles",
+   "seconds": 1.5
+  },
+  {
+   "name": "reveal",
+   "prompt": "magical reveal shimmer sparkle, satisfying",
+   "seconds": 1.2
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "curious satisfying process video background music, light plucky synth and marimba, steady medium tempo, clean and modern, sparse for voice-over, no vocals",
+  "seconds": 52
+ }
+}
