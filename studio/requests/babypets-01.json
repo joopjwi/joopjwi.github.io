@@ -1,0 +1,70 @@
+{
+ "id": "babypets-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "길가에서 발견된 손바닥만 한 아기 고양이 한 마리."
+  },
+  {
+   "seg": "B",
+   "spoken": "집으로 데려와 반짝이는 상자에 담아, 갓 태어난 아기 옆에 살짝 내려놓는데요,"
+  },
+  {
+   "seg": "C",
+   "spoken": "처음 보는 침대 위를 조심조심 탐색하던 고양이는,"
+  },
+  {
+   "seg": "D",
+   "spoken": "아기의 작은 발에 코를 대고 킁킁 냄새부터 맡아봅니다."
+  },
+  {
+   "seg": "E",
+   "spoken": "그리고 어느새 아기 옆에 나란히 누워 있는 사이가 됐죠."
+  },
+  {
+   "seg": "F",
+   "spoken": "이번엔 커다란 허스키. 아기 옆에 딱 붙어 누워 꼼짝도 안 하는데요,"
+  },
+  {
+   "seg": "G",
+   "spoken": "허스키가 고개를 돌려 얼굴을 들이밀자, 아기가 꺄르르 웃음을 터뜨립니다. 근데.. 아기가 크면 이 친구들을 기억할까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "sparkle",
+   "prompt": "soft magical sparkle twinkle",
+   "seconds": 1.2
+  },
+  {
+   "name": "sniff",
+   "prompt": "tiny cute kitten sniffing, soft",
+   "seconds": 0.8
+  },
+  {
+   "name": "whoosh",
+   "prompt": "soft gentle whoosh transition",
+   "seconds": 0.7
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "warm heartwarming gentle background music, soft piano and music box, tender and cute, baby and pets mood, sparse for voice-over, no vocals",
+  "seconds": 44
+ }
+}
