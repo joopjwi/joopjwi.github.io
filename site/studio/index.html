@@ -69,6 +69,22 @@
   .flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
   .flow div{background:#0e0e10;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:13px}
   .flow b{display:block;color:var(--yellow);font-size:14px;margin-bottom:4px}
+  .dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+  .done{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;gap:12px;padding:12px}
+  .done.up{opacity:.55}
+  .done .pv{flex:none;width:110px;aspect-ratio:9/16;border-radius:10px;overflow:hidden;background:#000}
+  .done .pv video,.done .pv img{width:100%;height:100%;object-fit:cover;display:block}
+  .done .info{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px}
+  .done .nm{font-weight:800;font-size:15px}
+  .field{background:#0e0e10;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;position:relative}
+  .field .lb{font-size:11px;color:var(--muted);margin-bottom:3px;display:flex;justify-content:space-between;align-items:center}
+  .field .tx{white-space:pre-wrap;word-break:break-all;max-height:84px;overflow:auto}
+  .cp{background:var(--yellow);color:#000;border:0;border-radius:6px;padding:3px 10px;font:inherit;font-size:12px;font-weight:800;cursor:pointer}
+  .dl{display:flex;gap:6px}
+  .dl a{flex:1;text-align:center;background:#202024;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:8px 6px;font-size:13px;font-weight:700;text-decoration:none}
+  .dl a.main{background:var(--yellow);color:#000;border-color:var(--yellow)}
+  .upck{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;cursor:pointer;padding:6px 0}
+  .upck input{width:20px;height:20px;accent-color:var(--yellow)}
   .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--yellow);color:#000;font-weight:800;padding:10px 18px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none;z-index:20}
   .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
   textarea.copybox{width:100%;height:120px;background:#0e0e10;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;font-size:13px}
@@ -83,6 +99,7 @@
     </div>
     <nav>
       <button data-v="find" class="on">후보 찾기</button>
+      <button data-v="done">완성본<span class="n" id="nDone"></span></button>
       <button data-v="saved">찜한 영상<span class="n" id="nSaved"></span></button>
       <button data-v="used">사용한 영상<span class="n" id="nUsed"></span></button>
       <button data-v="setup">설정 · 사용법</button>
@@ -118,6 +135,16 @@
       <div class="status" id="status"></div>
     </div>
     <div class="grid" id="results"></div>
+  </section>
+
+  <section class="view" id="v-done">
+    <div class="panel" style="padding:12px 16px">
+      <div class="row" style="justify-content:space-between">
+        <div class="note" id="doneSummary">불러오는 중…</div>
+        <label style="font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center"><input type="checkbox" id="hideUploaded"> 업로드 안 한 것만</label>
+      </div>
+    </div>
+    <div class="dgrid" id="doneList"></div>
   </section>
 
   <section class="view" id="v-saved"><div class="grid" id="savedList"></div></section>
@@ -171,7 +198,7 @@
     <div class="panel">
       <h2>데이터 관리</h2>
       <div class="row">
-        <button class="btn ghost" id="btnExport">찜·사용 목록 복사 (백업)</button>
+        <button class="btn ghost" id="btnExport">찜·사용·업로드 기록 복사 (백업)</button>
         <button class="btn ghost" id="btnImportShow">백업 붙여넣기</button>
       </div>
       <div id="importBox" hidden style="margin-top:10px">
@@ -207,7 +234,9 @@
     used: load("st_used", {}),
     genres: load("st_genres", ["animal"]),
     quota: load("st_quota", {day:"", used:0}),
-    cache: load("st_cache", null)
+    cache: load("st_cache", null),
+    uploaded: load("st_uploaded", {}),
+    done: []
   };
 
   // 할당량 날짜 = 미국 태평양 기준 날짜
@@ -409,7 +438,53 @@
     $("usedList").innerHTML = list.length ? list.map(function(v){ return card(v,null,"used"); }).join("") : '<div class="empty">아직 사용한 영상이 없어요.</div>';
     $("nUsed").textContent = list.length ? list.length : "";
   }
-  function renderAll(){ renderResults(); renderSaved(); renderUsed(); }
+  function renderAll(){ renderResults(); renderSaved(); renderUsed(); renderDone(); }
+
+  // ---------- 완성본 ----------
+  async function loadDone(){
+    try{
+      var r = await fetch("done/done.json?t=" + Date.now(), {cache:"no-store"});
+      var j = r.ok ? await r.json() : {items:[]};
+      state.done = (j.items || []).sort(function(a,b){ return (b.createdAt||"").localeCompare(a.createdAt||""); });
+    }catch(e){ state.done = []; }
+    renderDone();
+  }
+  function renderDone(){
+    var el = $("doneList"); if (!el) return;
+    var hide = $("hideUploaded").checked;
+    var all = state.done, up = all.filter(function(d){ return state.uploaded[d.id]; }).length;
+    $("nDone").textContent = all.length ? (all.length - up) + "/" + all.length : "";
+    $("doneSummary").textContent = all.length ? ("완성본 " + all.length + "개 · 업로드 완료 " + up + "개 · 남은 것 " + (all.length - up) + "개") : "아직 완성본이 없어요.";
+    var list = all.filter(function(d){ return !(hide && state.uploaded[d.id]); });
+    el.innerHTML = list.map(function(d){
+      var u = state.uploaded[d.id];
+      return '<div class="done' + (u ? " up" : "") + '" data-did="' + esc(d.id) + '">' +
+        '<div class="pv"><video src="' + esc(d.video) + '" poster="' + esc(d.poster || "") + '" preload="none" controls playsinline></video></div>' +
+        '<div class="info">' +
+          '<div class="stats"><span class="tag g">' + esc(d.category || "-") + '</span><span class="tag">' + esc(d.date || "") + '</span>' + (d.duration ? '<span class="tag">' + esc(d.duration) + '초</span>' : '') + '</div>' +
+          '<div class="nm">' + esc(d.name) + '</div>' +
+          '<div class="field"><div class="lb">유튜브 제목 <button class="cp" data-copy="title">복사</button></div><div class="tx">' + esc(d.ytTitle) + '</div></div>' +
+          '<div class="field"><div class="lb">유튜브 설명 <button class="cp" data-copy="desc">복사</button></div><div class="tx">' + esc(d.ytDesc) + '</div></div>' +
+          '<div class="dl"><a class="main" href="' + esc(d.video) + '" download="' + esc(d.fileName || (d.id + ".mp4")) + '">⬇ 영상 다운로드</a><a href="' + esc(d.video) + '" target="_blank" rel="noopener">새 창에서 열기</a></div>' +
+          '<label class="upck"><input type="checkbox" data-up="1"' + (u ? " checked" : "") + '> 업로드 완료' + (u ? ' <span class="note">(' + esc(u) + ')</span>' : '') + '</label>' +
+        '</div></div>';
+    }).join("") || '<div class="empty">' + (all.length ? "업로드 안 한 완성본이 없어요. 🎉" : "완성본이 생기면 여기에 떠요.") + '</div>';
+  }
+  document.addEventListener("click", async function(e){
+    var c = e.target.closest("[data-copy]"); if (!c) return;
+    var d = state.done.filter(function(x){ return x.id === c.closest("[data-did]").getAttribute("data-did"); })[0];
+    if (!d) return;
+    var ok = await copyText(c.getAttribute("data-copy") === "title" ? d.ytTitle : d.ytDesc);
+    toast(ok ? (c.getAttribute("data-copy") === "title" ? "제목 복사됨" : "설명 복사됨") : "복사 실패 — 길게 눌러 직접 복사해 주세요");
+  });
+  document.addEventListener("change", function(e){
+    if (e.target.matches("[data-up]")){
+      var id = e.target.closest("[data-did]").getAttribute("data-did");
+      if (e.target.checked) state.uploaded[id] = todayKR(); else delete state.uploaded[id];
+      save("st_uploaded", state.uploaded); renderDone();
+    }
+    if (e.target.id === "hideUploaded") renderDone();
+  });
 
   function slim(v){
     return {id:v.id,title:v.title,channel:v.channel,thumb:v.thumb,views:v.views,likes:v.likes,vph:v.vph,likeRate:v.likeRate,
@@ -500,14 +575,14 @@
 
   // ---------- 백업 ----------
   $("btnExport").addEventListener("click", async function(){
-    var ok = await copyText(JSON.stringify({saved:state.saved, used:state.used}));
+    var ok = await copyText(JSON.stringify({saved:state.saved, used:state.used, uploaded:state.uploaded}));
     $("dataStatus").textContent = ok ? "복사했어요. 메모장 등에 붙여넣어 보관하세요." : "복사에 실패했어요.";
   });
   $("btnImportShow").addEventListener("click", function(){ $("importBox").hidden = !$("importBox").hidden; });
   $("btnImport").addEventListener("click", function(){
     try{
       var d = JSON.parse($("importText").value);
-      Object.assign(state.saved, d.saved || {}); Object.assign(state.used, d.used || {});
+      Object.assign(state.saved, d.saved || {}); Object.assign(state.used, d.used || {}); Object.assign(state.uploaded, d.uploaded || {}); save("st_uploaded", state.uploaded);
       save("st_saved", state.saved); save("st_used", state.used); renderAll();
       $("dataStatus").textContent = "불러왔어요.";
     }catch(e){ $("dataStatus").textContent = "형식이 올바르지 않아요."; }
@@ -515,7 +590,7 @@
 
   // ---------- 시작 ----------
   $("needKey").hidden = !!state.key;
-  renderGenres(); renderQuota(); renderAll();
+  renderGenres(); renderQuota(); renderAll(); loadDone();
 })();
 </script>
 </body>
