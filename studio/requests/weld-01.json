@@ -1,0 +1,67 @@
+{
+ "id": "weld-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "스테인리스 파이프 두 개를 이어 붙이려면, 먼저 이음새를 작은 점 용접으로 살짝 고정해 줍니다."
+  },
+  {
+   "seg": "B",
+   "spoken": "그다음 도넛처럼 생긴 이 장치를 파이프에 끼우고 꽉 물려주는데요,"
+  },
+  {
+   "seg": "C",
+   "spoken": "버튼을 누르면 이제 사람은 손을 떼고 구경만 하면 됩니다. 장치 안에서 용접봉이 파이프를 한 바퀴 빙 돌면서 알아서 용접을 해버리거든요."
+  },
+  {
+   "seg": "D",
+   "spoken": "작업이 끝나고 장치를 열어 보면,"
+  },
+  {
+   "seg": "E",
+   "spoken": "자로 잰 듯 매끈한 용접 자국이 한 줄로 딱 남아 있어요. 이 기계의 이름은 오비탈 용접기. 근데.. 이런 기계가 나오면 용접공은 사라지게 될까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "zap",
+   "prompt": "short electric welding arc zap crackle",
+   "seconds": 1.0
+  },
+  {
+   "name": "click",
+   "prompt": "metal clamp snapping shut, mechanical click",
+   "seconds": 0.6
+  },
+  {
+   "name": "hum",
+   "prompt": "machine motor humming and welding arc buzzing steadily",
+   "seconds": 3.0
+  },
+  {
+   "name": "reveal",
+   "prompt": "magical reveal shimmer sparkle, satisfying",
+   "seconds": 1.2
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "satisfying modern technology background music, light plucky synth and soft electronic beat, curious and clean, sparse for voice-over, no vocals",
+  "seconds": 36
+ }
+}
