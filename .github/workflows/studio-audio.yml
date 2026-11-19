@@ -31,14 +31,26 @@ jobs:
         timeout-minutes: 6
         run: |
           if ! command -v ffmpeg >/dev/null; then
-            timeout 150 sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null 2>&1 || true
+            # PyPI의 정적 ffmpeg (apt 미러 장애와 무관)
+            pip install -q imageio-ffmpeg
+            FF=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")
+            sudo ln -sf "$FF" /usr/local/bin/ffmpeg
           fi
-          if ! command -v ffmpeg >/dev/null; then
-            curl -sSL -o /tmp/ff.tar.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
-            mkdir -p /tmp/ff && tar -xJf /tmp/ff.tar.xz -C /tmp/ff --strip-components=1
-            sudo cp /tmp/ff/ffmpeg /tmp/ff/ffprobe /usr/local/bin/
+          if ! command -v ffprobe >/dev/null; then
+            # tools/reels/tts_eleven.py가 쓰는 '길이 조회'만 흉내 내는 ffprobe 대용
+            sudo tee /usr/local/bin/ffprobe >/dev/null <<'PY'
+          #!/usr/bin/env python3
+          import re, subprocess, sys
+          f = sys.argv[-1]
+          err = subprocess.run(["ffmpeg", "-i", f], capture_output=True, text=True).stderr
+          m = re.search(r"Duration: (\d+):(\d+):([\d.]+)", err)
+          print(int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0)
+          PY
+            sudo sed -i 's/^          //' /usr/local/bin/ffprobe
+            sudo chmod +x /usr/local/bin/ffprobe
           fi
           ffmpeg -version | head -1
+          ffprobe -v error -show_entries format=duration -of csv=p=0 /dev/null || true
       - name: 요청 찾기
         id: req
         run: |
