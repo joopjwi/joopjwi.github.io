@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>원본 작업실 · 해외 쇼츠 후보 찾기</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --bg:#0b0b0c; --panel:#151517; --line:#2a2a2e; --text:#f4f4f5; --muted:#9b9ba3;
+    --yellow:#ffe600; --orange:#ff9d00; --green:#43d17a; --red:#ff5a5a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:Pretendard,-apple-system,"Apple SD Gothic Neo",sans-serif;font-size:15px;line-height:1.5}
+  header{position:sticky;top:0;z-index:5;background:rgba(11,11,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+  .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0 10px}
+  .brand{font-weight:900;font-size:20px;letter-spacing:-.5px}
+  .brand b{color:var(--yellow)}
+  .quota{font-size:12px;color:var(--muted);text-align:right}
+  .quota .bar{width:120px;height:5px;background:var(--line);border-radius:3px;margin-top:4px;overflow:hidden;margin-left:auto}
+  .quota .bar i{display:block;height:100%;background:var(--yellow)}
+  nav{display:flex;gap:4px;overflow-x:auto;padding-bottom:10px}
+  nav button{flex:none;background:none;border:1px solid var(--line);color:var(--muted);padding:7px 14px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}
+  nav button.on{background:var(--yellow);border-color:var(--yellow);color:#000}
+  nav button .n{font-size:12px;opacity:.8;margin-left:4px}
+  main{padding:18px 0 60px}
+  .view{display:none}.view.on{display:block}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:16px}
+  h2{font-size:17px;margin:0 0 12px;font-weight:800}
+  h3{font-size:15px;margin:18px 0 6px}
+  .genres{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+  .chip{background:#202024;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:10px;font:inherit;font-weight:700;cursor:pointer}
+  .chip.on{border-color:var(--yellow);color:var(--yellow);background:#2a2600}
+  .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .row label{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px}
+  select,input[type=text],input[type=password],input[type=number]{background:#0e0e10;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:8px 10px;font:inherit}
+  input[type=text].grow{flex:1;min-width:200px}
+  .btn{background:var(--yellow);color:#000;border:0;border-radius:10px;padding:10px 16px;font:inherit;font-weight:800;cursor:pointer}
+  .btn.ghost{background:#202024;color:var(--text);border:1px solid var(--line)}
+  .btn:disabled{opacity:.5;cursor:wait}
+  .status{font-size:13px;color:var(--muted);margin-top:10px;min-height:20px}
+  .status.err{color:var(--red)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .card.used{opacity:.45}
+  .thumb{position:relative;display:block;aspect-ratio:16/9;background:#000}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .dur{position:absolute;right:6px;bottom:6px;color:#fff;background:rgba(0,0,0,.8);font-size:12px;font-weight:700;padding:1px 6px;border-radius:4px}
+  .rank{position:absolute;left:6px;top:6px;background:var(--yellow);color:#000;font-weight:900;font-size:13px;padding:2px 8px;border-radius:6px}
+  .body{padding:12px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .title{font-weight:700;font-size:14px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .ch{font-size:12px;color:var(--muted)}
+  .stats{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:12px;background:#202024;border-radius:6px;padding:2px 8px;color:#d6d6db}
+  .tag.hot{background:#3a1d00;color:var(--orange);font-weight:800}
+  .tag.cc{background:#0f2e1c;color:var(--green);font-weight:800}
+  .tag.g{background:#2a2600;color:var(--yellow)}
+  .acts{display:flex;gap:6px;margin-top:auto;flex-wrap:wrap}
+  .acts button,.acts a{flex:1;min-width:70px;text-align:center;background:#202024;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:7px 6px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none}
+  .acts .main{background:var(--yellow);color:#000;border-color:var(--yellow)}
+  .acts .on{color:var(--yellow);border-color:var(--yellow)}
+  .empty{color:var(--muted);text-align:center;padding:40px 0}
+  ol.steps{padding-left:20px;margin:6px 0}
+  ol.steps li{margin:6px 0}
+  code{background:#0e0e10;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:13px}
+  .note{font-size:13px;color:var(--muted)}
+  .flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+  .flow div{background:#0e0e10;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:13px}
+  .flow b{display:block;color:var(--yellow);font-size:14px;margin-bottom:4px}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--yellow);color:#000;font-weight:800;padding:10px 18px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none;z-index:20}
+  .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+  textarea.copybox{width:100%;height:120px;background:#0e0e10;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">원본 <b>작업실</b></div>
+      <div class="quota"><span id="quotaText">오늘 API 사용량 0 / 10,000</span><div class="bar"><i id="quotaBar" style="width:0"></i></div></div>
+    </div>
+    <nav>
+      <button data-v="find" class="on">후보 찾기</button>
+      <button data-v="saved">찜한 영상<span class="n" id="nSaved"></span></button>
+      <button data-v="used">사용한 영상<span class="n" id="nUsed"></span></button>
+      <button data-v="setup">설정 · 사용법</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- 후보 찾기 -->
+  <section class="view on" id="v-find">
+    <div class="panel" id="needKey" hidden>
+      <h2>먼저 유튜브 API 키를 넣어주세요</h2>
+      <p class="note">키가 있어야 후보를 검색할 수 있어요. <a href="#" data-go="setup" style="color:var(--yellow)">설정 · 사용법</a> 탭에서 발급 방법을 보고 키를 저장해 주세요.</p>
+    </div>
+    <div class="panel">
+      <h2>장르 고르기</h2>
+      <div class="genres" id="genres"></div>
+      <div class="row" style="margin-bottom:10px">
+        <input type="text" class="grow" id="customQ" placeholder="직접 검색 (영어 추천) 예: seal aquarium japan">
+      </div>
+      <div class="row">
+        <label>기간 <select id="period"><option value="3">최근 3일</option><option value="7" selected>최근 7일</option><option value="14">최근 14일</option><option value="30">최근 30일</option></select></label>
+        <label>길이 <select id="dur"><option value="60">1분 이하</option><option value="180" selected>3분 이하</option><option value="240">4분 이하</option></select></label>
+        <label>최소 조회수 <select id="minViews"><option value="10000">1만</option><option value="50000">5만</option><option value="100000" selected>10만</option><option value="500000">50만</option></select></label>
+        <label>라이선스 <select id="license"><option value="any">전체</option><option value="creativeCommon">CC만 (안전)</option></select></label>
+        <label><input type="checkbox" id="noKo" checked> 한국어 영상 제외</label>
+        <label><input type="checkbox" id="hideUsed" checked> 사용한 영상 숨기기</label>
+      </div>
+      <div class="row" style="margin-top:14px">
+        <button class="btn" id="btnSearch">선택한 장르 검색</button>
+        <button class="btn ghost" id="btnAll">오늘의 추천 (전 장르 한번에)</button>
+      </div>
+      <div class="status" id="status"></div>
+    </div>
+    <div class="grid" id="results"></div>
+  </section>
+
+  <section class="view" id="v-saved"><div class="grid" id="savedList"></div></section>
+  <section class="view" id="v-used"><div class="grid" id="usedList"></div></section>
+
+  <!-- 설정 -->
+  <section class="view" id="v-setup">
+    <div class="panel">
+      <h2>하루 작업 흐름</h2>
+      <div class="flow">
+        <div><b>① 후보 고르기</b>'오늘의 추천'을 누르고 시간당 조회수가 높은 영상 중 반전·사건이 있는 걸 고르기</div>
+        <div><b>② 작업 요청 복사</b>카드의 '작업 요청' 버튼으로 영상 정보를 복사</div>
+        <div><b>③ 원본 받기</b>영상을 다운받기</div>
+        <div><b>④ Claude 채팅에 올리기</b>복사한 요청 + 영상 파일을 같이 보내면 완성본·제목·설명이 나옴</div>
+        <div><b>⑤ 업로드</b>완성본을 올리고 여기서 '사용함' 처리</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>유튜브 API 키</h2>
+      <div class="row">
+        <input type="password" class="grow" id="apiKey" placeholder="AIza로 시작하는 키 붙여넣기" autocomplete="off">
+        <button class="btn" id="btnSaveKey">저장</button>
+        <button class="btn ghost" id="btnTestKey">연결 테스트</button>
+      </div>
+      <div class="status" id="keyStatus"></div>
+      <p class="note">키는 지금 쓰는 이 기기의 브라우저에만 저장돼요. 휴대폰과 PC를 둘 다 쓰면 각각 한 번씩 넣어주세요.</p>
+
+      <h3>키 발급 방법 (무료, 5분)</h3>
+      <ol class="steps">
+        <li><a href="https://console.cloud.google.com/" target="_blank" rel="noopener" style="color:var(--yellow)">console.cloud.google.com</a>에 구글 계정으로 로그인 (약관 동의)</li>
+        <li>상단의 프로젝트 선택 → <b>새 프로젝트</b> → 이름 예: <code>shorts-studio</code> → 만들기</li>
+        <li>왼쪽 메뉴 <b>API 및 서비스 → 라이브러리</b> → <code>YouTube Data API v3</code> 검색 → <b>사용</b></li>
+        <li><b>API 및 서비스 → 사용자 인증 정보</b> → <b>+ 사용자 인증 정보 만들기 → API 키</b></li>
+        <li>만들어진 키를 눌러 <b>키 제한</b> 설정 (중요, 남이 키를 못 쓰게):<br>
+          · 애플리케이션 제한: <b>웹사이트</b> → <code>https://joopjwi.github.io/*</code> 추가<br>
+          · API 제한: <b>키 제한</b> → <code>YouTube Data API v3</code>만 체크 → 저장</li>
+        <li>키를 복사해서 위 칸에 붙여넣고 <b>저장 → 연결 테스트</b></li>
+      </ol>
+      <p class="note">결제 정보 등록은 필요 없어요. 하루 무료 한도는 10,000 단위로, 검색 한 번에 약 100이 들어요. '오늘의 추천'은 약 600이라 하루 10번 이상 돌려도 충분해요. 한도는 한국 시간 오후 4~5시쯤(미국 태평양 자정) 초기화돼요.</p>
+    </div>
+    <div class="panel">
+      <h2>원본 고르는 기준</h2>
+      <ol class="steps">
+        <li><b>사건이 있는 영상</b>: 처음 3초 안에 "어? 왜?"가 생기고 끝에 반전이 있는 것 (예: 물범을 세척 → 알고 보니 진짜 물범)</li>
+        <li><b>말이 없어도 이해되는 영상</b>: 원본 대사에 의존하면 재가공이 어려워요</li>
+        <li><b>15~90초 분량</b>: 필요한 장면만 써도 50초 쇼츠가 나오는 길이</li>
+        <li><b>피할 것</b>: 방송사·영화·뮤직비디오 클립, 일반인 얼굴이 크게 나오는 영상, 사고 피해자가 나오는 영상</li>
+        <li><b>CC 라이선스</b> 영상은 출처만 밝히면 재사용이 허락된 영상이라 가장 안전해요</li>
+      </ol>
+    </div>
+    <div class="panel">
+      <h2>데이터 관리</h2>
+      <div class="row">
+        <button class="btn ghost" id="btnExport">찜·사용 목록 복사 (백업)</button>
+        <button class="btn ghost" id="btnImportShow">백업 붙여넣기</button>
+      </div>
+      <div id="importBox" hidden style="margin-top:10px">
+        <textarea class="copybox" id="importText" placeholder="백업한 내용을 붙여넣기"></textarea>
+        <button class="btn" id="btnImport" style="margin-top:8px">불러오기</button>
+      </div>
+      <div class="status" id="dataStatus"></div>
+    </div>
+  </section>
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+  // ---------- 장르 프리셋 (영어 검색어, | 는 OR) ----------
+  var GENRES = [
+    {id:"animal", name:"🐾 동물 반전", q:"animal unexpected|funny animal moment|cat surprise|dog funny reaction"},
+    {id:"cute", name:"🐣 귀여운 동물", q:"cute animal|baby animal|animal rescue cute"},
+    {id:"aqua", name:"🦭 아쿠아리움·동물원", q:"aquarium funny|zoo funny moment|zookeeper animal"},
+    {id:"kind", name:"🤝 감동·선행", q:"kind stranger|heartwarming moment|wholesome moment caught on camera"},
+    {id:"cam", name:"🎥 카메라에 찍힌 순간", q:"caught on camera unexpected|security camera funny|dashcam unexpected"},
+    {id:"skill", name:"🛠 신기한 기술·장인", q:"satisfying skill|genius idea|amazing craftsman"},
+    {id:"japan", name:"🇯🇵 일본 화제", q:"only in japan|japan amazing|japanese funny"}
+  ];
+
+  // ---------- 저장소 ----------
+  function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+  function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  var state = {
+    key: load("st_key", ""),
+    saved: load("st_saved", {}),
+    used: load("st_used", {}),
+    genres: load("st_genres", ["animal"]),
+    quota: load("st_quota", {day:"", used:0}),
+    cache: load("st_cache", null)
+  };
+
+  // 할당량 날짜 = 미국 태평양 기준 날짜
+  function quotaDay(){ return new Date().toLocaleDateString("en-CA", {timeZone:"America/Los_Angeles"}); }
+  function addQuota(n){
+    var d = quotaDay();
+    if (state.quota.day !== d) state.quota = {day:d, used:0};
+    state.quota.used += n; save("st_quota", state.quota); renderQuota();
+  }
+  function renderQuota(){
+    var used = state.quota.day === quotaDay() ? state.quota.used : 0;
+    $("quotaText").textContent = "오늘 API 사용량 " + used.toLocaleString() + " / 10,000";
+    $("quotaBar").style.width = Math.min(100, used/100) + "%";
+  }
+
+  // ---------- 유틸 ----------
+  function $(id){ return document.getElementById(id); }
+  function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+  function toast(msg){ var t = $("toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(t._h); t._h = setTimeout(function(){ t.classList.remove("on"); }, 1800); }
+  function fmtNum(n){
+    n = +n || 0;
+    if (n >= 1e8) return (n/1e8).toFixed(1).replace(/\.0$/,"") + "억";
+    if (n >= 1e4) return (n/1e4).toFixed(n >= 1e5 ? 0 : 1).replace(/\.0$/,"") + "만";
+    if (n >= 1e3) return (n/1e3).toFixed(1).replace(/\.0$/,"") + "천";
+    return String(n);
+  }
+  function parseDur(iso){
+    var m = /P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/.exec(iso || "");
+    if (!m) return 0;
+    return (+m[1]||0)*86400 + (+m[2]||0)*3600 + (+m[3]||0)*60 + (+m[4]||0);
+  }
+  function fmtDur(s){ var m = Math.floor(s/60), r = s%60; return m + ":" + (r<10?"0":"") + r; }
+  function ago(h){ if (h < 24) return Math.round(h) + "시간 전"; return Math.round(h/24) + "일 전"; }
+  function todayKR(){ return new Date().toLocaleDateString("en-CA", {timeZone:"Asia/Seoul"}); }
+  var HANGUL = /[ㄱ-ㆎ가-힣]/;
+
+  async function copyText(text){
+    try{ await navigator.clipboard.writeText(text); return true; }
+    catch(e){
+      var ta = document.createElement("textarea"); ta.value = text; ta.style.position="fixed"; ta.style.opacity="0";
+      document.body.appendChild(ta); ta.select();
+      var ok = false; try{ ok = document.execCommand("copy"); }catch(_){}
+      ta.remove(); return ok;
+    }
+  }
+
+  // ---------- 유튜브 API ----------
+  var API = "https://www.googleapis.com/youtube/v3/";
+  async function yt(path, params){
+    var u = new URL(API + path);
+    Object.keys(params).forEach(function(k){ if (params[k] !== "" && params[k] != null) u.searchParams.set(k, params[k]); });
+    u.searchParams.set("key", state.key);
+    var r = await fetch(u.toString());
+    var j = await r.json().catch(function(){ return {}; });
+    if (!r.ok || j.error){
+      var reason = (j.error && j.error.errors && j.error.errors[0] && j.error.errors[0].reason) || "";
+      var msg = (j.error && j.error.message) || ("HTTP " + r.status);
+      if (reason === "quotaExceeded") msg = "오늘 무료 한도를 다 썼어요. 한국 시간 오후 4~5시쯤 초기화돼요.";
+      else if (reason === "keyInvalid" || /API key not valid/i.test(msg)) msg = "API 키가 올바르지 않아요. 설정 탭에서 다시 확인해 주세요.";
+      else if (/referer|referrer/i.test(msg)) msg = "키의 웹사이트 제한에 https://joopjwi.github.io/* 가 들어있는지 확인해 주세요.";
+      else if (/has not been used|disabled/i.test(msg)) msg = "구글 클라우드에서 YouTube Data API v3를 '사용'으로 켜주세요.";
+      throw new Error(msg);
+    }
+    return j;
+  }
+
+  async function searchGenre(q, opts){
+    var after = new Date(Date.now() - opts.days*86400000).toISOString();
+    var s = await yt("search", {
+      part:"snippet", type:"video", q:q, order:"viewCount", maxResults:50,
+      publishedAfter:after, videoDuration: opts.maxDur <= 240 ? "short" : "",
+      videoLicense: opts.license === "creativeCommon" ? "creativeCommon" : "",
+      relevanceLanguage: opts.noKo ? "en" : "", safeSearch:"moderate"
+    });
+    addQuota(100);
+    var ids = (s.items || []).map(function(it){ return it.id && it.id.videoId; }).filter(Boolean);
+    if (!ids.length) return [];
+    var v = await yt("videos", { part:"snippet,statistics,contentDetails,status", id: ids.join(","), maxResults:50 });
+    addQuota(1);
+    var now = Date.now();
+    return (v.items || []).map(function(it){
+      var sn = it.snippet || {}, st = it.statistics || {}, cd = it.contentDetails || {};
+      var hours = Math.max(1, (now - new Date(sn.publishedAt).getTime())/3600000);
+      var views = +st.viewCount || 0, likes = +st.likeCount || 0;
+      var th = sn.thumbnails || {};
+      return {
+        id: it.id, title: sn.title || "", channel: sn.channelTitle || "",
+        lang: sn.defaultAudioLanguage || sn.defaultLanguage || "",
+        publishedAt: sn.publishedAt, hours: hours,
+        views: views, likes: likes, comments: +st.commentCount || 0,
+        vph: views / hours, likeRate: views ? likes / views : 0,
+        dur: parseDur(cd.duration),
+        cc: (it.status && it.status.license) === "creativeCommon",
+        thumb: (th.high || th.medium || th["default"] || {}).url || ("https://i.ytimg.com/vi/" + it.id + "/hqdefault.jpg")
+      };
+    });
+  }
+
+  function opts(){
+    return {
+      days: +$("period").value, maxDur: +$("dur").value, minViews: +$("minViews").value,
+      license: $("license").value, noKo: $("noKo").checked, hideUsed: $("hideUsed").checked
+    };
+  }
+
+  function filterSort(list, o){
+    var seen = {};
+    return list.filter(function(v){
+      if (seen[v.id]) return false; seen[v.id] = 1;
+      if (v.dur === 0 || v.dur > o.maxDur) return false;
+      if (v.views < o.minViews) return false;
+      if (o.noKo && (HANGUL.test(v.title) || HANGUL.test(v.channel) || /^ko/i.test(v.lang))) return false;
+      return true;
+    }).sort(function(a,b){ return b.vph - a.vph; });
+  }
+
+  var busy = false;
+  async function run(genreList, label){
+    if (busy) return;
+    if (!state.key){ $("needKey").hidden = false; setStatus("API 키가 필요해요. 설정 탭에서 저장해 주세요.", true); return; }
+    var custom = $("customQ").value.trim();
+    var jobs = genreList.map(function(g){ return {name:g.name, q:g.q}; });
+    if (custom && label !== "all") jobs = [{name:"🔎 " + custom, q:custom}].concat(jobs);
+    if (!jobs.length){ setStatus("장르를 고르거나 검색어를 넣어주세요.", true); return; }
+    busy = true; $("btnSearch").disabled = $("btnAll").disabled = true;
+    var o = opts(), all = [], errs = [];
+    for (var i = 0; i < jobs.length; i++){
+      setStatus("검색 중… " + jobs[i].name + " (" + (i+1) + "/" + jobs.length + ")");
+      try{
+        var r = await searchGenre(jobs[i].q, o);
+        r.forEach(function(v){ v.genre = jobs[i].name; });
+        all = all.concat(r);
+      }catch(e){ errs.push(e.message); if (/한도|키|제한|켜주세요/.test(e.message)) break; }
+    }
+    var list = filterSort(all, o);
+    state.cache = {at: Date.now(), day: todayKR(), label: label, list: list};
+    save("st_cache", state.cache);
+    renderResults();
+    busy = false; $("btnSearch").disabled = $("btnAll").disabled = false;
+    if (errs.length && !list.length) setStatus(errs[0], true);
+    else setStatus("후보 " + list.length + "개 · 시간당 조회수 순" + (errs.length ? " (일부 오류: " + errs[0] + ")" : ""), !!errs.length);
+  }
+  function setStatus(t, err){ var s = $("status"); s.textContent = t; s.className = "status" + (err ? " err" : ""); }
+
+  // ---------- 카드 ----------
+  function card(v, i, ctx){
+    var used = state.used[v.id], saved = state.saved[v.id];
+    var hot = v.vph >= 10000 ? "🔥 급상승" : v.vph >= 3000 ? "상승 중" : "";
+    var h = '<div class="card' + (used && ctx === "find" ? " used" : "") + '" data-id="' + esc(v.id) + '">' +
+      '<a class="thumb" href="https://www.youtube.com/watch?v=' + encodeURIComponent(v.id) + '" target="_blank" rel="noopener">' +
+        '<img loading="lazy" src="' + esc(v.thumb) + '" alt="">' +
+        (i != null ? '<span class="rank">' + (i+1) + '</span>' : '') +
+        '<span class="dur">' + fmtDur(v.dur) + '</span></a>' +
+      '<div class="body">' +
+        '<div class="title">' + esc(v.title) + '</div>' +
+        '<div class="ch">' + esc(v.channel) + ' · ' + ago(v.hours) + '</div>' +
+        '<div class="stats">' +
+          (hot ? '<span class="tag hot">' + hot + '</span>' : '') +
+          '<span class="tag">조회 ' + fmtNum(v.views) + '</span>' +
+          '<span class="tag">시간당 ' + fmtNum(Math.round(v.vph)) + '</span>' +
+          '<span class="tag">좋아요 ' + (v.likeRate*100).toFixed(1) + '%</span>' +
+          (v.cc ? '<span class="tag cc">CC 라이선스</span>' : '') +
+          (v.genre ? '<span class="tag g">' + esc(v.genre) + '</span>' : '') +
+          (used ? '<span class="tag">사용 ' + esc(used.date) + '</span>' : '') +
+        '</div>' +
+        '<div class="acts">' +
+          '<button class="main" data-act="req">작업 요청</button>' +
+          '<button data-act="save" class="' + (saved ? "on" : "") + '">' + (saved ? "★ 찜함" : "☆ 찜") + '</button>' +
+          '<button data-act="use" class="' + (used ? "on" : "") + '">' + (used ? "✓ 사용함" : "사용함") + '</button>' +
+        '</div>' +
+      '</div></div>';
+    return h;
+  }
+
+  var index = {};
+  function remember(list){ list.forEach(function(v){ index[v.id] = v; }); }
+
+  function renderResults(){
+    var c = state.cache, el = $("results");
+    if (!c || !c.list){ el.innerHTML = '<div class="empty">장르를 고르고 검색하면 후보가 여기 떠요.</div>'; return; }
+    var o = opts(), list = c.list.filter(function(v){ return !(o.hideUsed && state.used[v.id]); });
+    remember(c.list);
+    el.innerHTML = list.length ? list.map(function(v,i){ return card(v,i,"find"); }).join("") :
+      '<div class="empty">조건에 맞는 후보가 없어요. 기간을 늘리거나 최소 조회수를 낮춰 보세요.</div>';
+    if (c.at && !$("status").textContent){
+      var t = new Date(c.at).toLocaleString("ko-KR", {timeZone:"Asia/Seoul", month:"numeric", day:"numeric", hour:"2-digit", minute:"2-digit"});
+      setStatus("마지막 검색: " + t + " · 후보 " + c.list.length + "개");
+    }
+  }
+  function renderSaved(){
+    var list = Object.keys(state.saved).map(function(k){ return state.saved[k]; }).sort(function(a,b){ return (b.savedAt||0) - (a.savedAt||0); });
+    remember(list);
+    $("savedList").innerHTML = list.length ? list.map(function(v){ return card(v,null,"saved"); }).join("") : '<div class="empty">찜한 영상이 없어요.</div>';
+    $("nSaved").textContent = list.length ? list.length : "";
+  }
+  function renderUsed(){
+    var list = Object.keys(state.used).map(function(k){ return state.used[k]; }).sort(function(a,b){ return (b.usedAt||0) - (a.usedAt||0); });
+    remember(list);
+    $("usedList").innerHTML = list.length ? list.map(function(v){ return card(v,null,"used"); }).join("") : '<div class="empty">아직 사용한 영상이 없어요.</div>';
+    $("nUsed").textContent = list.length ? list.length : "";
+  }
+  function renderAll(){ renderResults(); renderSaved(); renderUsed(); }
+
+  function slim(v){
+    return {id:v.id,title:v.title,channel:v.channel,thumb:v.thumb,views:v.views,likes:v.likes,vph:v.vph,likeRate:v.likeRate,
+            dur:v.dur,cc:v.cc,genre:v.genre,hours:v.hours,publishedAt:v.publishedAt};
+  }
+
+  function requestText(v){
+    return [
+      "[해외 원본 쇼츠 작업 요청]",
+      "원본 제목: " + v.title,
+      "링크: https://www.youtube.com/watch?v=" + v.id,
+      "채널: " + v.channel,
+      "길이: " + fmtDur(v.dur) + " · 조회수 " + fmtNum(v.views) + " · 시간당 " + fmtNum(Math.round(v.vph)),
+      "장르: " + (v.genre || "-") + (v.cc ? " · CC 라이선스" : ""),
+      "→ 원본 영상 파일 첨부합니다. 템플릿대로 완성본 + 제목·설명 만들어 주세요."
+    ].join("\n");
+  }
+
+  document.addEventListener("click", async function(e){
+    var b = e.target.closest("[data-act]");
+    if (b){
+      var id = b.closest(".card").getAttribute("data-id"), v = index[id];
+      if (!v) return;
+      var act = b.getAttribute("data-act");
+      if (act === "req"){
+        var ok = await copyText(requestText(v));
+        toast(ok ? "작업 요청 복사됨 → Claude 채팅에 붙여넣기" : "복사가 안 됐어요. 길게 눌러 직접 복사해 주세요");
+      } else if (act === "save"){
+        if (state.saved[id]) delete state.saved[id]; else { var s = slim(v); s.savedAt = Date.now(); state.saved[id] = s; }
+        save("st_saved", state.saved); renderAll(); toast(state.saved[id] ? "찜했어요" : "찜 해제");
+      } else if (act === "use"){
+        if (state.used[id]) delete state.used[id]; else { var u = slim(v); u.usedAt = Date.now(); u.date = todayKR(); state.used[id] = u; }
+        save("st_used", state.used); renderAll(); toast(state.used[id] ? "사용함 처리" : "사용 취소");
+      }
+      return;
+    }
+    var nav = e.target.closest("nav button, [data-go]");
+    if (nav){
+      e.preventDefault();
+      var v2 = nav.getAttribute("data-v") || nav.getAttribute("data-go");
+      document.querySelectorAll("nav button").forEach(function(x){ x.classList.toggle("on", x.getAttribute("data-v") === v2); });
+      document.querySelectorAll(".view").forEach(function(x){ x.classList.toggle("on", x.id === "v-" + v2); });
+      window.scrollTo(0,0);
+    }
+  });
+
+  // ---------- 장르 칩 ----------
+  function renderGenres(){
+    $("genres").innerHTML = GENRES.map(function(g){
+      return '<button class="chip' + (state.genres.indexOf(g.id) >= 0 ? " on" : "") + '" data-g="' + g.id + '">' + g.name + '</button>';
+    }).join("");
+  }
+  $("genres").addEventListener("click", function(e){
+    var c = e.target.closest("[data-g]"); if (!c) return;
+    var id = c.getAttribute("data-g"), i = state.genres.indexOf(id);
+    if (i >= 0) state.genres.splice(i,1); else state.genres.push(id);
+    save("st_genres", state.genres); renderGenres();
+  });
+  $("btnSearch").addEventListener("click", function(){
+    run(GENRES.filter(function(g){ return state.genres.indexOf(g.id) >= 0; }), "pick");
+  });
+  $("btnAll").addEventListener("click", function(){ run(GENRES, "all"); });
+  $("customQ").addEventListener("keydown", function(e){ if (e.key === "Enter") $("btnSearch").click(); });
+  ["hideUsed","noKo","dur","minViews"].forEach(function(id){
+    $(id).addEventListener("change", function(){
+      if (state.cache && state.cache.list && id !== "hideUsed") return; // 재검색 시 적용
+      renderResults();
+    });
+  });
+
+  // ---------- 설정 ----------
+  $("apiKey").value = state.key;
+  $("btnSaveKey").addEventListener("click", function(){
+    state.key = $("apiKey").value.trim(); save("st_key", state.key);
+    $("needKey").hidden = !!state.key;
+    $("keyStatus").className = "status"; $("keyStatus").textContent = state.key ? "저장했어요. '연결 테스트'로 확인해 보세요." : "키를 지웠어요.";
+  });
+  $("btnTestKey").addEventListener("click", async function(){
+    state.key = $("apiKey").value.trim(); save("st_key", state.key);
+    var s = $("keyStatus");
+    if (!state.key){ s.className = "status err"; s.textContent = "키를 먼저 넣어주세요."; return; }
+    s.className = "status"; s.textContent = "확인 중…";
+    try{
+      await yt("videos", {part:"id", chart:"mostPopular", regionCode:"US", maxResults:1}); addQuota(1);
+      s.textContent = "✅ 연결 성공! '후보 찾기' 탭에서 검색해 보세요."; $("needKey").hidden = true;
+    }catch(e){ s.className = "status err"; s.textContent = "❌ " + e.message; }
+  });
+
+  // ---------- 백업 ----------
+  $("btnExport").addEventListener("click", async function(){
+    var ok = await copyText(JSON.stringify({saved:state.saved, used:state.used}));
+    $("dataStatus").textContent = ok ? "복사했어요. 메모장 등에 붙여넣어 보관하세요." : "복사에 실패했어요.";
+  });
+  $("btnImportShow").addEventListener("click", function(){ $("importBox").hidden = !$("importBox").hidden; });
+  $("btnImport").addEventListener("click", function(){
+    try{
+      var d = JSON.parse($("importText").value);
+      Object.assign(state.saved, d.saved || {}); Object.assign(state.used, d.used || {});
+      save("st_saved", state.saved); save("st_used", state.used); renderAll();
+      $("dataStatus").textContent = "불러왔어요.";
+    }catch(e){ $("dataStatus").textContent = "형식이 올바르지 않아요."; }
+  });
+
+  // ---------- 시작 ----------
+  $("needKey").hidden = !!state.key;
+  renderGenres(); renderQuota(); renderAll();
+})();
+</script>
+</body>
+</html>
