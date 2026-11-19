@@ -1,0 +1,67 @@
+{
+ "id": "hotballs-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "새빨갛게 달군 쇠구슬들을 투명한 플라스틱 컵 탑 위에 쏟아부으면 어떻게 될까요?"
+  },
+  {
+   "seg": "B",
+   "spoken": "닿는 순간 컵에 불이 확 붙으면서, 구슬들이 바닥을 뚫고 그대로 아래 컵으로 떨어지는데요,"
+  },
+  {
+   "seg": "C",
+   "spoken": "한 칸, 또 한 칸. 컵을 하나씩 녹이며 계속 아래로 내려갑니다."
+  },
+  {
+   "seg": "D",
+   "spoken": "점점 식을 법도 한데 기세는 전혀 줄지 않고,"
+  },
+  {
+   "seg": "E",
+   "spoken": "마지막 컵에서는 오히려 더 크게 불길이 치솟아요. 근데.. 컵이 몇 층까지 있었으면 구슬이 멈췄을까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "pour",
+   "prompt": "metal balls pouring and clinking, short",
+   "seconds": 1.2
+  },
+  {
+   "name": "fire",
+   "prompt": "fire ignition whoosh, flame burst",
+   "seconds": 1.2
+  },
+  {
+   "name": "sizzle",
+   "prompt": "hot metal sizzling and melting plastic crackle",
+   "seconds": 2.5
+  },
+  {
+   "name": "burst",
+   "prompt": "big fireball whoosh burst",
+   "seconds": 1.5
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "tense curious experiment background music, pulsing low synth and light percussion, building suspense, sparse for voice-over, no vocals",
+  "seconds": 28
+ }
+}
