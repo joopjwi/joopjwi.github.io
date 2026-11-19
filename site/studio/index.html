@@ -59,6 +59,8 @@
   .tag.g{background:#2a2600;color:var(--yellow)}
   .acts{display:flex;gap:6px;margin-top:auto;flex-wrap:wrap}
   .acts button,.acts a{flex:1;min-width:70px;text-align:center;background:#202024;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:7px 6px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none}
+  .acts .main,.acts [data-act=link]{flex-basis:45%}
+  .acts .del{color:#ff8a8a}
   .acts .main{background:var(--yellow);color:#000;border-color:var(--yellow)}
   .acts .on{color:var(--yellow);border-color:var(--yellow)}
   .empty{color:var(--muted);text-align:center;padding:40px 0}
@@ -236,6 +238,7 @@
     quota: load("st_quota", {day:"", used:0}),
     cache: load("st_cache", null),
     uploaded: load("st_uploaded", {}),
+    hidden: load("st_hidden", {}),
     done: []
   };
 
@@ -385,7 +388,7 @@
   function card(v, i, ctx){
     var used = state.used[v.id], saved = state.saved[v.id];
     var hot = v.vph >= 10000 ? "🔥 급상승" : v.vph >= 3000 ? "상승 중" : "";
-    var h = '<div class="card' + (used && ctx === "find" ? " used" : "") + '" data-id="' + esc(v.id) + '">' +
+    var h = '<div class="card' + (used && ctx === "find" ? " used" : "") + '" data-id="' + esc(v.id) + '" data-ctx="' + ctx + '">' +
       '<a class="thumb" href="https://www.youtube.com/watch?v=' + encodeURIComponent(v.id) + '" target="_blank" rel="noopener">' +
         '<img loading="lazy" src="' + esc(v.thumb) + '" alt="">' +
         (i != null ? '<span class="rank">' + (i+1) + '</span>' : '') +
@@ -404,8 +407,10 @@
         '</div>' +
         '<div class="acts">' +
           '<button class="main" data-act="req">작업 요청</button>' +
+          '<button data-act="link">🔗 링크 복사</button>' +
           '<button data-act="save" class="' + (saved ? "on" : "") + '">' + (saved ? "★ 찜함" : "☆ 찜") + '</button>' +
           '<button data-act="use" class="' + (used ? "on" : "") + '">' + (used ? "✓ 사용함" : "사용함") + '</button>' +
+          '<button data-act="del" class="del">🗑 지우기</button>' +
         '</div>' +
       '</div></div>';
     return h;
@@ -417,7 +422,7 @@
   function renderResults(){
     var c = state.cache, el = $("results");
     if (!c || !c.list){ el.innerHTML = '<div class="empty">장르를 고르고 검색하면 후보가 여기 떠요.</div>'; return; }
-    var o = opts(), list = c.list.filter(function(v){ return !(o.hideUsed && state.used[v.id]); });
+    var o = opts(), list = c.list.filter(function(v){ return !state.hidden[v.id] && !(o.hideUsed && state.used[v.id]); });
     remember(c.list);
     el.innerHTML = list.length ? list.map(function(v,i){ return card(v,i,"find"); }).join("") :
       '<div class="empty">조건에 맞는 후보가 없어요. 기간을 늘리거나 최소 조회수를 낮춰 보세요.</div>';
@@ -512,6 +517,16 @@
       if (act === "req"){
         var ok = await copyText(requestText(v));
         toast(ok ? "작업 요청 복사됨 → Claude 채팅에 붙여넣기" : "복사가 안 됐어요. 길게 눌러 직접 복사해 주세요");
+      } else if (act === "link"){
+        var ok2 = await copyText("https://www.youtube.com/watch?v=" + id);
+        toast(ok2 ? "링크 복사됨" : "복사 실패 — 길게 눌러 직접 복사해 주세요");
+      } else if (act === "del"){
+        var ctx = b.closest(".card").getAttribute("data-ctx");
+        if (ctx === "saved") delete state.saved[id];
+        else if (ctx === "used") delete state.used[id];
+        else state.hidden[id] = todayKR();
+        save("st_saved", state.saved); save("st_used", state.used); save("st_hidden", state.hidden);
+        renderAll(); toast(ctx === "find" ? "목록에서 지웠어요 (다음 검색에도 안 나와요)" : "지웠어요");
       } else if (act === "save"){
         if (state.saved[id]) delete state.saved[id]; else { var s = slim(v); s.savedAt = Date.now(); state.saved[id] = s; }
         save("st_saved", state.saved); renderAll(); toast(state.saved[id] ? "찜했어요" : "찜 해제");
@@ -575,14 +590,14 @@
 
   // ---------- 백업 ----------
   $("btnExport").addEventListener("click", async function(){
-    var ok = await copyText(JSON.stringify({saved:state.saved, used:state.used, uploaded:state.uploaded}));
+    var ok = await copyText(JSON.stringify({saved:state.saved, used:state.used, uploaded:state.uploaded, hidden:state.hidden}));
     $("dataStatus").textContent = ok ? "복사했어요. 메모장 등에 붙여넣어 보관하세요." : "복사에 실패했어요.";
   });
   $("btnImportShow").addEventListener("click", function(){ $("importBox").hidden = !$("importBox").hidden; });
   $("btnImport").addEventListener("click", function(){
     try{
       var d = JSON.parse($("importText").value);
-      Object.assign(state.saved, d.saved || {}); Object.assign(state.used, d.used || {}); Object.assign(state.uploaded, d.uploaded || {}); save("st_uploaded", state.uploaded);
+      Object.assign(state.saved, d.saved || {}); Object.assign(state.used, d.used || {}); Object.assign(state.uploaded, d.uploaded || {}); save("st_uploaded", state.uploaded); Object.assign(state.hidden, d.hidden || {}); save("st_hidden", state.hidden);
       save("st_saved", state.saved); save("st_used", state.used); renderAll();
       $("dataStatus").textContent = "불러왔어요.";
     }catch(e){ $("dataStatus").textContent = "형식이 올바르지 않아요."; }
