@@ -1,0 +1,44 @@
+{
+ "id": "chihuahua-03-fx",
+ "sfx": [
+  {
+   "name": "whoosh",
+   "prompt": "quick cartoon whoosh transition swish",
+   "seconds": 0.7
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  },
+  {
+   "name": "suspense",
+   "prompt": "comedic cartoon suspense sting, plucked strings, short",
+   "seconds": 1.6
+  },
+  {
+   "name": "slide",
+   "prompt": "cartoon slide whistle going up, curious",
+   "seconds": 1.0
+  },
+  {
+   "name": "thud",
+   "prompt": "big soft plush toy falling off a sofa onto carpet, soft thud",
+   "seconds": 0.9
+  },
+  {
+   "name": "sneak",
+   "prompt": "comedic sneaky tiptoe pizzicato, cartoon",
+   "seconds": 2.5
+  },
+  {
+   "name": "ding",
+   "prompt": "cute innocent cartoon sparkle ding",
+   "seconds": 0.8
+  }
+ ],
+ "music": {
+  "prompt": "playful light comedic pizzicato strings and ukulele, cute pet video background music, bouncy and mischievous, steady tempo, no vocals",
+  "seconds": 40
+ }
+}
