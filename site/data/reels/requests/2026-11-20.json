@@ -1,0 +1,182 @@
+{
+ "date": "2026-11-20",
+ "dateLabel": "11월 20일 (금)",
+ "dataCheckedAt": "2026-11-20 06:27",
+ "intro": "배에 두르는 곰돌이 니트? 이게 겨울 꿀템이래요!",
+ "outro": "가격은 바뀔 수 있으니까, 프로필 링크에서 번호로 바로 줍쥐!",
+ "items": [
+  {
+   "id": "4656005846",
+   "short": "배워머",
+   "script": "1번! 겨울엔 배부터 시리죠? 러브핑코 캐릭터 배워머 6,040원!"
+  },
+  {
+   "id": "9728613423",
+   "short": "틈새 트롤리",
+   "script": "2번! 냉장고 옆 좁은 틈, 그냥 비워 두죠? 이동식 틈새 트롤리 8,990원!"
+  },
+  {
+   "id": "7217658918",
+   "short": "핫팩",
+   "script": "3번! 출근길 손 시리죠? 주머니에 쏙, 포켓형 핫팩 8,200원!"
+  },
+  {
+   "id": "6429602575",
+   "short": "풋크림",
+   "script": "4번! 겨울엔 발뒤꿈치 거칠죠? 고운발 풋크림이 어제 9,880원에서 오늘 8,620원!"
+  },
+  {
+   "id": "8010806804",
+   "short": "풀무원 생수",
+   "script": "5번! 물은 쟁여 둬야죠, 풀무원 2L 12개가 6,900원!"
+  }
+ ],
+ "chunks": [
+  {
+   "scene": "intro",
+   "display": "배에 두르는 곰돌이 니트?",
+   "spoken": "배에 두르는 곰돌이 니트?"
+  },
+  {
+   "scene": "intro",
+   "display": "이게 겨울 꿀템이래요!",
+   "spoken": "이게 겨울 꿀템이래요!"
+  },
+  {
+   "scene": 1,
+   "display": "1번!",
+   "spoken": "일번!"
+  },
+  {
+   "scene": 1,
+   "display": "겨울엔 배부터 시리죠?",
+   "spoken": "겨울엔 배부터 시리죠?"
+  },
+  {
+   "scene": 1,
+   "display": "러브핑코 캐릭터 배워머",
+   "spoken": "러브핑코 캐릭터 배워머"
+  },
+  {
+   "scene": 1,
+   "display": "6,040원!",
+   "spoken": "육천사십원!"
+  },
+  {
+   "scene": 2,
+   "display": "2번!",
+   "spoken": "이번!"
+  },
+  {
+   "scene": 2,
+   "display": "냉장고 옆 좁은 틈,",
+   "spoken": "냉장고 옆 좁은 틈,"
+  },
+  {
+   "scene": 2,
+   "display": "그냥 비워 두죠?",
+   "spoken": "그냥 비워 두죠?"
+  },
+  {
+   "scene": 2,
+   "display": "이동식 틈새 트롤리",
+   "spoken": "이동식 틈새 트롤리"
+  },
+  {
+   "scene": 2,
+   "display": "8,990원!",
+   "spoken": "팔천구백구십원!"
+  },
+  {
+   "scene": 3,
+   "display": "3번!",
+   "spoken": "삼번!"
+  },
+  {
+   "scene": 3,
+   "display": "출근길 손 시리죠?",
+   "spoken": "출근길 손 시리죠?"
+  },
+  {
+   "scene": 3,
+   "display": "주머니에 쏙, 포켓형 핫팩",
+   "spoken": "주머니에 쏙, 포켓형 핫팩"
+  },
+  {
+   "scene": 3,
+   "display": "8,200원!",
+   "spoken": "팔천이백원!"
+  },
+  {
+   "scene": 4,
+   "display": "4번!",
+   "spoken": "사번!"
+  },
+  {
+   "scene": 4,
+   "display": "겨울엔 발뒤꿈치 거칠죠?",
+   "spoken": "겨울엔 발뒤꿈치 거칠죠?"
+  },
+  {
+   "scene": 4,
+   "display": "고운발 풋크림이",
+   "spoken": "고운발 풋크림이"
+  },
+  {
+   "scene": 4,
+   "display": "어제 9,880원에서",
+   "spoken": "어제 구천팔백팔십원에서"
+  },
+  {
+   "scene": 4,
+   "display": "오늘 8,620원!",
+   "spoken": "오늘 팔천육백이십원!"
+  },
+  {
+   "scene": 5,
+   "display": "5번!",
+   "spoken": "오번!"
+  },
+  {
+   "scene": 5,
+   "display": "물은 쟁여 둬야죠,",
+   "spoken": "물은 쟁여 둬야죠,"
+  },
+  {
+   "scene": 5,
+   "display": "풀무원 2L 12개가",
+   "spoken": "풀무원 이리터 열두 개가"
+  },
+  {
+   "scene": 5,
+   "display": "6,900원!",
+   "spoken": "육천구백원!"
+  },
+  {
+   "scene": "outro",
+   "display": "가격은 바뀔 수 있으니까,",
+   "spoken": "가격은 바뀔 수 있으니까,"
+  },
+  {
+   "scene": "outro",
+   "display": "프로필 링크에서",
+   "spoken": "프로필 링크에서"
+  },
+  {
+   "scene": "outro",
+   "display": "번호로 바로 줍쥐!",
+   "spoken": "번호로 바로 줍쥐!"
+  }
+ ],
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ }
+}
