@@ -1,9 +1,9 @@
 {
  "apiVersion": 1,
  "status": "ok",
- "dataDate": "2026-11-19",
- "updatedAt": "2026-11-19T06:29:41+09:00",
- "expiresAt": "2026-11-20T09:00:00+09:00",
+ "dataDate": "2026-11-20",
+ "updatedAt": "2026-11-20T06:27:00+09:00",
+ "expiresAt": "2026-11-21T09:00:00+09:00",
  "maxPrice": 10000,
  "currency": "KRW",
  "disclosure": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 updatedAt 기준이며 쿠팡에서 바뀔 수 있음. 이미지 저작권은 판매자에게 있음.",
@@ -11,15 +11,15 @@
  "items": [
   {
    "rank": 1,
-   "productId": "7825654282",
-   "productName": "크린랩 롤백 25cm x 35cm",
-   "price": 5760,
-   "imageUrl": "https://img3a.coupangcdn.com/image/retail/images/392545394552626-29401e94-bf64-47f1-b757-343fa07496fe.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7825654282&itemId=22919691638&vendorItemId=86693839978&traceid=V0-113-504c52a37707b820&pt=0&slot=6",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8728996007",
+   "productName": "JCCOMPANY 소모 배변패드",
+   "price": 5200,
+   "imageUrl": "https://img1a.coupangcdn.com/image/vendor_inventory/image_audit/stage/manual/797479006696650-4e21e4f5-bcd3-4dc6-a570-92c4a84c0f09_1750916156712.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8728996007&itemId=25335924473&vendorItemId=92330661981&traceid=V0-113-f4451cf2884b62b6&pt=0&slot=7",
+   "category": "반려동물",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 1,
-   "subCategory": "주방용품",
+   "subCategory": "반려동물",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -27,14 +27,14 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 6,
+    "coupangRank": 7,
     "keyword": null,
-    "joopjwiScore": 1.25
+    "joopjwiScore": 1.24
    },
    "price_history": {
-    "previousPrice": 9780,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 41
+    "previousPrice": 7600,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 32
    },
    "tags": [],
    "validation": {
@@ -47,32 +47,34 @@
   },
   {
    "rank": 2,
-   "productId": "8304729560",
-   "productName": "코멧 키친 잘라쓰는 종이호일",
-   "price": 4990,
-   "imageUrl": "https://img3c.coupangcdn.com/image/retail/images/895620324571919-24f9ac44-9dfc-4ec3-b687-593b0a67fb5e.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8304729560&itemId=23958478288&vendorItemId=90979979724&traceid=V0-113-4fdc122230146cbc&pt=0&slot=9",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "6239512369",
+   "productName": "풀무원샘물 무라벨 생수, 500ml, 40개",
+   "price": 8720,
+   "imageUrl": "https://ads-partners.coupang.com/image1/DpvKFMrTxfXKHGKYDj5NHHBH4iWrMJMegwtTsxp1G3VIXFOnmG0AipzMSLEyGfFAt8aqnZt7Fvdzu735mEsGrHVLFl8U3DLV9-Pvgs1tdXvwk3_GGGIwVoMhc60Tt_juNHqTcvEaFyqExrFDBSrhY3NAo6DH62dW_kxZRYQKYBXFxhwlRsGWHNfn0xP9AXbj2Lt19raqHcNgyf3NPkQVdb3haed-GEjFs_59dELkWXOYYrr3LEGRI8tM601gu94T2htP7pE3iHn7olkHYrtHlv6LLWoPE2IdLOne9OjfXZFYcnP9cwbH0Ils3Cma1fvLeEG94yumfkuPZbbj9cB7XDz5LQBRtYCT5vGqDrrXyhAJo_Ej4MYrJFbc83if0ZliTrauQTVMytnsRAVPFuCEzcnvtdy1EaSKQTzgjTxUZI4QNx3KqD7oireoDPmCLqcAJwPJt_qx8DOq8JKp1clk9wqw0mzc4iVAY1uvm2zJS9ib8iEyV_jb9LTuGCmM3oIz1fTDLnChJXnb7KPZVQL2dfy-R_ofNxIPTOy2rofVeQLAPhlZSW3H8UsBi8OeYXpnK7M=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6239512369&itemId=15922885474&vendorItemId=86494127148&traceid=V0-153-81b232b954af2ed9&clickBeacon=f5f360b0-e45f-11f1-89aa-00cdb27b3714%7E3&requestid=20261120062702431059311882&token=31850C%7CMIXED&pt=1&slot=2",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 2,
-   "subCategory": "주방용품",
+   "subCategory": "생수",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 9,
-    "keyword": null,
-    "joopjwiScore": 1.21
+    "source": "coupang_keyword_search",
+    "coupangRank": 2,
+    "keyword": "생수",
+    "joopjwiScore": 1.19
    },
    "price_history": {
-    "previousPrice": 6990,
-    "previousPriceDate": "2026-11-15",
-    "dropPercent": 29
+    "previousPrice": 8720,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "매일 쓰는 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -83,15 +85,15 @@
   },
   {
    "rank": 3,
-   "productId": "6239512369",
-   "productName": "풀무원샘물 무라벨 생수, 500ml, 40개",
-   "price": 8720,
-   "imageUrl": "https://ads-partners.coupang.com/image1/W_phOqjLJBe8pk8dW_Z9erNGjrMK8SAKIsO8VVzy_UY5v_g7AeNLh3cHhfg_uuF55pOzu4YAk-jaBnA3zjdNpenW1OxIZhQtj5sF7YJJTo1jA4xN-b4txGeS8GsfE1sk7pEVvM83gKBdqqju16uyyyzJXTYbLSJOt7bHHpkDOtYj5Ekc1vBtNbEJU3Xmt9QdrMThqCvSqwJ6IMnti346vcndjwvizJjgxKqukov5mXUfYltaKH6V0B2JZwMJ25yHFDaK-yhVST3HWngsYqduBwWbJNqy-h9pQcaNiMiazs10b0eYP_viEvudleexp-yc4-1suzfFhXhYTK9OaFxnEPC9tQVMaeM0kA-Lm2Aknfdo7UnwEssc5iEKmbMw4BbhxQLteZKClf19FAG-Ye1EkD7zlZcQh397f1z_tfjhiVp_ZFhyGnr8xue7NJX1AaInfHSHG1Ylc-sExRevsI3VgP5ffJtNUrm_NtivbP3Z5T_PRu6y35yuADXPnN6aoG0qoN6xhsJKJVEIZUO1xgFkw-3cULYI2XTTyYGIMaOer8Z4kD_EWD6LxKvCewb7PnEdgfs=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6239512369&itemId=15922885474&vendorItemId=86494127148&traceid=V0-153-81b232b954af2ed9&clickBeacon=2be17a00-e397-11f1-a229-4d2781f815fc%7E3&requestid=20261119062944070022088726&token=31850C%7CMIXED&pt=1&slot=1",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "305672892",
+   "productName": "탐사 클래식 물티슈 캡형",
+   "price": 7890,
+   "imageUrl": "https://ads-partners.coupang.com/image1/03NK-3Lkak6nWpf8043E4hR2T8XddVzKGObL2P693g7zHnAoGrLV8XVuBB-cN-VkOG6FjT8Jl791pg2otx8xOrru08oCpqBYMGnj7RnIbeVZqbaphHb9KnLCum9j5-8qy4jihZ5vQBYlFt52pyRiz3SBcMi4Zrm9qnp9LHt_RL8aQi2d_Gpj3ithlEpxKFl0m9VWuaeAvg49kpYmBPd6FMeQb-FS0KkrVs9s2ofneorjhPvsR7YX5beAhEU2ps2_a7_-jbg4Y0wqMa9AAsxSdRVxjug2JrGB59DAOuIH08Qq5DicuAjYKpTeDAMNhFUroMEB4RqqNMslEllbKvY9kY0BDkWfHjYzYR_PgSGaVyxnoWn-xesNcoVgRA6viAAw87vSV01R3jzY_Kr9ba97YoX7JIY5NYGqusB6JnzyM3uzq5Po6kzV0ZMUkmw7-fL8bhkhQDkm6GYMFEIx6N8xkOsPvpvwzVW7Ws6Oy-ybDw8uM65Ms6FaoxKeBqPXrCVySi_uby1K72VFOcZpikLS6YIi9Ju_8rpqgKZuhWiC604zXJolW-hoyy0QjGG6N2YVCZDOcoQjYCKuv93KxfY=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=305672892&itemId=963428194&vendorItemId=5366452533&traceid=V0-153-df6e481d96579701&requestid=20261120062700334292637309&token=31850C%7CMIXED&pt=0&slot=5",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 3,
-   "subCategory": "생수",
+   "subCategory": "물티슈",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -99,13 +101,13 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 1,
-    "keyword": "삼다수",
-    "joopjwiScore": 1.2
+    "coupangRank": 5,
+    "keyword": "물티슈",
+    "joopjwiScore": 1.16
    },
    "price_history": {
-    "previousPrice": 8720,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 7890,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [
@@ -121,25 +123,25 @@
   },
   {
    "rank": 4,
-   "productId": "4876313878",
-   "productName": "백산수, 2L, 6개",
-   "price": 3810,
-   "imageUrl": "https://ads-partners.coupang.com/image1/tpSo6MdhCbkfJ_A_tqQ2gMCSKZEmQngeYQ9fV4l7qHmBLwPJcptXG5XzDxVRS4k-ukJ_sY8hHyHLQai3upAoDV6pu4wdZvwr4yoXh1Uymj9WQA9iGK3e0259y7gPizk-vf5NKrVZzopYQjrJX94eaCeKInSEozPIedQCBYsFTBLNVME3sTdVGyx-dH7shlRZNBVNVkl3MZcwVTiOn_2ka7vYSqIIY2G2tKn-mS-S8YAiefQ5XLuDJwuPxm-AOa-EzvDOlXtwrvRuZsVyg7fVUnubro414B64RsqpVZRiBjdP8vbetm09pwcmcWUEGA_Daa01zBigV-BxbzKE1t8RlNARmv7Lw0ZIxHp7VoaaIFoga7VyG0yBLmyq_ZjHph_Sx6fdN8lWgumY8msyvWD_GN1Xc-nNiCQx9IAFwWLxoLnSQ2zLT5xX_u7P2Q92AFcq-rEE7cTcSj7V5FkIab4xcAqOhekv_CF2242657H36sV2exruJ3cqlOnIrQ-ZCEGnbGuCp3wNquHywh8yrc7IVBinmB7mSFMZ6Td53GviQ5_fmIswX0vMqBJ6UWgZhHMcktTqscxuj54aqTbXxEfuXvDc4ks=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=4876313878&itemId=6342574349&vendorItemId=95854128813&traceid=V0-153-cdb04ffccb5ff56c&clickBeacon=2cf90480-e397-11f1-8f6e-4e93ee512d24%7E3&requestid=20261119062945905108189971&token=31850C%7CMIXED&pt=1&slot=5",
+   "productId": "8010806804",
+   "productName": "풀무원 퓨어 무라벨 생수, 2L, 12개",
+   "price": 6900,
+   "imageUrl": "https://ads-partners.coupang.com/image1/zWXglLmXaTYjql85zXXPWdCe_bmPRd3IfQNHN7-vZQSAoLcqVC8StYLTrJQzgi2nyWUsc2J7Dzl0NDvKJ937-f3mH1kR--fsgplfLgik7zVLeBfxj9ERl1x7mZOnYcg8cxrzpmgMJTSZ3K0pOWy7jqieSiwwANK70l6EpMWOqR_P0cnlqtEexndDyd9fnPEMMFn0bpEAmHztiZK2pLRRJUMpfcQgtL7eB36mjhx2GEybSmBeKXRct3kcMwKC2fP-6DuDuENX5EC2GkHWzT8GG-gu48cju7_xFOC9o3wHOK9J1mDljqORIH1syFQM9z_y04A62XiKQBHIvkEci2b52XVQiMdlwy3gDfdX_AfsaMZQAC7CdLNs0SWZaSHamnq-8CaE4xz3Xr0Tff9TuCgoTxAn2dRZL_3jwGiggWjmbEAt0Z6KyCzZAZusy-KsXl-vdUWVdbeciC7jrI2HOCrHa_f2X_e19mEVmUTUQWNhUf1wQ5wwIK6Ho8t1l4_x615vspmIcerCbePMt5gnXIo4Q56eGRhI9iAhb-yDKuH7WS1yXeV3A_FINBfpGa0LFAd25Fn1tNA=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8010806804&itemId=27311078171&vendorItemId=86494112156&traceid=V0-153-813b314348313aea&clickBeacon=f5f360b0-e45f-11f1-938b-52229e0612ff%7E3&requestid=20261120062702431059311882&token=31850C%7CMIXED&pt=1&slot=6",
    "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 4,
-   "subCategory": "삼다수",
+   "subCategory": "생수",
    "shipping": {
-    "isRocket": false,
+    "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 5,
-    "keyword": "삼다수",
-    "joopjwiScore": 1.16
+    "coupangRank": 6,
+    "keyword": "생수",
+    "joopjwiScore": 1.15
    },
    "price_history": {
     "previousPrice": null,
@@ -159,15 +161,15 @@
   },
   {
    "rank": 5,
-   "productId": "305672892",
-   "productName": "탐사 클래식 물티슈 캡형",
-   "price": 7890,
-   "imageUrl": "https://ads-partners.coupang.com/image1/AbFnXFcsxi0mzAltAcOG8s_wElAecorsj2UOrSpZNVAnNeYiZUttN2Ku-0MlMu-k3MFpQiJb_LuAytem9gtGZ8yw2XlBJAzMju1_NovcmnrlxwD1JBsVsIE464TIXO9apaaeouuu_RP4aypXmGy-D_ccryvaB4oFDTd8NYm4bjRVO_pTVzFy-6i3f9nU2tP76rxlVj4v3TLeis0sms_WHuQBLetcUXrZcn3TlYBu_jRFWjyoEQoy7N-jBgFyvYXBnkjJuGrLtBpv9ZZBsIXX-kie000ibyZ24ljNzGpb8YdeCBBSYHr5XkOUDmxs6GNaCH3MN3rWIOvujs5mCvrK__e8GknLC_BYPhBLl-SDQ-wldU3OXZ7PpZfNuIhFULGKV46T_exyAYeDOyUgRzHJqRTXfNnSMUxOJ25Aj2x1YdTqN9k6792TDBWU-N8UOqRVCyRfgraCOAWYTRZYJFXaGNVml3flQWcxzZkcLj5pBnLNbmYfpY_rvp91kt6ztGVtbr-GS7hOUwjoNsldavkqOmq19fPO_TSedEuzeEu3dFVw5hZAvAzfuTo_F0Xblok9s1DCIqLekP9wGcPe",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=305672892&itemId=963428194&vendorItemId=5366452533&traceid=V0-153-df6e481d96579701&requestid=20261119062942139262986022&token=31850C%7CMIXED&pt=0&slot=6",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7689270513",
+   "productName": "탐사 샘물",
+   "price": 5990,
+   "imageUrl": "https://ads-partners.coupang.com/image1/zkIo9bpcp7kAK2MwzvI0VQjVySWAXUFi45Q2OVwe0J6zNA-tQQAiUEn90ORRpVRBArz9Qu1IH3pEpE_E2OuhJgsCv2blw2uYs4ArqCzZC3X9Gi5gpa8G9eQrbP9kpteuPlkb2T0dquHdyOsIZELRTTvqyFCJVggerrSIhNfeKMec9wm4Y_Ls-aNYlASwCI0uBT9DU2jZwGDm1-BjIXGOwu9zKJ5890Whebl9YNJSnAJXClZA6-cp-8OsSxyJBC4wdqqzVSyUMK5Uo1Q_BNfzCl0yumJYHUVKzejP3U5-XXJzbdSxgVpZ9M3RdaOkWFlc0JRgAVyHYv9qmWLuFnTOhWphzGuLgm2Y6nx_b53b9tO8l-uOgOtSlZEsklKCK844O98I-wO0b6dijmr8c3ZQmwg-h2oVfQAHQQc0PX8DlWqQziXoSV2UaGNIiSatDyH9YqxIg1VzJCbxOTWVAWsqv5z8D1p2PaoDPo-8KglwPa3Kugo6mPE0o_KqV3tO7AKc546ihuPJzDDqWw9dQ3xElU4BX9-In67c_TrIxzAuJroIhRTWPGohfx2CAzUb53DlFsvcnRvdPRbS30ygMBM=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7689270513&itemId=20877904723&vendorItemId=87945140904&traceid=V0-153-6080a97a4592b297&requestid=20261120062702431059311882&token=31850C%7CMIXED&pt=0&slot=8",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 5,
-   "subCategory": "물티슈",
+   "subCategory": "생수",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -175,13 +177,13 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 6,
-    "keyword": "물티슈",
-    "joopjwiScore": 1.15
+    "coupangRank": 8,
+    "keyword": "생수",
+    "joopjwiScore": 1.13
    },
    "price_history": {
-    "previousPrice": 7890,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5990,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [
@@ -197,15 +199,15 @@
   },
   {
    "rank": 6,
-   "productId": "7689270513",
-   "productName": "탐사 샘물",
-   "price": 5990,
-   "imageUrl": "https://ads-partners.coupang.com/image1/dyvPMawDctacCS0id5Y6wq-HHBnUAjAUcp8zbHwgC8LIXB6JpaO17Bd5B22sQegBYpFnm8FZnx8LbnhpWpMG_IgVNV81qzro_hUFpv30awMrNj9zLXtZZY92HZQVfLiob6CrvBAJIU1ZIny_PnDZS0dsj9-LfDQ5izMwB5y0mZgkY3sPHlEvHEkxGxHEWpw2cUkXc3Ra1Z1sC7ShQCZQL1W8LVhFwUewTNquzAkTKWd2z1j3QdTlEKphi5ZWYpb2Ay9aGdmbSjf3hKFgosJFUvSccJYraaRchgPTbr1oelXHoyUbIVYCb0akF1hcPQRK4Y1Gap9xmHB04AEZPz-2COoSgPmCzKSZ_D_XkRynDrqVg36ydsp2EWdQOiCxt1KmAp9ixu3iCdvjHeHZWzYEWwTaBwq7YzFO5N0jVUfmBv9IRAEz2uIQwsIIhLX4zlnlZt8JqUztV3l57pZw-KzQ-tECUAo2ILndo2LDjQsbTHhm1iG-8_Cz23Rdax70m_Rww_EkaeWHqtAYSIJZ5NaJ11-z0fXroKvnfuu9vawcA1NXPFmOHAvqBkX_auQAleSFS2ljCYxnx9DNycD1AHQC",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7689270513&itemId=20877904723&vendorItemId=87945140904&traceid=V0-153-6080a97a4592b297&requestid=20261119062944070022088726&token=31850C%7CMIXED&pt=0&slot=8",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "9320256369",
+   "productName": "블루나 본 퓨어 저자극 물티슈 캡형",
+   "price": 7080,
+   "imageUrl": "https://ads-partners.coupang.com/image1/WD-JIEWDiY-WnWMdWONGhcTERdvYrc4moYEauWFlmvbZ6p0oNDxiDvjMqx8ngNpLllugXMj85-MQLHptKRPLOSMHd68YfQxw4INpDbZZJvzPJ1wVgIKZBp7hmrZg52Ws7y6tyzT9rCOS7MDS4uP-4FQlA0apATIRsuZq8GreY3hSXZjGC-pxArRhDbX_Dnyl3z6Me7KOL5quVnZGS8K1AcENwmp9UoslgSXBEnaGNEPz_bzpzj8trBgX5omybuRE9Sx7bCZ5-TpMtUD-JBxHHuD9_L_-m8rxT3E_l8eUYNPzLKsebMh1-RDSPseBCvhBf_o35FAkwrc6Iwcf9vENCiWfemIxmgNMJAjEuhjvGSWyGeTgxSUKKUgdFxQy-FFft3fPwyf1SPvRPW7F-Jr4st-7WFYziWpHmwXRAgfjkoGjGbqkDDFBlDxE__cu2DSOI9z1xIj4rO9N1N9i0VPhPqI6hQ1LEHHXtZt3EQVyZ0JptmLFNu3YSJqMTLVwNi79-zcFYL411vPlII_Fzrlhcdb7o94Y3M1zcewKsTnXTAI6teKlNcfoDZs1-MzzgddcKSR5tyqJr-MgpUEWFn9pKQ==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9320256369&itemId=27623848954&vendorItemId=94586776590&traceid=V0-153-f229860d401386f6&requestid=20261120062700334292637309&token=31850C%7CMIXED&pt=0&slot=8",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 6,
-   "subCategory": "생수",
+   "subCategory": "물티슈",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -214,12 +216,12 @@
    "popularity": {
     "source": "coupang_keyword_search",
     "coupangRank": 8,
-    "keyword": "생수",
+    "keyword": "물티슈",
     "joopjwiScore": 1.13
    },
    "price_history": {
-    "previousPrice": 5990,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 7080,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [
@@ -235,15 +237,15 @@
   },
   {
    "rank": 7,
-   "productId": "8401503493",
-   "productName": "바겐슈타이거 스텐 행 레이들 홀더",
-   "price": 7780,
-   "imageUrl": "https://ads-partners.coupang.com/image1/b9Zu4drJB03HPuxDb2fKxdH3cKvlpo5Lu-2dbPN-LkNcgS4jWHwnw6lf1bPlK5K5qN7Orew-vlNdQTPjcw8CXf3UTeXWPN4M1HJVsIbJF1kPMpAe7MY7w9-PdpcywsbTDx9C--abK67tDpclb59tmyfjqjE9SFt6pxwOXhUhoN-xYQojpnPa1ziGOhnBX3Ge1Nmm8-e6zpiab44nihnIQG8UIP5-KfTNTdBOAxA1hndJeV-nKNQPwxKv-fJvoa_iNx9iquDs7PLQ-cY2FkoXpHnIW_yCHFVakHauSOyQyUaZGzomRDYzemPu8x4_KpKGVCnsBBclmsFI10m3inW7En_07Z7lruoHyvr3dkY9So8S1myGtUuW2T5sCdYoVxIhn5-7U1DZS01Ic2Bs-iPY0jyNgseS0rFsxgRbEPFYYvzjyVzT6proT2c6RfwFLtyxiYvMI_aTOgeiqvXX5XQU2tQaF4iVY8OdwItQVUujVJhtg1Dt4osk9mvPyD7KoTz3u2p1S7lqZkG_theXiQfGESMY5bc=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8401503493&itemId=24285973394&vendorItemId=91302230180&traceid=V0-153-a09d7e78167f1866&requestid=20261119062949949272599041&token=31850C%7CMIXED&pt=0&slot=7",
-   "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "9725928327",
+   "productName": "제주삼다수 그린 무라벨",
+   "price": 6450,
+   "imageUrl": "https://ads-partners.coupang.com/image1/dMDzqO-kcbLwiaw6dJuHnkFbSLdvm2N3pyUSKLhRpcIjQtkSp0NbokT36zL9U0TB_JAYwPo0mcCLSv5FKNPF6a-9igtGRRevVQcWi5hwXaTWGwOnDaqyQZpnwajTGyJtagij8tsEVpumyRvn4QpMMGOyDVzPos9G01oBt01ZM-bcVI1XdUiFImpYzoGxQCXiXiy-1sZ-REv2_5wnHpD1wO9VzhQphIvOyhIBn1NS40gRP7xJKN-vICBqdeMkQRSEoarHnDis4FmqlbIEss-NanD3D0bV6e8LgVuUFlOHiPPFO3xOAXk0AfXvT5UG1XIRDgFlYaMKfkOAWwoTaY0LSw0tdhwOBuc6boBJdP2m9d10PVBA7WvdPKsnWivC8t-vh06IbSNp_yaJv_KXbTa2i2SjtgQC5xtkXNr97uPzvd6fgVytldTWt2ZZnBg6tsv2q-MQS_ifvx68xbNPDVF9cDG82SKOFc3TaL4lYxIdJZPJ30_tjmSOxmhOES1f78aLtYgZKj6uoGPpEyE8hJziAWlWN-KluG68a5LAjaHZnbJBOZjTUkFiNK3eIUIm63KmxcidfKVcvJSZKZ8LMg==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9725928327&itemId=29105043162&vendorItemId=86430112499&traceid=V0-153-586f4f926c107687&requestid=20261120062702431059311882&token=31850C%7CMIXED&pt=0&slot=9",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 7,
-   "subCategory": "주방 꿀템",
+   "subCategory": "생수",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -251,17 +253,17 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 7,
-    "keyword": "주방 꿀템",
-    "joopjwiScore": 1.13
+    "coupangRank": 9,
+    "keyword": "생수",
+    "joopjwiScore": 1.12
    },
    "price_history": {
-    "previousPrice": 8530,
-    "previousPriceDate": "2026-11-16",
-    "dropPercent": 9
+    "previousPrice": 6280,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
    },
    "tags": [
-    "궁금한 템"
+    "매일 쓰는 템"
    ],
    "validation": {
     "price": "ok",
@@ -273,15 +275,15 @@
   },
   {
    "rank": 8,
-   "productId": "9725928327",
-   "productName": "제주삼다수 그린 무라벨",
-   "price": 6280,
-   "imageUrl": "https://ads-partners.coupang.com/image1/bw97yShN6ahMF_mTb0Vzh0APbK4a6tMgYon_s4Pt88ajZ3_UuBVuOBTNtvXmsmbrYCVG82NBsqx8kGWBSohSKbYm6xtS4Q9v0b8KmztbTGNJMDS7kU7m86KmbFXp-B3a-gKgIDpZsE-RidU5jLKcpj-13mrmnOISpKC1zbR9Bzf0-KLZhG4QdwLrXYUPsM0JgYBpwl4Cj4vXA4jye0ba1cF1ss1_nXh-LBHMOmPc2T60nC2eb4BdRjH1PDV6UwT2_2g3EnAx3etp-dr2tGkHkcxM65EUaGPoMyPB6qXFs9mcwVCxWWiwcYk61fCGGDrd6tkZK7S7KNR6rE0GlyYPfVfY4WpxG_xEq8ZICEym3_DLoX59mUvFJx4FFGBuBbItm0CyCYFDCzkIU5G97XnUU0sGPBUMneeIfUG8BiaYGC6PHWuxKRBUImCaQZ6oF0K2P7FIrHwzUyJAzTzAQP5Q94odiycuHuLj36drERM1lyJp7gy8AhdgHYI8DJguT28FIecOj_DeIURIBBlUiUEO-J-GuvEHNAq4XgA_RzgXFN4ZeK2Ah1vrjoITwbVdg-rO05RHlDzCrY7S7rYy7w==",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9725928327&itemId=29105043162&vendorItemId=86430112499&traceid=V0-153-586f4f926c107687&requestid=20261119062944070022088726&token=31850C%7CMIXED&pt=0&slot=9",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "169280610",
+   "productName": "코멧 깨끗한 천연펄프 2겹 키친타월 150매",
+   "price": 6990,
+   "imageUrl": "https://ads-partners.coupang.com/image1/MskMDF2_EIKAWeg3MhXJltRl_8BMTxOyzDSqVomx44nxmVjJ8YXv2Z3PBbUTot_fg7cxnx0dkITmn0KjsANQOxZ9O3YsEFnFOyA4Ksfh5KVVixITtEVnkrusRbw36tqBH_ghqRqlZBREHSMVC7Xr-lUnPKmPerEbfsN_i6xqh38fOtVcn4YnGVMB_88CsRJvcpj3KxbSdaYS4QSngZBLFXZvKXJW677OMRAKHLDCm1SH94AIjp2a9C7VIru_3h_-0shDMgTsqQesprDnVq9tnDzb1xdGVkWZ53X2AxrjWEOYJgopuDYwEo2a4jbkKMA85aojGxYCk1OP320R4-zfj27mbZiutv5Vcdtz67hj4CDp8wjUtI1DPiDsrA6GYB1m-wc9JAkjnfSaGROnSl9xy2OpoCazbAe714e9Vuhc40qetV8WLBWdzgzA4MfUTk8fneEp3DXoNh-iHoZCH0KCmJXGI4DM4Tl3GiNc3G0B1Rx33wnZu8AQAtK0eEBXOoQoOAXUp3aW1t5Gs-Ix0CNGGNiUUZJ8fnLPyI4Eew4xQ2gLeV8BbfckK8Gm5KPojscP-JsnNasUvPx1lPk=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=169280610&itemId=484461411&vendorItemId=4220116848&traceid=V0-153-4ae8b097aa58b84c&requestid=20261120062704219309554323&token=31850C%7CMIXED&pt=0&slot=1",
+   "category": "주방·살림",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 8,
-   "subCategory": "생수",
+   "subCategory": "키친타월",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -289,13 +291,13 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 9,
-    "keyword": "삼다수",
+    "coupangRank": 1,
+    "keyword": "키친타월",
     "joopjwiScore": 1.12
    },
    "price_history": {
-    "previousPrice": 6280,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 6990,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [
@@ -311,89 +313,15 @@
   },
   {
    "rank": 9,
-   "productId": "9320256369",
-   "productName": "블루나 본 퓨어 저자극 물티슈 캡형",
-   "price": 7080,
-   "imageUrl": "https://ads-partners.coupang.com/image1/CnIGrZx9HOT_yKiZCpS5WWrcKKIV1XKNZQO8zJVBI34Vr0wVG2BmA25Rqs4cZk7EHqTTZOA951oG1jLcNAbd7DwJ2RLzFppsPbqtv7UKcNJQdWv7ARy5wfVUhrXbUNdSpnbp_77NEb9bKb6UxaAmIt7NNglQ3SZjbgWAtXVauq85y5177sjWQCQelsR1bipXfjo3Ig6hANeW-NEVjIIPB-wF5wWdkTq4XwKeRKuSkqPQ2DrWEh9QFGilUTJJ0Qh7M1jQEDw2C_j4o1w4_80SBDmPebsCNFjdeMDJ-PeIQTB2wWhWNmVqvK_Xagq0WZqhYtQNCMfT5ItQee6njJ0AB3q08kAKEKCRcDEFkmg81k0558tKJhN7Xe7FwzY6cQ34cRrkw002f9XnJdRf2bApQDI86wuCZ8CCXLxr5Z8gutCm-oKW6i1symo50GiNu42PaDKQYf5UuIGWNP1tT4UZnAAVkUzdvoqpyPIfjIIGnueXehmYFC9nCFnqvOK0l_mR6YMZ3BppqUPOpz8rjkL-u0XSMpAWsMmSDLSzoE5YyZ7E-iYTH-kzOQechZkryd47NlFhXfLuUgP3wN2jG5Ib",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9320256369&itemId=27623848954&vendorItemId=94586776590&traceid=V0-153-f229860d401386f6&requestid=20261119062942139262986022&token=31850C%7CMIXED&pt=0&slot=9",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 9,
-   "subCategory": "물티슈",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 9,
-    "keyword": "물티슈",
-    "joopjwiScore": 1.12
-   },
-   "price_history": {
-    "previousPrice": 7080,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [
-    "매일 쓰는 템"
-   ],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 10,
-   "productId": "9287063502",
-   "productName": "주식회사아텍스 실리콘 외풍차단 틈새차단 문풍지 테이프 반투명 45mm x 5m",
-   "price": 3000,
-   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/2026/01/05/17/9/a83e3cab-0bfb-4c6c-b5e2-b0c80cfc4eee.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9287063502&itemId=27501525383&vendorItemId=94466585855&traceid=V0-113-5d39e0eb8bc3a7e0&pt=0&slot=20",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 10,
-   "subCategory": "홈인테리어",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 20,
-    "keyword": null,
-    "joopjwiScore": 1.11
-   },
-   "price_history": {
-    "previousPrice": 5350,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 44
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 11,
-   "productId": "6959736515",
-   "productName": "브리즈문 2세대 밀키웨이 오로라 가루 30g",
-   "price": 5260,
-   "imageUrl": "https://ads-partners.coupang.com/image1/SD4BV53b1ouZzw_zSMgX5GJZQFDTGj2r8ChlB0uqbtU7uUwWXAv3jva0dL5Q-ipwfK1sQp3-NHUrBLyoLeOCKmmRm9gzbBslM2vsiRinnvDkPCGF1HKrfcO_uvdxlsBjOWJEE8HqvUQLYUdSxER79SRrwcHIf72VtA4w48jfb8PfZGhoIddZ-Iz6xWDTqEI1it4X5-V63lDXJCmU-V5YMhvIWsKiZQpBXxQgLd9n4y-2nbq2FVgdB1lNhxGPEiXzzGQSAhLLshkiOGf9ZyxsprM9VdpLt4E-rANZCGvwTk31W996JfzsECoukj6U37WGC1ntJAXZQKbMrIUvIsDb-keXLwubwKxR3bOUGIulvsJ_3xOuz77RTVHxJvA13UMDEsUkiF28FGnZ0wwrM6hdClpzJsll3pWZHI3m1d3C_UxwdLy7NyzTXrpO3_5W2qq9UhTvvGRokZsDGAWoNxyq-cYCnuqA06N_5eal1nv22Q32q8ywJ6wTtgVXbrCa_vVeOF7S_2-30g288BUT4seiti8=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6959736515&itemId=16938774547&vendorItemId=91267299457&traceid=V0-153-64e1f28adfa02a46&requestid=20261119062956373016909208&token=31850C%7CGM&pt=0&slot=1",
+   "productId": "4656005846",
+   "productName": "러브핑코 캐릭터 배워머",
+   "price": 6040,
+   "imageUrl": "https://ads-partners.coupang.com/image1/qpQgOAuphftwUJoqqtbKaqVH4KJ_xhB38xMPw6NiHtisczfV2sqoOpdAdliKquK7rTJ5saPxSVz5nqLKN8MzvkS6eOeIP_W3CeBG_1bqwf0YSXG-Bmu-KEDWF71u44Tjh8ro90wxijKqQVKV_lNLcAS0vjvE4ikB-RF-JFJS-GLE2BaYnDAAQpwrYTjMYw_76ELtJ1PPWKeEtg1TzaRvFO7pRWTHaHW1SongYLIv8vrIdNPeVRQ1BWiaS0-iXxiH5iNCdA1MD2hesZcPcaTqm36rEwEyQj76xhtdth4y-DAhU-N7zxmUO-wGFqXWduo-QpBDEddI4Xn6LAYfjwefhm_x57xx8_YtsesAXA2azYwdj6xAxTZfopdWP0aoWgH9YqwkVUsuzkYddOtpOTQgsuK53nBqtadbInkKanRxOUWh2hgWi5_-7gwh2gNE8fouazcjnvMaI1eoPu9EZEUALqcRvqtPECh31sN_NjlHUHPqgQoammxQ_kPY-QiiF1_ZqgE2pWQ2Bn2wM3Vj4xk-0qhf6-2NKbk2ky1-MILcClqoYiQuUHZwwhfHORTbM4gWrjw5",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=4656005846&itemId=5810209711&vendorItemId=73108698803&traceid=V0-153-4d226a6ef2a49b4d&clickBeacon=faf2d3c0-e45f-11f1-a290-6e1f0135f8d5%7E3&requestid=20261120062710769140443649&token=31850C%7CMIXED&pt=1&slot=1",
    "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 11,
-   "subCategory": "캠핑 꿀템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 9,
+   "subCategory": "겨울 꿀템",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -402,82 +330,8 @@
    "popularity": {
     "source": "coupang_keyword_search",
     "coupangRank": 1,
-    "keyword": "캠핑 꿀템",
+    "keyword": "겨울 꿀템",
     "joopjwiScore": 1.1
-   },
-   "price_history": {
-    "previousPrice": 5260,
-    "previousPriceDate": "2026-11-17",
-    "dropPercent": 0
-   },
-   "tags": [
-    "궁금한 템"
-   ],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 12,
-   "productId": "7614436434",
-   "productName": "[로켓프레시] 풀무원 소가 찌개두부",
-   "price": 1440,
-   "imageUrl": "https://image12.coupangcdn.com/image/retail/images/305290783010632-3c6015c0-32d1-4fa0-bf89-3d1d6b3fb70b.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7614436434&itemId=20174033794&vendorItemId=87266101083&traceid=V0-113-fe53098f2647f708&pt=0&slot=30",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 12,
-   "subCategory": "식품",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 30,
-    "keyword": null,
-    "joopjwiScore": 1.09
-   },
-   "price_history": {
-    "previousPrice": 2790,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 48
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 13,
-   "productId": "9479098815",
-   "productName": "캠핑 로프 가이라인 스트링 다용도로프",
-   "price": 700,
-   "imageUrl": "https://ads-partners.coupang.com/image1/dSnQsAm-hblKUO9hddCRQoBoYc92uDnfNXvAvv-Yn76QjA-FuH-wmdDrcmZ-rIENb0qU_Xa2AfS7vHbIsVdb24UvTHTeOf12scYU09_YCuQsE42XD-2cEJmCLgpkusMzWAuzcUeTnjldCWct8W4JRU7pmN9IBvUGnPC820V6_inge5QIUzflFmdj-lTvqq6LHjfjjS3amfqLmQNQNdGZJHBVxnP6Ur7PFG-m9HcLGhBJ6nOQ2eZqFPxiOkIEe_LHxdTzA2_do4dtOC-LHKsBqZJZN6h230ODbVDylDNNvTBrr_3PritVt6dnQIzDL3d5bal9WDBDQn9KcnAw_N9wBVSetH9W9fY1Ox7maErzHovDALWsOL1C4eitUMDST_mwkOdTOAdjwhEbBtX7ud0218yQZsrDsJ9fPDq9y8HcjPeu58nTt39bq1JCCh9W4hAf0pA6F9_FVQHXIXbtVH_toKXF2y_4CXERFNJIKpPuYozeXcsHPlhaJXJItCXeG9XmMguL-7pOAjEUb4b8_2iAHP3ULlBhXqdHMMLhT-8Hkg==",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9479098815&itemId=28220914999&vendorItemId=95155251011&traceid=V0-153-17956b9f44a9033a&requestid=20261119062956373016909208&token=31850C%7CGM&pt=0&slot=2",
-   "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 13,
-   "subCategory": "캠핑 꿀템",
-   "shipping": {
-    "isRocket": false,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 2,
-    "keyword": "캠핑 꿀템",
-    "joopjwiScore": 1.09
    },
    "price_history": {
     "previousPrice": null,
@@ -496,15 +350,15 @@
    }
   },
   {
-   "rank": 14,
+   "rank": 10,
    "productId": "7230779632",
    "productName": "신선한 대란",
-   "price": 7990,
-   "imageUrl": "https://static.coupangcdn.com/image/1025_amir_coupang_oct_80k/316d/6262fa64e13b4344cf33980399519eb5c7b2d25baac2bd9a33b7a5a7c762.jpg",
+   "price": 7880,
+   "imageUrl": "https://image10.coupangcdn.com/image/1025_amir_coupang_oct_80k/316d/6262fa64e13b4344cf33980399519eb5c7b2d25baac2bd9a33b7a5a7c762.jpg",
    "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7230779632&itemId=18347032018&vendorItemId=85491095723&traceid=V0-113-f5bb636e7db07a4a&pt=0&slot=1",
    "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 14,
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 10,
    "subCategory": "식품",
    "shipping": {
     "isRocket": true,
@@ -515,11 +369,83 @@
     "source": "coupang_best_category",
     "coupangRank": 1,
     "keyword": null,
-    "joopjwiScore": 1.08
+    "joopjwiScore": 1.09
    },
    "price_history": {
     "previousPrice": 7990,
-    "previousPriceDate": "2026-11-18",
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 1
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 11,
+   "productId": "6398359177",
+   "productName": "[로켓프레시] 돌 바나나",
+   "price": 2290,
+   "imageUrl": "https://img5c.coupangcdn.com/image/rs_quotation_api/vdrlagvk/ef6622307fdd45a6858dcdd1cd4173a1.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6398359177&itemId=22432685559&vendorItemId=89477313750&traceid=V0-113-e79ef4f4c61411d2&pt=0&slot=12",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 11,
+   "subCategory": "식품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 12,
+    "keyword": null,
+    "joopjwiScore": 1.09
+   },
+   "price_history": {
+    "previousPrice": 2590,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 12
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 12,
+   "productId": "4618503633",
+   "productName": "국내산 무",
+   "price": 1580,
+   "imageUrl": "https://img2a.coupangcdn.com/image/retail/images/1482132093671966-acb44d46-3b28-4e28-925c-292da96e7ce1.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=4618503633&itemId=5720086446&vendorItemId=73018834165&traceid=V0-113-af0f9a73d6065309&pt=0&slot=2",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 12,
+   "subCategory": "식품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 2,
+    "keyword": null,
+    "joopjwiScore": 1.07
+   },
+   "price_history": {
+    "previousPrice": 1580,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -532,16 +458,52 @@
    }
   },
   {
-   "rank": 15,
-   "productId": "7376360456",
-   "productName": "와이그레이스 주방 투명 오염방지 타일시트지, 1개",
-   "price": 6210,
-   "imageUrl": "https://ads-partners.coupang.com/image1/ZPmViy3McmmMgj3BZMhskUYwfVeL-TLXRefjKaMg7eeEumNO9CDTxiySUi4nDSet37L45_hm5hrXqlKquTgc5VnA28O4ir0TXtJ7XqKt19icFY_ai_bCj24ENKOy7zOuUlNyAuy0FAJHj3jcoxwNSBUJcRcvDQ6N3q6mXIDPfCzo5Ue_ipvLm2uCbl8zyHbc0BPqIP-ow8uXx1_867lNHeIXpnLvJhjZ-EsDNrvcFWUW-6ZFeFuypJ-i5-B280H0oV-Bz7xlx3yogmd9V9-IhODTl4rKo5Bc_rhEi8c5Bzeq625IgkAqoOkQlylUw37oXRcf27EVJdk3Jw7T9ljyAlS59aqVS6IsXpbPaTI9eHk0rJkHOSRVPxufmfduuJSod8S99Ch69eoF8Ob8p0ojTOto-8wBl-7JmRhs1CwBKa3Typ63iBgfY8E449Ey6T0etc90z4G7s69ovkxnp8tO6UXZPUPN9aWwa9x2Tr3DyW7nIG05vQF0yXxgc01lYJVQVrI2ngk=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7376360456&itemId=19039358758&vendorItemId=91427128080&traceid=V0-153-a1699c7b8e3928f4&clickBeacon=2f6e9860-e397-11f1-b57b-45a7159f4e43%7E3&requestid=20261119062949949272599041&token=31850C%7CMIXED&pt=1&slot=4",
+   "rank": 13,
+   "productId": "6640702742",
+   "productName": "못생겨도 맛있는 애호박 1입",
+   "price": 1390,
+   "imageUrl": "https://image3.coupangcdn.com/image/retail/images/1845911457723088-8911a3cc-0274-4ad7-bb6f-696aea588fc2.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6640702742&itemId=15179344195&vendorItemId=82400627614&traceid=V0-113-2521279b4c57f86a&pt=0&slot=20",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 13,
+   "subCategory": "식품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 20,
+    "keyword": null,
+    "joopjwiScore": 1.07
+   },
+   "price_history": {
+    "previousPrice": 1690,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 18
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 14,
+   "productId": "9382511359",
+   "productName": "앞날창창 플라스틱 리빙박스 수납 정리함, 투명블랙, 1개",
+   "price": 6720,
+   "imageUrl": "https://ads-partners.coupang.com/image1/vbcayULxnobdndgTvRgcDFK96w9npRjV0FDRG5AVuwc5BAc53c1t1Z3yR0IG9FJ_-h42SFeD16izDAGhoCQeuKWM4T4Q9jqK35iTZprKaBawsQ1ipwGfZn1FHA-V3JXQkWpTTY5LKhNsJjpPfUQ7gz2c1mSJ6hyEQ2wy2mqBaHkIYl4XNXXNpnXK7PemcMfdAXqUJKotg5lQQEgGStUwS-0bt-a6p9ZQaLk1erGCmTJDxOhCmylD8AM05iYfXrgyBtgP0urL8B0kY7eEuEWhqA6zxoWa41HXVUK39qjZWBGLJbFiYOsvNcYccpRTmnHp5t1eNYfQ1jdeXAmWISV-P6oyPGb1GLnUUDHpwREIWSV1ULFfn8wDKh2Gfu9O-xMchkY1uetQIlsaV58QYSr5yiQrZVlhiQoMY3LlSp8soir5Utrz_Ops5D3YTYZJkM--yBmYpaGYHDplF70oVg2ALC9vP6ASgiQvTZ4J8m2It9UHwFFxRGuLrWxvYJtaqOBVg7E15gXSCQRlbg==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9382511359&itemId=27655643098&vendorItemId=94618003953&traceid=V0-153-d3f19decb5024cdb&clickBeacon=fc2c6530-e45f-11f1-927b-944456469882%7E3&requestid=20261120062712867193055999&token=31850C%7CMIXED&pt=1&slot=4",
    "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 15,
-   "subCategory": "주방 꿀템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 14,
+   "subCategory": "다용도 정리함",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -550,12 +512,50 @@
    "popularity": {
     "source": "coupang_keyword_search",
     "coupangRank": 4,
-    "keyword": "주방 꿀템",
+    "keyword": "다용도 정리함",
     "joopjwiScore": 1.07
    },
    "price_history": {
-    "previousPrice": 6210,
-    "previousPriceDate": "2026-11-16",
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [
+    "궁금한 템"
+   ],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 15,
+   "productId": "9728613423",
+   "productName": "NUNUHANA 슬림형 다용도  이동식 틈새 트롤리",
+   "price": 8990,
+   "imageUrl": "https://ads-partners.coupang.com/image1/gUf64-tfnmxHgP7UgYkYpo6UCJrLfJN7nZ5VeIXpaquXdlAScaSOY_n0Nx5qmz2HfxenAkl00ZAvHlYZ1y28RDLdVrBBjKRcGHnXqFaCPHg65afFOP5YYOslTLL8XimiIVlN1kkdWg5-k2gZsDGyCY8QFJCsc2vUAaNgOpau5zFWV2130uv5fOJFj92Rnx3yr1F_s_0JwZ86Ax9EHn_UJtbHhXYVgCs_fOqtmexz6_5_ORJ63FRs7aYHI2LNz7XRf4WskJGH95f2BBlZAigYHK68T0jyZTN2d43fDZbvPUW0KNHzMSUWiBCwcslqV0ygH4_uWdwTa9NrmceYzHz7E1LT-HaF_WEfO0d799IieLJXfRm0m4Gk2DTE_Wo8b9Bf60PGCbvcmvNku-fXtoA1hTChirYKVTTfL-wvGfwFQCKOTYIsSGW3aJgfkQqUkXpurgvcf3mOZ75_ET6PaRO-FZtzUp-f9XB8BeOcu3PQqhaVOcFxgk8YVDgkBtNPm2UIeoaYARbprElLufSW9_hiPnv5L7l_Qe5Lo_hMuqrcfR2rOmOd",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9728613423&itemId=29112780208&vendorItemId=96194864931&traceid=V0-153-6b08a732008115ad&requestid=20261120062714680223148778&token=31850C%7CMIXED&pt=0&slot=4",
+   "category": "신기한템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 15,
+   "subCategory": "틈새 수납",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_keyword_search",
+    "coupangRank": 4,
+    "keyword": "틈새 수납",
+    "joopjwiScore": 1.07
+   },
+   "price_history": {
+    "previousPrice": 8990,
+    "previousPriceDate": "2026-11-17",
     "dropPercent": 0
    },
    "tags": [
@@ -571,29 +571,29 @@
   },
   {
    "rank": 16,
-   "productId": "9586925633",
-   "productName": "천연 옻칠 원목 사선 뒤지개 캠핑뒤지개",
-   "price": 3300,
-   "imageUrl": "https://ads-partners.coupang.com/image1/uIJraa2whysuN4uEuDQtFUj_2T-uB8E0f2kSmh8L1qIGuOS4qLjhXZ3Zeqs-90S2g0N4YlimD3x8AQ_bmv6SgLBweAsy7phmOBcktDVtTynrCLBm_qjGQ6AdRTwMPGqfbVpBbDeQh3zn4N13N8_Dtfg0IOOi4ToeVbhD_61Qi14conObzDFDBDaEAMEvI-sQ0iy8KQREAOfVqFVZgqNRkNCHTerENs7kwFhblthE1FYuD7X7raD8mQeSrir-TNtwYlZWk1lRcuqdCgq9jm1bEJ7RGPk8_cEg-Xr3LjfswREdIGYK_G4r2hZcaY6MZCfyQTeN_De4piEGYSNdxSgPyVJvIQueglaE8K_iYQuD3yvDOrBZkWq8ZK-yTOpUyQtm0YurLaR3wtD5brYY-k4S4WLH3AtK12JmytklMC2t-TK1mVHAeH9AhijAriwNbRel1c28RQ0Ip2bIWS2zx7whucvYCTzt9tSmE3WfmRR8smcHEUZZaxNQN1r4VmS3k3D-6dNqWrIxXEQTa2nzctStMC-EPbBd_eJsWDAzdanRwA==",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9586925633&itemId=28617930909&vendorItemId=91683767464&traceid=V0-153-00d1018ea04b8e7a&requestid=20261119062956373016909208&token=31850C%7CGM&pt=0&slot=4",
+   "productId": "317523753",
+   "productName": "[판매자추천] 겨울철 필수템 수면치마담요 극세사 밍크치마담요",
+   "price": 8800,
+   "imageUrl": "https://ads-partners.coupang.com/image1/xJvtuRtDWRjuVt4-xI0Od3JZXQMAwePP5sQ_EMMXqWq9QPQiMmT9REwgfbwpT0nb5doVjY8G64XiMgi6zHY1SbFM3mrP5s9fA-Io9l2uN9aLYLx2eMYy2PDimjS7GCCVdUu7xWQVP4JASE23TmOuCINsPMW7VVjaTph-mllFEj6s-Hm7EfBlvl10LcF5E7ecTMw22MMyxeIzWalUACrr6tqbUt0cOFrVWxVCwgJRxh4D1dMQMnqlImmjTsvH3z5_6H_1fzvsbCOsLl-fNzW6yN10sYjB5redBINvIycGYH1DGk80HoqdSGxv-K8bq6u8J6zkQdW0D7uCdor1JYFFT3ttK6cVKe3doAyGQT2Ng1A9NmCYgmHSe_7QmwhKih5GofwV2znifGiC_HOYcl5ztFqIo5uXNSk40zRMtgJEuB6P_5HDatQUNHLOXiVCUhKpfmdf1i2MX4dp58LwpKppAk_ogHyFA6qeARtS32lLsHCB2STZkFaiq4rqUTq6g9t_PrkC4jHtOWqyHGCxI0IWj_DIvqL46Xb0Grv-VEc6dJoQP9OLYW45ZAMqqB6QYMi0POcL73HYWZPGGYQrREJw_gxHsh-L1RbOx3LMWg==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=317523753&itemId=1012801181&vendorItemId=5446924989&traceid=V0-153-8d62300c448cdfb4&requestid=20261120062710769140443649&token=31850C%7CMIXED&pt=0&slot=5",
    "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 16,
-   "subCategory": "캠핑 꿀템",
+   "subCategory": "겨울 꿀템",
    "shipping": {
     "isRocket": false,
-    "isFreeShipping": false,
+    "isFreeShipping": true,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 4,
-    "keyword": "캠핑 꿀템",
-    "joopjwiScore": 1.07
+    "coupangRank": 5,
+    "keyword": "겨울 꿀템",
+    "joopjwiScore": 1.06
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 8800,
+    "previousPriceDate": "2026-11-17",
     "dropPercent": 0
    },
    "tags": [
@@ -609,14 +609,52 @@
   },
   {
    "rank": 17,
-   "productId": "4618503633",
-   "productName": "국내산 무",
-   "price": 1580,
-   "imageUrl": "https://image3.coupangcdn.com/image/retail/images/1482132093671966-acb44d46-3b28-4e28-925c-292da96e7ce1.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=4618503633&itemId=5720086446&vendorItemId=73018834165&traceid=V0-113-af0f9a73d6065309&pt=0&slot=3",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7134558328",
+   "productName": "크리넥스 안심 3겹 키친타올",
+   "price": 6700,
+   "imageUrl": "https://ads-partners.coupang.com/image1/yTVz45PDSF-5v10ayWIZBYAJa7NAGGZpXreoTRCcV_nbM-AsTSitOxl2db2aUcDH9tXTfQ7c7tTNWo1vxUH9AfI3COJO43bqNmHq_8ND3Qm9AFrptiXRMBNe_zhvHYKsTnLjEDwzf7wkCmzIpmZzjrV1IwVuXGvYIKCPYeXv6NMnTIaVXIWt-i9f354hooAZzBgMROznzgHqJqJiHugamgd-m66ALq0rJFsID_sLdWxbjR5430RS2tEYraQeu9yiIk7rqzo2rAZN1a2OYaYTAveYP-fLqo3rjnuYosGP1X1d2OoD2G8ISUtX1nfU0gwdPTpoNBx1B4LCbH0_Ql8jJ50XuhrWfmPORGj96opBY8pqTE8kv_0ITRUQzOXyrcheP0Dr-6PiBSFPbzp-SkSjpG_rBR1CrgoEJu_3EwWYVuFJoBalHTPIF0gy-ffiE6Wd2utigHp3N-WfByUBESpqClzpkY2VIoVhUNu1XuY_OWQ_DmMg6E4qu2ENYybFQrQQu4bwVSEEDdEQLgwTJCQhQIb-GBYpbZo57k6G_C1gt0XElWi-QtZUSDgfh150_zTRdS833lePYACDA26jW8p2",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7134558328&itemId=20247515510&vendorItemId=3158599929&traceid=V0-153-1640d8dc2891e05d&requestid=20261120062704219309554323&token=31850C%7CMIXED&pt=0&slot=7",
+   "category": "주방·살림",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 17,
+   "subCategory": "키친타월",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_keyword_search",
+    "coupangRank": 7,
+    "keyword": "키친타월",
+    "joopjwiScore": 1.06
+   },
+   "price_history": {
+    "previousPrice": 6700,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [
+    "매일 쓰는 템"
+   ],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 18,
+   "productId": "1271064981",
+   "productName": "곰곰 무항생제 신선한 대란",
+   "price": 8390,
+   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/2215512493945149-f801fa53-33fd-482b-abcf-20dda5817093.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1271064981&itemId=2275730724&vendorItemId=70272921582&traceid=V0-113-5e7ea65e5d0510be&pt=0&slot=4",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 18,
    "subCategory": "식품",
    "shipping": {
     "isRocket": true,
@@ -625,13 +663,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 3,
+    "coupangRank": 4,
     "keyword": null,
-    "joopjwiScore": 1.06
+    "joopjwiScore": 1.05
    },
    "price_history": {
-    "previousPrice": 1580,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 8390,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -644,73 +682,33 @@
    }
   },
   {
-   "rank": 18,
-   "productId": "8520333912",
-   "productName": "존글로벌 걸이식 고급형 주방 쓰레기통 + 비닐봉투 세트, 혼합색상, 1세트",
-   "price": 7990,
-   "imageUrl": "https://ads-partners.coupang.com/image1/L498DjU2b2qP2UO8L8ATk1RHJXTdC7DlIh215ctvSgY8sCbrfItHbcpq9oob86ZKB9whroC8nt1AO3f-NJUzNkl33Qkrl5flboyW6ONmZ9Y7YSbPxRbHkaP5ntcAEHMkpm3krz8FOQLNIVVPaK74pwRoXcjh37aep00Vg7Rem23LjRhqL2Tf543YSW8js62hO-BjvV6Ve8NyRNqtUrO5MIRLl6ejKIrTer3kzMb3e0ah-4aDOHbwFslZkQ5mjLaP3pzpZBK83MqwbRAahLl3mN-eWgT19v_IP1eFS5tvj7q-IdTLpiaW4nVjNMgqF2yhf8DnDYT197ghwzxe4rfn1Grvj9Y8Go669AmeMv4YFVYSsYfJ6dP9Rji-guMkcPP3Vqthzs2I_Wjr6uyoCNsCFuhlGrIL8n1IsVB4y6c51W792PCFx2H0aw2FR-HEh3f4k2cn2if0031brqvUkMxp644wuPPRuCIqZZ3idIaZ-83gq5lK_WWhqaHk3G82Bh5cjg1Gm8qM",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8520333912&itemId=19803726248&vendorItemId=91313236566&traceid=V0-153-747c4b2d571ec338&clickBeacon=2f6e9860-e397-11f1-b4df-0b15e065f807%7E3&requestid=20261119062949949272599041&token=31850C%7CMIXED&pt=1&slot=5",
-   "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 18,
-   "subCategory": "주방 꿀템",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 5,
-    "keyword": "주방 꿀템",
-    "joopjwiScore": 1.06
-   },
-   "price_history": {
-    "previousPrice": 7990,
-    "previousPriceDate": "2026-11-16",
-    "dropPercent": 0
-   },
-   "tags": [
-    "궁금한 템"
-   ],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
    "rank": 19,
-   "productId": "9606278168",
-   "productName": "쫀쫀거품물때제거 아이헤이트더티 트리플액션 변기세정제",
-   "price": 5900,
-   "imageUrl": "https://ads-partners.coupang.com/image1/3_lOa3sUG7aRn-2Q3wKAGY-5dDDCUUbcndfNnIWsoWrpRotMSBTN0VpAJehxs1b-RfA8vmcnwLp44qSmjSguGTA_grGDzAF2n9nMQHfdJ3H4SUGIDw5tlGSo3KlSETB5uRld9HcQ_gs39vPVoFiUa_jzNIBRkgXq-e8yDpN7e5DWaq2D5lfbgyOGBONIvEJlpnDICpcmilaY2UPg6IghUv3ZgN5aujIU0taace3Qr6GaNs20tCk6t71v0zA_84ZOGrTNmO4ZYP-fRZ8zQ6QDe4FqG-h4PFTdZseT5QHaK2OnbDLCEbRLYa2AxawV7rygibDHiNb2kMk3M7nkHLk1HSE9sVZgbE-YCAJFdaFTYhjLbuHgKJw4YiJUlz4jMvQ-MfV2Dl4yDTmFTz7bQiQj4y-9T9Mj1R6DEVlAIaZCrjRciiqPYD9e2_rjl92KgAKuLihZoNnVsj59j34e4kCbLUmBhMnuIWaI4aDcoF_g729nRc9V17wo9EXrHeI80kh_TCnNFMrN7oEFVVc5mZ9Bpsho7MhhuBCy8Nq2v56uFdYuurgHz-_u2zQ6ELh_FUwQsU2VRb0e50-LBP5tFgPOE2Inxf8kv6q1M2FCB302fg==",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9606278168&itemId=28677867822&vendorItemId=95631108239&traceid=V0-153-dee70c5a6f309c05&requestid=20261119062952124306643734&token=31850C%7CMIXED&pt=0&slot=5",
-   "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8520281997",
+   "productName": "프로그 향기나는 기저귀봉투 베이비파우더향 100p",
+   "price": 5560,
+   "imageUrl": "https://image13.coupangcdn.com/image/retail/images/845662615684342-71e8e3ea-eed1-4cd9-a597-ed0bc1075465.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8520281997&itemId=154765889&vendorItemId=3361346762&traceid=V0-113-fd869e24ac667329&pt=0&slot=4",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 19,
-   "subCategory": "욕실 꿀템",
+   "subCategory": "생활용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 5,
-    "keyword": "욕실 꿀템",
-    "joopjwiScore": 1.06
+    "source": "coupang_best_category",
+    "coupangRank": 4,
+    "keyword": null,
+    "joopjwiScore": 1.05
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 5560,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
-   "tags": [
-    "궁금한 템"
-   ],
+   "tags": [],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -721,34 +719,32 @@
   },
   {
    "rank": 20,
-   "productId": "9747678410",
-   "productName": "접이식 자동차 도어 수납함 컵홀더 한드폰 거치대 차량용 사이드 수납포켓 LETILYRA",
-   "price": 9500,
-   "imageUrl": "https://ads-partners.coupang.com/image1/a_l3G0wQpN8X9X6nayvDYBHK1_fUkNNnhLf-TnimN43qyN33DOCkyPsC_ppyvpdCKvXhH5VfACAJFU4OHmZBuMk4wz3CyYFtsiIBwEiPTkBjsPgLSzAlgQmXnYihYdNGbAoTYEzBeT8DmcCdi5H1DgqLFY33S_MWn7n2gUZqPDfRvz3cVrB1IgUBaq-9wumXsF4N3Lgw3AE901U0WbX9_gTx9GImLhtar7sh6UBfFsZFgROQXk9QU2TUdVOaxhxFugz3NbfqXGjVjECg2VZpBL1xY4auJ0tQBd3Yw-p-qnAs5G9QmVu_OEZrk1FZ98xbmNj-eth6vvJt6nVpibJpGNg6yWflPr5BAv8Z3eFzKA_4wjqxDPcRkou4VD__VXbKxT9xvjRV27uOacYypzLO9LbvWSHH9-0qmMSSq78AdDVivuKHRRV7oTuybIKYKYZJd9OKKePGwpGU2xLjrhaFJgA4FPloGPRlo31N9Bk8aVSuHffXbU7_C-GJL_Iu3LRgPXXY9loKdsWM2uAgA1Fq6w64dfZHg1bCkGMaQaZiMyfoMdbg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9747678410&itemId=29154240841&vendorItemId=96076844048&traceid=V0-153-c64067fb959a0603&requestid=20261119062954353022083098&token=31850C%7CMIXED&pt=0&slot=8",
-   "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8466035436",
+   "productName": "리벤스 스페셜 민트 유아물티슈 캡형",
+   "price": 7120,
+   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/23101485338839-5554723b-d87f-419a-a5b8-db3a0a9e46f8.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8466035436&itemId=24495587357&vendorItemId=91508759715&traceid=V0-113-8a7557ea3fee4f11&pt=0&slot=4",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 20,
-   "subCategory": "차량 꿀템",
+   "subCategory": "출산·유아",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 8,
-    "keyword": "차량 꿀템",
-    "joopjwiScore": 1.06
+    "source": "coupang_best_category",
+    "coupangRank": 4,
+    "keyword": null,
+    "joopjwiScore": 1.05
    },
    "price_history": {
-    "previousPrice": 9790,
-    "previousPriceDate": "2026-11-16",
-    "dropPercent": 3
+    "previousPrice": 7120,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
    },
-   "tags": [
-    "궁금한 템"
-   ],
+   "tags": [],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -759,29 +755,29 @@
   },
   {
    "rank": 21,
-   "productId": "8405667324",
-   "productName": "캠핑 야간 안전등 LED 스트링가드 텐트줄조명",
-   "price": 1060,
-   "imageUrl": "https://ads-partners.coupang.com/image1/yGbumTnqK4mhlcjzyAcgfpQkwHt3xYxU951SxRxJzsmVBBoEwsZ5FHFbQOLLL578efJzeyqkc1lFBdw0PnM2knzE8AzlOp6gdH9aoESMbJFa-riUgp3r7EQIvx711f5CXNb_cxNwScH2eFt3AqDXH9CTNC60lw1ZWyURMH3ADh5xNE0kBzarfxBtKnVZhMvbBQkVVhPDg2WSCmDkGA01-1PTw98fprtQxivHEsRMQPBn_VXueV8pW1CTth681INQZ53-iu-JRbjrGMc9Kh5QhYQXby7uoRung1xpOlQfSHEJbHQP_HlXAolwJSA1GTVcVHHDTbzpTStRYE4MsBdutbYAHjdomxQGoDL6YOB8hNkfPuHieTzEg1jr29r2IB_nO7mc3gu-pwIRtqtC1jzPkxz-2hYLaKWoQcVrv8jVE7c2_ASjelmJZyuo1L18tSenDMqGlr6vlSTnPMJ4PPj1CZrk58w3vJtj_uw8H1227D8fFjWxFSwzjLns6Ivyz7Q7SZPPAgqtaV_CRMmRMzEhWPp2NkNLUzqAjycuceamjv0=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8405667324&itemId=24591742177&vendorItemId=92765638219&traceid=V0-153-dc54d1b99f0100ed&requestid=20261119062956373016909208&token=31850C%7CGM&pt=0&slot=5",
+   "productId": "9453346482",
+   "productName": "바른피부연구소 뽑아쓰는 일회용 숙면패드 베개커버",
+   "price": 7800,
+   "imageUrl": "https://ads-partners.coupang.com/image1/v3h69LT0so6yVCHMv0TJjuUlpuTL33JOIjESdT6pzNacB5vsa68Mj9oIqWMKliyVddSFu_8YeEGMy7bjlUurmmNXIIWuCFlWP_P8P0DkHeWG_YxkrOHvOfUb0JbAbo5SmPts4Rwa72-eUuFL-Z1Z-g4jkFH2Rx1c2OFugeEXJA57pWFGkFs-angpUf0KS7lT6jiDJhV_32o1aH86u_MBuf9Wxur9kSEmLUFcdicFz3bwL2bMm9uRapdQ9jYGGaHx65mPlTr4QNJ-T3CNbM0y-N7mSX_5tMpthX_81lLSGztf-5hFZnNO3fW5ausBUO8oV3ywy2doSklqOm2V5-eB_rURV56vi24ZBCxnbwfsCshOoFymJitS7UBvwTwxFzgbjQ-QJ63lwTysSw_mnoaNo9KL-N3Vu6dfGncwtuZYQRFkc40eh0tqnG9pWZDu4gPSQ8SlJbLtuvMrScLVBuPAz_tnd7ZUn9BhFcCguzo06lZzB-Cl0tD6botEWCkLAXd9pFPRjo1OC8Xn-A39XSICz-OFQ3E7y6Qmi12AGyKyeglRJx1su9GMuI3P_CX9zfOBwF5KaRIiCE1fwe1hksSv-ohwRdAOW0AK6_S9zMTdMw==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9453346482&itemId=28124272749&vendorItemId=95080003578&traceid=V0-153-cbd087af407b519b&requestid=20261120062710769140443649&token=31850C%7CMIXED&pt=0&slot=6",
    "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 21,
-   "subCategory": "캠핑 꿀템",
+   "subCategory": "겨울 꿀템",
    "shipping": {
-    "isRocket": false,
+    "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 5,
-    "keyword": "캠핑 꿀템",
-    "joopjwiScore": 1.06
+    "coupangRank": 6,
+    "keyword": "겨울 꿀템",
+    "joopjwiScore": 1.05
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 7800,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [
@@ -797,32 +793,34 @@
   },
   {
    "rank": 22,
-   "productId": "218520566",
-   "productName": "돌 스위티오 바나나",
-   "price": 4350,
-   "imageUrl": "https://img4a.coupangcdn.com/image/retail/images/216707697399849-f5636001-2526-4fc9-9c7b-e13d6364c9a0.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=218520566&itemId=490814306&vendorItemId=4242007843&traceid=V0-113-1286db42c5993e56&pt=0&slot=4",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "9658139776",
+   "productName": "이동식 틈새 트롤리",
+   "price": 5870,
+   "imageUrl": "https://ads-partners.coupang.com/image1/geLqRoFKkJxxFG5ngVdxdDQEXCBp-OStAOMOuabE39cYvarXrmp2RKWdfjV1v9Xbbnyu3kBcfw1TxbqR9Dmibe6dceOfTEgg9To2BaCdv25ZkWIid8cEKtZwA_cODH8Cw7vfXb_i_y6auPmVgTHhaH5U2BczvUh5XdUe55coojz2SQkt1ubaU0xiLk_Gm-mS1g9Dsz2EiVKL-u9XB7vKng-yjFhkpEIWoS2nYj5I2yoagSiyRzLRq_c5yTzrSNOB-QaKcIPjIF1tAqUintDsKY7lXnpAXFddux9Md2n6Ye1R1UCoNekvff4HjY3YwlYyRR0UvXYGEsnJTL1ITRIgcmizP5FKp_NDUF9bke8ITdHEYGQWbUt-CRuEk0rfeJsR_CG78tHIbh9HDh8S5d0EVSmaliVyZJkxoFmym4em_ilyNYwUUddXx9zTQQ23YyvO61KlxMfHrHFRyB2R2JG1oIC8gskDLs0lMBMdjvJ0m_fSHcOCinbcVEBIlF5dVHQ-oI1PAzMhKxw5bql6XinGSfFI5Q==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9658139776&itemId=28871168210&vendorItemId=95191561801&traceid=V0-153-6baa1e0b87eb50de&requestid=20261120062714680223148778&token=31850C%7CMIXED&pt=0&slot=6",
+   "category": "신기한템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 22,
-   "subCategory": "식품",
+   "subCategory": "틈새 수납",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 4,
-    "keyword": null,
+    "source": "coupang_keyword_search",
+    "coupangRank": 6,
+    "keyword": "틈새 수납",
     "joopjwiScore": 1.05
    },
    "price_history": {
-    "previousPrice": 4350,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5870,
+    "previousPriceDate": "2026-11-17",
     "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "궁금한 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -833,162 +831,14 @@
   },
   {
    "rank": 23,
-   "productId": "8520281997",
-   "productName": "프로그 향기나는 기저귀봉투 베이비파우더향 100p",
-   "price": 5560,
-   "imageUrl": "https://image9.coupangcdn.com/image/retail/images/845662615684342-71e8e3ea-eed1-4cd9-a597-ed0bc1075465.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8520281997&itemId=154765889&vendorItemId=3361346762&traceid=V0-113-fd869e24ac667329&pt=0&slot=4",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 23,
-   "subCategory": "생활용품",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 4,
-    "keyword": null,
-    "joopjwiScore": 1.05
-   },
-   "price_history": {
-    "previousPrice": 5560,
-    "previousPriceDate": "2026-11-17",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 24,
-   "productId": "6542739738",
-   "productName": "달팽이리빙 퀴진드마망 실리콘 씽크대 물막이",
-   "price": 9500,
-   "imageUrl": "https://ads-partners.coupang.com/image1/dnla-8NDvswTA84ddv_npzKunIeaVH21sVNZpf2a1FuNphrkXNWOPv-ZBOXMrOvEc06LWDekYBG9HITlhMbvEyYaS0XyWI_mnvxINQWyYi4SXLB5M18XEZr0NV4ncoNlJQpLql-boRUoHV-lNO2SaxcYfEiqMCDWWqCI-uQLpJUzZujE3zd4E0cDXikZQdVFjJTs7jVW8LF6KbaglUj6OwwcAocBJxL3ef6K6ntdxvwT1XnprgS6n7SxVwrITm8V7_VJOWTVhLL2QpELs9PgKb3DylBrbOxKIHUDOXgtn9f-6vMdheervgS-n9sILhWJZvbEBpkpqMMsaiU9s0N6a9YF47Z8lfK60EvzCsjg4wJbRIhgu0UmjKeL24DenzaQGeyabKu3ALjk-qDAcDY96Fti_4c6_5JFHM1Z8MonFEP9zsrri0v5Bqq8cCgJHls5uC0x3kfyq0EDrVfG8VwjWYYwk7UukNlxP2gmpGqhGtXvo4qE9V6eLx_hyd1rsXjmNrSbA2mlAFg5nXQfiz_RDM0eF0nfNeq5XkPdupb9-hZEiXg=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6542739738&itemId=14573958705&vendorItemId=81816101821&traceid=V0-153-412cbbb1928665a7&requestid=20261119062949949272599041&token=31850C%7CMIXED&pt=0&slot=6",
-   "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 24,
-   "subCategory": "주방 꿀템",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 6,
-    "keyword": "주방 꿀템",
-    "joopjwiScore": 1.05
-   },
-   "price_history": {
-    "previousPrice": 9500,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [
-    "궁금한 템"
-   ],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 25,
-   "productId": "9615573045",
-   "productName": "데오람 발세척 발씻는 매트 풋브러쉬",
-   "price": 4900,
-   "imageUrl": "https://ads-partners.coupang.com/image1/XOHfMvKmFXqj5F-KXAb6hGetvSKhNlWfxHIyn8LwzJEEsM3SDdl2efxqm0goJqZHaqDgu_DjZ6IPkm6Gozjlm_ZWr3vxpg2J0YX2z33qsFy9MpayWwUbGDPdUntirIf4hEmngsVIml10gfYwA_-ZYF0lKRwxYpzyZo42Bug1ckFqCBOWp6Xf1VxoueTT6zgG1DYjdaoltV0KsoLLdizeUQDaOaDvl_bFcFdFWDsDxxcdUL-UMBTpuqQv_ECBHSoEdy8evwYaOZj0rznbae6e7pFxFlxJ4txPKSY0hnPdXkifICU8pzXRumCSfCFC-V3Hj3BUwonXyB3HrEV6xZgm99ly8k1GTFkE4wGGpiumUK1ccGej9-3AAecdKF3vxKbn1IGcfSfBzauKSqy_t1Wr42bKL6-rquNc8A4wN6pi4dNLHmdsc6z6pg2AMaImy42sycB9BejJGhfiRO67ibb29HHJaecEpvXG8jTW2sY3ZR9wnXh69Cx7WFNBOyI_bbBgAQh7-Ozl5jRNIkw5ahD4dOc21k_Zl_xdi-SovRvEDxaDzMPf18J7DZFfceX6rq9PyY3x0HjCuFwnOcDGJJ43MHmUkDFAZVE5NDF1tHvoNw==",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9615573045&itemId=28710742527&vendorItemId=95651570870&traceid=V0-153-f2d145262a0b3afa&requestid=20261119062952124306643734&token=31850C%7CMIXED&pt=0&slot=6",
-   "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 25,
-   "subCategory": "욕실 꿀템",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 6,
-    "keyword": "욕실 꿀템",
-    "joopjwiScore": 1.05
-   },
-   "price_history": {
-    "previousPrice": 4900,
-    "previousPriceDate": "2026-11-16",
-    "dropPercent": 0
-   },
-   "tags": [
-    "궁금한 템"
-   ],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 26,
-   "productId": "1074470755",
-   "productName": "국내산 양파",
-   "price": 3680,
-   "imageUrl": "https://img3a.coupangcdn.com/image/retail/images/1729902560488915-32b55f7e-10fe-43de-bc99-c68510085f87.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1074470755&itemId=2573048645&vendorItemId=70565380605&traceid=V0-113-faa1a5ef3bec40bf&pt=0&slot=5",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 26,
-   "subCategory": "식품",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 5,
-    "keyword": null,
-    "joopjwiScore": 1.04
-   },
-   "price_history": {
-    "previousPrice": 3680,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 27,
    "productId": "9407932009",
    "productName": "베르데리필 리필 매직캔 호환 리필 쓰레기 봉투 베이비 파우더향 250",
    "price": 9900,
-   "imageUrl": "https://image10.coupangcdn.com/image/retail/images/165492334828407-2ce18342-1128-4205-acdf-f762714e9f20.png",
+   "imageUrl": "https://img4c.coupangcdn.com/image/retail/images/165492334828407-2ce18342-1128-4205-acdf-f762714e9f20.png",
    "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9407932009&itemId=27950939446&vendorItemId=94909139289&traceid=V0-113-7400437e6acda69d&pt=0&slot=5",
    "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 27,
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 23,
    "subCategory": "생활용품",
    "shipping": {
     "isRocket": true,
@@ -1003,7 +853,7 @@
    },
    "price_history": {
     "previousPrice": 9900,
-    "previousPriceDate": "2026-11-18",
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1016,16 +866,16 @@
    }
   },
   {
-   "rank": 28,
-   "productId": "8982821483",
-   "productName": "무식이네 강력 접착식 고급 각도조절 샤워기 거치대",
-   "price": 3980,
-   "imageUrl": "https://ads-partners.coupang.com/image1/AduSR5JPaqRcsTMlAeTQ2dQPxWU1jhWZpPYbGC2NoY-sHmqPmEl2FvwrRMbAZAYnbbfGzeXGgvl7jGfcTonNdUGIRix_xjKPHra00FdHxtPL5UB-WhUlY0pEVrUB7yimVPitELM66Uy9m0kGMc4T-Ut2bR8LOscQLhwy1xGo4c8_ExWWJXs-LWR5j5yJ_U72dH64ciTk7dB-jvr9iZPlQgtNGFlNiy39JB-JuKhQ9eLg3ty1dipuMZiLgOnyPO7VTYBrhghx-DReGdl2vEzDrcdSOYHGbUs2JAHQTuM3WDkwHc1W2W5iQ1oPG0Dg5zHRudKx8iqNiwo9UqdI9i3LjzC_BNBZik1bnbPISk-eisdITjsmkNwUhBL8E7LlXqi59d1uCzvavjbFSgvTR4QtmjhCd1KzX45VgxKlwqlX3ArMwFaSMiJU9msOmbRJn64aaNg4wCPryX_UsDi7kvTD8QVrnDAzPx5s6B2rZ3nF5o9v8n7uUd4RmCMZeFgtzDP8a0uYfpVASuEvn0Kj1HJmGtZv8ckVM4XRBnxi6C7yvQa4ygYfzmA2BVAVJBPyl0EOjMS9OHFlCEbR_MONQwI=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8982821483&itemId=24679498633&vendorItemId=91689543130&traceid=V0-153-efa726a570b78cb9&requestid=20261119062952124306643734&token=31850C%7CMIXED&pt=0&slot=7",
+   "rank": 24,
+   "productId": "247132626",
+   "productName": "노바리빙 오피스 파티션 선반",
+   "price": 6900,
+   "imageUrl": "https://ads-partners.coupang.com/image1/bjwKZdVNMslTtxvDbo5IO_q7cRpnCrlAZkqBb4jHbuBtcyyYjO1-GQIzOEYfD9VmiQyUVSlqj2KnXpM4VZgeOHzlhVLn5AUhWAtTKcH46jZgRuf1W1hi7IoPu_281zYMl1CZgaHSlKew_nEFPHZPXGzvd5uvlIqOp8vkyjYLlvpKxaNvfikN_tyDwye1VjABcKZrjAZw1X4N0VqjthrHTBNqP3-jyO87b6AfmlJdxHqY6Ubh3dZyJyxyoQ4dJNYCcSrd3poaVxOv5XA-oYr1d1f9Ux7US3jXvxhPfAP22AjTrbKsWrB9NM4_hguPhAd0hyYNqow1Cw0EVEeIleCE5O1xUC_n78JvZy8fshztRF3Ld88Wl8cxJhCPiCe2t1IqD0LQpFTAiJD2EuG_7v0KR16FXRoOv93CZLql2E8QkYwVP3V8bfakQa3iIwGKsZhUY4qYNMPNsfpH7G65dy8v2Zuo8NThKmiemw9-BWu2vPOMQtMbZuCC0RS0jspcWTtkT0j3V6YXuz-PF-cLuKbOoIs=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=247132626&itemId=2560391445&vendorItemId=70552880220&traceid=V0-153-d41d66c229f18c81&requestid=20261120062708638046368463&token=31850C%7CMIXED&pt=0&slot=7",
    "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 28,
-   "subCategory": "욕실 꿀템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 24,
+   "subCategory": "사무실 꿀템",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1034,7 +884,7 @@
    "popularity": {
     "source": "coupang_keyword_search",
     "coupangRank": 7,
-    "keyword": "욕실 꿀템",
+    "keyword": "사무실 꿀템",
     "joopjwiScore": 1.04
    },
    "price_history": {
@@ -1054,30 +904,30 @@
    }
   },
   {
-   "rank": 29,
-   "productId": "9479669311",
-   "productName": "[다기능] 유막제거 티슈 차량 유막제거 물티슈 자동차 유막 제거제+발수 코팅 유리 발수코팅제 자동차 유막 제거제 차량용 멀티세정티슈 차량 실내세정제 유리세정 티슈 세차티슈 닝운시상",
-   "price": 9600,
-   "imageUrl": "https://ads-partners.coupang.com/image1/9I4d4j-puPOyZeIT9ORx9QtN1ihlcN-UAI0fc1s0806pzaLxpFlP6u52bQzXzEQ66q2PfKIdl3sQKzgY1ikFuFYTRhiMMUjNULcbbbqwZcW90lcFeXF4A8d8NPWmqFbio6cH3LF0hNpQdOcSRGQ9mcsUNcu5QImz6Th13Ntqb6mrQZf7A4GK4ExajuFmPUb39FxKcy_bq3SqZnh3nx4o0Ks_Vj_BXslab9gFMFtyfkcvmTZ3oAtf_lh698FBCT2yacV7SePNt26PRQCKMMjwPbPLnvRCl_UhzOuQBTBOP5AwXTW5rCehJ667yX6hhV8HTmRLXBp8FBMv9pf4Pa3xChUzrl1-8FM8WCWn82ZoDdJktcbN3wHwjkAt9vJ_7e8mqyVKIGxZdqqCJHoE8PlTB4ULmVaX1J8ZvudViTYnS55HfuE61F9jgsoEHFg2EmmqPHiX61uyqW6Ue59RpiH-vGProJ8WsLN6aexVTXJpe2930tqVcDJs7y6WsMb429l0aK7C2IGZDPmCYPJOHwD-1Ch3sCrMrSIg2glYzvoONZFeIg==",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9479669311&itemId=28890515156&vendorItemId=95831007841&traceid=V0-153-5f6df594a1937db7&requestid=20261119062954353022083098&token=31850C%7CMIXED&pt=0&slot=7",
+   "rank": 25,
+   "productId": "8301731034",
+   "productName": "꿀템 찬스 고급 배색 니트 바라클라바 7color 겨울 모자 데일리 생활 필수품",
+   "price": 6710,
+   "imageUrl": "https://ads-partners.coupang.com/image1/zESLe4mTops2QKbMzKpMk93oWXKY-dGOEAy4O2aU-YI_nniH3ftrne-Rh3zjGVKuXVmvT8YXQuRfeZM5m2iy4jd1YT_wx45DrDHU_cPWiNSa0-5Czja6CHIhe2kPuI42APcJnPzSwy9aJgM19T0iF3s2h2abLpDe0dIWBhCc4lDGbyPxzCqGD-j64KibZzM7u7aGr1IHWZ4aD3TdcJUVlCjS0wnI_Sp4Ijdzu44xUPIfxIlnxIk3ruq_A6g-2NrFWWq6VV4_He_FXZTu0XpYs5T9OJn45nh088c_VvsjH4PYRGjOi3PTmz-VxqnNIzLJkrrSzku4TESwEJqpKeInhZa-qEEaAcFJXVPlox0eTirPehuFH9eqFtCvAeUvJpOptvjooWfyVDIbWY0sO7grPv_EMZC1HnHwmnNGp8MztRKo1rNCN8mz2WDbTdBbMUoRGkABl6zbntNQ1AOc5CKganS9rBzYgnY4Enj9gnYYH2zaXhdcg-lBvaqIbkE7kD8wjTbqbXxr_AenKKXzzL8yfhf4oV_25Wvn9mryEWuOIB6Ad4FE6e02hoSNd5ObyxH7RYWOXLmMETYeymkLXk86UWfbo60Lq97ikjuh6Z3Eow==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8301731034&itemId=23949717553&vendorItemId=94218634099&traceid=V0-153-2dde6f070f123f03&requestid=20261120062710769140443649&token=31850C%7CMIXED&pt=0&slot=7",
    "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 29,
-   "subCategory": "차량 꿀템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 25,
+   "subCategory": "겨울 꿀템",
    "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
+    "isRocket": false,
+    "isFreeShipping": true,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_keyword_search",
     "coupangRank": 7,
-    "keyword": "차량 꿀템",
+    "keyword": "겨울 꿀템",
     "joopjwiScore": 1.04
    },
    "price_history": {
-    "previousPrice": 9600,
-    "previousPriceDate": "2026-11-16",
+    "previousPrice": null,
+    "previousPriceDate": null,
     "dropPercent": 0
    },
    "tags": [
@@ -1092,18 +942,56 @@
    }
   },
   {
-   "rank": 30,
-   "productId": "8466035436",
-   "productName": "리벤스 스페셜 민트 유아물티슈 캡형",
-   "price": 7120,
-   "imageUrl": "https://img1c.coupangcdn.com/image/retail/images/23101485338839-5554723b-d87f-419a-a5b8-db3a0a9e46f8.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8466035436&itemId=24495587357&vendorItemId=91508759715&traceid=V0-113-8a7557ea3fee4f11&pt=0&slot=6",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 30,
-   "subCategory": "출산·유아",
+   "rank": 26,
+   "productId": "9116096390",
+   "productName": "리퀴드 실내건조 중성 세탁 액체세제",
+   "price": 7940,
+   "imageUrl": "https://ads-partners.coupang.com/image1/zx3vLhkh3FPrmwKbzyBKANOixAfZ2SaVmRe26mh8fxVYzogRsXIuVsYFGjBtgKmjluNqjue-CFSMAUvwtj1Yg1e_N5oHeiF-EPj4-RaaBlb_wocNuue75xjOZ75E1A-YAaT7Gh0uyZ1TNTWQhp0S6eupCAmdAy8Si9WQhNfLP87Mz1kqSMiETTmomFmkYW_UOhVaFJdpatO9Br7NHwY2h9IiYliww4-WsfmQ1hGANHdrpluu7SXhDTl3OjCdJTFs2xWE3OTGe7CTMjjZNCZZqHBY8dmFPHJutJ-dD1uQXGpyMj1ae0wOIftz-MVtT8vDyBpz4WwJ6iXrT6hwGUtA1f-_q1r64OUdUoKNjOpEOEI8hrR2fLftirAEElJIXqWlK3VkdXvacN5bjj-fPd4o_soxvWHDnPGW19HUHvwd6HcT73osQJJ-igFgR_5Ct7ztNdlQw0rMoodwcKdcSS-PLepdjBJeXeSIK9FNoo7ArAzsbytbGXyU34YIADHTY25FPx5DZUCaUWylNtGBn8kUzEIiFrM9UOYJcaUFit-_8dWziUo17VGs9HFc2VnGLZ7jPSQqhIdffIvOq0Agvhw=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9116096390&itemId=26812913660&vendorItemId=96164302071&traceid=V0-153-0ce4c660698c2aa2&requestid=20261120062706502309555116&token=31850C%7CMIXED&pt=0&slot=9",
+   "category": "청소·수납",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 26,
+   "subCategory": "세탁세제",
    "shipping": {
-    "isRocket": false,
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_keyword_search",
+    "coupangRank": 9,
+    "keyword": "세탁세제",
+    "joopjwiScore": 1.04
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [
+    "매일 쓰는 템"
+   ],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 27,
+   "productId": "6201953316",
+   "productName": "국내산 청양고추",
+   "price": 1980,
+   "imageUrl": "https://image8.coupangcdn.com/image/retail/images/4277012004459-c7710d73-f1c9-4fe3-bb5d-a9ca72f84383.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6201953316&itemId=6106220628&vendorItemId=73402571318&traceid=V0-113-bbf565437496d4e6&pt=0&slot=6",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 27,
+   "subCategory": "식품",
+   "shipping": {
+    "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
@@ -1114,7 +1002,43 @@
     "joopjwiScore": 1.03
    },
    "price_history": {
-    "previousPrice": 7120,
+    "previousPrice": 1980,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 28,
+   "productId": "9535412530",
+   "productName": "네이쳐러브메레 일회용 아기턱받이",
+   "price": 4400,
+   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/337280602122349-df246567-ad42-4aa6-b31b-5f3018a51bf5.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9535412530&itemId=28439694546&vendorItemId=95390486098&traceid=V0-113-b6e318658ae7e857&pt=0&slot=6",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 28,
+   "subCategory": "생활용품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 6,
+    "keyword": null,
+    "joopjwiScore": 1.03
+   },
+   "price_history": {
+    "previousPrice": 4400,
     "previousPriceDate": "2026-11-18",
     "dropPercent": 0
    },
@@ -1128,16 +1052,52 @@
    }
   },
   {
-   "rank": 31,
-   "productId": "6403395461",
-   "productName": "코멧 싱크대 배수구 거름망",
-   "price": 5990,
-   "imageUrl": "https://ads-partners.coupang.com/image1/Rm0uECW0VKq9lnUvRs_CO0cRyX_yfmmsldHdn9KXD8OsZbZS5rro6tMtIGLBRfpXM4fsPaekSRYkkctJcHmzLm1mKJ1yZfHpdc4hGYpkmAaQ0Lof_2cDTQOlzQjoT-4soxMc8xG4ghb2HWHuNFw8wUDHI-bh6U_JMDOzY4Rq6QNvRdg2fdo1i99ep_d5TL2pvVdfU6UWFvBd4_alUdK5aVl8fuLpDlVAj1TEuEQvQwkL5PJe4FZ87dBV5_602smQnu0gl1NPqfwaXMrOZW8bFw4he4j30sA-bNyqXdfvziCZvRR9-MDt3suvIl0hfc1jK2Tg_BSsVVzX1mPilH115eJu5_uiyOXjj6cm0uIaZmD9s_7Tgy-0fKQqsWkgPOd67cguuBtfgqUKZuTapsyQH0eKCJFl-qZlmUldFL5BNydk5HpKL6Jh9NYf_19kU5d1ehK3eGuqPohRPj6nXOLbR6biZzXOUQYTqHlZk5HYIhoFSAfXgnsqzWr86kXQefHP39UghJ6K_6UE7qH7wyvFZsHGRQg=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6403395461&itemId=13700241463&vendorItemId=80951667111&traceid=V0-153-9427547f572ad1a8&requestid=20261119062949949272599041&token=31850C%7CMIXED&pt=0&slot=8",
+   "rank": 29,
+   "productId": "8057228086",
+   "productName": "세타필 베이비 젠틀 바디워시 앤 샴푸",
+   "price": 9980,
+   "imageUrl": "https://image10.coupangcdn.com/image/retail/images/290348615014765-cec6df75-8c57-4937-9b93-55ad5d71a4dc.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8057228086&itemId=22619334086&vendorItemId=89660894270&traceid=V0-113-91d88cd5680bcfa4&pt=0&slot=6",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 29,
+   "subCategory": "출산·유아",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 6,
+    "keyword": null,
+    "joopjwiScore": 1.03
+   },
+   "price_history": {
+    "previousPrice": 9980,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 30,
+   "productId": "9540428542",
+   "productName": "웰스텝 지압슬리퍼 실내 사무실 붓기",
+   "price": 9800,
+   "imageUrl": "https://ads-partners.coupang.com/image1/-4gADRAX4wO__e1P-4Llvi0PMg4h9iuc2jlJcWm7OGRPizFJhsjLzREw_4Da7tod_sQvAyZsy3qOqyZqRUo_Vh_IAZ7URBrKv_DwlxhOfySjYITL4sPtBxbApYttHNcELSdmokPS1qRQK4wkhuo0auOSIMFjH8ebS__eTPDuKXPLQmqV0R_TgKeDm63Be2R9Sts_So25fbRi6Fs8n2_0CRaTysbF0rbEyfLKu8wX9ORrXlN-ZJ2Qs0e7lE6pauD6LqYEgJTBTV2AGiydPep_5irrMuEYgkVP3N2qb7Af_b5O6-ou_RYA8qw32DPCdhgc9RIL6h38ZiDBJdnMoa1Qrf9ZhmdHtwWUMmVLUmOx-wpEx1BvdFJ0_B_N45CxV79cPoMyUKX4LC4DlTAwB-0O0pC2kC2AKam3DLjwCETHG3WhQZv2ivq8nqirLDzCmlMABwuHm0Ok0GbD8jcuA_0vruU8cU-8RXJUN8O2xzIlZJwvg_wnWFHi8pVJlXqiIq2UAx7ZkGqxt9WYcKt2RXDbVcE3p-EumpX0EyQracn1vh20Sw==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9540428542&itemId=28457783361&vendorItemId=95408279004&traceid=V0-153-2a7473d95546d39c&requestid=20261120062708638046368463&token=31850C%7CMIXED&pt=0&slot=8",
    "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 31,
-   "subCategory": "주방 꿀템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 30,
+   "subCategory": "사무실 꿀템",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1146,12 +1106,12 @@
    "popularity": {
     "source": "coupang_keyword_search",
     "coupangRank": 8,
-    "keyword": "주방 꿀템",
+    "keyword": "사무실 꿀템",
     "joopjwiScore": 1.03
    },
    "price_history": {
-    "previousPrice": 5990,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 9800,
+    "previousPriceDate": "2026-11-17",
     "dropPercent": 0
    },
    "tags": [
@@ -1166,15 +1126,15 @@
    }
   },
   {
-   "rank": 32,
-   "productId": "2233944921",
-   "productName": "국내산 백오이",
-   "price": 2900,
-   "imageUrl": "https://image13.coupangcdn.com/image/retail/images/7220705008763344-8e1e5f5b-cc82-4027-bd50-23deda6a92b9.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=2233944921&itemId=12311272628&vendorItemId=79581434699&traceid=V0-113-c6e3f57a4f6a376e&pt=0&slot=7",
+   "rank": 31,
+   "productId": "1232968322",
+   "productName": "곰곰 신선한 1A 우유",
+   "price": 3690,
+   "imageUrl": "https://img1a.coupangcdn.com/image/retail/images/233351842351776-df7a26c5-d4b8-4870-8646-5751ecddce86.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1232968322&itemId=2189623987&vendorItemId=70187605147&traceid=V0-113-1fc5b0b4f277ae56&pt=0&slot=7",
    "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 32,
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 31,
    "subCategory": "식품",
    "shipping": {
     "isRocket": true,
@@ -1188,8 +1148,8 @@
     "joopjwiScore": 1.02
    },
    "price_history": {
-    "previousPrice": 2640,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 3690,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1202,15 +1162,91 @@
    }
   },
   {
+   "rank": 32,
+   "productId": "8966017226",
+   "productName": "못말리는짱구 핸드폰거치대 1+1",
+   "price": 9000,
+   "imageUrl": "https://ads-partners.coupang.com/image1/k-X8KZWY9UP8U-cfkxNiE9WhifgQxIPFN0uOSR8aj-GUCnNotfPPtv7rfAvcNR8K-bgbxhPYTkL03-PD83t-V2roDMq3lS-FbK8eR7kVh5J__N4xJwY4XCuin4i055UH_EUE-zTdhZBmScDUagOPeyBCIOX8OwR47_Db2AFoxDe2botARi0u2BEeaExdyfKaqIIhItWrNg5GmZJX1pDGkZG33CAVO3FF02shr3GGd1dLIyEmJToTN24rDTsGxjbJuR3lkOUPbsRVKCiyfUZ4sI7VyLYGA45pd8RhgqY_r00wUuoOYstcHa144KeYKfWxNpjMbZxxg4kx52nTlbzO5Zc8a6ixN86s-8CaU44wwuJ4bGG-lvZ-Ff4eu4SDcJkwGstT1Z5DEvpAsyEaFJ2J9l7CCXDkyyrwzIfH6N96OCnVIr9OV-ZENO49UDoc7bGfAfVIMELxD8uBTxaHtHDDta6jlMRmZE83-jmZ2JgJ3iS7ofQNV9Dm8js1Ig5BHXkGAPOTZgDzPoGOjRIcBY3mE4Qd2KmKQ7GUp_6hvi5kvot6Nls=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8966017226&itemId=26238708140&vendorItemId=93218721501&traceid=V0-153-cb6ba525de2c86fa&requestid=20261120062708638046368463&token=31850C%7CMIXED&pt=0&slot=9",
+   "category": "신기한템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 32,
+   "subCategory": "사무실 꿀템",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_keyword_search",
+    "coupangRank": 9,
+    "keyword": "사무실 꿀템",
+    "joopjwiScore": 1.02
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [
+    "궁금한 템"
+   ],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
    "rank": 33,
-   "productId": "1271064981",
-   "productName": "곰곰 무항생제 신선한 대란",
-   "price": 8390,
-   "imageUrl": "https://image5.coupangcdn.com/image/retail/images/2215512493945149-f801fa53-33fd-482b-abcf-20dda5817093.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1271064981&itemId=2275730724&vendorItemId=70272921582&traceid=V0-113-5e7ea65e5d0510be&pt=0&slot=8",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "9270674341",
+   "productName": "생활 밀착 고급 기모 안감 성인남녀 터치 장갑 눈꽃 사슴 사은품 판촉물 방한 겨울 꿀템 추천",
+   "price": 5250,
+   "imageUrl": "https://ads-partners.coupang.com/image1/MdlVThW0iHfP0MpvMQJNW4cVwq4E7OwZy_-JGuEhxiJ18VBgMleFGSPAnbf5CVfZKdgjzqSth_ykPN0pTCYLorn8bKUhgGQoV-DuRwMJe6nfZctMB52vAUi37yixyAsPG_rH3mdxPervTZMqD2grWbJA6qOu2RU3tYbbjUMSQPYdIPFs5gk71tbZiEleqv3tbvvBMJ3EFjCPGRQuwcTsajCywAEMCm9OAisnhZ4BCubvQjy8y4WJSRvKm83CMdIvJHbeWRq2JS297Fz1Z63MxtGw1L_4ejsY9SIF-b4A_UR9cHt-mGfbLc3eyTX5d3V3_9ubrZaIZ-cy7jGtbhKZCf0AJ2uc9CUmTmu1cChcGjFftYbBCoKInW3xDPEtPn0L-SQn-SKc3hXZzqjLfh-eSr32cSu_wdc9KWFhbMm55UFSmOLHEaiJpYWSwlxdOL6943i4CkaVYVAfBgwICpc5geFICkA6RsvpNxidoBXkw0tpKLqQAvM3e5rX9aPrfdi4YwuuwIBi3aVsfY2eMIXdNTqHpr9XA_9MJWPIwo77jMjt8iTlKmifn3yzOPCmLvJFRtSlaeRZQ9UYXdDXC0-NhTdTNAPA_RGp9cnE3UqDbac=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9270674341&itemId=27437861017&vendorItemId=96330261352&traceid=V0-153-28dcf3dedac74e32&requestid=20261120062710769140443649&token=31850C%7CMIXED&pt=0&slot=9",
+   "category": "신기한템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 33,
+   "subCategory": "겨울 꿀템",
+   "shipping": {
+    "isRocket": false,
+    "isFreeShipping": true,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_keyword_search",
+    "coupangRank": 9,
+    "keyword": "겨울 꿀템",
+    "joopjwiScore": 1.02
+   },
+   "price_history": {
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
+   },
+   "tags": [
+    "궁금한 템"
+   ],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 34,
+   "productId": "7548941405",
+   "productName": "[로켓프레시] 국내산 깐마늘",
+   "price": 1680,
+   "imageUrl": "https://image10.coupangcdn.com/image/retail/images/1245521295790002-ba376a2f-873c-467a-937e-2d49dbbb8273.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7548941405&itemId=19861765205&vendorItemId=86962702565&traceid=V0-113-dc2bef9c7b7d5f43&pt=0&slot=8",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 34,
    "subCategory": "식품",
    "shipping": {
     "isRocket": true,
@@ -1224,44 +1260,8 @@
     "joopjwiScore": 1.01
    },
    "price_history": {
-    "previousPrice": 8390,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 34,
-   "productId": "8510780911",
-   "productName": "탐사 향기나는 기저귀 쓰레기봉투 베이비파우더향 100p",
-   "price": 5000,
-   "imageUrl": "https://img1c.coupangcdn.com/image/retail/images/1660945635374858-f61b1639-c757-47b3-b871-e79d1d8e1043.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8510780911&itemId=24635173109&vendorItemId=91646131047&traceid=V0-113-ca43c3b6d0743d1c&pt=0&slot=8",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 34,
-   "subCategory": "생활용품",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 8,
-    "keyword": null,
-    "joopjwiScore": 1.01
-   },
-   "price_history": {
-    "previousPrice": 5000,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 1680,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1275,32 +1275,34 @@
   },
   {
    "rank": 35,
-   "productId": "8057228086",
-   "productName": "세타필 베이비 젠틀 바디워시 앤 샴푸",
-   "price": 9980,
-   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/290348615014765-cec6df75-8c57-4937-9b93-55ad5d71a4dc.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8057228086&itemId=22619334086&vendorItemId=89660894270&traceid=V0-113-91d88cd5680bcfa4&pt=0&slot=8",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "9325834083",
+   "productName": "기본형 2단 수납형 모니터받침대 책상정리",
+   "price": 9680,
+   "imageUrl": "https://ads-partners.coupang.com/image1/ECAskNJtaY-aaV46EF3UcOzq0yv0MDH7K1Rxd_Y4HVdug7GU2COjQ3ZAQzbwztH6wjyiImWZzne48kddOoeIuin3MUjpERUxU1EfWTesAlupgp4IGvi3yYqOyxvAJzB-_Y6Gj9aqcSt6kr38DRaj9b0hgJgVUafX3TkJr6HqUel8-PUHONFqLJQtWjrxqwNY9I3St6qt6XITcFCeXLYzmUF5PXD4tcc46chZwU-wLvDgdO5pWWzD3nEOj-djyxaG3NjS8iO9pFumpNiiNtXFMFXuxYrBQxiUMns7GeNGcxTvZNn-f4PiWyb8nqZsBYWSAOv5TY2ClFMz9NkJiikezZwRgRJdx1RLC5DYim8zrnPsza0WnghEGsdh0fHk5Y9zHZADcNALbV66OYFnmXUohNAWFd6WeqT4PBS_Fc0zrOnlFZ3O7Of4nO-iks7ekz4B7N2GLolZwyMSHZqvGHCqDTbB906WxeEL-RMYwS6rtqCiaMDlMnB13NGXSAzhNU2n-cF4yu2Bumda9ORcgMESJA_b3dM2AWMT82CB89jZxqY5",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9325834083&itemId=27644423676&vendorItemId=94530257191&traceid=V0-153-828ac73da608a953&requestid=20261120062708638046368463&token=31850C%7CMIXED&pt=0&slot=10",
+   "category": "신기한템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 35,
-   "subCategory": "출산·유아",
+   "subCategory": "사무실 꿀템",
    "shipping": {
-    "isRocket": false,
+    "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 8,
-    "keyword": null,
+    "source": "coupang_keyword_search",
+    "coupangRank": 10,
+    "keyword": "사무실 꿀템",
     "joopjwiScore": 1.01
    },
    "price_history": {
-    "previousPrice": 9980,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 9680,
+    "previousPriceDate": "2026-11-17",
     "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "궁금한 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -1311,32 +1313,34 @@
   },
   {
    "rank": 36,
-   "productId": "117235005",
-   "productName": "오즈맘 유아동용 캐릭터 가제 손수건 10p 세트",
-   "price": 6440,
-   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/2018/08/02/17/3/d02e0bbd-4604-4870-a5f8-a4f9fc4ebcb9.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=117235005&itemId=350832708&vendorItemId=3855251040&traceid=V0-113-05f42b25740d56b7&pt=0&slot=9",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8864268037",
+   "productName": "다용도 정리 수납함",
+   "price": 5890,
+   "imageUrl": "https://ads-partners.coupang.com/image1/2Gh2LNa-yDCABo932OtEAy64us1GfF0ektxybUcBSss_R96usb6QzLW-8YxVgn6JhEBZ0Tc7Op16XdOu0M6bmhWkilncXKRzRruY4k4v2VeC-DX0wv-tsI6HC4dz1aR5XsMYUpCVTLwhUBQucSbgXIUbDU0Q9b9-hslBk0mXkeSycZNT_jh85iIrvOffIvaA6kLVpHZoS39hdGvOJQTY4CUT6xKoE08wt_mZGYfIl6BJeDthfxVxLrQVRifZumOO7q8amYB6F6nm6tCnsWqkJ8zpx09-ka_D541whFnWO9Vd-uG0njWeRpcdbsHdFEPMk6uZrVC0KdYRVozTO70ffOZO-0VjpTgiTs75dNnh8Y9BXH_qnPJAyZhx0ETV00FpDG27EliZMXr0llKsyWXSlHZ8xO2QODcFwZsXgs4lnwh9xh9nCruSFeFFEHJEM-X0xHWb5tq5VjxO5R4o7b_XmnVgtCDsVAo1bqG5VgjrEIScqwjTF7WIwuxT0GidNMf7n27IGNnlSM3g_H3WKKlpjQq3240=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8864268037&itemId=25852166403&vendorItemId=95297362305&traceid=V0-153-901941fe844c0763&requestid=20261120062712867193055999&token=31850C%7CMIXED&pt=0&slot=10",
+   "category": "신기한템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 36,
-   "subCategory": "생활용품",
+   "subCategory": "다용도 정리함",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 9,
-    "keyword": null,
-    "joopjwiScore": 1.0
+    "source": "coupang_keyword_search",
+    "coupangRank": 10,
+    "keyword": "다용도 정리함",
+    "joopjwiScore": 1.01
    },
    "price_history": {
-    "previousPrice": 6440,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": null,
+    "previousPriceDate": null,
     "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "궁금한 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -1347,15 +1351,15 @@
   },
   {
    "rank": 37,
-   "productId": "169280610",
-   "productName": "코멧 깨끗한 천연펄프 2겹 키친타월 150매",
-   "price": 6990,
-   "imageUrl": "https://image8.coupangcdn.com/image/retail/images/77501536142093-e3d45edd-9f61-4817-9073-b527fca4280f.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=169280610&itemId=484461411&vendorItemId=4220116848&traceid=V0-113-4ae8b097aa58b84c&pt=0&slot=1",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "6826020009",
+   "productName": "두들북",
+   "price": 5000,
+   "imageUrl": "https://img1a.coupangcdn.com/image/1025_amir_coupang_oct_80k/146e/49f73cd88bb579749360d78ca712a03a356180d250a099dff049668e8f77.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6826020009&itemId=16192363517&vendorItemId=83387448087&traceid=V0-113-bef1ad80d20ab9b9&pt=0&slot=7",
+   "category": "도서",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 37,
-   "subCategory": "주방용품",
+   "subCategory": "도서",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1363,14 +1367,14 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 1,
+    "coupangRank": 7,
     "keyword": null,
-    "joopjwiScore": 1.0
+    "joopjwiScore": 1.01
    },
    "price_history": {
-    "previousPrice": 6990,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
+    "previousPrice": 5400,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 7
    },
    "tags": [],
    "validation": {
@@ -1383,15 +1387,15 @@
   },
   {
    "rank": 38,
-   "productId": "8366678245",
-   "productName": "슈페르바 저소음 큰숫자 학생 수능 아날로그 손목 시계 수능시계",
-   "price": 8490,
-   "imageUrl": "https://image14.coupangcdn.com/image/vendor_inventory/4cab/7c77123e3ad5e7c8478ba537d53d89b5647a38a22c9387617ab72483c63a.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8366678245&itemId=24174016730&vendorItemId=91192078657&traceid=V0-113-91a1919b344f73db&pt=0&slot=1",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "1275124832",
+   "productName": "곰곰 아삭한 콩나물",
+   "price": 1090,
+   "imageUrl": "https://image15.coupangcdn.com/image/retail/images/1052513687379823-df863522-e52c-4f82-8cc7-7a6af214e231.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1275124832&itemId=2281054168&vendorItemId=70278175584&traceid=V0-113-ce2ea187b7556c63&pt=0&slot=9",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 38,
-   "subCategory": "패션",
+   "subCategory": "식품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1399,13 +1403,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 1,
+    "coupangRank": 9,
     "keyword": null,
     "joopjwiScore": 1.0
    },
    "price_history": {
-    "previousPrice": 8490,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 980,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1419,15 +1423,15 @@
   },
   {
    "rank": 39,
-   "productId": "7299719601",
-   "productName": "탐사 실속형 배변패드",
-   "price": 6190,
-   "imageUrl": "https://img2a.coupangcdn.com/image/retail/images/386688755640254-04f1dee4-b35d-4af8-8e71-816be4afdc13.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7299719601&itemId=18677046089&vendorItemId=85811303945&traceid=V0-113-a654f2eb1a75f0f5&pt=0&slot=1",
-   "category": "반려동물",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8194763460",
+   "productName": "코멧 종이컵 185ml",
+   "price": 9990,
+   "imageUrl": "https://image8.coupangcdn.com/image/retail/images/106545446780646-e6e0211c-4dd6-4fae-9f44-db0044ed1275.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8194763460&itemId=29043163797&vendorItemId=95970214257&traceid=V0-113-850ad507c68daf96&pt=0&slot=1",
+   "category": "주방·살림",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 39,
-   "subCategory": "반려동물",
+   "subCategory": "주방용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1440,8 +1444,8 @@
     "joopjwiScore": 1.0
    },
    "price_history": {
-    "previousPrice": 6190,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 9990,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1455,29 +1459,29 @@
   },
   {
    "rank": 40,
-   "productId": "6201953316",
-   "productName": "국내산 청양고추",
-   "price": 1980,
-   "imageUrl": "https://img2c.coupangcdn.com/image/retail/images/4277012004459-c7710d73-f1c9-4fe3-bb5d-a9ca72f84383.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6201953316&itemId=6106220628&vendorItemId=73402571318&traceid=V0-113-bbf565437496d4e6&pt=0&slot=10",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8366678245",
+   "productName": "슈페르바 저소음 큰숫자 학생 수능 아날로그 손목 시계 수능시계",
+   "price": 8490,
+   "imageUrl": "https://image12.coupangcdn.com/image/vendor_inventory/4cab/7c77123e3ad5e7c8478ba537d53d89b5647a38a22c9387617ab72483c63a.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8366678245&itemId=24174016730&vendorItemId=91192078657&traceid=V0-113-91a1919b344f73db&pt=0&slot=1",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 40,
-   "subCategory": "식품",
+   "subCategory": "패션",
    "shipping": {
-    "isRocket": true,
+    "isRocket": false,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 10,
+    "coupangRank": 1,
     "keyword": null,
-    "joopjwiScore": 0.99
+    "joopjwiScore": 1.0
    },
    "price_history": {
-    "previousPrice": 1980,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 8490,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1491,15 +1495,15 @@
   },
   {
    "rank": 41,
-   "productId": "8194763460",
-   "productName": "코멧 종이컵 185ml",
-   "price": 9990,
-   "imageUrl": "https://img2a.coupangcdn.com/image/retail/images/106545446780646-e6e0211c-4dd6-4fae-9f44-db0044ed1275.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8194763460&itemId=29043163797&vendorItemId=95970214257&traceid=V0-113-850ad507c68daf96&pt=0&slot=2",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "33939970",
+   "productName": "탐사 복사용지 80g",
+   "price": 5890,
+   "imageUrl": "https://img5a.coupangcdn.com/image/retail/images/82909889688311-90f66c58-3cc6-47de-a902-b8127919a9aa.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=33939970&itemId=21281530997&vendorItemId=88341620259&traceid=V0-113-322798a417398205&pt=0&slot=1",
+   "category": "문구·취미",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 41,
-   "subCategory": "주방용품",
+   "subCategory": "문구·오피스",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1507,12 +1511,12 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 2,
+    "coupangRank": 1,
     "keyword": null,
-    "joopjwiScore": 0.99
+    "joopjwiScore": 1.0
    },
    "price_history": {
-    "previousPrice": 9990,
+    "previousPrice": 5890,
     "previousPriceDate": "2026-11-18",
     "dropPercent": 0
    },
@@ -1527,15 +1531,15 @@
   },
   {
    "rank": 42,
-   "productId": "1946659295",
-   "productName": "바세린 립테라피 스틱",
-   "price": 4440,
-   "imageUrl": "https://img3c.coupangcdn.com/image/retail/images/971be084-919b-49b1-bd1d-765e686f75253182951393765719383.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1946659295&itemId=27764005899&vendorItemId=94724614515&traceid=V0-113-34c257b8cc02cbff&pt=0&slot=2",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7299719601",
+   "productName": "탐사 실속형 배변패드",
+   "price": 6190,
+   "imageUrl": "https://img3a.coupangcdn.com/image/retail/images/386688755640254-04f1dee4-b35d-4af8-8e71-816be4afdc13.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7299719601&itemId=18677046089&vendorItemId=85811303945&traceid=V0-113-a654f2eb1a75f0f5&pt=0&slot=1",
+   "category": "반려동물",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 42,
-   "subCategory": "뷰티",
+   "subCategory": "반려동물",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1543,13 +1547,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 2,
+    "coupangRank": 1,
     "keyword": null,
-    "joopjwiScore": 0.99
+    "joopjwiScore": 1.0
    },
    "price_history": {
-    "previousPrice": 4440,
-    "previousPriceDate": "2026-11-17",
+    "previousPrice": 6190,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1563,15 +1567,15 @@
   },
   {
    "rank": 43,
-   "productId": "9081602559",
-   "productName": "이지하임 4켤레 털빠짐없는 편안한 무압박 남녀공용 수면양말 세트",
-   "price": 8900,
-   "imageUrl": "https://img5a.coupangcdn.com/image/vendor_inventory/180d/4655c26dc8f95c573cfed1a50f2808fd81fed501c07d4271edf4c647dba6.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9081602559&itemId=26680116570&vendorItemId=93623881096&traceid=V0-113-31b4874a764ae054&pt=0&slot=2",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "6202345562",
+   "productName": "국내산 흙당근",
+   "price": 990,
+   "imageUrl": "https://img3c.coupangcdn.com/image/retail/images/8096734771923510-8aed9104-5723-4d1d-b96e-b8d60481ebe8.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6202345562&itemId=12314074324&vendorItemId=79584195630&traceid=V0-113-e4697a05f924f886&pt=0&slot=10",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 43,
-   "subCategory": "패션",
+   "subCategory": "식품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1579,13 +1583,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 2,
+    "coupangRank": 10,
     "keyword": null,
     "joopjwiScore": 0.99
    },
    "price_history": {
-    "previousPrice": 8500,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 990,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1599,15 +1603,15 @@
   },
   {
    "rank": 44,
-   "productId": "1232968322",
-   "productName": "곰곰 신선한 1A 우유",
-   "price": 3690,
-   "imageUrl": "https://image13.coupangcdn.com/image/retail/images/233351842351776-df7a26c5-d4b8-4870-8646-5751ecddce86.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1232968322&itemId=2189623987&vendorItemId=70187605147&traceid=V0-113-1fc5b0b4f277ae56&pt=0&slot=11",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8510780911",
+   "productName": "탐사 향기나는 기저귀 쓰레기봉투 베이비파우더향 100p",
+   "price": 5000,
+   "imageUrl": "https://img2a.coupangcdn.com/image/retail/images/1660945635374858-f61b1639-c757-47b3-b871-e79d1d8e1043.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8510780911&itemId=24635173109&vendorItemId=91646131047&traceid=V0-113-ca43c3b6d0743d1c&pt=0&slot=10",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 44,
-   "subCategory": "식품",
+   "subCategory": "생활용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1615,13 +1619,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 11,
+    "coupangRank": 10,
     "keyword": null,
-    "joopjwiScore": 0.98
+    "joopjwiScore": 0.99
    },
    "price_history": {
-    "previousPrice": 3690,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5000,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1638,10 +1642,10 @@
    "productId": "8724035718",
    "productName": "코멧 천연펄프 키친타올 롤형 2겹 130매",
    "price": 3990,
-   "imageUrl": "https://image15.coupangcdn.com/image/retail/images/4653423856146-7b6d57f6-73ca-4816-8fbf-421dd8cfcdd8.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8724035718&itemId=25343354825&vendorItemId=92337871553&traceid=V0-113-4d430879689b6479&pt=0&slot=3",
+   "imageUrl": "https://image13.coupangcdn.com/image/retail/images/4653423856146-7b6d57f6-73ca-4816-8fbf-421dd8cfcdd8.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8724035718&itemId=25343354825&vendorItemId=92337871553&traceid=V0-113-4d430879689b6479&pt=0&slot=2",
    "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 45,
    "subCategory": "주방용품",
    "shipping": {
@@ -1651,13 +1655,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 3,
+    "coupangRank": 2,
     "keyword": null,
-    "joopjwiScore": 0.98
+    "joopjwiScore": 0.99
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 3990,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1671,29 +1675,29 @@
   },
   {
    "rank": 46,
-   "productId": "9068696519",
-   "productName": "신일 박스테이프 폭 48mm x 길이 40m x 두께 0.57mm",
-   "price": 3450,
-   "imageUrl": "https://img3c.coupangcdn.com/image/retail/images/930519213985665-402cf826-9ad2-4213-a040-f1151bf3f30f.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9068696519&itemId=26631731165&vendorItemId=93604560126&traceid=V0-113-87606ea0fe6f103e&pt=0&slot=3",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "1946659295",
+   "productName": "바세린 립테라피 스틱",
+   "price": 4440,
+   "imageUrl": "https://img5c.coupangcdn.com/image/retail/images/971be084-919b-49b1-bd1d-765e686f75253182951393765719383.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1946659295&itemId=27764005899&vendorItemId=94724614515&traceid=V0-113-34c257b8cc02cbff&pt=0&slot=2",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 46,
-   "subCategory": "홈인테리어",
+   "subCategory": "뷰티",
    "shipping": {
-    "isRocket": false,
+    "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 3,
+    "coupangRank": 2,
     "keyword": null,
-    "joopjwiScore": 0.98
+    "joopjwiScore": 0.99
    },
    "price_history": {
-    "previousPrice": 3450,
-    "previousPriceDate": "2026-11-17",
+    "previousPrice": 4440,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1707,15 +1711,15 @@
   },
   {
    "rank": 47,
-   "productId": "7548941405",
-   "productName": "[로켓프레시] 국내산 깐마늘",
-   "price": 1680,
-   "imageUrl": "https://img3a.coupangcdn.com/image/retail/images/1245521295790002-ba376a2f-873c-467a-937e-2d49dbbb8273.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7548941405&itemId=19861765205&vendorItemId=86962702565&traceid=V0-113-dc2bef9c7b7d5f43&pt=0&slot=12",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "6429602575",
+   "productName": "고운발 명품 풋크림",
+   "price": 8620,
+   "imageUrl": "https://img1a.coupangcdn.com/image/retail/images/0e044cfd-7e94-4efb-ab2c-d752fefa649911756920276554919706.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6429602575&itemId=28227975774&vendorItemId=95181799195&traceid=V0-113-756cad25a4d6a763&pt=0&slot=15",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 47,
-   "subCategory": "식품",
+   "subCategory": "뷰티",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1723,14 +1727,14 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 12,
+    "coupangRank": 15,
     "keyword": null,
-    "joopjwiScore": 0.97
+    "joopjwiScore": 0.99
    },
    "price_history": {
-    "previousPrice": 1680,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
+    "previousPrice": 9880,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 13
    },
    "tags": [],
    "validation": {
@@ -1743,13 +1747,13 @@
   },
   {
    "rank": 48,
-   "productId": "26148164",
-   "productName": "베이비베어 가제무지 면 손수건 10p",
-   "price": 5990,
-   "imageUrl": "https://img3a.coupangcdn.com/image/retail/images/2017/07/06/15/1/9e5330af-9d0e-4c5a-8cd4-eaad0f8ccde8.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=26148164&itemId=101530350&vendorItemId=3188953819&traceid=V0-113-cc1756588e94f457&pt=0&slot=12",
+   "productId": "117235005",
+   "productName": "오즈맘 유아동용 캐릭터 가제 손수건 10p 세트",
+   "price": 6440,
+   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/2018/08/02/17/3/d02e0bbd-4604-4870-a5f8-a4f9fc4ebcb9.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=117235005&itemId=350832708&vendorItemId=3855251040&traceid=V0-113-05f42b25740d56b7&pt=0&slot=11",
    "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 48,
    "subCategory": "생활용품",
    "shipping": {
@@ -1759,13 +1763,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 12,
+    "coupangRank": 11,
     "keyword": null,
-    "joopjwiScore": 0.97
+    "joopjwiScore": 0.98
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 6440,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1779,15 +1783,15 @@
   },
   {
    "rank": 49,
-   "productId": "7134558328",
-   "productName": "크리넥스 안심 3겹 키친타올",
-   "price": 6700,
-   "imageUrl": "https://image14.coupangcdn.com/image/retail/images/212202820595125-a3283e0c-7c03-4898-b6ae-731fc724862a.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7134558328&itemId=20247515510&vendorItemId=3158599929&traceid=V0-113-1640d8dc2891e05d&pt=0&slot=4",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8309014082",
+   "productName": "FRANKLIIN 주방세제&젖병세정제",
+   "price": 9100,
+   "imageUrl": "https://image7.coupangcdn.com/image/retail/images/2801553931683894-b4e105cd-52b8-453e-80f7-a488bfc2c699.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8309014082&itemId=23974362780&vendorItemId=86714034495&traceid=V0-113-99bc20d00e1b83c9&pt=0&slot=11",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 49,
-   "subCategory": "주방용품",
+   "subCategory": "출산·유아",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1795,13 +1799,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 4,
+    "coupangRank": 11,
     "keyword": null,
-    "joopjwiScore": 0.97
+    "joopjwiScore": 0.98
    },
    "price_history": {
-    "previousPrice": 6700,
-    "previousPriceDate": "2026-11-16",
+    "previousPrice": 9100,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1815,15 +1819,15 @@
   },
   {
    "rank": 50,
-   "productId": "6408714556",
-   "productName": "에너자이저 맥스 AA 건전지",
-   "price": 5590,
-   "imageUrl": "https://image10.coupangcdn.com/image/retail/images/409207085753684-1ee13958-11c5-4ea0-83dc-a31fd803ba5b.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6408714556&itemId=21554382917&vendorItemId=88606993492&traceid=V0-113-e7d093673f389992&pt=0&slot=4",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "9445273260",
+   "productName": "글래드 프레스앤씰 매직랩 일반형",
+   "price": 9150,
+   "imageUrl": "https://image10.coupangcdn.com/image/retail/images/29559139165282-f705fcbf-d63e-40af-a1a0-f1d4232e2fd9.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9445273260&itemId=24579112318&vendorItemId=3001897577&traceid=V0-113-1f9f7e3efe375d3c&pt=0&slot=3",
+   "category": "주방·살림",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 50,
-   "subCategory": "홈인테리어",
+   "subCategory": "주방용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1831,13 +1835,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 4,
+    "coupangRank": 3,
     "keyword": null,
-    "joopjwiScore": 0.97
+    "joopjwiScore": 0.98
    },
    "price_history": {
-    "previousPrice": 5590,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 9150,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1851,17 +1855,17 @@
   },
   {
    "rank": 51,
-   "productId": "9239525189",
-   "productName": "캐츠랑 전연령 고양이 비타플러스 건식사료",
-   "price": 9560,
-   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/165195564307482-0a177d06-3f15-45b1-8664-9181a0dc17c8.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9239525189&itemId=27319445737&vendorItemId=70734097756&traceid=V0-113-196384dd01c28a75&pt=0&slot=4",
-   "category": "반려동물",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "5749856293",
+   "productName": "불스원 Rain OK 에탄올 3in1 발수코팅 워셔액",
+   "price": 7900,
+   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/112206867450646-199940ae-7107-4b91-8a4f-74d1d1d61cc6.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=5749856293&itemId=12501743947&vendorItemId=86481822530&traceid=V0-113-d5234fd64f1d71ef&pt=0&slot=4",
+   "category": "디지털·차량",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 51,
-   "subCategory": "반려동물",
+   "subCategory": "자동차용품",
    "shipping": {
-    "isRocket": true,
+    "isRocket": false,
     "isFreeShipping": false,
     "shippingFee": null
    },
@@ -1872,8 +1876,8 @@
     "joopjwiScore": 0.97
    },
    "price_history": {
-    "previousPrice": 9000,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 7900,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1887,15 +1891,15 @@
   },
   {
    "rank": 52,
-   "productId": "6258890122",
-   "productName": "국내산 양배추 1/2통",
-   "price": 1990,
-   "imageUrl": "https://image4.coupangcdn.com/image/retail/images/7532952550087039-f9e2e389-cf67-4441-b445-cf29f2cfab13.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6258890122&itemId=12731571135&vendorItemId=79998120417&traceid=V0-113-141283c2d77077cc&pt=0&slot=13",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "71748",
+   "productName": "아모스 초강력 딱풀",
+   "price": 3600,
+   "imageUrl": "https://image5.coupangcdn.com/image/retail/images/82087056190627-893948dd-bb53-4656-9fdd-de2e8c04700c.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=71748&itemId=7186136918&vendorItemId=90775480616&traceid=V0-113-8261656de2d6badc&pt=0&slot=13",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 52,
-   "subCategory": "식품",
+   "subCategory": "출산·유아",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -1908,8 +1912,8 @@
     "joopjwiScore": 0.96
    },
    "price_history": {
-    "previousPrice": 1990,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 3600,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1923,13 +1927,13 @@
   },
   {
    "rank": 53,
-   "productId": "8255612928",
-   "productName": "코멧 손이 편한 위생장갑",
-   "price": 5280,
-   "imageUrl": "https://image14.coupangcdn.com/image/retail/images/526942403074766-9f48cebd-764c-49c0-b77a-76a38de541f2.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8255612928&itemId=23774321269&vendorItemId=90798555812&traceid=V0-113-eedf29f11fed63c4&pt=0&slot=5",
+   "productId": "8304729560",
+   "productName": "코멧 키친 잘라쓰는 종이호일",
+   "price": 4990,
+   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/895620324571919-24f9ac44-9dfc-4ec3-b687-593b0a67fb5e.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8304729560&itemId=23958478288&vendorItemId=90979979724&traceid=V0-113-4fdc122230146cbc&pt=0&slot=5",
    "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 53,
    "subCategory": "주방용품",
    "shipping": {
@@ -1944,8 +1948,8 @@
     "joopjwiScore": 0.96
    },
    "price_history": {
-    "previousPrice": 5280,
-    "previousPriceDate": "2026-11-17",
+    "previousPrice": 4990,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1959,13 +1963,13 @@
   },
   {
    "rank": 54,
-   "productId": "6671696651",
-   "productName": "코멧 53 μm 경포장용 박스 테이프 48 mm*40 m",
-   "price": 3390,
-   "imageUrl": "https://image8.coupangcdn.com/image/retail/images/1149028466891514-9591f176-d46d-4c56-bd24-0312f36952fa.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6671696651&itemId=15352091516&vendorItemId=82572322173&traceid=V0-113-ae61bb9a51cbb7cc&pt=0&slot=5",
+   "productId": "6408714556",
+   "productName": "에너자이저 맥스 AA 건전지",
+   "price": 5590,
+   "imageUrl": "https://image15.coupangcdn.com/image/retail/images/409207085753684-1ee13958-11c5-4ea0-83dc-a31fd803ba5b.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6408714556&itemId=21554382917&vendorItemId=88606993492&traceid=V0-113-e7d093673f389992&pt=0&slot=5",
    "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 54,
    "subCategory": "홈인테리어",
    "shipping": {
@@ -1980,8 +1984,8 @@
     "joopjwiScore": 0.96
    },
    "price_history": {
-    "previousPrice": 3390,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5590,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -1995,30 +1999,30 @@
   },
   {
    "rank": 55,
-   "productId": "8803472212",
-   "productName": "아이리버 C타입-C타입 패브릭 초고속 충전 데이터 케이블 60W",
-   "price": 5020,
-   "imageUrl": "https://img4a.coupangcdn.com/image/retail/images/1185484732024517-f2792875-d5b9-46bc-bc3f-9899ec568ce6.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8803472212&itemId=25636725400&vendorItemId=92626790654&traceid=V0-113-4e0e1cdf04169745&pt=0&slot=9",
-   "category": "디지털·차량",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8552491124",
+   "productName": "코멧 A4 L홀더",
+   "price": 3860,
+   "imageUrl": "https://image9.coupangcdn.com/image/retail/images/2606831288937311-f8eb23c9-b35e-4b13-961b-e751f8b4860b.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8552491124&itemId=25072415229&vendorItemId=92076477589&traceid=V0-113-0c078e07a435f807&pt=0&slot=5",
+   "category": "문구·취미",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 55,
-   "subCategory": "가전디지털",
+   "subCategory": "문구·오피스",
    "shipping": {
-    "isRocket": true,
+    "isRocket": false,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 9,
+    "coupangRank": 5,
     "keyword": null,
     "joopjwiScore": 0.96
    },
    "price_history": {
-    "previousPrice": 5220,
-    "previousPriceDate": "2026-11-17",
-    "dropPercent": 4
+    "previousPrice": 3860,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
    },
    "tags": [],
    "validation": {
@@ -2031,15 +2035,15 @@
   },
   {
    "rank": 56,
-   "productId": "7951127185",
-   "productName": "베이스알파 에센셜 성인용 일회용 우의 10개",
-   "price": 6190,
-   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/1050981065886216-32993e50-afd4-4ee3-a0a9-e12d8f6412c7.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7951127185&itemId=21946103876&vendorItemId=88993938075&traceid=V0-113-1ed6b2a4fcccb4ef&pt=0&slot=5",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "9239525189",
+   "productName": "캐츠랑 전연령 고양이 비타플러스 건식사료",
+   "price": 9560,
+   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/165195564307482-0a177d06-3f15-45b1-8664-9181a0dc17c8.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9239525189&itemId=27319445737&vendorItemId=70734097756&traceid=V0-113-196384dd01c28a75&pt=0&slot=5",
+   "category": "반려동물",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 56,
-   "subCategory": "패션",
+   "subCategory": "반려동물",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2052,8 +2056,8 @@
     "joopjwiScore": 0.96
    },
    "price_history": {
-    "previousPrice": 6190,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 9560,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2067,15 +2071,15 @@
   },
   {
    "rank": 57,
-   "productId": "8847719903",
-   "productName": "네이쳐러브메레 일회용 아기턱받이",
-   "price": 8800,
-   "imageUrl": "https://img5c.coupangcdn.com/image/retail/images/117ca3c9-0ae6-4363-9823-20451675022b155050709081134146.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8847719903&itemId=28281401998&vendorItemId=95234398902&traceid=V0-113-cf1010a240d197bb&pt=0&slot=14",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8312748844",
+   "productName": "[로켓프레시] 신라명과 쫄깃한 생우유 식빵",
+   "price": 3240,
+   "imageUrl": "https://image15.coupangcdn.com/image/retail/images/25774596768350-7fa2a8ab-1756-444f-9dea-b18f8ebdd167.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8312748844&itemId=23987770488&vendorItemId=91008804768&traceid=V0-113-38e43d9e81550ce6&pt=0&slot=14",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 57,
-   "subCategory": "생활용품",
+   "subCategory": "식품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2088,8 +2092,8 @@
     "joopjwiScore": 0.95
    },
    "price_history": {
-    "previousPrice": 8800,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": null,
+    "previousPriceDate": null,
     "dropPercent": 0
    },
    "tags": [],
@@ -2103,17 +2107,17 @@
   },
   {
    "rank": 58,
-   "productId": "8309014082",
-   "productName": "FRANKLIIN 주방세제&젖병세정제",
-   "price": 9100,
-   "imageUrl": "https://image14.coupangcdn.com/image/retail/images/2801553931683894-b4e105cd-52b8-453e-80f7-a488bfc2c699.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8309014082&itemId=23974362780&vendorItemId=86714034495&traceid=V0-113-99bc20d00e1b83c9&pt=0&slot=14",
+   "productId": "26148164",
+   "productName": "베이비베어 가제무지 면 손수건 10p",
+   "price": 5990,
+   "imageUrl": "https://img3a.coupangcdn.com/image/retail/images/2017/07/06/15/1/9e5330af-9d0e-4c5a-8cd4-eaad0f8ccde8.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=26148164&itemId=101530350&vendorItemId=3188953819&traceid=V0-113-cc1756588e94f457&pt=0&slot=14",
    "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 58,
-   "subCategory": "출산·유아",
+   "subCategory": "생활용품",
    "shipping": {
-    "isRocket": false,
+    "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
@@ -2124,8 +2128,8 @@
     "joopjwiScore": 0.95
    },
    "price_history": {
-    "previousPrice": 9100,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5990,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2139,17 +2143,17 @@
   },
   {
    "rank": 59,
-   "productId": "9670451408",
-   "productName": "코멧 포켓형 손난로 핫팩 100g",
-   "price": 8500,
-   "imageUrl": "https://image7.coupangcdn.com/image/retail/images/119453090079539-087e1c6e-1952-4850-88fe-651d3b6a038c.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9670451408&itemId=27014813784&vendorItemId=93983447578&traceid=V0-113-8846e86e0c9b47df&pt=0&slot=6",
+   "productId": "9068696519",
+   "productName": "신일 박스테이프 폭 48mm x 길이 40m x 두께 0.57mm",
+   "price": 3450,
+   "imageUrl": "https://image14.coupangcdn.com/image/retail/images/930519213985665-402cf826-9ad2-4213-a040-f1151bf3f30f.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9068696519&itemId=26631731165&vendorItemId=93604560126&traceid=V0-113-87606ea0fe6f103e&pt=0&slot=6",
    "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 59,
    "subCategory": "홈인테리어",
    "shipping": {
-    "isRocket": false,
+    "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
@@ -2160,8 +2164,8 @@
     "joopjwiScore": 0.95
    },
    "price_history": {
-    "previousPrice": 8500,
-    "previousPriceDate": "2026-11-17",
+    "previousPrice": 3450,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2175,15 +2179,15 @@
   },
   {
    "rank": 60,
-   "productId": "9092536150",
-   "productName": "불스원 컴파운드 마스터 2종",
-   "price": 8010,
-   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/41812963859318-0f685c54-63b5-45a0-8a92-e6b99f0f8b11.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9092536150&itemId=23771727089&vendorItemId=90796002519&traceid=V0-113-f3d948b32f7863f6&pt=0&slot=6",
+   "productId": "7908137708",
+   "productName": "신지모루 아이폰 8핀 고속충전 라이트닝 케이블",
+   "price": 5000,
+   "imageUrl": "https://image1.coupangcdn.com/image/1025_amir_coupang_oct_80k/4514/bb04add84c0bd32f32da0fe068c8212e268fdf271e4f64181f0a88af4ca5.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7908137708&itemId=21573867352&vendorItemId=88625581432&traceid=V0-113-379f5e8f329e61b4&pt=0&slot=6",
    "category": "디지털·차량",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 60,
-   "subCategory": "자동차용품",
+   "subCategory": "가전디지털",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2196,8 +2200,8 @@
     "joopjwiScore": 0.95
    },
    "price_history": {
-    "previousPrice": 8010,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5000,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2211,15 +2215,15 @@
   },
   {
    "rank": 61,
-   "productId": "8552491124",
-   "productName": "코멧 A4 L홀더",
-   "price": 3860,
-   "imageUrl": "https://image14.coupangcdn.com/image/retail/images/2606831288937311-f8eb23c9-b35e-4b13-961b-e751f8b4860b.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8552491124&itemId=25072415229&vendorItemId=92076477589&traceid=V0-113-0c078e07a435f807&pt=0&slot=6",
-   "category": "문구·취미",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8558097627",
+   "productName": "리틀트리 종이 방향제",
+   "price": 9100,
+   "imageUrl": "https://image3.coupangcdn.com/image/retail/images/2024/08/09/15/2/34bdfa5c-b466-482a-b16a-29bc9e264b5e.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8558097627&itemId=15844440191&vendorItemId=90891154525&traceid=V0-113-74823c513af19253&pt=0&slot=6",
+   "category": "디지털·차량",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 61,
-   "subCategory": "문구·오피스",
+   "subCategory": "자동차용품",
    "shipping": {
     "isRocket": false,
     "isFreeShipping": false,
@@ -2232,8 +2236,8 @@
     "joopjwiScore": 0.95
    },
    "price_history": {
-    "previousPrice": 3860,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 9100,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2247,15 +2251,15 @@
   },
   {
    "rank": 62,
-   "productId": "9445273260",
-   "productName": "글래드 프레스앤씰 매직랩 일반형",
-   "price": 9150,
-   "imageUrl": "https://image6.coupangcdn.com/image/retail/images/29559139165282-f705fcbf-d63e-40af-a1a0-f1d4232e2fd9.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9445273260&itemId=24579112318&vendorItemId=3001897577&traceid=V0-113-1f9f7e3efe375d3c&pt=0&slot=7",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7742021454",
+   "productName": "코멧 베이직 나무 순면 면봉",
+   "price": 4660,
+   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/3760625139148465-fbb340bb-c73c-45b2-be2b-35a566800df1.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7742021454&itemId=20831821410&vendorItemId=87899941732&traceid=V0-113-efb111596ac9a123&pt=0&slot=6",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 62,
-   "subCategory": "주방용품",
+   "subCategory": "뷰티",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2263,13 +2267,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 7,
+    "coupangRank": 6,
     "keyword": null,
-    "joopjwiScore": 0.94
+    "joopjwiScore": 0.95
    },
    "price_history": {
-    "previousPrice": 9150,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 4660,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2283,29 +2287,29 @@
   },
   {
    "rank": 63,
-   "productId": "7370852457",
-   "productName": "벡셀 알카라인 AA 건전지",
-   "price": 8270,
-   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/1078146430561617-8522720d-73d1-4d63-a403-1e3b1f9e4bc6.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7370852457&itemId=19013340292&vendorItemId=3191160606&traceid=V0-113-127dcc7e8403d34b&pt=0&slot=7",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7951127185",
+   "productName": "베이스알파 에센셜 성인용 일회용 우의 10개",
+   "price": 6190,
+   "imageUrl": "https://image6.coupangcdn.com/image/retail/images/1050981065886216-32993e50-afd4-4ee3-a0a9-e12d8f6412c7.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7951127185&itemId=21946103876&vendorItemId=88993938075&traceid=V0-113-1ed6b2a4fcccb4ef&pt=0&slot=6",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 63,
-   "subCategory": "홈인테리어",
+   "subCategory": "패션",
    "shipping": {
-    "isRocket": true,
+    "isRocket": false,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 7,
+    "coupangRank": 6,
     "keyword": null,
-    "joopjwiScore": 0.94
+    "joopjwiScore": 0.95
    },
    "price_history": {
-    "previousPrice": 8290,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 6190,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2319,15 +2323,15 @@
   },
   {
    "rank": 64,
-   "productId": "8059755411",
-   "productName": "도브 뷰티 크림 바 비누",
-   "price": 5050,
-   "imageUrl": "https://image13.coupangcdn.com/image/retail/images/315738342650826-27bae142-185e-4f99-9557-8c053f2bab58.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8059755411&itemId=27923704185&vendorItemId=90858864367&traceid=V0-113-95b0039747b18185&pt=0&slot=7",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "260392160",
+   "productName": "소마셈: 10까지의 더하기와 빼기 1",
+   "price": 7200,
+   "imageUrl": "https://img4c.coupangcdn.com/image/1025_amir_coupang_oct_80k/1759/b15a53adc9c876708446e5b92077621e7fe9527a4069e73c3e2fa5a6a5c8.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=260392160&itemId=1016016304&vendorItemId=5452186632&traceid=V0-113-329a5679f1f87476&pt=0&slot=6",
+   "category": "도서",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 64,
-   "subCategory": "뷰티",
+   "subCategory": "도서",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2335,13 +2339,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 7,
+    "coupangRank": 6,
     "keyword": null,
-    "joopjwiScore": 0.94
+    "joopjwiScore": 0.95
    },
    "price_history": {
-    "previousPrice": 4820,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 7200,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2355,14 +2359,194 @@
   },
   {
    "rank": 65,
+   "productId": "7835241336",
+   "productName": "[로켓프레시] 해슬로 가시없는 어린이 순살가자미 (냉동)",
+   "price": 9990,
+   "imageUrl": "https://image13.coupangcdn.com/image/rs_quotation_api/0andidpm/9a5d7b7f6f7f48d0990a342c0ae4f308.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7835241336&itemId=21316524410&vendorItemId=88375977557&traceid=V0-113-7c264ca02332b728&pt=0&slot=15",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 65,
+   "subCategory": "출산·유아",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 15,
+    "keyword": null,
+    "joopjwiScore": 0.94
+   },
+   "price_history": {
+    "previousPrice": 9990,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 66,
+   "productId": "8355778781",
+   "productName": "하우스클래스 자연주의 일회용 수세미",
+   "price": 4800,
+   "imageUrl": "https://image11.coupangcdn.com/image/retail/images/438316379637475-73869760-a8ad-4573-b56a-6f35fd6e2445.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8355778781&itemId=24143556509&vendorItemId=91162419771&traceid=V0-113-f6593ad8dc593f43&pt=0&slot=7",
+   "category": "주방·살림",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 66,
+   "subCategory": "주방용품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 7,
+    "keyword": null,
+    "joopjwiScore": 0.94
+   },
+   "price_history": {
+    "previousPrice": 4800,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 67,
+   "productId": "9670451408",
+   "productName": "코멧 포켓형 손난로 핫팩 100g",
+   "price": 8500,
+   "imageUrl": "https://image3.coupangcdn.com/image/retail/images/119453090079539-087e1c6e-1952-4850-88fe-651d3b6a038c.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9670451408&itemId=27014813784&vendorItemId=93983447578&traceid=V0-113-8846e86e0c9b47df&pt=0&slot=7",
+   "category": "청소·수납",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 67,
+   "subCategory": "홈인테리어",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 7,
+    "keyword": null,
+    "joopjwiScore": 0.94
+   },
+   "price_history": {
+    "previousPrice": 8500,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 68,
+   "productId": "8371538377",
+   "productName": "맥스틸 애플 아이폰 삼성 갤럭시 호환 C타입 오픈형 유선 이어폰, GM-EC20, 화이트",
+   "price": 3990,
+   "imageUrl": "https://image8.coupangcdn.com/image/vendor_inventory/2dfb/e535854df82d4a23493b749c7359a922c11904e5aca6d8d28cc8f6a1ae4b.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8371538377&itemId=24191384321&vendorItemId=91477513891&traceid=V0-113-3296e603157fd219&pt=0&slot=7",
+   "category": "디지털·차량",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 68,
+   "subCategory": "가전디지털",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 7,
+    "keyword": null,
+    "joopjwiScore": 0.94
+   },
+   "price_history": {
+    "previousPrice": 3990,
+    "previousPriceDate": "2026-11-17",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 69,
+   "productId": "8059755411",
+   "productName": "도브 뷰티 크림 바 비누",
+   "price": 5050,
+   "imageUrl": "https://image12.coupangcdn.com/image/retail/images/315738342650826-27bae142-185e-4f99-9557-8c053f2bab58.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8059755411&itemId=27923704185&vendorItemId=90858864367&traceid=V0-113-95b0039747b18185&pt=0&slot=7",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 69,
+   "subCategory": "뷰티",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 7,
+    "keyword": null,
+    "joopjwiScore": 0.94
+   },
+   "price_history": {
+    "previousPrice": 5050,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 70,
    "productId": "7774271163",
    "productName": "김수열줄넘기 골드플러스 SY-415",
    "price": 7200,
-   "imageUrl": "https://image8.coupangcdn.com/image/1025_amir_coupang_oct_80k/a68a/b998ccd8136eecdc749226a5b541337522c734ceadd8f30587b327b11d1e.jpg",
+   "imageUrl": "https://image1.coupangcdn.com/image/1025_amir_coupang_oct_80k/a68a/b998ccd8136eecdc749226a5b541337522c734ceadd8f30587b327b11d1e.jpg",
    "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7774271163&itemId=20996548087&vendorItemId=3263680689&traceid=V0-113-6ccfa2209ddff24f&pt=0&slot=7",
    "category": "문구·취미",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 65,
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 70,
    "subCategory": "완구·취미",
    "shipping": {
     "isRocket": true,
@@ -2377,187 +2561,7 @@
    },
    "price_history": {
     "previousPrice": 7200,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 66,
-   "productId": "71748",
-   "productName": "아모스 초강력 딱풀",
-   "price": 3600,
-   "imageUrl": "https://image9.coupangcdn.com/image/retail/images/82087056190627-893948dd-bb53-4656-9fdd-de2e8c04700c.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=71748&itemId=7186136918&vendorItemId=90775480616&traceid=V0-113-8261656de2d6badc&pt=0&slot=16",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 66,
-   "subCategory": "출산·유아",
-   "shipping": {
-    "isRocket": false,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 16,
-    "keyword": null,
-    "joopjwiScore": 0.93
-   },
-   "price_history": {
-    "previousPrice": 3600,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 67,
-   "productId": "5749856293",
-   "productName": "불스원 Rain OK 에탄올 3in1 발수코팅 워셔액",
-   "price": 7900,
-   "imageUrl": "https://img2a.coupangcdn.com/image/retail/images/112206867450646-199940ae-7107-4b91-8a4f-74d1d1d61cc6.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=5749856293&itemId=12501743947&vendorItemId=86481822530&traceid=V0-113-d5234fd64f1d71ef&pt=0&slot=8",
-   "category": "디지털·차량",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 67,
-   "subCategory": "자동차용품",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 8,
-    "keyword": null,
-    "joopjwiScore": 0.93
-   },
-   "price_history": {
-    "previousPrice": 7900,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 68,
-   "productId": "6945258911",
-   "productName": "도브 포밍 핸드워시 딥 모이스처",
-   "price": 5400,
-   "imageUrl": "https://image12.coupangcdn.com/image/retail/images/413883168832509-b6247333-892a-4f17-ad6e-058721af32b0.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6945258911&itemId=18036947987&vendorItemId=85191358457&traceid=V0-113-963b13d84d62961d&pt=0&slot=8",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 68,
-   "subCategory": "뷰티",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 8,
-    "keyword": null,
-    "joopjwiScore": 0.93
-   },
-   "price_history": {
-    "previousPrice": 5400,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 69,
-   "productId": "8802041287",
-   "productName": "아이깨끗해 핸드워시 리필용 순 파우더향",
-   "price": 6040,
-   "imageUrl": "https://img4a.coupangcdn.com/image/vendor_inventory/aa23/43e54e5fe2b0b6faf3c1412efb42d9fac4d9119b8321dcbd02972ec62a82.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8802041287&itemId=24297077299&vendorItemId=80898220518&traceid=V0-113-b6eb26fb5939f113&pt=0&slot=38",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 69,
-   "subCategory": "뷰티",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 38,
-    "keyword": null,
-    "joopjwiScore": 0.93
-   },
-   "price_history": {
-    "previousPrice": 9210,
-    "previousPriceDate": "2026-11-16",
-    "dropPercent": 34
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 70,
-   "productId": "6439592471",
-   "productName": "이지뷰 플러스 김서림방지 극세사 안경닦이",
-   "price": 8000,
-   "imageUrl": "https://img2a.coupangcdn.com/image/vendor_inventory/e3be/8907d90034ca2ff883892481696e367c805f7a5a911d9bfc7f1dfc59c662.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6439592471&itemId=11178639348&vendorItemId=78456562577&traceid=V0-113-6f18a672afcb66ef&pt=0&slot=8",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 70,
-   "subCategory": "패션",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 8,
-    "keyword": null,
-    "joopjwiScore": 0.93
-   },
-   "price_history": {
-    "previousPrice": 8000,
-    "previousPriceDate": "2026-11-18",
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2574,10 +2578,10 @@
    "productId": "346720292",
    "productName": "로드메일코리아 고급형 코팅필름 코팅지 100mic",
    "price": 7900,
-   "imageUrl": "https://image11.coupangcdn.com/image/retail/images/32607647970434-1c1bb96e-d8a4-47a1-8587-26af09e812f6.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=346720292&itemId=1100530003&vendorItemId=5627805085&traceid=V0-113-e68f480b91d16506&pt=0&slot=8",
+   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/32607647970434-1c1bb96e-d8a4-47a1-8587-26af09e812f6.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=346720292&itemId=1100530003&vendorItemId=5627805085&traceid=V0-113-e68f480b91d16506&pt=0&slot=7",
    "category": "문구·취미",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 71,
    "subCategory": "문구·오피스",
    "shipping": {
@@ -2587,13 +2591,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 8,
+    "coupangRank": 7,
     "keyword": null,
-    "joopjwiScore": 0.93
+    "joopjwiScore": 0.94
    },
    "price_history": {
     "previousPrice": 7900,
-    "previousPriceDate": "2026-11-17",
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2607,15 +2611,15 @@
   },
   {
    "rank": 72,
-   "productId": "9042301904",
-   "productName": "마이 핫 보온대 160g",
-   "price": 8250,
-   "imageUrl": "https://img5c.coupangcdn.com/image/vendor_inventory/image_audit/stage/manual/4d031488496a048f8cb4965b996616a344b307a737e867b90ef54fa2f2e1_1791335442788.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9042301904&itemId=26318773624&vendorItemId=95858955657&traceid=V0-113-8b033daeb9e0abde&pt=0&slot=8",
-   "category": "문구·취미",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "4778232493",
+   "productName": "국내산 양배추",
+   "price": 3690,
+   "imageUrl": "https://img5a.coupangcdn.com/image/retail/images/5788964362181-7f48acee-e7f2-4b33-8f61-acdfd2d8f9e3.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=4778232493&itemId=6106533654&vendorItemId=73402883858&traceid=V0-113-9ec0661fff296ec3&pt=0&slot=15",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 72,
-   "subCategory": "스포츠·레저",
+   "subCategory": "식품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2623,13 +2627,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 8,
+    "coupangRank": 15,
     "keyword": null,
-    "joopjwiScore": 0.93
+    "joopjwiScore": 0.94
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 3690,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2643,15 +2647,15 @@
   },
   {
    "rank": 73,
-   "productId": "9803295211",
-   "productName": "이지캔 매직 공용리필 250",
-   "price": 6990,
-   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/2020/06/10/16/7/bd1bcb53-0aef-4cec-bfc9-7af603a92a9b.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9803295211&itemId=2381492153&vendorItemId=70867629976&traceid=V0-113-b8439f0577f24246&pt=0&slot=17",
+   "productId": "1582685329",
+   "productName": "탐사 스케치북 도화지 130g 8절",
+   "price": 5390,
+   "imageUrl": "https://img1c.coupangcdn.com/image/1025_amir_coupang_oct_80k/4d65/f7aee54bc4832cf6928cb3e6a9044c27832418aa4d5d9e8b179b9af20099.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1582685329&itemId=2705541564&vendorItemId=70695846626&traceid=V0-113-afbcf1d437012134&pt=0&slot=16",
    "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 73,
-   "subCategory": "생활용품",
+   "subCategory": "출산·유아",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2659,13 +2663,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 17,
+    "coupangRank": 16,
     "keyword": null,
-    "joopjwiScore": 0.92
+    "joopjwiScore": 0.93
    },
    "price_history": {
-    "previousPrice": 6990,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5390,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2679,15 +2683,15 @@
   },
   {
    "rank": 74,
-   "productId": "7742021454",
-   "productName": "코멧 베이직 나무 순면 면봉",
-   "price": 4660,
-   "imageUrl": "https://img1a.coupangcdn.com/image/retail/images/3760625139148465-fbb340bb-c73c-45b2-be2b-35a566800df1.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7742021454&itemId=20831821410&vendorItemId=87899941732&traceid=V0-113-efb111596ac9a123&pt=0&slot=9",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7871935374",
+   "productName": "크린랩 플러스 크린장갑",
+   "price": 7900,
+   "imageUrl": "https://img1c.coupangcdn.com/image/retail/images/478766476271349-a6f21d68-c273-4fcf-a196-d14b1ea1f9bf.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7871935374&itemId=26240251921&vendorItemId=88560434953&traceid=V0-113-0750aa43d1c37d6b&pt=0&slot=8",
+   "category": "주방·살림",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 74,
-   "subCategory": "뷰티",
+   "subCategory": "주방용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2695,13 +2699,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 9,
+    "coupangRank": 8,
     "keyword": null,
-    "joopjwiScore": 0.92
+    "joopjwiScore": 0.93
    },
    "price_history": {
-    "previousPrice": 4660,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 7900,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2715,15 +2719,15 @@
   },
   {
    "rank": 75,
-   "productId": "7025888843",
-   "productName": "지능업 만2세 워크북",
-   "price": 2700,
-   "imageUrl": "https://img3a.coupangcdn.com/image/1025_amir_coupang_oct_80k/196f/543247a6abcd4c4feff6e218fb6e5e62c6b15591d77cfabac60fa37f4fb9.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7025888843&itemId=17321851727&vendorItemId=84492574522&traceid=V0-113-6619e4dad5b352bf&pt=0&slot=9",
-   "category": "도서",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7370852457",
+   "productName": "벡셀 알카라인 AA 건전지",
+   "price": 8270,
+   "imageUrl": "https://image11.coupangcdn.com/image/retail/images/1078146430561617-8522720d-73d1-4d63-a403-1e3b1f9e4bc6.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7370852457&itemId=19013340292&vendorItemId=3191160606&traceid=V0-113-127dcc7e8403d34b&pt=0&slot=8",
+   "category": "청소·수납",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 75,
-   "subCategory": "도서",
+   "subCategory": "홈인테리어",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2731,13 +2735,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 9,
+    "coupangRank": 8,
     "keyword": null,
-    "joopjwiScore": 0.92
+    "joopjwiScore": 0.93
    },
    "price_history": {
-    "previousPrice": 2700,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 8270,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2751,15 +2755,15 @@
   },
   {
    "rank": 76,
-   "productId": "6053389138",
-   "productName": "순면 빅 엠보 무지손수건 50 x 50 cm",
-   "price": 7150,
-   "imageUrl": "https://image15.coupangcdn.com/image/1025_amir_coupang_oct_80k/d94a/4d3a0136719143d852bb2be17d77d61d95d40790e3964ca9fc56eca5a976.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6053389138&itemId=11101165755&vendorItemId=78380504048&traceid=V0-113-de615c11ff51bc69&pt=0&slot=23",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "1628630781",
+   "productName": "홈플래닛 퀄컴 공식인증 QC3.0 18W고속충전기 + 타입C케이블 1.2m 세트",
+   "price": 6490,
+   "imageUrl": "https://image7.coupangcdn.com/image/retail/images/249601546836886-cc62fd26-1e09-4454-8780-ffe4880e6b10.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1628630781&itemId=2778296479&vendorItemId=89645323681&traceid=V0-113-e16801aaf71b1d25&pt=0&slot=8",
+   "category": "디지털·차량",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 76,
-   "subCategory": "생활용품",
+   "subCategory": "가전디지털",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2767,14 +2771,14 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 23,
+    "coupangRank": 8,
     "keyword": null,
-    "joopjwiScore": 0.91
+    "joopjwiScore": 0.93
    },
    "price_history": {
-    "previousPrice": 7500,
+    "previousPrice": 6490,
     "previousPriceDate": "2026-11-18",
-    "dropPercent": 5
+    "dropPercent": 0
    },
    "tags": [],
    "validation": {
@@ -2787,15 +2791,15 @@
   },
   {
    "rank": 77,
-   "productId": "1541104559",
-   "productName": "홈플래닛 스테인레스 디지털 백라이팅 주방저울 1kg",
-   "price": 6590,
-   "imageUrl": "https://img5a.coupangcdn.com/image/retail/images/18729388757488-1b49d1fe-0678-4996-83e9-e9724f137255.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1541104559&itemId=2249520008&vendorItemId=70246910450&traceid=V0-113-b1d4661f7e1becc5&pt=0&slot=10",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "6789548230",
+   "productName": "케라시스 케라마이드 극손상 헤어트리트먼트",
+   "price": 9500,
+   "imageUrl": "https://image6.coupangcdn.com/image/retail/images/98679915779588-e71368f1-3826-4516-a88b-eaf771f2e839.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6789548230&itemId=7680088915&vendorItemId=74970391620&traceid=V0-113-85a44be9cfccd894&pt=0&slot=8",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 77,
-   "subCategory": "주방용품",
+   "subCategory": "뷰티",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2803,13 +2807,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 10,
+    "coupangRank": 8,
     "keyword": null,
-    "joopjwiScore": 0.91
+    "joopjwiScore": 0.93
    },
    "price_history": {
-    "previousPrice": 6590,
-    "previousPriceDate": "2026-11-17",
+    "previousPrice": 9500,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2823,15 +2827,15 @@
   },
   {
    "rank": 78,
-   "productId": "8391768862",
-   "productName": "하루온 붙이는 핫팩 50g 10개입",
-   "price": 8780,
-   "imageUrl": "https://image12.coupangcdn.com/image/retail/images/2903476371618-464efe5b-95fc-4652-89b6-138bd700732e.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8391768862&itemId=5160774&vendorItemId=93262001415&traceid=V0-113-97106676b8d12b43&pt=0&slot=10",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8314698514",
+   "productName": "앙플러스 캠핑 스포츠 미니 에어펌프",
+   "price": 2780,
+   "imageUrl": "https://img1c.coupangcdn.com/image/retail/images/47119540233261-32c8d6a1-dc25-4377-9a3f-f140dfff1698.jpeg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8314698514&itemId=23994740131&vendorItemId=91015690381&traceid=V0-113-b14aa3492142b14a&pt=0&slot=8",
+   "category": "문구·취미",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 78,
-   "subCategory": "홈인테리어",
+   "subCategory": "완구·취미",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2839,13 +2843,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 10,
+    "coupangRank": 8,
     "keyword": null,
-    "joopjwiScore": 0.91
+    "joopjwiScore": 0.93
    },
    "price_history": {
-    "previousPrice": 8780,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 2780,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2859,15 +2863,15 @@
   },
   {
    "rank": 79,
-   "productId": "9506325370",
-   "productName": "맥스틸 25W GaN 2포트 PD PPS 초고속 충전기 C타입 USB 멀티 어댑터",
-   "price": 4900,
-   "imageUrl": "https://static.coupangcdn.com/image/retail/images/2026/05/06/10/3/925c3cb7-84e7-4669-afe7-f28456cf98bf.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9506325370&itemId=28325572495&vendorItemId=95375952128&traceid=V0-113-cb89503691f99db1&pt=0&slot=10",
-   "category": "디지털·차량",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8847719903",
+   "productName": "네이쳐러브메레 일회용 아기턱받이",
+   "price": 8800,
+   "imageUrl": "https://image7.coupangcdn.com/image/retail/images/117ca3c9-0ae6-4363-9823-20451675022b155050709081134146.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8847719903&itemId=28281401998&vendorItemId=95234398902&traceid=V0-113-cf1010a240d197bb&pt=0&slot=17",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 79,
-   "subCategory": "가전디지털",
+   "subCategory": "생활용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2875,13 +2879,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 10,
+    "coupangRank": 17,
     "keyword": null,
-    "joopjwiScore": 0.91
+    "joopjwiScore": 0.92
    },
    "price_history": {
-    "previousPrice": 4900,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 8800,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2895,15 +2899,15 @@
   },
   {
    "rank": 80,
-   "productId": "7183147785",
-   "productName": "문화연필 수정테이프 5mm x 8M",
-   "price": 3130,
-   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/79250044471851-72edc804-0545-4026-a444-1f83fd1afc7a.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7183147785&itemId=18120454261&vendorItemId=91008731581&traceid=V0-113-6e35ac487d30cc8a&pt=0&slot=10",
-   "category": "문구·취미",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7600179424",
+   "productName": "탐사 무인쇄 종이용기 520ml",
+   "price": 5190,
+   "imageUrl": "https://img1a.coupangcdn.com/image/retail/images/476890482348998-eb869b70-bee4-4db7-9f0c-4b3ebf6bca2a.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7600179424&itemId=24450268669&vendorItemId=91464121037&traceid=V0-113-a8f45c09fc4dfd16&pt=0&slot=9",
+   "category": "주방·살림",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 80,
-   "subCategory": "문구·오피스",
+   "subCategory": "주방용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2911,13 +2915,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 10,
+    "coupangRank": 9,
     "keyword": null,
-    "joopjwiScore": 0.91
+    "joopjwiScore": 0.92
    },
    "price_history": {
-    "previousPrice": 3130,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5190,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2931,15 +2935,15 @@
   },
   {
    "rank": 81,
-   "productId": "7835241336",
-   "productName": "[로켓프레시] 해슬로 가시없는 어린이 순살가자미 (냉동)",
-   "price": 9990,
-   "imageUrl": "https://image4.coupangcdn.com/image/rs_quotation_api/0andidpm/9a5d7b7f6f7f48d0990a342c0ae4f308.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7835241336&itemId=21316524410&vendorItemId=88375977557&traceid=V0-113-7c264ca02332b728&pt=0&slot=19",
-   "category": "생필품",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "6439592471",
+   "productName": "이지뷰 플러스 김서림방지 극세사 안경닦이",
+   "price": 8000,
+   "imageUrl": "https://image13.coupangcdn.com/image/vendor_inventory/e3be/8907d90034ca2ff883892481696e367c805f7a5a911d9bfc7f1dfc59c662.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6439592471&itemId=11178639348&vendorItemId=78456562577&traceid=V0-113-6f18a672afcb66ef&pt=0&slot=9",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 81,
-   "subCategory": "출산·유아",
+   "subCategory": "패션",
    "shipping": {
     "isRocket": false,
     "isFreeShipping": false,
@@ -2947,13 +2951,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 19,
+    "coupangRank": 9,
     "keyword": null,
-    "joopjwiScore": 0.9
+    "joopjwiScore": 0.92
    },
    "price_history": {
-    "previousPrice": 9990,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 8000,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -2967,15 +2971,15 @@
   },
   {
    "rank": 82,
-   "productId": "7217658918",
-   "productName": "인라이프 국내 제조 포켓형 아이 프렌즈 핫팩 60g",
-   "price": 8200,
-   "imageUrl": "https://img2c.coupangcdn.com/image/retail/images/5795199331517-69dbd3f0-5eec-45fb-abd1-67b988b26ab6.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7217658918&itemId=23696778220&vendorItemId=90721872474&traceid=V0-113-5c95ad40cf55bd35&pt=0&slot=11",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7183147785",
+   "productName": "문화연필 수정테이프 5mm x 8M",
+   "price": 3130,
+   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/79250044471851-72edc804-0545-4026-a444-1f83fd1afc7a.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7183147785&itemId=18120454261&vendorItemId=91008731581&traceid=V0-113-6e35ac487d30cc8a&pt=0&slot=9",
+   "category": "문구·취미",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 82,
-   "subCategory": "홈인테리어",
+   "subCategory": "문구·오피스",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -2983,13 +2987,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 11,
+    "coupangRank": 9,
     "keyword": null,
-    "joopjwiScore": 0.9
+    "joopjwiScore": 0.92
    },
    "price_history": {
-    "previousPrice": 8200,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 3130,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -3003,15 +3007,15 @@
   },
   {
    "rank": 83,
-   "productId": "7415163807",
-   "productName": "신지모루 오피디 25W GaN 듀얼포트 PPS 초고속 PD 충전기",
-   "price": 8980,
-   "imageUrl": "https://image8.coupangcdn.com/image/retail/images/11932041733418-2d422f73-d65a-4fd6-9346-67f88b350a6b.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7415163807&itemId=19222022188&vendorItemId=86338760049&traceid=V0-113-693c11efc2bbce39&pt=0&slot=11",
-   "category": "디지털·차량",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7217658918",
+   "productName": "인라이프 국내 제조 포켓형 아이 프렌즈 핫팩 60g",
+   "price": 8200,
+   "imageUrl": "https://img5c.coupangcdn.com/image/retail/images/5795199331517-69dbd3f0-5eec-45fb-abd1-67b988b26ab6.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7217658918&itemId=23696778220&vendorItemId=90721872474&traceid=V0-113-5c95ad40cf55bd35&pt=0&slot=10",
+   "category": "청소·수납",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 83,
-   "subCategory": "가전디지털",
+   "subCategory": "홈인테리어",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -3019,13 +3023,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 11,
+    "coupangRank": 10,
     "keyword": null,
-    "joopjwiScore": 0.9
+    "joopjwiScore": 0.91
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 8200,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -3039,15 +3043,15 @@
   },
   {
    "rank": 84,
-   "productId": "8750406018",
-   "productName": "코멧 안개분사 분무기 200ml",
-   "price": 2080,
-   "imageUrl": "https://image10.coupangcdn.com/image/retail/images/1059098390956037-1111a63e-801b-41a7-9793-dc155a812747.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8750406018&itemId=25437852325&vendorItemId=92430780495&traceid=V0-113-2611217747f7491b&pt=0&slot=11",
-   "category": "문구·취미",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8209850103",
+   "productName": "티스 딥 오프 클렌징 오일",
+   "price": 8640,
+   "imageUrl": "https://image11.coupangcdn.com/image/vendor_inventory/9005/3d45a3c9cec8699d0636574942d579a226b4dc2fc9b3eea69564a79a6ed7.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8209850103&itemId=19562632866&vendorItemId=3024513911&traceid=V0-113-f545739f75c9e969&pt=0&slot=10",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 84,
-   "subCategory": "완구·취미",
+   "subCategory": "뷰티",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -3055,48 +3059,12 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 11,
+    "coupangRank": 10,
     "keyword": null,
-    "joopjwiScore": 0.9
+    "joopjwiScore": 0.91
    },
    "price_history": {
-    "previousPrice": 2080,
-    "previousPriceDate": "2026-11-16",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 85,
-   "productId": "8355778781",
-   "productName": "하우스클래스 자연주의 일회용 수세미",
-   "price": 4800,
-   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/438316379637475-73869760-a8ad-4573-b56a-6f35fd6e2445.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8355778781&itemId=24143556509&vendorItemId=91162419771&traceid=V0-113-f6593ad8dc593f43&pt=0&slot=12",
-   "category": "주방·살림",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 85,
-   "subCategory": "주방용품",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 12,
-    "keyword": null,
-    "joopjwiScore": 0.89
-   },
-   "price_history": {
-    "previousPrice": 4800,
+    "previousPrice": 8640,
     "previousPriceDate": "2026-11-18",
     "dropPercent": 0
    },
@@ -3110,16 +3078,16 @@
    }
   },
   {
-   "rank": 86,
-   "productId": "260392160",
-   "productName": "소마셈: 10까지의 더하기와 빼기 1",
-   "price": 7200,
-   "imageUrl": "https://image14.coupangcdn.com/image/1025_amir_coupang_oct_80k/1759/b15a53adc9c876708446e5b92077621e7fe9527a4069e73c3e2fa5a6a5c8.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=260392160&itemId=1016016304&vendorItemId=5452186632&traceid=V0-113-329a5679f1f87476&pt=0&slot=12",
-   "category": "도서",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 86,
-   "subCategory": "도서",
+   "rank": 85,
+   "productId": "8680115623",
+   "productName": "코코도르 우드볼 차량용 디퓨저 50ml 2개입",
+   "price": 7300,
+   "imageUrl": "https://image12.coupangcdn.com/image/retail/images/6518710419375-48ed7617-29c6-4d34-9305-e3b46608e62e.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8680115623&itemId=13324713413&vendorItemId=80580757555&traceid=V0-113-65ec201075747cce&pt=0&slot=19",
+   "category": "디지털·차량",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 85,
+   "subCategory": "자동차용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -3127,12 +3095,48 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 12,
+    "coupangRank": 19,
     "keyword": null,
-    "joopjwiScore": 0.89
+    "joopjwiScore": 0.9
    },
    "price_history": {
-    "previousPrice": 7200,
+    "previousPrice": 7900,
+    "previousPriceDate": "2026-11-18",
+    "dropPercent": 8
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 86,
+   "productId": "72986941",
+   "productName": "카스 디지털 온습도계 T023",
+   "price": 9890,
+   "imageUrl": "https://image15.coupangcdn.com/image/retail/images/38697928953915-170521ca-6275-4f9b-8b9b-45f905e96395.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=72986941&itemId=243287302&vendorItemId=71474316987&traceid=V0-113-5b904fae4ec5962b&pt=0&slot=11",
+   "category": "문구·취미",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 86,
+   "subCategory": "문구·오피스",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 11,
+    "keyword": null,
+    "joopjwiScore": 0.9
+   },
+   "price_history": {
+    "previousPrice": 9890,
     "previousPriceDate": "2026-11-18",
     "dropPercent": 0
    },
@@ -3147,15 +3151,15 @@
   },
   {
    "rank": 87,
-   "productId": "8314698514",
-   "productName": "앙플러스 캠핑 스포츠 미니 에어펌프",
-   "price": 2780,
-   "imageUrl": "https://image13.coupangcdn.com/image/retail/images/47119540233261-32c8d6a1-dc25-4377-9a3f-f140dfff1698.jpeg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8314698514&itemId=23994740131&vendorItemId=91015690381&traceid=V0-113-b14aa3492142b14a&pt=0&slot=12",
-   "category": "문구·취미",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "170016366",
+   "productName": "코멧 더블 지퍼백 중형 50매 + 대형 50매",
+   "price": 9890,
+   "imageUrl": "https://image9.coupangcdn.com/image/retail/images/2494822962977525-b7062d7c-231a-4284-92e5-20588a0a0b85.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=170016366&itemId=486458377&vendorItemId=4226718301&traceid=V0-113-47079a5d9e354cd5&pt=0&slot=12",
+   "category": "주방·살림",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 87,
-   "subCategory": "완구·취미",
+   "subCategory": "주방용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -3168,8 +3172,8 @@
     "joopjwiScore": 0.89
    },
    "price_history": {
-    "previousPrice": 2780,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 9890,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -3186,10 +3190,10 @@
    "productId": "7812235201",
    "productName": "코멧 홈 미끄럼방지 회전형 옷걸이",
    "price": 6790,
-   "imageUrl": "https://img4a.coupangcdn.com/image/retail/images/26221524720922-8803ca7f-7b54-4120-b9d4-5fe0a48f5751.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7812235201&itemId=21775526940&vendorItemId=88824348926&traceid=V0-113-ebe6fcca55cc45d5&pt=0&slot=13",
+   "imageUrl": "https://image14.coupangcdn.com/image/retail/images/26221524720922-8803ca7f-7b54-4120-b9d4-5fe0a48f5751.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7812235201&itemId=21775526940&vendorItemId=88824348926&traceid=V0-113-ebe6fcca55cc45d5&pt=0&slot=12",
    "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 88,
    "subCategory": "홈인테리어",
    "shipping": {
@@ -3199,13 +3203,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 13,
+    "coupangRank": 12,
     "keyword": null,
-    "joopjwiScore": 0.88
+    "joopjwiScore": 0.89
    },
    "price_history": {
     "previousPrice": 6790,
-    "previousPriceDate": "2026-11-18",
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -3219,13 +3223,13 @@
   },
   {
    "rank": 89,
-   "productId": "7908137708",
-   "productName": "신지모루 아이폰 8핀 고속충전 라이트닝 케이블",
-   "price": 5000,
-   "imageUrl": "https://image12.coupangcdn.com/image/1025_amir_coupang_oct_80k/4514/bb04add84c0bd32f32da0fe068c8212e268fdf271e4f64181f0a88af4ca5.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7908137708&itemId=21573867352&vendorItemId=88625581432&traceid=V0-113-379f5e8f329e61b4&pt=0&slot=13",
+   "productId": "9157959912",
+   "productName": "신지모루 단선 방지 C타입-C타입 L자형 앵글 우븐 패브릭 100W PD 초고속 충전 케이블",
+   "price": 5330,
+   "imageUrl": "https://img5c.coupangcdn.com/image/retail/images/141947217610434-228175e7-bd0e-43a3-ac2b-ad2ba6c16645.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9157959912&itemId=26973149470&vendorItemId=93942031820&traceid=V0-113-bd7c772461003895&pt=0&slot=12",
    "category": "디지털·차량",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 89,
    "subCategory": "가전디지털",
    "shipping": {
@@ -3235,13 +3239,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 13,
+    "coupangRank": 12,
     "keyword": null,
-    "joopjwiScore": 0.88
+    "joopjwiScore": 0.89
    },
    "price_history": {
-    "previousPrice": 5000,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 5330,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -3255,15 +3259,15 @@
   },
   {
    "rank": 90,
-   "productId": "8558097627",
-   "productName": "리틀트리 종이 방향제",
-   "price": 9100,
-   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/2024/08/09/15/2/34bdfa5c-b466-482a-b16a-29bc9e264b5e.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8558097627&itemId=15844440191&vendorItemId=90891154525&traceid=V0-113-74823c513af19253&pt=0&slot=13",
-   "category": "디지털·차량",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "1837382112",
+   "productName": "재미있고 빠른 첫 한글 쓰기. 1: 모음 자음 쉬운 낱말",
+   "price": 5850,
+   "imageUrl": "https://img1a.coupangcdn.com/image/1025_amir_coupang_oct_80k/1581/80cd03f1270869f511297752f741b5d00d9a020a80e32ff30aecd53723b8.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1837382112&itemId=3124084294&vendorItemId=71111752987&traceid=V0-113-45971ee0bf153e3e&pt=0&slot=12",
+   "category": "도서",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 90,
-   "subCategory": "자동차용품",
+   "subCategory": "도서",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -3271,13 +3275,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 13,
+    "coupangRank": 12,
     "keyword": null,
-    "joopjwiScore": 0.88
+    "joopjwiScore": 0.89
    },
    "price_history": {
-    "previousPrice": 9100,
-    "previousPriceDate": "2026-11-17",
+    "previousPrice": 5850,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -3291,15 +3295,15 @@
   },
   {
    "rank": 91,
-   "productId": "7456133206",
-   "productName": "카슬라 베리 순정 가죽 주차번호판",
-   "price": 8680,
-   "imageUrl": "https://img5a.coupangcdn.com/image/vendor_inventory/7bac/9660221c10283b75a12b0b25f0bbf1921ba141791347027837ec08b76656.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7456133206&itemId=19423110777&vendorItemId=86534535615&traceid=V0-113-f02ae2672dc0368c&pt=0&slot=15",
-   "category": "디지털·차량",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "7310061586",
+   "productName": "에너자이저 맥스 AAA건전지",
+   "price": 9300,
+   "imageUrl": "https://img1c.coupangcdn.com/image/retail/images/2024/07/16/17/1/667260f8-4d0c-48ae-a1b5-a63c9eac04f8.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7310061586&itemId=15586037431&vendorItemId=90721346384&traceid=V0-113-9859826c070276d4&pt=0&slot=14",
+   "category": "청소·수납",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 91,
-   "subCategory": "자동차용품",
+   "subCategory": "홈인테리어",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -3307,14 +3311,14 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 15,
+    "coupangRank": 14,
     "keyword": null,
-    "joopjwiScore": 0.88
+    "joopjwiScore": 0.87
    },
    "price_history": {
-    "previousPrice": 8900,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 2
+    "previousPrice": 9300,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
    },
    "tags": [],
    "validation": {
@@ -3327,13 +3331,13 @@
   },
   {
    "rank": 92,
-   "productId": "6826020009",
-   "productName": "두들북",
-   "price": 5400,
-   "imageUrl": "https://image9.coupangcdn.com/image/1025_amir_coupang_oct_80k/146e/49f73cd88bb579749360d78ca712a03a356180d250a099dff049668e8f77.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6826020009&itemId=16192363517&vendorItemId=83387448087&traceid=V0-113-bef1ad80d20ab9b9&pt=0&slot=13",
+   "productId": "7127398808",
+   "productName": "세이노의 가르침 : 피보다 진하게 살아라",
+   "price": 6480,
+   "imageUrl": "https://image3.coupangcdn.com/image/vendor_inventory/0c69/fbacd92df89c4ca2b9362bdc7a00dd0e1a00913488ce365a7e965c0d1bb2.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7127398808&itemId=17860321879&vendorItemId=85023602513&traceid=V0-113-837de659028893fc&pt=0&slot=14",
    "category": "도서",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 92,
    "subCategory": "도서",
    "shipping": {
@@ -3343,13 +3347,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 13,
+    "coupangRank": 14,
     "keyword": null,
-    "joopjwiScore": 0.88
+    "joopjwiScore": 0.87
    },
    "price_history": {
-    "previousPrice": 5400,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 6480,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],
@@ -3363,15 +3367,15 @@
   },
   {
    "rank": 93,
-   "productId": "6233575144",
-   "productName": "꼬마손 병풍 초점책 블랙 & 화이트",
-   "price": 3500,
-   "imageUrl": "https://image12.coupangcdn.com/image/1025_amir_coupang_oct_80k/66c2/6c21025d99533379e0a105b9613badf22db40270c351b41df716fb0da96f.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6233575144&itemId=12541667999&vendorItemId=79810071269&traceid=V0-113-3c85dd5ec1f77897&pt=0&slot=15",
-   "category": "도서",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8428979691",
+   "productName": "헤인느 전차종 호환 차량 틈새 쿠션 자동차 사이드 포켓",
+   "price": 5800,
+   "imageUrl": "https://image4.coupangcdn.com/image/vendor_inventory/a0b8/22dbcd24beb534e15ed37f800adba6aa8a5c6164a375c75d3a14aff4a739.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8428979691&itemId=24383675088&vendorItemId=91398740788&traceid=V0-113-db690c059d0ed7c0&pt=0&slot=15",
+   "category": "디지털·차량",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 93,
-   "subCategory": "도서",
+   "subCategory": "자동차용품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -3384,8 +3388,8 @@
     "joopjwiScore": 0.86
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 5800,
+    "previousPriceDate": "2026-11-18",
     "dropPercent": 0
    },
    "tags": [],
@@ -3399,14 +3403,50 @@
   },
   {
    "rank": 94,
-   "productId": "8832081734",
-   "productName": "유한락스 반려동물 냄새얼룩 제거제",
-   "price": 9900,
-   "imageUrl": "https://image9.coupangcdn.com/image/retail/images/84532198622701-97b6f38b-dd8d-4dd7-8ae9-9d2e7aaf318c.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8832081734&itemId=25800574049&vendorItemId=87999276369&traceid=V0-113-5d37709c59c0a37a&pt=0&slot=15",
-   "category": "반려동물",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "productId": "8350616562",
+   "productName": "코멧 뽑아쓰는 분리수거 배접 비닐봉투",
+   "price": 9780,
+   "imageUrl": "https://image5.coupangcdn.com/image/retail/images/238316875927424-443cd088-79c8-43ff-85f2-a0d4e321fa66.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8350616562&itemId=24124670002&vendorItemId=91143810348&traceid=V0-113-1bceaf9322725bf6&pt=0&slot=16",
+   "category": "청소·수납",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 94,
+   "subCategory": "홈인테리어",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 16,
+    "keyword": null,
+    "joopjwiScore": 0.85
+   },
+   "price_history": {
+    "previousPrice": 9780,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 95,
+   "productId": "7170134497",
+   "productName": "도그랑 전연령 강아지 클래식 건식사료",
+   "price": 9900,
+   "imageUrl": "https://img3c.coupangcdn.com/image/1025_amir_coupang_oct_80k/3d0e/ba67a4dc06a11af9ea7d8e28c861fc97ea92b9a5918039cd0b4a6c2069f6.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7170134497&itemId=26575764776&vendorItemId=3000148538&traceid=V0-113-0108322f4f2b4966&pt=0&slot=16",
+   "category": "반려동물",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 95,
    "subCategory": "반려동물",
    "shipping": {
     "isRocket": true,
@@ -3415,9 +3455,153 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 15,
+    "coupangRank": 16,
     "keyword": null,
-    "joopjwiScore": 0.86
+    "joopjwiScore": 0.85
+   },
+   "price_history": {
+    "previousPrice": 9900,
+    "previousPriceDate": "2026-11-17",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 96,
+   "productId": "66936708",
+   "productName": "웁스 반려동물 닭가슴살 간식",
+   "price": 9280,
+   "imageUrl": "https://image8.coupangcdn.com/image/retail/images/1141569806056058-9638e192-a75a-4887-922b-e5f8fd39bb6f.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=66936708&itemId=224777702&vendorItemId=3546221593&traceid=V0-113-5d4b611f4acad846&pt=0&slot=17",
+   "category": "반려동물",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 96,
+   "subCategory": "반려동물",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 17,
+    "keyword": null,
+    "joopjwiScore": 0.84
+   },
+   "price_history": {
+    "previousPrice": 9300,
+    "previousPriceDate": "2026-11-18",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 97,
+   "productId": "6610541214",
+   "productName": "NEW 가방퍼즐",
+   "price": 9100,
+   "imageUrl": "https://image14.coupangcdn.com/image/1025_amir_coupang_oct_80k/2304/72ed36293e2c04a0467fb2e56efd5140a75bf005215d6812834ffcb52008.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6610541214&itemId=14987954379&vendorItemId=82210941256&traceid=V0-113-9639018f2c3e1c19&pt=0&slot=25",
+   "category": "도서",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 97,
+   "subCategory": "도서",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 25,
+    "keyword": null,
+    "joopjwiScore": 0.76
+   },
+   "price_history": {
+    "previousPrice": 9100,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 98,
+   "productId": "9349896857",
+   "productName": "뿌리깊은 초등국어 독해력 기본편",
+   "price": 8910,
+   "imageUrl": "https://image15.coupangcdn.com/image/retail/images/66856798398610-46979fef-7ed4-498d-b0fa-4b9fe19f20b9.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9349896857&itemId=27737057097&vendorItemId=3583354650&traceid=V0-113-a474b8ae83f3a0bc&pt=0&slot=26",
+   "category": "도서",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 98,
+   "subCategory": "도서",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 26,
+    "keyword": null,
+    "joopjwiScore": 0.75
+   },
+   "price_history": {
+    "previousPrice": 8910,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 0
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 99,
+   "productId": "7370340249",
+   "productName": "아기상어 첫 색칠놀이",
+   "price": 4900,
+   "imageUrl": "https://img4c.coupangcdn.com/image/1025_amir_coupang_oct_80k/8555/451cf496deb6e842818ae4bb563af8a47d83bf769e4845a5dd3f86245bc3.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7370340249&itemId=19010899501&vendorItemId=86135591950&traceid=V0-113-0fc75c2045c773c3&pt=0&slot=30",
+   "category": "도서",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 99,
+   "subCategory": "도서",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 30,
+    "keyword": null,
+    "joopjwiScore": 0.71
    },
    "price_history": {
     "previousPrice": null,
@@ -3434,194 +3618,14 @@
    }
   },
   {
-   "rank": 95,
-   "productId": "1837382112",
-   "productName": "재미있고 빠른 첫 한글 쓰기. 1: 모음 자음 쉬운 낱말",
-   "price": 5850,
-   "imageUrl": "https://image14.coupangcdn.com/image/1025_amir_coupang_oct_80k/1581/80cd03f1270869f511297752f741b5d00d9a020a80e32ff30aecd53723b8.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=1837382112&itemId=3124084294&vendorItemId=71111752987&traceid=V0-113-45971ee0bf153e3e&pt=0&slot=21",
-   "category": "도서",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 95,
-   "subCategory": "도서",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 21,
-    "keyword": null,
-    "joopjwiScore": 0.8
-   },
-   "price_history": {
-    "previousPrice": 5850,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 96,
-   "productId": "8487404030",
-   "productName": "탐사 강아지 고구마말랭이 간식",
-   "price": 9890,
-   "imageUrl": "https://image8.coupangcdn.com/image/retail/images/68686746330726-d426d6a7-cd33-48b0-bf93-a4b4ba594981.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8487404030&itemId=24563910643&vendorItemId=91576053521&traceid=V0-113-9799d84d557b8ba6&pt=0&slot=21",
-   "category": "반려동물",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 96,
-   "subCategory": "반려동물",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 21,
-    "keyword": null,
-    "joopjwiScore": 0.8
-   },
-   "price_history": {
-    "previousPrice": 9890,
-    "previousPriceDate": "2026-11-16",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 97,
-   "productId": "7127398808",
-   "productName": "세이노의 가르침 : 피보다 진하게 살아라",
-   "price": 6480,
-   "imageUrl": "https://img5a.coupangcdn.com/image/vendor_inventory/0c69/fbacd92df89c4ca2b9362bdc7a00dd0e1a00913488ce365a7e965c0d1bb2.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7127398808&itemId=17860321879&vendorItemId=85023602513&traceid=V0-113-837de659028893fc&pt=0&slot=23",
-   "category": "도서",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 97,
-   "subCategory": "도서",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 23,
-    "keyword": null,
-    "joopjwiScore": 0.78
-   },
-   "price_history": {
-    "previousPrice": 6480,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 98,
-   "productId": "8425193796",
-   "productName": "리스펫 반려동물 LED 다보여 발톱깎이 4.3 x 15 cm",
-   "price": 8990,
-   "imageUrl": "https://img4a.coupangcdn.com/image/retail/images/1262896815256507-b6d3da19-bb90-46ab-a4b4-d5718051038a.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8425193796&itemId=24374243503&vendorItemId=70444061653&traceid=V0-113-44eb52770b636cf8&pt=0&slot=24",
-   "category": "반려동물",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 98,
-   "subCategory": "반려동물",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 24,
-    "keyword": null,
-    "joopjwiScore": 0.77
-   },
-   "price_history": {
-    "previousPrice": 8990,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 99,
-   "productId": "6610541214",
-   "productName": "NEW 가방퍼즐",
-   "price": 9100,
-   "imageUrl": "https://img1c.coupangcdn.com/image/1025_amir_coupang_oct_80k/2304/72ed36293e2c04a0467fb2e56efd5140a75bf005215d6812834ffcb52008.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6610541214&itemId=14987954379&vendorItemId=82210941256&traceid=V0-113-9639018f2c3e1c19&pt=0&slot=33",
-   "category": "도서",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 99,
-   "subCategory": "도서",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 33,
-    "keyword": null,
-    "joopjwiScore": 0.68
-   },
-   "price_history": {
-    "previousPrice": 9100,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
    "rank": 100,
-   "productId": "9349896857",
-   "productName": "뿌리깊은 초등국어 독해력 기본편",
-   "price": 8910,
-   "imageUrl": "https://image1.coupangcdn.com/image/retail/images/66856798398610-46979fef-7ed4-498d-b0fa-4b9fe19f20b9.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9349896857&itemId=27737057097&vendorItemId=3583354650&traceid=V0-113-a474b8ae83f3a0bc&pt=0&slot=37",
+   "productId": "8743373045",
+   "productName": "기적의 말하기 영단어 1000",
+   "price": 8100,
+   "imageUrl": "https://img4c.coupangcdn.com/image/retail/images/2025/04/30/14/4/cd1d351c-02a4-4da5-805e-f9dcefaac17d.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8743373045&itemId=25410440556&vendorItemId=92417608145&traceid=V0-113-36f83c8df5b7ba33&pt=0&slot=39",
    "category": "도서",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
    "overallRank": 100,
    "subCategory": "도서",
    "shipping": {
@@ -3631,13 +3635,13 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 37,
+    "coupangRank": 39,
     "keyword": null,
-    "joopjwiScore": 0.64
+    "joopjwiScore": 0.62
    },
    "price_history": {
-    "previousPrice": 8910,
-    "previousPriceDate": "2026-11-17",
+    "previousPrice": 8100,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [],

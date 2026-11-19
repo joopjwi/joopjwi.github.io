@@ -1,26 +1,26 @@
 {
  "apiVersion": 1,
  "status": "ok",
- "dataDate": "2026-11-19",
- "updatedAt": "2026-11-19T06:29:41+09:00",
- "expiresAt": "2026-11-20T09:00:00+09:00",
+ "dataDate": "2026-11-20",
+ "updatedAt": "2026-11-20T06:27:00+09:00",
+ "expiresAt": "2026-11-21T09:00:00+09:00",
  "maxPrice": 10000,
  "currency": "KRW",
  "disclosure": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 updatedAt 기준이며 쿠팡에서 바뀔 수 있음. 이미지 저작권은 판매자에게 있음.",
- "selection": "curated",
+ "selection": "auto",
  "count": 5,
  "items": [
   {
    "rank": 1,
-   "productId": "9287063502",
-   "productName": "주식회사아텍스 실리콘 외풍차단 틈새차단 문풍지 테이프 반투명 45mm x 5m",
-   "price": 3000,
-   "imageUrl": "https://image2.coupangcdn.com/image/retail/images/2026/01/05/17/9/a83e3cab-0bfb-4c6c-b5e2-b0c80cfc4eee.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9287063502&itemId=27501525383&vendorItemId=94466585855&traceid=V0-113-5d39e0eb8bc3a7e0&pt=0&slot=20",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 10,
-   "subCategory": "홈인테리어",
+   "productId": "8728996007",
+   "productName": "JCCOMPANY 소모 배변패드",
+   "price": 5200,
+   "imageUrl": "https://img1a.coupangcdn.com/image/vendor_inventory/image_audit/stage/manual/797479006696650-4e21e4f5-bcd3-4dc6-a570-92c4a84c0f09_1750916156712.png",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8728996007&itemId=25335924473&vendorItemId=92330661981&traceid=V0-113-f4451cf2884b62b6&pt=0&slot=7",
+   "category": "반려동물",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 1,
+   "subCategory": "반려동물",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -28,14 +28,14 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 20,
+    "coupangRank": 7,
     "keyword": null,
-    "joopjwiScore": 1.11
+    "joopjwiScore": 1.24
    },
    "price_history": {
-    "previousPrice": 5350,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 44
+    "previousPrice": 7600,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 32
    },
    "tags": [],
    "validation": {
@@ -48,15 +48,15 @@
   },
   {
    "rank": 2,
-   "productId": "6542739738",
-   "productName": "달팽이리빙 퀴진드마망 실리콘 씽크대 물막이",
-   "price": 9500,
-   "imageUrl": "https://ads-partners.coupang.com/image1/dnla-8NDvswTA84ddv_npzKunIeaVH21sVNZpf2a1FuNphrkXNWOPv-ZBOXMrOvEc06LWDekYBG9HITlhMbvEyYaS0XyWI_mnvxINQWyYi4SXLB5M18XEZr0NV4ncoNlJQpLql-boRUoHV-lNO2SaxcYfEiqMCDWWqCI-uQLpJUzZujE3zd4E0cDXikZQdVFjJTs7jVW8LF6KbaglUj6OwwcAocBJxL3ef6K6ntdxvwT1XnprgS6n7SxVwrITm8V7_VJOWTVhLL2QpELs9PgKb3DylBrbOxKIHUDOXgtn9f-6vMdheervgS-n9sILhWJZvbEBpkpqMMsaiU9s0N6a9YF47Z8lfK60EvzCsjg4wJbRIhgu0UmjKeL24DenzaQGeyabKu3ALjk-qDAcDY96Fti_4c6_5JFHM1Z8MonFEP9zsrri0v5Bqq8cCgJHls5uC0x3kfyq0EDrVfG8VwjWYYwk7UukNlxP2gmpGqhGtXvo4qE9V6eLx_hyd1rsXjmNrSbA2mlAFg5nXQfiz_RDM0eF0nfNeq5XkPdupb9-hZEiXg=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6542739738&itemId=14573958705&vendorItemId=81816101821&traceid=V0-153-412cbbb1928665a7&requestid=20261119062949949272599041&token=31850C%7CMIXED&pt=0&slot=6",
-   "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 24,
-   "subCategory": "주방 꿀템",
+   "productId": "6239512369",
+   "productName": "풀무원샘물 무라벨 생수, 500ml, 40개",
+   "price": 8720,
+   "imageUrl": "https://ads-partners.coupang.com/image1/DpvKFMrTxfXKHGKYDj5NHHBH4iWrMJMegwtTsxp1G3VIXFOnmG0AipzMSLEyGfFAt8aqnZt7Fvdzu735mEsGrHVLFl8U3DLV9-Pvgs1tdXvwk3_GGGIwVoMhc60Tt_juNHqTcvEaFyqExrFDBSrhY3NAo6DH62dW_kxZRYQKYBXFxhwlRsGWHNfn0xP9AXbj2Lt19raqHcNgyf3NPkQVdb3haed-GEjFs_59dELkWXOYYrr3LEGRI8tM601gu94T2htP7pE3iHn7olkHYrtHlv6LLWoPE2IdLOne9OjfXZFYcnP9cwbH0Ils3Cma1fvLeEG94yumfkuPZbbj9cB7XDz5LQBRtYCT5vGqDrrXyhAJo_Ej4MYrJFbc83if0ZliTrauQTVMytnsRAVPFuCEzcnvtdy1EaSKQTzgjTxUZI4QNx3KqD7oireoDPmCLqcAJwPJt_qx8DOq8JKp1clk9wqw0mzc4iVAY1uvm2zJS9ib8iEyV_jb9LTuGCmM3oIz1fTDLnChJXnb7KPZVQL2dfy-R_ofNxIPTOy2rofVeQLAPhlZSW3H8UsBi8OeYXpnK7M=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6239512369&itemId=15922885474&vendorItemId=86494127148&traceid=V0-153-81b232b954af2ed9&clickBeacon=f5f360b0-e45f-11f1-89aa-00cdb27b3714%7E3&requestid=20261120062702431059311882&token=31850C%7CMIXED&pt=1&slot=2",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 2,
+   "subCategory": "생수",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -64,17 +64,17 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 6,
-    "keyword": "주방 꿀템",
-    "joopjwiScore": 1.05
+    "coupangRank": 2,
+    "keyword": "생수",
+    "joopjwiScore": 1.19
    },
    "price_history": {
-    "previousPrice": 9500,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 8720,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
    "tags": [
-    "궁금한 템"
+    "매일 쓰는 템"
    ],
    "validation": {
     "price": "ok",
@@ -86,32 +86,34 @@
   },
   {
    "rank": 3,
-   "productId": "6439592471",
-   "productName": "이지뷰 플러스 김서림방지 극세사 안경닦이",
-   "price": 8000,
-   "imageUrl": "https://img2a.coupangcdn.com/image/vendor_inventory/e3be/8907d90034ca2ff883892481696e367c805f7a5a911d9bfc7f1dfc59c662.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6439592471&itemId=11178639348&vendorItemId=78456562577&traceid=V0-113-6f18a672afcb66ef&pt=0&slot=8",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 70,
-   "subCategory": "패션",
+   "productId": "305672892",
+   "productName": "탐사 클래식 물티슈 캡형",
+   "price": 7890,
+   "imageUrl": "https://ads-partners.coupang.com/image1/03NK-3Lkak6nWpf8043E4hR2T8XddVzKGObL2P693g7zHnAoGrLV8XVuBB-cN-VkOG6FjT8Jl791pg2otx8xOrru08oCpqBYMGnj7RnIbeVZqbaphHb9KnLCum9j5-8qy4jihZ5vQBYlFt52pyRiz3SBcMi4Zrm9qnp9LHt_RL8aQi2d_Gpj3ithlEpxKFl0m9VWuaeAvg49kpYmBPd6FMeQb-FS0KkrVs9s2ofneorjhPvsR7YX5beAhEU2ps2_a7_-jbg4Y0wqMa9AAsxSdRVxjug2JrGB59DAOuIH08Qq5DicuAjYKpTeDAMNhFUroMEB4RqqNMslEllbKvY9kY0BDkWfHjYzYR_PgSGaVyxnoWn-xesNcoVgRA6viAAw87vSV01R3jzY_Kr9ba97YoX7JIY5NYGqusB6JnzyM3uzq5Po6kzV0ZMUkmw7-fL8bhkhQDkm6GYMFEIx6N8xkOsPvpvwzVW7Ws6Oy-ybDw8uM65Ms6FaoxKeBqPXrCVySi_uby1K72VFOcZpikLS6YIi9Ju_8rpqgKZuhWiC604zXJolW-hoyy0QjGG6N2YVCZDOcoQjYCKuv93KxfY=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=305672892&itemId=963428194&vendorItemId=5366452533&traceid=V0-153-df6e481d96579701&requestid=20261120062700334292637309&token=31850C%7CMIXED&pt=0&slot=5",
+   "category": "생필품",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 3,
+   "subCategory": "물티슈",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 8,
-    "keyword": null,
-    "joopjwiScore": 0.93
+    "source": "coupang_keyword_search",
+    "coupangRank": 5,
+    "keyword": "물티슈",
+    "joopjwiScore": 1.16
    },
    "price_history": {
-    "previousPrice": 8000,
-    "previousPriceDate": "2026-11-18",
+    "previousPrice": 7890,
+    "previousPriceDate": "2026-11-19",
     "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "매일 쓰는 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -122,15 +124,15 @@
   },
   {
    "rank": 4,
-   "productId": "8982821483",
-   "productName": "무식이네 강력 접착식 고급 각도조절 샤워기 거치대",
-   "price": 3980,
-   "imageUrl": "https://ads-partners.coupang.com/image1/AduSR5JPaqRcsTMlAeTQ2dQPxWU1jhWZpPYbGC2NoY-sHmqPmEl2FvwrRMbAZAYnbbfGzeXGgvl7jGfcTonNdUGIRix_xjKPHra00FdHxtPL5UB-WhUlY0pEVrUB7yimVPitELM66Uy9m0kGMc4T-Ut2bR8LOscQLhwy1xGo4c8_ExWWJXs-LWR5j5yJ_U72dH64ciTk7dB-jvr9iZPlQgtNGFlNiy39JB-JuKhQ9eLg3ty1dipuMZiLgOnyPO7VTYBrhghx-DReGdl2vEzDrcdSOYHGbUs2JAHQTuM3WDkwHc1W2W5iQ1oPG0Dg5zHRudKx8iqNiwo9UqdI9i3LjzC_BNBZik1bnbPISk-eisdITjsmkNwUhBL8E7LlXqi59d1uCzvavjbFSgvTR4QtmjhCd1KzX45VgxKlwqlX3ArMwFaSMiJU9msOmbRJn64aaNg4wCPryX_UsDi7kvTD8QVrnDAzPx5s6B2rZ3nF5o9v8n7uUd4RmCMZeFgtzDP8a0uYfpVASuEvn0Kj1HJmGtZv8ckVM4XRBnxi6C7yvQa4ygYfzmA2BVAVJBPyl0EOjMS9OHFlCEbR_MONQwI=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8982821483&itemId=24679498633&vendorItemId=91689543130&traceid=V0-153-efa726a570b78cb9&requestid=20261119062952124306643734&token=31850C%7CMIXED&pt=0&slot=7",
+   "productId": "4656005846",
+   "productName": "러브핑코 캐릭터 배워머",
+   "price": 6040,
+   "imageUrl": "https://ads-partners.coupang.com/image1/qpQgOAuphftwUJoqqtbKaqVH4KJ_xhB38xMPw6NiHtisczfV2sqoOpdAdliKquK7rTJ5saPxSVz5nqLKN8MzvkS6eOeIP_W3CeBG_1bqwf0YSXG-Bmu-KEDWF71u44Tjh8ro90wxijKqQVKV_lNLcAS0vjvE4ikB-RF-JFJS-GLE2BaYnDAAQpwrYTjMYw_76ELtJ1PPWKeEtg1TzaRvFO7pRWTHaHW1SongYLIv8vrIdNPeVRQ1BWiaS0-iXxiH5iNCdA1MD2hesZcPcaTqm36rEwEyQj76xhtdth4y-DAhU-N7zxmUO-wGFqXWduo-QpBDEddI4Xn6LAYfjwefhm_x57xx8_YtsesAXA2azYwdj6xAxTZfopdWP0aoWgH9YqwkVUsuzkYddOtpOTQgsuK53nBqtadbInkKanRxOUWh2hgWi5_-7gwh2gNE8fouazcjnvMaI1eoPu9EZEUALqcRvqtPECh31sN_NjlHUHPqgQoammxQ_kPY-QiiF1_ZqgE2pWQ2Bn2wM3Vj4xk-0qhf6-2NKbk2ky1-MILcClqoYiQuUHZwwhfHORTbM4gWrjw5",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=4656005846&itemId=5810209711&vendorItemId=73108698803&traceid=V0-153-4d226a6ef2a49b4d&clickBeacon=faf2d3c0-e45f-11f1-a290-6e1f0135f8d5%7E3&requestid=20261120062710769140443649&token=31850C%7CMIXED&pt=1&slot=1",
    "category": "신기한템",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 28,
-   "subCategory": "욕실 꿀템",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 9,
+   "subCategory": "겨울 꿀템",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -138,9 +140,9 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 7,
-    "keyword": "욕실 꿀템",
-    "joopjwiScore": 1.04
+    "coupangRank": 1,
+    "keyword": "겨울 꿀템",
+    "joopjwiScore": 1.1
    },
    "price_history": {
     "previousPrice": null,
@@ -160,34 +162,32 @@
   },
   {
    "rank": 5,
-   "productId": "4876313878",
-   "productName": "백산수, 2L, 6개",
-   "price": 3810,
-   "imageUrl": "https://ads-partners.coupang.com/image1/tpSo6MdhCbkfJ_A_tqQ2gMCSKZEmQngeYQ9fV4l7qHmBLwPJcptXG5XzDxVRS4k-ukJ_sY8hHyHLQai3upAoDV6pu4wdZvwr4yoXh1Uymj9WQA9iGK3e0259y7gPizk-vf5NKrVZzopYQjrJX94eaCeKInSEozPIedQCBYsFTBLNVME3sTdVGyx-dH7shlRZNBVNVkl3MZcwVTiOn_2ka7vYSqIIY2G2tKn-mS-S8YAiefQ5XLuDJwuPxm-AOa-EzvDOlXtwrvRuZsVyg7fVUnubro414B64RsqpVZRiBjdP8vbetm09pwcmcWUEGA_Daa01zBigV-BxbzKE1t8RlNARmv7Lw0ZIxHp7VoaaIFoga7VyG0yBLmyq_ZjHph_Sx6fdN8lWgumY8msyvWD_GN1Xc-nNiCQx9IAFwWLxoLnSQ2zLT5xX_u7P2Q92AFcq-rEE7cTcSj7V5FkIab4xcAqOhekv_CF2242657H36sV2exruJ3cqlOnIrQ-ZCEGnbGuCp3wNquHywh8yrc7IVBinmB7mSFMZ6Td53GviQ5_fmIswX0vMqBJ6UWgZhHMcktTqscxuj54aqTbXxEfuXvDc4ks=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=4876313878&itemId=6342574349&vendorItemId=95854128813&traceid=V0-153-cdb04ffccb5ff56c&clickBeacon=2cf90480-e397-11f1-8f6e-4e93ee512d24%7E3&requestid=20261119062945905108189971&token=31850C%7CMIXED&pt=1&slot=5",
+   "productId": "7230779632",
+   "productName": "신선한 대란",
+   "price": 7880,
+   "imageUrl": "https://image10.coupangcdn.com/image/1025_amir_coupang_oct_80k/316d/6262fa64e13b4344cf33980399519eb5c7b2d25baac2bd9a33b7a5a7c762.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7230779632&itemId=18347032018&vendorItemId=85491095723&traceid=V0-113-f5bb636e7db07a4a&pt=0&slot=1",
    "category": "식품·간식",
-   "updatedAt": "2026-11-19T06:29:41+09:00",
-   "overallRank": 4,
-   "subCategory": "삼다수",
+   "updatedAt": "2026-11-20T06:27:00+09:00",
+   "overallRank": 10,
+   "subCategory": "식품",
    "shipping": {
-    "isRocket": false,
+    "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 5,
-    "keyword": "삼다수",
-    "joopjwiScore": 1.16
+    "source": "coupang_best_category",
+    "coupangRank": 1,
+    "keyword": null,
+    "joopjwiScore": 1.09
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
-    "dropPercent": 0
+    "previousPrice": 7990,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 1
    },
-   "tags": [
-    "매일 쓰는 템"
-   ],
+   "tags": [],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
