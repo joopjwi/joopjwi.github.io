@@ -38,6 +38,31 @@ def main(req_path, out_dir):
     else:
         status["tts"] = "skipped"
 
+    # 목소리 후보 샘플 (같은 문장을 여러 목소리로)
+    for smp in spec.get("samples", []):
+        try:
+            body = {"text": smp["text"], "model_id": smp.get("model", "eleven_multilingual_v2"),
+                    "voice_settings": smp.get("voiceSettings", {"stability": 0.4, "similarity_boost": 0.8,
+                                                                "style": 0.35, "speed": 1.1})}
+            audio = post(f"https://api.elevenlabs.io/v1/text-to-speech/{smp['voiceId']}?output_format=mp3_44100_128", body)
+            (out / f"sample_{smp['name']}.mp3").write_bytes(audio)
+            status.setdefault("samples", {})[smp["name"]] = "ok"
+        except urllib.error.HTTPError as e:
+            status.setdefault("samples", {})[smp["name"]] = f"error {e.code}: {e.read().decode(errors='ignore')[:200]}"
+
+    # 계정 목소리 목록
+    if spec.get("listVoices"):
+        try:
+            req = urllib.request.Request("https://api.elevenlabs.io/v1/voices", headers={"xi-api-key": KEY})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                vs = json.loads(r.read()).get("voices", [])
+            json.dump([{"id": v["voice_id"], "name": v["name"], "category": v.get("category"),
+                        "labels": v.get("labels")} for v in vs],
+                      open(out / "voices.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            status["voices"] = len(vs)
+        except urllib.error.HTTPError as e:
+            status["voices"] = f"error {e.code}: {e.read().decode(errors='ignore')[:200]}"
+
     # 외부 음원(예: Creative Claw로 만든 BGM) 내려받기
     for f in spec.get("fetch", []):
         try:

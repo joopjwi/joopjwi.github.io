@@ -1,0 +1,36 @@
+{
+ "id": "voice-samples-01",
+ "listVoices": true,
+ "samples": [
+  {
+   "name": "1_Sarah",
+   "voiceId": "EXAVITQu4vr4xnSDxMaL",
+   "text": "주인이 잠깐 자리를 비운 순간, 치와와가 기다렸다는 듯 달려들어 자기보다 몇 배는 큰 인형을 소파 아래로 끌어내리는데요?"
+  },
+  {
+   "name": "2_Jessica",
+   "voiceId": "cgSgspJ2msm6clMCkdW9",
+   "text": "주인이 잠깐 자리를 비운 순간, 치와와가 기다렸다는 듯 달려들어 자기보다 몇 배는 큰 인형을 소파 아래로 끌어내리는데요?"
+  },
+  {
+   "name": "3_Laura",
+   "voiceId": "FGY2WhTYpPnrIDTdsKH5",
+   "text": "주인이 잠깐 자리를 비운 순간, 치와와가 기다렸다는 듯 달려들어 자기보다 몇 배는 큰 인형을 소파 아래로 끌어내리는데요?"
+  },
+  {
+   "name": "4_Alice",
+   "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+   "text": "주인이 잠깐 자리를 비운 순간, 치와와가 기다렸다는 듯 달려들어 자기보다 몇 배는 큰 인형을 소파 아래로 끌어내리는데요?"
+  },
+  {
+   "name": "5_Lily",
+   "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+   "text": "주인이 잠깐 자리를 비운 순간, 치와와가 기다렸다는 듯 달려들어 자기보다 몇 배는 큰 인형을 소파 아래로 끌어내리는데요?"
+  },
+  {
+   "name": "6_Matilda",
+   "voiceId": "XrExE9yKIg1WjnnlVkGX",
+   "text": "주인이 잠깐 자리를 비운 순간, 치와와가 기다렸다는 듯 달려들어 자기보다 몇 배는 큰 인형을 소파 아래로 끌어내리는데요?"
+  }
+ ]
+}
