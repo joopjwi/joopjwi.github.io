@@ -1,0 +1,75 @@
+{
+ "id": "tardog-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.06
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "전복된 트럭에서 쏟아진 시커멓고 끈적한 액체 한가운데, 강아지 한 마리가 꼼짝도 못 하고 갇혀 있습니다."
+  },
+  {
+   "seg": "B",
+   "spoken": "빠져나오려고 발버둥 칠수록 몸은 더 무겁게 달라붙고,"
+  },
+  {
+   "seg": "C",
+   "spoken": "그때 한 남성이 판자를 깔고 한 발 한 발 조심스럽게 다가가기 시작합니다."
+  },
+  {
+   "seg": "D",
+   "spoken": "손을 뻗어 강아지 앞발을 붙잡고 힘껏 끌어당겨 보지만, 액체가 너무 끈적해서 꿈쩍도 하지 않아요."
+  },
+  {
+   "seg": "E",
+   "spoken": "다른 사람까지 합세해 둘이서 당겨봐도 쉽지 않은 상황."
+  },
+  {
+   "seg": "F",
+   "spoken": "결국 소방대원들까지 출동했고,"
+  },
+  {
+   "seg": "G",
+   "spoken": "여러 명이 힘을 모아 들어 올린 끝에, 마침내 강아지를 꺼내는 데 성공합니다. 근데.. 저 몸에 잔뜩 묻은 끈적한 건 어떻게 다 씻어낼까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "suspense",
+   "prompt": "short dramatic tension hit, low boom",
+   "seconds": 1.5
+  },
+  {
+   "name": "squelch",
+   "prompt": "thick sticky mud squelch, short",
+   "seconds": 1.0
+  },
+  {
+   "name": "siren",
+   "prompt": "distant fire truck siren, short",
+   "seconds": 2.0
+  },
+  {
+   "name": "success",
+   "prompt": "warm triumphant success chime, soft",
+   "seconds": 1.5
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "tense emotional rescue documentary background music, low strings and soft pulsing percussion building to a hopeful uplifting ending, sparse for voice-over, no vocals",
+  "seconds": 55
+ }
+}
