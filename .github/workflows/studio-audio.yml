@@ -1,0 +1,57 @@
+name: 원본 작업실 오디오 생성
+
+on:
+  push:
+    branches: [main]
+    paths: ["studio/requests/**"]
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "요청 ID (studio/requests/<id>.json)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: studio-audio
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 준비
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: 요청 찾기
+        id: req
+        run: |
+          if [ -n "${{ github.event.inputs.id }}" ]; then
+            F="studio/requests/${{ github.event.inputs.id }}.json"
+          else
+            F=$(git diff --name-only HEAD~1 HEAD -- studio/requests/ | grep '\.json$' | tail -1)
+          fi
+          ID=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['id'])" "$F")
+          echo "file=$F" >> "$GITHUB_OUTPUT"; echo "id=$ID" >> "$GITHUB_OUTPUT"
+          echo "요청: $F ($ID)"
+      - name: 음성·효과음·BGM (ElevenLabs)
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: python3 tools/studio/make_audio.py "${{ steps.req.outputs.file }}" "out/${{ steps.req.outputs.id }}"
+      - name: 결과를 studio-out 브랜치에 저장 (최근 10건 유지)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git clone -q --depth 1 -b studio-out "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" so 2>/dev/null || (mkdir so && cd so && git init -q -b studio-out)
+          rm -rf "so/${{ steps.req.outputs.id }}" && cp -r "out/${{ steps.req.outputs.id }}" so/
+          cd so
+          ls -d */ 2>/dev/null | sort | head -n -10 | xargs -r rm -rf
+          rm -rf .git && git init -q -b studio-out && git add -A
+          git -c user.name=joopjwi-bot -c user.email=actions@users.noreply.github.com commit -qm "studio audio ${{ steps.req.outputs.id }}"
+          git push -fq "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" studio-out

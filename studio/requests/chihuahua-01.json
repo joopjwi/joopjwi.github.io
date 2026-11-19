@@ -1,0 +1,32 @@
+{
+  "id": "chihuahua-01",
+  "source": "https://www.youtube.com/watch?v=rmkddbZyePE",
+  "tts": {
+    "voiceId": "vn80HZNY7EsdYzoFRYZm",
+    "model": "eleven_multilingual_v2",
+    "voiceSettings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": true, "speed": 1.1}
+  },
+  "chunks": [
+    {"seg": "A", "spoken": "한 남자가 집에 거대한 강아지 인형을 데려왔습니다."},
+    {"seg": "B", "spoken": "소파에 앉자마자 인형을 꼭 끌어안고 쓰다듬는데요,"},
+    {"seg": "C", "spoken": "바로 앞에서 그 모습을 지켜보는 작은 눈이 있었으니, 이 집 막내 치와와예요. 표정에 질투가 가득하죠?"},
+    {"seg": "D", "spoken": "그리고 주인이 잠깐 자리를 비운 순간,"},
+    {"seg": "E", "spoken": "치와와가 기다렸다는 듯 달려들어 자기보다 몇 배는 큰 인형을 소파 아래로 끌어내리더니,"},
+    {"seg": "F", "spoken": "그대로 질질 끌고 저 멀리 문 앞까지 가서는 혼자 쏙 돌아옵니다."},
+    {"seg": "G", "spoken": "그러고는 아무 일 없었다는 듯 소파에 얌전히 앉아 있는데요,"},
+    {"seg": "H", "spoken": "결국 주인 품은 다시 치와와 차지가 됐습니다. 근데.. 그 인형은 대체 어디로 사라진 걸까요?"}
+  ],
+  "sfx": [
+    {"name": "whoosh", "prompt": "quick cartoon whoosh transition swish", "seconds": 0.7},
+    {"name": "pop", "prompt": "cute cartoon pop bubble sound", "seconds": 0.5},
+    {"name": "suspense", "prompt": "comedic cartoon suspense sting, plucked strings, short", "seconds": 1.6},
+    {"name": "slide", "prompt": "cartoon slide whistle going up, curious", "seconds": 1.0},
+    {"name": "thud", "prompt": "big soft plush toy falling off a sofa onto carpet, soft thud", "seconds": 0.9},
+    {"name": "sneak", "prompt": "comedic sneaky tiptoe pizzicato, cartoon", "seconds": 2.5},
+    {"name": "ding", "prompt": "cute innocent cartoon sparkle ding", "seconds": 0.8}
+  ],
+  "music": {
+    "prompt": "playful light comedic pizzicato strings and ukulele, cute pet video background music, bouncy and mischievous, steady tempo, no vocals",
+    "seconds": 40
+  }
+}
