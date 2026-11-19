@@ -1,0 +1,58 @@
+{
+ "id": "goat-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "몸집 큰 셰퍼드 앞에서 아기 염소 한 마리가 신이 나서 폴짝폴짝 뛰어다니는데요,"
+  },
+  {
+   "seg": "B",
+   "spoken": "무서울 법도 한데 겁도 없이 점프를 하고, 또 하고, 또 합니다."
+  },
+  {
+   "seg": "C",
+   "spoken": "셰퍼드는 그저 가만히 내려다보기만 하는데요,"
+  },
+  {
+   "seg": "D",
+   "spoken": "결국 아기 염소가 조심스럽게 다가가자, 셰퍼드도 고개를 숙여 코를 콕 맞대줍니다. 근데.. 이 둘, 다 크면 누가 누구를 지켜주게 될까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "boing",
+   "prompt": "soft cute cartoon boing bounce",
+   "seconds": 0.6
+  },
+  {
+   "name": "boop",
+   "prompt": "cute tiny boop sound, soft",
+   "seconds": 0.5
+  },
+  {
+   "name": "aww",
+   "prompt": "soft heartwarming sparkle chime",
+   "seconds": 1.2
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "cute heartwarming playful background music, ukulele and glockenspiel, bouncy light tempo, sweet friendship mood, sparse for voice-over, no vocals",
+  "seconds": 30
+ }
+}
