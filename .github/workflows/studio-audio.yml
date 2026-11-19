@@ -54,14 +54,14 @@ jobs:
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: python3 tools/studio/make_audio.py "${{ steps.req.outputs.file }}" "out/${{ steps.req.outputs.id }}"
-      - name: 결과를 studio-out 브랜치에 저장 (최근 10건 유지)
+      - name: 결과를 studio-out 브랜치에 저장 (최대 40건 유지)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git clone -q --depth 1 -b studio-out "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" so 2>/dev/null || (mkdir so && cd so && git init -q -b studio-out)
           rm -rf "so/${{ steps.req.outputs.id }}" && cp -r "out/${{ steps.req.outputs.id }}" so/
           cd so
-          ls -d */ 2>/dev/null | sort | head -n -10 | xargs -r rm -rf
+          ls -d */ 2>/dev/null | grep -v "^${{ steps.req.outputs.id }}/$" | sort | head -n -40 | xargs -r rm -rf
           rm -rf .git && git init -q -b studio-out && git add -A
           git -c user.name=joopjwi-bot -c user.email=actions@users.noreply.github.com commit -qm "studio audio ${{ steps.req.outputs.id }}"
           git push -fq "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" studio-out
