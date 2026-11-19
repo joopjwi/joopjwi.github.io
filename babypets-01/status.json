@@ -1,0 +1,11 @@
+{
+ "id": "babypets-01",
+ "tts": "ok",
+ "sfx": {
+  "sparkle": "ok",
+  "sniff": "ok",
+  "whoosh": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

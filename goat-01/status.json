@@ -1,0 +1,11 @@
+{
+ "id": "goat-01",
+ "tts": "ok",
+ "sfx": {
+  "boing": "ok",
+  "boop": "ok",
+  "aww": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

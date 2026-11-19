@@ -1,0 +1,13 @@
+{
+ "id": "goldfish-01",
+ "tts": "ok",
+ "sfx": {
+  "splash": "ok",
+  "whoosh": "ok",
+  "slide": "ok",
+  "suspense": "ok",
+  "ding": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}
