@@ -7,11 +7,49 @@
  "maxPrice": 10000,
  "currency": "KRW",
  "disclosure": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 updatedAt 기준이며 쿠팡에서 바뀔 수 있음. 이미지 저작권은 판매자에게 있음.",
- "selection": "auto",
+ "selection": "curated",
  "count": 5,
  "items": [
   {
    "rank": 1,
+   "productId": "8735123379",
+   "productName": "디오벨러 물빠짐 오리 비누 받침대",
+   "price": 3990,
+   "imageUrl": "https://ads-partners.coupang.com/image1/3aLs9dDGWBrTm4U63W5QFqx5cjKCYkIHDutgbrb185LW9wBGhNFegAHxiyW3V1rT73nTQ0wXynA2SedV9oghwkZ3Kn7nvS0117dUB9eD_HLxWvXt6H2f-3XGGvgoBAFGbanGRG9uPL6CB_wLqqm8rFNbZkvdAA2se5PcAIhMmPuX8mzkPFAePFNYw3zhbCMw-6pAE-UGkk926PA-nZgINdigPbt7HPw6QBNny776NS8tfkVJfA-rbJUT0fbH2Q47q0RAq1ApHuM9HapQKTJe2LXKRv2xgXG3io_1bCsfDcf6AC3jwOr-rScYNwjc4WkA8tPbjRDJb6TS-IPil-vZd9Aib-NTWnO6HLwy1um1zmP-D7LfIuvg9_sHNMmNtJcl3hdcTsjXcHG_LZOCs_HeYGQ6TUMzifBHuez6QpiRoT6PKGPkx5GEM90e7HWRq-2Q68zJFtZVk_ts8pgE-SpUmvgSnIeCiGO9rDWh9YXsqLsfdNsZ7on4lIaLJT4PSD31-N64CWMQKceqa8AoFMXFEv7aS5DDYL8OvjZYx5UaQ2jv7w==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8735123379&itemId=28565629160&vendorItemId=91685658461&traceid=V0-153-ba95df315df528f8&requestid=20261121062640244095007218&token=31850C%7CMIXED&pt=0&slot=6",
+   "category": "신기한템",
+   "updatedAt": "2026-11-21T06:26:32+09:00",
+   "overallRank": 35,
+   "subCategory": "아이디어 상품",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_keyword_search",
+    "coupangRank": 6,
+    "keyword": "아이디어 상품",
+    "joopjwiScore": 1.05
+   },
+   "price_history": {
+    "previousPrice": 3990,
+    "previousPriceDate": "2026-11-18",
+    "dropPercent": 0
+   },
+   "tags": [
+    "궁금한 템"
+   ],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 2,
    "productId": "6528172171",
    "productName": "흙대파",
    "price": 2490,
@@ -47,88 +85,16 @@
    }
   },
   {
-   "rank": 2,
-   "productId": "2233944921",
-   "productName": "국내산 백오이",
-   "price": 2640,
-   "imageUrl": "https://image3.coupangcdn.com/image/retail/images/7220705008763344-8e1e5f5b-cc82-4027-bd50-23deda6a92b9.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=2233944921&itemId=12311272628&vendorItemId=79581434699&traceid=V0-113-c6e3f57a4f6a376e&pt=0&slot=6",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 2,
-   "subCategory": "식품",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 6,
-    "keyword": null,
-    "joopjwiScore": 1.33
-   },
-   "price_history": {
-    "previousPrice": 5990,
-    "previousPriceDate": "2026-11-20",
-    "dropPercent": 56
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
    "rank": 3,
-   "productId": "6429602575",
-   "productName": "고운발 명품 크림",
-   "price": 5000,
-   "imageUrl": "https://img1a.coupangcdn.com/image/1025_amir_coupang_oct_80k/0390/d9edf2d53d002469220171d6e5c6c3f33c96d6cb5b0cf4a5f0d96851c8e3.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6429602575&itemId=12949443&vendorItemId=3019803096&traceid=V0-113-756cad25a4d6a763&pt=0&slot=4",
-   "category": "뷰티·패션",
+   "productId": "7707978357",
+   "productName": "치트몰 무타공 핸드폰 거치대 휴지걸이 (강력 접착 스티커), 1개, 블랙",
+   "price": 4940,
+   "imageUrl": "https://ads-partners.coupang.com/image1/DoyboXg0PrO3h-FZDsHqmDhNLO6B9HAIeaqUGZVdu6-pwIxnzxRPzwm6HM5V6dy4796CwGXiz8t9O9IO7pZVQyhcsSHlvh9pavNPli3wIvlT721gPDO2n030RajhNbO4HvCva0lImBXpBE_7bGfzjvXhS4-X9qo0nA-UL0pD7zEatzcQ3YZIamCl2oTPJBWL4GWP8LKyyukJzp6wFloHTPGVGRRnef7bI7AHfq9RZ0FFy4dX9A1Ao67vFz-41XY8GDdsfzEU9snoL0pTPj-dKUxIJhJZmLQ55QcpoTdCGrykmmScfga0Kh3W6pjs80poUpHmnrEbQxKiGZmi3h6YtVRxuaroKTKJhkyd983PV-wy7L-RzA6wBn-KybRKLuoEENBb4o3nE158JKYkcpXNsbhOMSsvYBZdN19M9LBFnk5G64CIcncMRntRaE_vL_BpKfD1JI8qm3KcLRlf4w4y7jGndToM4YTnnaTnvkXwDYNzsXejaE8fucDJdSAIWWWWWMgyit00Kke0UqjT_PKENWJxBEUHmNvl",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7707978357&itemId=20654680097&vendorItemId=87727630032&traceid=V0-153-70a45dc29b3445a2&clickBeacon=132bbf50-e529-11f1-9d8b-225c017c0a10%7E3&requestid=20261121062640244095007218&token=31850C%7CMIXED&pt=1&slot=3",
+   "category": "신기한템",
    "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 4,
-   "subCategory": "뷰티",
-   "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
-    "shippingFee": null
-   },
-   "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 4,
-    "keyword": null,
-    "joopjwiScore": 1.27
-   },
-   "price_history": {
-    "previousPrice": 8620,
-    "previousPriceDate": "2026-11-20",
-    "dropPercent": 42
-   },
-   "tags": [],
-   "validation": {
-    "price": "ok",
-    "affiliateUrl": "ok",
-    "image": "ok",
-    "imageReuseRights": "unverified",
-    "stock": "unverified"
-   }
-  },
-  {
-   "rank": 4,
-   "productId": "48172",
-   "productName": "페리오 뉴 후레쉬 알파 치약",
-   "price": 9900,
-   "imageUrl": "https://ads-partners.coupang.com/image1/u4ljk9nvhnP2bMAQuzs-l79T9JtMgz71TlFwNEcS_bK3WCQKP9O81SfNy2Y48QP7yfGaKXaTBQRpZH68PWqIi1U-J511ZQqQm-22MaM-UFuo3VTQ0sn3umliXNZCa-C3oaodWBPEEv6ao9-gu1yZJCMAyqSraGgcwIxsxISzdFteECAr_XLddwe78lSLI94Gb4HQE2eu_mJGcZg8-c5rklFlL64tk6oS4xUInB_9AKuAYdwz5BhlN940yQsLK7zK1EpxFOOR-CkTXZqZoY1jC5SdQBLYgThfAN8mQMZWdFlTtEs6fNHa6urJ7gerIBtvpkHfO3MAtZdRN75KS-mTQT9aIqumm5uXM-yzydWOYFt15n5jPHNDpLUFkCUuXassrvvbwIWkxjbmH7NCKF8rip5b2IyqQK4TB3mhazCimks22Xv7mc1TF2HQiwVfyngeBdkyxjDHV7e9jq0tMzYF0fbwWoaY6PNRsJzc4cDbvH13UGssR2m3iF3SqP_5Ivzj2e19ZBW8epz4BOUcsbfT5rjHQPRkmfcPYdfE2Ed8wnRaXOMoKgLxWlMuforVQt0oCnYW8V_9CnAxEs8=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=48172&itemId=22617234707&vendorItemId=89658808626&traceid=V0-153-affe53097c8bfdd9&requestid=20261121062638408257029977&token=31850C%7CMIXED&pt=0&slot=1",
-   "category": "생필품",
-   "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 6,
-   "subCategory": "치약",
+   "overallRank": 24,
+   "subCategory": "아이디어 상품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -136,17 +102,17 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 1,
-    "keyword": "치약",
-    "joopjwiScore": 1.2
+    "coupangRank": 3,
+    "keyword": "아이디어 상품",
+    "joopjwiScore": 1.08
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
+    "previousPrice": 4940,
+    "previousPriceDate": "2026-11-18",
     "dropPercent": 0
    },
    "tags": [
-    "매일 쓰는 템"
+    "궁금한 템"
    ],
    "validation": {
     "price": "ok",
@@ -157,16 +123,52 @@
    }
   },
   {
-   "rank": 5,
-   "productId": "9501349694",
-   "productName": "럭키썸 1+1 먼지제거 스퀴지 미니 밀대걸레",
-   "price": 3900,
-   "imageUrl": "https://ads-partners.coupang.com/image1/P1lv950fpQJw_HXWP9TCgv3HjUFA5LUqLH87Nyy0Wo8QOa8Esj5WL06JlG4I0squxq1tWRzL4VwPfM0AFbD_7p9IArQ8BIk-FkBlHNTOLPMGJvm6qS9Iv2Bz7WjDQR-dFky01tuhhH4D67IVuDoz5qa7L8TDeeYIYb66BlgCkUMKrMKFAy-fIaA0_E4GBM1KjyJ1W69Mmpl8DeZeBgd98kDCwKqT7uyZRCtVbIBCHb13Lal_Q4lLZEGwNpeyNCUFXZNin-SlAlFzC-KK1P-SNizY1vHm0evSPCrBQc3rvPNOi-1PIBhCdpmLl8dmZMN5io_ezcUy2hdlAJLwIZRtIrruncpBJmWjmj2RmUuaCjlrSgeXiZY-17U3QffgEETP-8UIFkYJ8twtPRNzzlEe2ooQOvlSA1_BuH9bD-ApB5J0R3gdJoK8aYWv_4EnBBp8nJJy1zCF8c2pWgLad-cusBkhV0fW7qxjkQ33jHdY4ivuhBqLf-t1y2GftO1VMnTaEqbMyHAEjPlc6jJR-0B54XzLqpqGctgCURR0PyCRBouT1LI=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9501349694&itemId=28306080379&vendorItemId=95876272367&traceid=V0-153-41ff37b9f3b7044e&requestid=20261121062640244095007218&token=31850C%7CMIXED&pt=0&slot=7",
-   "category": "신기한템",
+   "rank": 4,
+   "productId": "8209844068",
+   "productName": "이니스프리 화산송이 모공 바하 클렌징 폼",
+   "price": 5700,
+   "imageUrl": "https://image6.coupangcdn.com/image/retail/images/108349678027725-757b1210-90f2-4713-8f30-76b7ae97b9da.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8209844068&itemId=17990592306&vendorItemId=87121069249&traceid=V0-113-2984a05f4a40116c&pt=0&slot=27",
+   "category": "뷰티·패션",
    "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 9,
-   "subCategory": "아이디어 상품",
+   "overallRank": 40,
+   "subCategory": "뷰티",
+   "shipping": {
+    "isRocket": true,
+    "isFreeShipping": false,
+    "shippingFee": null
+   },
+   "popularity": {
+    "source": "coupang_best_category",
+    "coupangRank": 27,
+    "keyword": null,
+    "joopjwiScore": 1.04
+   },
+   "price_history": {
+    "previousPrice": 9350,
+    "previousPriceDate": "2026-11-20",
+    "dropPercent": 39
+   },
+   "tags": [],
+   "validation": {
+    "price": "ok",
+    "affiliateUrl": "ok",
+    "image": "ok",
+    "imageReuseRights": "unverified",
+    "stock": "unverified"
+   }
+  },
+  {
+   "rank": 5,
+   "productId": "9320256369",
+   "productName": "블루나 본 퓨어 저자극 물티슈 캡형",
+   "price": 7080,
+   "imageUrl": "https://ads-partners.coupang.com/image1/nFJeL7NnfwEUnvOJnDfwvtpL_q1IjUiU6bDfOs45HUh_vY8B2K8t9EJl2RWTx5iDTBGQbfCpE4UahWNf5M_eCoYYI2jDmr0n4lTUI5orFT5TG33wf_V-ydJCX7IIa-KlD2t1nNqrfGUqJ8xpILFpxxpVZsw_sxumKpSLoIhFpdggFBIbTzT1wn6yXPEFNurJHMJJcS7R-j0-XEUcPiC-XxEjNuizuvV_EVpp7fVShYNMDgASLwtvcW0MYpNH4bZbAxWaJpdnKTvWdp_IitUbmt_6gwTMMWsDr2WhJD_cHAJqkd4oDCx4Q_WQKO-XG39RmVGA0dMFthKrKptKvPlW5OyAbpQvIzo43NSNmomAZP1ph-yQCHeyEAUNioR2DiB9bVmKxmYQxMd9K3RIvKPOLpDrVzVaFLb9RXaX91ZAZ4CnZGNnhG48DTC5G_3DYvf4LutThpfLGXxshydDF5RxwtWCmuf2x98yvhbohznl_-o0cBzI2_gTJdRsWyZngRIMalb5bpgByJ0fhv_TGvBh9XRNlHI6a1kVnNRz4d8Z38OBn6aYZ-eceOQBL5Pi2gvTWZeW3RYk1LYxSDX1AkYf",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9320256369&itemId=27623848954&vendorItemId=94586776590&traceid=V0-153-f229860d401386f6&requestid=20261121062632884086776882&token=31850C%7CMIXED&pt=0&slot=9",
+   "category": "생필품",
+   "updatedAt": "2026-11-21T06:26:32+09:00",
+   "overallRank": 16,
+   "subCategory": "물티슈",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -174,17 +176,17 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 7,
-    "keyword": "아이디어 상품",
-    "joopjwiScore": 1.17
+    "coupangRank": 9,
+    "keyword": "물티슈",
+    "joopjwiScore": 1.12
    },
    "price_history": {
-    "previousPrice": 4500,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 13
+    "previousPrice": 7080,
+    "previousPriceDate": "2026-11-20",
+    "dropPercent": 0
    },
    "tags": [
-    "궁금한 템"
+    "매일 쓰는 템"
    ],
    "validation": {
     "price": "ok",
