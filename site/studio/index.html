@@ -105,6 +105,9 @@
   .ref .bt button{background:#202024;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:8px 10px;font:inherit;font-size:13px;font-weight:800;cursor:pointer;min-width:62px}
   .ref .bt .c{background:var(--yellow);color:#000;border-color:var(--yellow)}
   .ref .bt .x{color:#ff8a8a}
+  .syncb{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:2px 10px;font:inherit;font-size:12px;font-weight:700;cursor:pointer;margin-bottom:4px}
+  .syncb.ok{color:var(--green);border-color:#1f5a37}
+  .syncb.err{color:var(--red);border-color:#5a1f1f}
   .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--yellow);color:#000;font-weight:800;padding:10px 18px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none;z-index:20}
   .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
   textarea.copybox{width:100%;height:120px;background:#0e0e10;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;font-size:13px}
@@ -115,7 +118,7 @@
   <div class="wrap">
     <div class="top">
       <div class="brand">태끼짱의 <b>딸깍 공장</b></div>
-      <div class="quota"><span id="quotaText">오늘 API 사용량 0 / 10,000</span><div class="bar"><i id="quotaBar" style="width:0"></i></div></div>
+      <div class="quota"><button id="syncBadge" class="syncb" title="지금 동기화">☁ 연동 꺼짐</button><br><span id="quotaText">오늘 API 사용량 0 / 10,000</span><div class="bar"><i id="quotaBar" style="width:0"></i></div></div>
     </div>
     <nav>
       <button data-v="find" class="on">후보 찾기</button>
@@ -233,6 +236,25 @@
       </ol>
     </div>
     <div class="panel">
+      <h2>휴대폰 ↔ PC 연동</h2>
+      <p class="note">찜·사용·지운 후보, 업로드 체크(보관함), 레퍼런스가 모든 기기에서 똑같이 보이게 해요. 기기마다 아래 연동 키를 한 번씩 넣어주세요.</p>
+      <div class="row">
+        <input type="password" class="grow" id="ghToken" placeholder="github_pat_로 시작하는 연동 키" autocomplete="off">
+        <button class="btn" id="btnSaveTok">저장 · 연동</button>
+      </div>
+      <div class="status" id="tokStatus"></div>
+      <h3>연동 키 만드는 법 (GitHub, 3분)</h3>
+      <ol class="steps">
+        <li>PC에서 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener" style="color:var(--yellow)">github.com/settings/personal-access-tokens/new</a> 열기 (joopjwi 계정 로그인)</li>
+        <li><b>Token name</b>: <code>딸깍공장 연동</code> · <b>Expiration</b>: 1년(또는 원하는 기간)</li>
+        <li><b>Repository access</b> → <b>Only select repositories</b> → <code>joopjwi/joopjwi.github.io</code> 선택</li>
+        <li><b>Permissions → Repository permissions → Contents</b> → <b>Read and write</b></li>
+        <li>맨 아래 <b>Generate token</b> → 나온 키 복사 → 위 칸에 붙여넣고 <b>저장 · 연동</b></li>
+        <li>휴대폰에서도 이 페이지 설정 탭에 같은 키를 한 번 넣어주세요 (카톡 나에게 보내기 등으로 옮기면 편해요)</li>
+      </ol>
+      <p class="note">키는 이 기기 브라우저에만 저장돼요. 연동 데이터(찜·레퍼런스 링크·업로드 기록)는 저장소의 별도 공간(studio-sync)에 저장되고, 저장소가 공개라 링크를 아는 사람은 볼 수 있어요. 유튜브 API 키나 연동 키는 올라가지 않아요.</p>
+    </div>
+    <div class="panel">
       <h2>데이터 관리</h2>
       <div class="row">
         <button class="btn ghost" id="btnExport">찜·사용·업로드·레퍼런스 복사 (백업)</button>
@@ -264,7 +286,9 @@
 
   // ---------- 저장소 ----------
   function load(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
-  function save(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  function saveRaw(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  var SYNC_KEYS = {st_saved:1, st_used:1, st_uploaded:1, st_hidden:1, st_refs:1};
+  function save(k, v){ saveRaw(k, v); if (SYNC_KEYS[k] && window.__scheduleSync) window.__scheduleSync(); }
   var state = {
     key: load("st_key", ""),
     saved: load("st_saved", {}),
@@ -641,6 +665,81 @@
     save("st_refs", state.refs); toast("메모 저장됨");
   });
 
+  // ---------- 기기 연동 (GitHub studio-sync 브랜치) ----------
+  var GH = "https://api.github.com/repos/joopjwi/joopjwi.github.io/contents/studio-sync.json";
+  var KINDS = ["saved","used","uploaded","hidden","refs"];
+  var tok = load("st_ghtok", "");
+  function toMap(arr){ var m = {}; (arr || []).forEach(function(r){ if (r && r.id) m[r.id] = r; }); return m; }
+  function snap(){ var o = {}; KINDS.forEach(function(k){ o[k] = k === "refs" ? toMap(state.refs) : state[k]; }); return JSON.parse(JSON.stringify(o)); }
+  function fromRemote(d){ var o = {}; KINDS.forEach(function(k){ o[k] = k === "refs" ? toMap(d && d.refs) : ((d && d[k]) || {}); }); return o; }
+  function merge3(b, l, r){
+    var out = {};
+    KINDS.forEach(function(k){
+      var B = b[k] || {}, L = l[k] || {}, R = r[k] || {}, ids = {}, m = {};
+      [B, L, R].forEach(function(x){ Object.keys(x).forEach(function(i){ ids[i] = 1; }); });
+      Object.keys(ids).forEach(function(i){
+        var bs = JSON.stringify(B[i]), ls = JSON.stringify(L[i]), rs = JSON.stringify(R[i]), pick;
+        if (ls === rs) pick = L[i]; else if (ls === bs) pick = R[i]; else if (rs === bs) pick = L[i]; else pick = L[i] !== undefined ? L[i] : R[i];
+        if (pick !== undefined) m[i] = pick;
+      });
+      out[k] = m;
+    });
+    return out;
+  }
+  function apply(m){
+    state.saved = m.saved; state.used = m.used; state.uploaded = m.uploaded; state.hidden = m.hidden;
+    state.refs = Object.keys(m.refs).map(function(i){ return m.refs[i]; }).sort(function(a,b){ return (b.addedAt||"").localeCompare(a.addedAt||""); });
+    saveRaw("st_saved", state.saved); saveRaw("st_used", state.used); saveRaw("st_uploaded", state.uploaded);
+    saveRaw("st_hidden", state.hidden); saveRaw("st_refs", state.refs);
+  }
+  function b64e(str){ return btoa(unescape(encodeURIComponent(str))); }
+  function b64d(b){ return decodeURIComponent(escape(atob(b.replace(/\n/g, "")))); }
+  function ghHeaders(){ return {"Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json"}; }
+  function badge(t, cls){ var b = $("syncBadge"); b.textContent = t; b.className = "syncb" + (cls ? " " + cls : ""); }
+  var syncing = false, again = false, timer = null;
+  async function syncNow(manual){
+    if (!tok){ badge("☁ 연동 꺼짐"); if (manual) { toast("설정 탭에서 연동 키를 넣어주세요"); } return; }
+    if (syncing){ again = true; return; }
+    syncing = true; badge("☁ 동기화 중…");
+    try{
+      for (var attempt = 0; attempt < 3; attempt++){
+        var g = await fetch(GH + "?ref=studio-sync&t=" + Date.now(), {headers: ghHeaders(), cache: "no-store"});
+        if (g.status === 401 || g.status === 403) throw new Error("연동 키가 올바르지 않거나 권한(Contents 읽기/쓰기)이 없어요");
+        var sha = null, rdata = {};
+        if (g.ok){ var gj = await g.json(); sha = gj.sha; rdata = JSON.parse(b64d(gj.content) || "{}"); }
+        else if (g.status !== 404) throw new Error("GitHub 응답 " + g.status);
+        var base = load("st_syncbase", {}), local = snap(), remote = fromRemote(rdata);
+        var merged = merge3(base, local, remote);
+        apply(merged); renderAll();
+        if (JSON.stringify(merged) === JSON.stringify(remote)){ saveRaw("st_syncbase", merged); break; }
+        var body = {saved: merged.saved, used: merged.used, uploaded: merged.uploaded, hidden: merged.hidden,
+                    refs: state.refs, v: 1, updatedAt: Date.now()};
+        var p = await fetch(GH, {method: "PUT", headers: Object.assign({"Content-Type": "application/json"}, ghHeaders()),
+          body: JSON.stringify({message: "딸깍 공장 동기화", branch: "studio-sync", content: b64e(JSON.stringify(body)), sha: sha || undefined})});
+        if (p.ok){ saveRaw("st_syncbase", merged); break; }
+        if (p.status === 409 || p.status === 422) continue;   // 다른 기기가 먼저 저장 → 다시 합치기
+        if (p.status === 401 || p.status === 403) throw new Error("연동 키에 쓰기 권한(Contents: Read and write)이 없어요");
+        throw new Error("저장 실패 " + p.status);
+      }
+      var t = new Date().toLocaleTimeString("ko-KR", {hour: "2-digit", minute: "2-digit"});
+      badge("☁ 연동됨 " + t, "ok");
+      if (manual) toast("동기화 완료");
+    }catch(e){ badge("☁ 연동 오류", "err"); $("tokStatus").textContent = "❌ " + e.message; if (manual) toast(e.message); }
+    syncing = false;
+    if (again){ again = false; syncNow(); }
+  }
+  window.__scheduleSync = function(){ if (!tok) return; clearTimeout(timer); badge("☁ 저장 대기…"); timer = setTimeout(syncNow, 1200); };
+  $("syncBadge").addEventListener("click", function(){ syncNow(true); });
+  $("ghToken").value = tok;
+  $("btnSaveTok").addEventListener("click", async function(){
+    tok = $("ghToken").value.trim(); saveRaw("st_ghtok", tok);
+    $("tokStatus").textContent = tok ? "연동 중…" : "연동 키를 지웠어요. 이 기기는 연동이 꺼져요.";
+    if (tok){ await syncNow(true); if (!/오류/.test($("syncBadge").textContent)) $("tokStatus").textContent = "✅ 연동됐어요! 다른 기기에도 같은 키를 넣어주세요."; }
+    else badge("☁ 연동 꺼짐");
+  });
+  document.addEventListener("visibilitychange", function(){ if (document.visibilityState === "visible") syncNow(); });
+  setInterval(function(){ if (document.visibilityState === "visible") syncNow(); }, 60000);
+
   function slim(v){
     return {id:v.id,title:v.title,channel:v.channel,thumb:v.thumb,views:v.views,likes:v.likes,vph:v.vph,likeRate:v.likeRate,
             dur:v.dur,cc:v.cc,genre:v.genre,hours:v.hours,publishedAt:v.publishedAt};
@@ -755,7 +854,7 @@
 
   // ---------- 시작 ----------
   $("needKey").hidden = !!state.key;
-  renderGenres(); renderQuota(); renderAll(); loadDone();
+  renderGenres(); renderQuota(); renderAll(); loadDone(); syncNow();
 })();
 </script>
 </body>
