@@ -1,45 +1,43 @@
 {
  "apiVersion": 1,
  "status": "ok",
- "dataDate": "2026-11-20",
- "updatedAt": "2026-11-20T06:27:00+09:00",
- "expiresAt": "2026-11-21T09:00:00+09:00",
+ "dataDate": "2026-11-21",
+ "updatedAt": "2026-11-21T06:26:32+09:00",
+ "expiresAt": "2026-11-22T09:00:00+09:00",
  "maxPrice": 10000,
  "currency": "KRW",
  "disclosure": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 updatedAt 기준이며 쿠팡에서 바뀔 수 있음. 이미지 저작권은 판매자에게 있음.",
- "selection": "curated",
+ "selection": "auto",
  "count": 5,
  "items": [
   {
    "rank": 1,
-   "productId": "4656005846",
-   "productName": "러브핑코 캐릭터 배워머",
-   "price": 6040,
-   "imageUrl": "https://ads-partners.coupang.com/image1/qpQgOAuphftwUJoqqtbKaqVH4KJ_xhB38xMPw6NiHtisczfV2sqoOpdAdliKquK7rTJ5saPxSVz5nqLKN8MzvkS6eOeIP_W3CeBG_1bqwf0YSXG-Bmu-KEDWF71u44Tjh8ro90wxijKqQVKV_lNLcAS0vjvE4ikB-RF-JFJS-GLE2BaYnDAAQpwrYTjMYw_76ELtJ1PPWKeEtg1TzaRvFO7pRWTHaHW1SongYLIv8vrIdNPeVRQ1BWiaS0-iXxiH5iNCdA1MD2hesZcPcaTqm36rEwEyQj76xhtdth4y-DAhU-N7zxmUO-wGFqXWduo-QpBDEddI4Xn6LAYfjwefhm_x57xx8_YtsesAXA2azYwdj6xAxTZfopdWP0aoWgH9YqwkVUsuzkYddOtpOTQgsuK53nBqtadbInkKanRxOUWh2hgWi5_-7gwh2gNE8fouazcjnvMaI1eoPu9EZEUALqcRvqtPECh31sN_NjlHUHPqgQoammxQ_kPY-QiiF1_ZqgE2pWQ2Bn2wM3Vj4xk-0qhf6-2NKbk2ky1-MILcClqoYiQuUHZwwhfHORTbM4gWrjw5",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=4656005846&itemId=5810209711&vendorItemId=73108698803&traceid=V0-153-4d226a6ef2a49b4d&clickBeacon=faf2d3c0-e45f-11f1-a290-6e1f0135f8d5%7E3&requestid=20261120062710769140443649&token=31850C%7CMIXED&pt=1&slot=1",
-   "category": "신기한템",
-   "updatedAt": "2026-11-20T06:27:00+09:00",
-   "overallRank": 9,
-   "subCategory": "겨울 꿀템",
+   "productId": "6528172171",
+   "productName": "흙대파",
+   "price": 2490,
+   "imageUrl": "https://image12.coupangcdn.com/image/retail/images/4063320789843989-2f070b18-3886-4b8c-871b-2403227cfec9.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6528172171&itemId=5911958170&vendorItemId=73210037048&traceid=V0-113-ea3e109dddeaf065&pt=0&slot=2",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-21T06:26:32+09:00",
+   "overallRank": 1,
+   "subCategory": "식품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 1,
-    "keyword": "겨울 꿀템",
-    "joopjwiScore": 1.1
+    "source": "coupang_best_category",
+    "coupangRank": 2,
+    "keyword": null,
+    "joopjwiScore": 1.37
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
-    "dropPercent": 0
+    "previousPrice": 4830,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 48
    },
-   "tags": [
-    "궁금한 템"
-   ],
+   "tags": [],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -50,34 +48,32 @@
   },
   {
    "rank": 2,
-   "productId": "9728613423",
-   "productName": "NUNUHANA 슬림형 다용도  이동식 틈새 트롤리",
-   "price": 8990,
-   "imageUrl": "https://ads-partners.coupang.com/image1/gUf64-tfnmxHgP7UgYkYpo6UCJrLfJN7nZ5VeIXpaquXdlAScaSOY_n0Nx5qmz2HfxenAkl00ZAvHlYZ1y28RDLdVrBBjKRcGHnXqFaCPHg65afFOP5YYOslTLL8XimiIVlN1kkdWg5-k2gZsDGyCY8QFJCsc2vUAaNgOpau5zFWV2130uv5fOJFj92Rnx3yr1F_s_0JwZ86Ax9EHn_UJtbHhXYVgCs_fOqtmexz6_5_ORJ63FRs7aYHI2LNz7XRf4WskJGH95f2BBlZAigYHK68T0jyZTN2d43fDZbvPUW0KNHzMSUWiBCwcslqV0ygH4_uWdwTa9NrmceYzHz7E1LT-HaF_WEfO0d799IieLJXfRm0m4Gk2DTE_Wo8b9Bf60PGCbvcmvNku-fXtoA1hTChirYKVTTfL-wvGfwFQCKOTYIsSGW3aJgfkQqUkXpurgvcf3mOZ75_ET6PaRO-FZtzUp-f9XB8BeOcu3PQqhaVOcFxgk8YVDgkBtNPm2UIeoaYARbprElLufSW9_hiPnv5L7l_Qe5Lo_hMuqrcfR2rOmOd",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9728613423&itemId=29112780208&vendorItemId=96194864931&traceid=V0-153-6b08a732008115ad&requestid=20261120062714680223148778&token=31850C%7CMIXED&pt=0&slot=4",
-   "category": "신기한템",
-   "updatedAt": "2026-11-20T06:27:00+09:00",
-   "overallRank": 15,
-   "subCategory": "틈새 수납",
+   "productId": "2233944921",
+   "productName": "국내산 백오이",
+   "price": 2640,
+   "imageUrl": "https://image3.coupangcdn.com/image/retail/images/7220705008763344-8e1e5f5b-cc82-4027-bd50-23deda6a92b9.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=2233944921&itemId=12311272628&vendorItemId=79581434699&traceid=V0-113-c6e3f57a4f6a376e&pt=0&slot=6",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-21T06:26:32+09:00",
+   "overallRank": 2,
+   "subCategory": "식품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 4,
-    "keyword": "틈새 수납",
-    "joopjwiScore": 1.07
+    "source": "coupang_best_category",
+    "coupangRank": 6,
+    "keyword": null,
+    "joopjwiScore": 1.33
    },
    "price_history": {
-    "previousPrice": 8990,
-    "previousPriceDate": "2026-11-17",
-    "dropPercent": 0
+    "previousPrice": 5990,
+    "previousPriceDate": "2026-11-20",
+    "dropPercent": 56
    },
-   "tags": [
-    "궁금한 템"
-   ],
+   "tags": [],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -88,15 +84,15 @@
   },
   {
    "rank": 3,
-   "productId": "7217658918",
-   "productName": "인라이프 국내 제조 포켓형 아이 프렌즈 핫팩 60g",
-   "price": 8200,
-   "imageUrl": "https://img5c.coupangcdn.com/image/retail/images/5795199331517-69dbd3f0-5eec-45fb-abd1-67b988b26ab6.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7217658918&itemId=23696778220&vendorItemId=90721872474&traceid=V0-113-5c95ad40cf55bd35&pt=0&slot=10",
-   "category": "청소·수납",
-   "updatedAt": "2026-11-20T06:27:00+09:00",
-   "overallRank": 83,
-   "subCategory": "홈인테리어",
+   "productId": "6429602575",
+   "productName": "고운발 명품 크림",
+   "price": 5000,
+   "imageUrl": "https://img1a.coupangcdn.com/image/1025_amir_coupang_oct_80k/0390/d9edf2d53d002469220171d6e5c6c3f33c96d6cb5b0cf4a5f0d96851c8e3.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6429602575&itemId=12949443&vendorItemId=3019803096&traceid=V0-113-756cad25a4d6a763&pt=0&slot=4",
+   "category": "뷰티·패션",
+   "updatedAt": "2026-11-21T06:26:32+09:00",
+   "overallRank": 4,
+   "subCategory": "뷰티",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -104,14 +100,14 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 10,
+    "coupangRank": 4,
     "keyword": null,
-    "joopjwiScore": 0.91
+    "joopjwiScore": 1.27
    },
    "price_history": {
-    "previousPrice": 8200,
-    "previousPriceDate": "2026-11-19",
-    "dropPercent": 0
+    "previousPrice": 8620,
+    "previousPriceDate": "2026-11-20",
+    "dropPercent": 42
    },
    "tags": [],
    "validation": {
@@ -124,32 +120,34 @@
   },
   {
    "rank": 4,
-   "productId": "6429602575",
-   "productName": "고운발 명품 풋크림",
-   "price": 8620,
-   "imageUrl": "https://img1a.coupangcdn.com/image/retail/images/0e044cfd-7e94-4efb-ab2c-d752fefa649911756920276554919706.png",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6429602575&itemId=28227975774&vendorItemId=95181799195&traceid=V0-113-756cad25a4d6a763&pt=0&slot=15",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-20T06:27:00+09:00",
-   "overallRank": 47,
-   "subCategory": "뷰티",
+   "productId": "48172",
+   "productName": "페리오 뉴 후레쉬 알파 치약",
+   "price": 9900,
+   "imageUrl": "https://ads-partners.coupang.com/image1/u4ljk9nvhnP2bMAQuzs-l79T9JtMgz71TlFwNEcS_bK3WCQKP9O81SfNy2Y48QP7yfGaKXaTBQRpZH68PWqIi1U-J511ZQqQm-22MaM-UFuo3VTQ0sn3umliXNZCa-C3oaodWBPEEv6ao9-gu1yZJCMAyqSraGgcwIxsxISzdFteECAr_XLddwe78lSLI94Gb4HQE2eu_mJGcZg8-c5rklFlL64tk6oS4xUInB_9AKuAYdwz5BhlN940yQsLK7zK1EpxFOOR-CkTXZqZoY1jC5SdQBLYgThfAN8mQMZWdFlTtEs6fNHa6urJ7gerIBtvpkHfO3MAtZdRN75KS-mTQT9aIqumm5uXM-yzydWOYFt15n5jPHNDpLUFkCUuXassrvvbwIWkxjbmH7NCKF8rip5b2IyqQK4TB3mhazCimks22Xv7mc1TF2HQiwVfyngeBdkyxjDHV7e9jq0tMzYF0fbwWoaY6PNRsJzc4cDbvH13UGssR2m3iF3SqP_5Ivzj2e19ZBW8epz4BOUcsbfT5rjHQPRkmfcPYdfE2Ed8wnRaXOMoKgLxWlMuforVQt0oCnYW8V_9CnAxEs8=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=48172&itemId=22617234707&vendorItemId=89658808626&traceid=V0-153-affe53097c8bfdd9&requestid=20261121062638408257029977&token=31850C%7CMIXED&pt=0&slot=1",
+   "category": "생필품",
+   "updatedAt": "2026-11-21T06:26:32+09:00",
+   "overallRank": 6,
+   "subCategory": "치약",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 15,
-    "keyword": null,
-    "joopjwiScore": 0.99
+    "source": "coupang_keyword_search",
+    "coupangRank": 1,
+    "keyword": "치약",
+    "joopjwiScore": 1.2
    },
    "price_history": {
-    "previousPrice": 9880,
-    "previousPriceDate": "2026-11-19",
-    "dropPercent": 13
+    "previousPrice": null,
+    "previousPriceDate": null,
+    "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "매일 쓰는 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -160,15 +158,15 @@
   },
   {
    "rank": 5,
-   "productId": "8010806804",
-   "productName": "풀무원 퓨어 무라벨 생수, 2L, 12개",
-   "price": 6900,
-   "imageUrl": "https://ads-partners.coupang.com/image1/zWXglLmXaTYjql85zXXPWdCe_bmPRd3IfQNHN7-vZQSAoLcqVC8StYLTrJQzgi2nyWUsc2J7Dzl0NDvKJ937-f3mH1kR--fsgplfLgik7zVLeBfxj9ERl1x7mZOnYcg8cxrzpmgMJTSZ3K0pOWy7jqieSiwwANK70l6EpMWOqR_P0cnlqtEexndDyd9fnPEMMFn0bpEAmHztiZK2pLRRJUMpfcQgtL7eB36mjhx2GEybSmBeKXRct3kcMwKC2fP-6DuDuENX5EC2GkHWzT8GG-gu48cju7_xFOC9o3wHOK9J1mDljqORIH1syFQM9z_y04A62XiKQBHIvkEci2b52XVQiMdlwy3gDfdX_AfsaMZQAC7CdLNs0SWZaSHamnq-8CaE4xz3Xr0Tff9TuCgoTxAn2dRZL_3jwGiggWjmbEAt0Z6KyCzZAZusy-KsXl-vdUWVdbeciC7jrI2HOCrHa_f2X_e19mEVmUTUQWNhUf1wQ5wwIK6Ho8t1l4_x615vspmIcerCbePMt5gnXIo4Q56eGRhI9iAhb-yDKuH7WS1yXeV3A_FINBfpGa0LFAd25Fn1tNA=",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8010806804&itemId=27311078171&vendorItemId=86494112156&traceid=V0-153-813b314348313aea&clickBeacon=f5f360b0-e45f-11f1-938b-52229e0612ff%7E3&requestid=20261120062702431059311882&token=31850C%7CMIXED&pt=1&slot=6",
-   "category": "식품·간식",
-   "updatedAt": "2026-11-20T06:27:00+09:00",
-   "overallRank": 4,
-   "subCategory": "생수",
+   "productId": "9501349694",
+   "productName": "럭키썸 1+1 먼지제거 스퀴지 미니 밀대걸레",
+   "price": 3900,
+   "imageUrl": "https://ads-partners.coupang.com/image1/P1lv950fpQJw_HXWP9TCgv3HjUFA5LUqLH87Nyy0Wo8QOa8Esj5WL06JlG4I0squxq1tWRzL4VwPfM0AFbD_7p9IArQ8BIk-FkBlHNTOLPMGJvm6qS9Iv2Bz7WjDQR-dFky01tuhhH4D67IVuDoz5qa7L8TDeeYIYb66BlgCkUMKrMKFAy-fIaA0_E4GBM1KjyJ1W69Mmpl8DeZeBgd98kDCwKqT7uyZRCtVbIBCHb13Lal_Q4lLZEGwNpeyNCUFXZNin-SlAlFzC-KK1P-SNizY1vHm0evSPCrBQc3rvPNOi-1PIBhCdpmLl8dmZMN5io_ezcUy2hdlAJLwIZRtIrruncpBJmWjmj2RmUuaCjlrSgeXiZY-17U3QffgEETP-8UIFkYJ8twtPRNzzlEe2ooQOvlSA1_BuH9bD-ApB5J0R3gdJoK8aYWv_4EnBBp8nJJy1zCF8c2pWgLad-cusBkhV0fW7qxjkQ33jHdY4ivuhBqLf-t1y2GftO1VMnTaEqbMyHAEjPlc6jJR-0B54XzLqpqGctgCURR0PyCRBouT1LI=",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9501349694&itemId=28306080379&vendorItemId=95876272367&traceid=V0-153-41ff37b9f3b7044e&requestid=20261121062640244095007218&token=31850C%7CMIXED&pt=0&slot=7",
+   "category": "신기한템",
+   "updatedAt": "2026-11-21T06:26:32+09:00",
+   "overallRank": 9,
+   "subCategory": "아이디어 상품",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -176,17 +174,17 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 6,
-    "keyword": "생수",
-    "joopjwiScore": 1.15
+    "coupangRank": 7,
+    "keyword": "아이디어 상품",
+    "joopjwiScore": 1.17
    },
    "price_history": {
-    "previousPrice": null,
-    "previousPriceDate": null,
-    "dropPercent": 0
+    "previousPrice": 4500,
+    "previousPriceDate": "2026-11-18",
+    "dropPercent": 13
    },
    "tags": [
-    "매일 쓰는 템"
+    "궁금한 템"
    ],
    "validation": {
     "price": "ok",
