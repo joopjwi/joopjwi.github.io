@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-20",
+ "status": "ok",
+ "duration": 33.77,
+ "tts": {
+  "rawDuration": 40.87,
+  "duration": 33.07,
+  "cuts": 22,
+  "words": 64,
+  "expectedWords": 64,
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2"
+ },
+ "video": "https://joopjwi.github.io/reels/2026-11-20.mp4",
+ "cover": "https://joopjwi.github.io/reels/2026-11-20.jpg"
+}
