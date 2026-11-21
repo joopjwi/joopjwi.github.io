@@ -1,45 +1,43 @@
 {
  "apiVersion": 1,
  "status": "ok",
- "dataDate": "2026-11-21",
- "updatedAt": "2026-11-21T06:26:32+09:00",
- "expiresAt": "2026-11-22T09:00:00+09:00",
+ "dataDate": "2026-11-22",
+ "updatedAt": "2026-11-22T06:18:08+09:00",
+ "expiresAt": "2026-11-23T09:00:00+09:00",
  "maxPrice": 10000,
  "currency": "KRW",
  "disclosure": "쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 updatedAt 기준이며 쿠팡에서 바뀔 수 있음. 이미지 저작권은 판매자에게 있음.",
- "selection": "curated",
+ "selection": "auto",
  "count": 5,
  "items": [
   {
    "rank": 1,
-   "productId": "8735123379",
-   "productName": "디오벨러 물빠짐 오리 비누 받침대",
-   "price": 3990,
-   "imageUrl": "https://ads-partners.coupang.com/image1/3aLs9dDGWBrTm4U63W5QFqx5cjKCYkIHDutgbrb185LW9wBGhNFegAHxiyW3V1rT73nTQ0wXynA2SedV9oghwkZ3Kn7nvS0117dUB9eD_HLxWvXt6H2f-3XGGvgoBAFGbanGRG9uPL6CB_wLqqm8rFNbZkvdAA2se5PcAIhMmPuX8mzkPFAePFNYw3zhbCMw-6pAE-UGkk926PA-nZgINdigPbt7HPw6QBNny776NS8tfkVJfA-rbJUT0fbH2Q47q0RAq1ApHuM9HapQKTJe2LXKRv2xgXG3io_1bCsfDcf6AC3jwOr-rScYNwjc4WkA8tPbjRDJb6TS-IPil-vZd9Aib-NTWnO6HLwy1um1zmP-D7LfIuvg9_sHNMmNtJcl3hdcTsjXcHG_LZOCs_HeYGQ6TUMzifBHuez6QpiRoT6PKGPkx5GEM90e7HWRq-2Q68zJFtZVk_ts8pgE-SpUmvgSnIeCiGO9rDWh9YXsqLsfdNsZ7on4lIaLJT4PSD31-N64CWMQKceqa8AoFMXFEv7aS5DDYL8OvjZYx5UaQ2jv7w==",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8735123379&itemId=28565629160&vendorItemId=91685658461&traceid=V0-153-ba95df315df528f8&requestid=20261121062640244095007218&token=31850C%7CMIXED&pt=0&slot=6",
-   "category": "신기한템",
-   "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 35,
-   "subCategory": "아이디어 상품",
+   "productId": "8552491124",
+   "productName": "코멧 A4 L홀더",
+   "price": 3860,
+   "imageUrl": "https://img4a.coupangcdn.com/image/retail/images/2606831288937311-f8eb23c9-b35e-4b13-961b-e751f8b4860b.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8552491124&itemId=25072415229&vendorItemId=92076477589&traceid=V0-113-0c078e07a435f807&pt=0&slot=5",
+   "category": "문구·취미",
+   "updatedAt": "2026-11-22T06:18:08+09:00",
+   "overallRank": 1,
+   "subCategory": "문구·오피스",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_keyword_search",
-    "coupangRank": 6,
-    "keyword": "아이디어 상품",
-    "joopjwiScore": 1.05
+    "source": "coupang_best_category",
+    "coupangRank": 5,
+    "keyword": null,
+    "joopjwiScore": 1.26
    },
    "price_history": {
-    "previousPrice": 3990,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
+    "previousPrice": 9990,
+    "previousPriceDate": "2026-11-21",
+    "dropPercent": 61
    },
-   "tags": [
-    "궁금한 템"
-   ],
+   "tags": [],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -50,14 +48,14 @@
   },
   {
    "rank": 2,
-   "productId": "6528172171",
-   "productName": "흙대파",
-   "price": 2490,
-   "imageUrl": "https://image12.coupangcdn.com/image/retail/images/4063320789843989-2f070b18-3886-4b8c-871b-2403227cfec9.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=6528172171&itemId=5911958170&vendorItemId=73210037048&traceid=V0-113-ea3e109dddeaf065&pt=0&slot=2",
+   "productId": "218520566",
+   "productName": "돌 스위티오 바나나",
+   "price": 3990,
+   "imageUrl": "https://img5a.coupangcdn.com/image/retail/images/216707697399849-f5636001-2526-4fc9-9c7b-e13d6364c9a0.jpg",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=218520566&itemId=490814306&vendorItemId=4242007843&traceid=V0-113-1286db42c5993e56&pt=0&slot=3",
    "category": "식품·간식",
-   "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 1,
+   "updatedAt": "2026-11-22T06:18:08+09:00",
+   "overallRank": 2,
    "subCategory": "식품",
    "shipping": {
     "isRocket": true,
@@ -66,14 +64,14 @@
    },
    "popularity": {
     "source": "coupang_best_category",
-    "coupangRank": 2,
+    "coupangRank": 3,
     "keyword": null,
-    "joopjwiScore": 1.37
+    "joopjwiScore": 1.23
    },
    "price_history": {
-    "previousPrice": 4830,
-    "previousPriceDate": "2026-11-19",
-    "dropPercent": 48
+    "previousPrice": 4780,
+    "previousPriceDate": "2026-11-21",
+    "dropPercent": 17
    },
    "tags": [],
    "validation": {
@@ -86,15 +84,15 @@
   },
   {
    "rank": 3,
-   "productId": "7707978357",
-   "productName": "치트몰 무타공 핸드폰 거치대 휴지걸이 (강력 접착 스티커), 1개, 블랙",
-   "price": 4940,
-   "imageUrl": "https://ads-partners.coupang.com/image1/DoyboXg0PrO3h-FZDsHqmDhNLO6B9HAIeaqUGZVdu6-pwIxnzxRPzwm6HM5V6dy4796CwGXiz8t9O9IO7pZVQyhcsSHlvh9pavNPli3wIvlT721gPDO2n030RajhNbO4HvCva0lImBXpBE_7bGfzjvXhS4-X9qo0nA-UL0pD7zEatzcQ3YZIamCl2oTPJBWL4GWP8LKyyukJzp6wFloHTPGVGRRnef7bI7AHfq9RZ0FFy4dX9A1Ao67vFz-41XY8GDdsfzEU9snoL0pTPj-dKUxIJhJZmLQ55QcpoTdCGrykmmScfga0Kh3W6pjs80poUpHmnrEbQxKiGZmi3h6YtVRxuaroKTKJhkyd983PV-wy7L-RzA6wBn-KybRKLuoEENBb4o3nE158JKYkcpXNsbhOMSsvYBZdN19M9LBFnk5G64CIcncMRntRaE_vL_BpKfD1JI8qm3KcLRlf4w4y7jGndToM4YTnnaTnvkXwDYNzsXejaE8fucDJdSAIWWWWWMgyit00Kke0UqjT_PKENWJxBEUHmNvl",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=7707978357&itemId=20654680097&vendorItemId=87727630032&traceid=V0-153-70a45dc29b3445a2&clickBeacon=132bbf50-e529-11f1-9d8b-225c017c0a10%7E3&requestid=20261121062640244095007218&token=31850C%7CMIXED&pt=1&slot=3",
+   "productId": "9747678410",
+   "productName": "접이식 자동차 도어 수납함 컵홀더 한드폰 거치대 차량용 사이드 수납포켓 LETILYRA",
+   "price": 8690,
+   "imageUrl": "https://ads-partners.coupang.com/image1/28hyUq_rnhpMJL3C29grZWT-JOS9DtvDZgH97Fz0c-6fqQ-oQ2iwQdc0aTqDPKoIFkQKopoj3rdPJhwrzvmcFkXs-kcVbBOaTiH25RI0KeQdoAJVeyixIe9qbfcX1pftT3dDmki2JlU3BmXk1ospMzxMv1HAlvY5kdUnfUOCePa4INuSbBqJkYg8zeT5AAX0Aff7A5DSRC16OnvPFTDzEa2mS45VNLpCq9CF8b0a1CmvGpVdmgQYS6G-U_fXq9i54drTqkeO0CV8jRCUcQr-V5jA-AkvyMyCz6EgY6lVPFvkJ_WVd_aIYmW-VMrO7WRGHUsOtfE-mlIyf-g-ZVKmsHA0wusi4bWKlVZtT_7B0pXs9Po4QRy9X6QeTjI9APVYFl_-ebW7Gn0IeTIYLZDjwBMcdlra9y24cRzg9GoEWQQYMIRrJbFRMwtIHv-gNMP5sc7sGJS_4HvOzNMBnnGUibwerqwsXHPzyFOuK16udRXsmGKpx3LUHehPMb9WLD88HVPJhPcwVjlgR4UITp4MAvA-ROT22MS6auefpp_KzV2T",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9747678410&itemId=29154240841&vendorItemId=96076844048&traceid=V0-153-c64067fb959a0603&requestid=20261122061822601298398760&token=31850C%7CGM&pt=0&slot=2",
    "category": "신기한템",
-   "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 24,
-   "subCategory": "아이디어 상품",
+   "updatedAt": "2026-11-22T06:18:08+09:00",
+   "overallRank": 3,
+   "subCategory": "차량 꿀템",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
@@ -102,14 +100,14 @@
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 3,
-    "keyword": "아이디어 상품",
-    "joopjwiScore": 1.08
+    "coupangRank": 2,
+    "keyword": "차량 꿀템",
+    "joopjwiScore": 1.18
    },
    "price_history": {
-    "previousPrice": 4940,
-    "previousPriceDate": "2026-11-18",
-    "dropPercent": 0
+    "previousPrice": 9500,
+    "previousPriceDate": "2026-11-19",
+    "dropPercent": 9
    },
    "tags": [
     "궁금한 템"
@@ -124,32 +122,34 @@
   },
   {
    "rank": 4,
-   "productId": "8209844068",
-   "productName": "이니스프리 화산송이 모공 바하 클렌징 폼",
-   "price": 5700,
-   "imageUrl": "https://image6.coupangcdn.com/image/retail/images/108349678027725-757b1210-90f2-4713-8f30-76b7ae97b9da.jpg",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8209844068&itemId=17990592306&vendorItemId=87121069249&traceid=V0-113-2984a05f4a40116c&pt=0&slot=27",
-   "category": "뷰티·패션",
-   "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 40,
-   "subCategory": "뷰티",
+   "productId": "8010806804",
+   "productName": "풀무원 퓨어 무라벨 생수, 2L, 12개",
+   "price": 6900,
+   "imageUrl": "https://ads-partners.coupang.com/image1/3iOhn_AnDButEYqm3lNhYrWBmAR9wPmw-atTZNdvUA_AFRfjAkcrtFjn202RWnAXZavQXoe_HWVtYLeSfSYmbIfa-GB7OQk71b6PJ936L2JRPHgcMXEAgj6dJWExrfKW3uNJVTsH2C2Ei0IjT7nW2_OEBw4CINp53GzPlUVVE4ATesFMzZ_xpKRCCJSE7f6Tv3gQXq8uDDsy8HRm7Jiyup_M2c80HWM7cA_U3IFB1hSXRQ4RVT2m2vuhJY25Qjqyp4tKJ5E1_1WdgnYh6cApX2GbhG4_wZClshJsgS-lEZWHi60ZPfutTJxiIHJT6NDCUCOIrbXnav9VmJJRm-BTxETR2bcHq21-_wG-WzSGfN4qhusijdimyyCaSlLyJMyjk-Jcm2USAU4svCqopoikSGotQ38sLzLdJINOU9-HdjfDGOhiNDpfMD6jreNmM_cJwZBPQrcTKt3wx6EMMSKBnkq-80vUcyLNuMslc6QqSXB1lqVZL1RID1Ak2R3Mw-TkiHtH2Py1QpsaUCsGyjn8Guoc-GxEvSLixABXQw_QN8rlhbM6g47K5hL427Z0vg08wwH2_g==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=8010806804&itemId=27311078171&vendorItemId=86494112156&traceid=V0-153-813b314348313aea&clickBeacon=0e0cb970-e5f1-11f1-accf-ac1d6dab05fe%7E3&requestid=20261122061811058086776792&token=31850C%7CMIXED&pt=1&slot=4",
+   "category": "식품·간식",
+   "updatedAt": "2026-11-22T06:18:08+09:00",
+   "overallRank": 4,
+   "subCategory": "생수",
    "shipping": {
     "isRocket": true,
     "isFreeShipping": false,
     "shippingFee": null
    },
    "popularity": {
-    "source": "coupang_best_category",
-    "coupangRank": 27,
-    "keyword": null,
-    "joopjwiScore": 1.04
+    "source": "coupang_keyword_search",
+    "coupangRank": 4,
+    "keyword": "생수",
+    "joopjwiScore": 1.17
    },
    "price_history": {
-    "previousPrice": 9350,
-    "previousPriceDate": "2026-11-20",
-    "dropPercent": 39
+    "previousPrice": 6900,
+    "previousPriceDate": "2026-11-21",
+    "dropPercent": 0
    },
-   "tags": [],
+   "tags": [
+    "매일 쓰는 템"
+   ],
    "validation": {
     "price": "ok",
     "affiliateUrl": "ok",
@@ -160,29 +160,29 @@
   },
   {
    "rank": 5,
-   "productId": "9320256369",
-   "productName": "블루나 본 퓨어 저자극 물티슈 캡형",
-   "price": 7080,
-   "imageUrl": "https://ads-partners.coupang.com/image1/nFJeL7NnfwEUnvOJnDfwvtpL_q1IjUiU6bDfOs45HUh_vY8B2K8t9EJl2RWTx5iDTBGQbfCpE4UahWNf5M_eCoYYI2jDmr0n4lTUI5orFT5TG33wf_V-ydJCX7IIa-KlD2t1nNqrfGUqJ8xpILFpxxpVZsw_sxumKpSLoIhFpdggFBIbTzT1wn6yXPEFNurJHMJJcS7R-j0-XEUcPiC-XxEjNuizuvV_EVpp7fVShYNMDgASLwtvcW0MYpNH4bZbAxWaJpdnKTvWdp_IitUbmt_6gwTMMWsDr2WhJD_cHAJqkd4oDCx4Q_WQKO-XG39RmVGA0dMFthKrKptKvPlW5OyAbpQvIzo43NSNmomAZP1ph-yQCHeyEAUNioR2DiB9bVmKxmYQxMd9K3RIvKPOLpDrVzVaFLb9RXaX91ZAZ4CnZGNnhG48DTC5G_3DYvf4LutThpfLGXxshydDF5RxwtWCmuf2x98yvhbohznl_-o0cBzI2_gTJdRsWyZngRIMalb5bpgByJ0fhv_TGvBh9XRNlHI6a1kVnNRz4d8Z38OBn6aYZ-eceOQBL5Pi2gvTWZeW3RYk1LYxSDX1AkYf",
-   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9320256369&itemId=27623848954&vendorItemId=94586776590&traceid=V0-153-f229860d401386f6&requestid=20261121062632884086776882&token=31850C%7CMIXED&pt=0&slot=9",
+   "productId": "9334818564",
+   "productName": "쓰레기봉투 청색 50매, 50L, 2세트",
+   "price": 7890,
+   "imageUrl": "https://ads-partners.coupang.com/image1/vlTaHTZwRq20Ud-pvoLDPmSyMEkilDCBB6yHSqV_ty_1YSxLKYvfzp0WDGcm2oo3R63aVy2-9av5LTv7cN-H-GC0OeIop-W-W9O3wTXOualYAI12U_9Q1l4NFqdhGPVT08gvZPU4axOfBUvMHbBqrpedwitJDrq2XQYPw3PAfIYLQURcvMV9DXXMDj2gXFpyheaZkhVuD8jOVsWuSj-hREUI8GcI8XcwAi8G0KHDCnr9pWgtpR3Lke_C-0iyHLLywgkG_VzyVnma9UM5bsmxLphOlYPbLC3QqH3jk6jtJ8QGqhugdXGhdXmoZX12VAqNVhnv7hU48pUf64IGPoHnNfRGz48iIt9A3wKM02tDjOdjewQb5GEvypQymmWmFIyF2sMp9sKimrasHcUTiTAOTKadBMGfrw_CjUvKYnHn8AcsIGMu2y-RKWI1ZCLseJICAmweGoYHPCCxn0fH5elr6KKg3H-Xa3omEfNcBYAuarnE9GIz1fPvetKIYdIErGC6QdKCnl-4fIsdotF_-no3XHLr8JmwsEv5iA==",
+   "affiliateUrl": "https://link.coupang.com/re/AFFSDP?lptag=AF7198996&pageKey=9334818564&itemId=23742577453&vendorItemId=95599994283&traceid=V0-153-7627678e51f6e662&clickBeacon=0f377dd0-e5f1-11f1-9815-d7f8e7a9b3cf%7E3&requestid=20261122061812922024746046&token=31850C%7CMIXED&pt=1&slot=5",
    "category": "생필품",
-   "updatedAt": "2026-11-21T06:26:32+09:00",
-   "overallRank": 16,
-   "subCategory": "물티슈",
+   "updatedAt": "2026-11-22T06:18:08+09:00",
+   "overallRank": 5,
+   "subCategory": "쓰레기봉투",
    "shipping": {
-    "isRocket": true,
-    "isFreeShipping": false,
+    "isRocket": false,
+    "isFreeShipping": true,
     "shippingFee": null
    },
    "popularity": {
     "source": "coupang_keyword_search",
-    "coupangRank": 9,
-    "keyword": "물티슈",
-    "joopjwiScore": 1.12
+    "coupangRank": 5,
+    "keyword": "쓰레기봉투",
+    "joopjwiScore": 1.16
    },
    "price_history": {
-    "previousPrice": 7080,
-    "previousPriceDate": "2026-11-20",
+    "previousPrice": null,
+    "previousPriceDate": null,
     "dropPercent": 0
    },
    "tags": [
