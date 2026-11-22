@@ -243,6 +243,10 @@
         <button class="btn" id="btnSaveTok">저장 · 연동</button>
       </div>
       <div class="status" id="tokStatus"></div>
+      <div class="row" style="margin-top:8px">
+        <button class="btn ghost" id="btnLinkCopy">📱 다른 기기 한 번에 연결 링크 복사</button>
+      </div>
+      <p class="note">이 기기에 넣은 유튜브 API 키와 연동 키를 담은 링크예요. 카톡 '나에게 보내기'로 보내서 휴대폰에서 누르기만 하면 두 키가 한 번에 들어가요. 링크에 키가 들어 있으니 다른 사람에게는 보내지 마세요.</p>
       <h3>연동 키 만드는 법 (GitHub, 3분)</h3>
       <ol class="steps">
         <li>PC에서 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener" style="color:var(--yellow)">github.com/settings/personal-access-tokens/new</a> 열기 (joopjwi 계정 로그인)</li>
@@ -739,6 +743,26 @@
   });
   document.addEventListener("visibilitychange", function(){ if (document.visibilityState === "visible") syncNow(); });
   setInterval(function(){ if (document.visibilityState === "visible") syncNow(); }, 60000);
+
+  // ---------- 한 번에 연결 링크 ----------
+  $("btnLinkCopy").addEventListener("click", async function(){
+    if (!state.key && !tok){ toast("먼저 이 기기에 키를 넣어주세요"); return; }
+    var code = b64e(JSON.stringify({k: state.key || "", t: tok || ""})).replace(/=+$/, "");
+    var ok = await copyText(location.origin + location.pathname + "#setup=" + code);
+    toast(ok ? "연결 링크 복사됨 → 휴대폰으로 보내서 누르세요" : "복사 실패");
+  });
+  (function(){
+    var m = /^#setup=([A-Za-z0-9+/_-]+)/.exec(location.hash);
+    if (!m) return;
+    try{
+      var d = JSON.parse(b64d(m[1].replace(/-/g, "+").replace(/_/g, "/")));
+      if (d.k){ state.key = d.k; saveRaw("st_key", d.k); $("apiKey").value = d.k; $("needKey").hidden = true; }
+      if (d.t){ tok = d.t; saveRaw("st_ghtok", d.t); $("ghToken").value = d.t; }
+      toast("이 기기 연결 완료!");
+    }catch(e){ toast("연결 링크가 올바르지 않아요"); }
+    history.replaceState(null, "", location.pathname);
+  })();
+  try{ if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
 
   function slim(v){
     return {id:v.id,title:v.title,channel:v.channel,thumb:v.thumb,views:v.views,likes:v.likes,vph:v.vph,likeRate:v.likeRate,
