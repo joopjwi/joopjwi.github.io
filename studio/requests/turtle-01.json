@@ -1,0 +1,71 @@
+{
+ "id": "turtle-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.06
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "바다 위에서 만난 바다거북 한 마리. 입 주변에 따개비가 다닥다닥 붙어서 입을 제대로 다물지도 못하는 상태인데요,"
+  },
+  {
+   "seg": "B",
+   "spoken": "사람이 손으로 하나씩 조심스럽게 떼어내기 시작합니다. 얼마나 많이 붙어 있었는지, 떼어낸 따개비가 금세 한 무더기가 되고,"
+  },
+  {
+   "seg": "C",
+   "spoken": "입 안쪽까지 꼼꼼하게 정리해 주는 동안, 거북이는 신기할 만큼 얌전히 기다려 주는데요,"
+  },
+  {
+   "seg": "D",
+   "spoken": "마지막 하나까지 깨끗하게 떼어내자, 드디어 입을 편하게 다물 수 있게 됐어요."
+  },
+  {
+   "seg": "E",
+   "spoken": "그리고 다시 바다로 돌려보내는 순간,"
+  },
+  {
+   "seg": "F",
+   "spoken": "거북이는 잠깐 이쪽을 돌아보더니, 천천히 헤엄쳐 넓은 바다로 돌아갑니다. 근데.. 저 눈빛, 고맙다는 인사였을까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "crack",
+   "prompt": "small shell crack snap, short",
+   "seconds": 0.6
+  },
+  {
+   "name": "waves",
+   "prompt": "gentle ocean waves lapping against a boat",
+   "seconds": 3.0
+  },
+  {
+   "name": "splash",
+   "prompt": "sea turtle gently sliding into water, soft splash",
+   "seconds": 1.2
+  },
+  {
+   "name": "sparkle",
+   "prompt": "soft magical sparkle twinkle",
+   "seconds": 1.2
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "warm emotional ocean background music, gentle piano and soft strings, hopeful and calm, sea rescue mood, sparse for voice-over, no vocals",
+  "seconds": 58
+ }
+}
