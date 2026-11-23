@@ -1,9 +1,9 @@
 {
  "apiVersion": 1,
  "status": "ok",
- "dataDate": "2026-11-23",
- "lastSuccessAt": "2026-11-23T06:24:11+09:00",
- "lastAttemptAt": "2026-11-23T06:24:11+09:00",
+ "dataDate": "2026-11-24",
+ "lastSuccessAt": "2026-11-24T06:28:45+09:00",
+ "lastAttemptAt": "2026-11-24T06:28:45+09:00",
  "apiCalls": 23,
  "error": null
 }
