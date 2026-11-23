@@ -1,0 +1,79 @@
+{
+ "id": "sneezecat-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "코가 꽉 막힌 듯 답답해 보이는 고양이. 집사가 휴지를 길쭉하게 돌돌 말아서 콧구멍 앞에 살살 대보는데요,"
+  },
+  {
+   "seg": "B",
+   "spoken": "간질간질 참다못한 고양이가 에취! 하고 크게 재채기를 합니다."
+  },
+  {
+   "seg": "C",
+   "spoken": "그랬더니 콧물이 쭉 딸려 나왔어요."
+  },
+  {
+   "seg": "D",
+   "spoken": "집사는 멈추지 않고 다시 한번 도전. 고양이 표정은 이미 세상 귀찮음 그 자체."
+  },
+  {
+   "seg": "E",
+   "spoken": "몇 번을 반복한 끝에 또 한 번 시원하게 에취,"
+  },
+  {
+   "seg": "F",
+   "spoken": "휴지로 코 주변을 꼼꼼하게 닦아주자,"
+  },
+  {
+   "seg": "G",
+   "spoken": "고양이는 눈을 꼭 감은 채 얌전히 몸을 맡깁니다."
+  },
+  {
+   "seg": "H",
+   "spoken": "고양이 코는 예민해서 함부로 따라 하면 다칠 수 있으니 주의하세요. 근데.. 고양이도 코가 막히면 우리처럼 답답할까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "tickle",
+   "prompt": "light cartoon tickle twinkle, playful",
+   "seconds": 0.8
+  },
+  {
+   "name": "sneeze",
+   "prompt": "cute small cartoon sneeze sound effect, achoo, not human voice",
+   "seconds": 0.8
+  },
+  {
+   "name": "slurp",
+   "prompt": "comedic gooey stretch slime sound, short",
+   "seconds": 0.8
+  },
+  {
+   "name": "ding",
+   "prompt": "cute cartoon sparkle ding",
+   "seconds": 0.8
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "cute comedic background music, playful pizzicato and clarinet, slightly silly and warm, light tempo, sparse for voice-over, no vocals",
+  "seconds": 50
+ }
+}
