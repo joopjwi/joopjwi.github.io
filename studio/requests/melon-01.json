@@ -1,0 +1,79 @@
+{
+ "id": "melon-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "빙글빙글 돌아가는 막대에 노란 반죽을 얇게 바르고, 불에 굽고, 또 바르고 굽기를 계속 반복하는데요,"
+  },
+  {
+   "seg": "B",
+   "spoken": "이렇게 한 겹 한 겹 쌓다 보면 어느새 동글동글한 모양이 잡히기 시작합니다."
+  },
+  {
+   "seg": "C",
+   "spoken": "이번엔 초록색 반죽으로 바꿔서 겉면을 몇 겹 더 입혀주고,"
+  },
+  {
+   "seg": "D",
+   "spoken": "다 구워진 기다란 덩어리를 막대에서 쏙 빼낸 뒤,"
+  },
+  {
+   "seg": "E",
+   "spoken": "한 덩이씩 나누면 가운데가 뻥 뚫린 초록 공이 됩니다."
+  },
+  {
+   "seg": "F",
+   "spoken": "여기에 뜨거운 인두로 지지직, 줄무늬를 그려 넣으면,"
+  },
+  {
+   "seg": "G",
+   "spoken": "어디서 많이 본 모양이죠? 뚫린 가운데에 분홍색 크림을 가득 채우고, 까만 알갱이로 씨까지 콕콕 박아주면,"
+  },
+  {
+   "seg": "H",
+   "spoken": "반으로 갈랐을 때 진짜 수박 같은 수박 바움쿠헨 완성! 근데.. 이거 수박 맛일까요, 케이크 맛일까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "sizzle",
+   "prompt": "hot iron searing pastry, short sizzle",
+   "seconds": 1.2
+  },
+  {
+   "name": "whoosh",
+   "prompt": "quick whoosh transition swish",
+   "seconds": 0.7
+  },
+  {
+   "name": "squish",
+   "prompt": "soft cream piping squish, satisfying",
+   "seconds": 1.0
+  },
+  {
+   "name": "reveal",
+   "prompt": "magical reveal shimmer sparkle, satisfying",
+   "seconds": 1.2
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "satisfying factory process background music, light bouncy marimba and plucky synth, curious and cheerful, steady tempo, sparse for voice-over, no vocals",
+  "seconds": 55
+ }
+}
