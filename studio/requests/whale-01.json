@@ -1,0 +1,83 @@
+{
+ "id": "whale-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.05
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "잔잔한 바다 위, 작은 배 바로 앞으로 거대한 고래 한 마리가 불쑥 머리를 내밉니다."
+  },
+  {
+   "seg": "B",
+   "spoken": "물속으로 카메라를 넣어 보니, 사람보다 몇 배는 큰 고래가 배 바로 밑을 유유히 지나가고 있었는데요,"
+  },
+  {
+   "seg": "C",
+   "spoken": "놀랍게도 고래는 사람들의 손이 닿을 만큼 가까이 다가와서는, 머리를 쓰다듬어도 피하지 않고 가만히 몸을 맡깁니다."
+  },
+  {
+   "seg": "D",
+   "spoken": "물속에서는 다이버가 고래와 나란히 헤엄치며 손을 맞대기도 하죠."
+  },
+  {
+   "seg": "E",
+   "spoken": "그런데 모든 고래가 이렇게 편안한 건 아니었어요. 어떤 고래는 굵은 밧줄에 몸이 칭칭 감긴 채 발견됐는데요,"
+  },
+  {
+   "seg": "F",
+   "spoken": "다이버들이 조심스럽게 다가가 칼로 밧줄을 한 가닥씩 잘라내고,"
+  },
+  {
+   "seg": "G",
+   "spoken": "입에 걸려 있던 그물까지 하나하나 걷어내 줍니다."
+  },
+  {
+   "seg": "H",
+   "spoken": "몸이 가벼워진 고래는 그제야 다시 자유롭게 헤엄치기 시작하고,"
+  },
+  {
+   "seg": "I",
+   "spoken": "다시 배 옆으로 다가와 사람들 손길을 받아 줍니다. 근데.. 여러분이라면 저 거대한 고래를 직접 만져볼 수 있을까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "blow",
+   "prompt": "whale surfacing and blowing air through blowhole",
+   "seconds": 1.5
+  },
+  {
+   "name": "underwater",
+   "prompt": "underwater ambience whoosh, deep and calm",
+   "seconds": 2.0
+  },
+  {
+   "name": "snip",
+   "prompt": "knife cutting thick rope underwater, muffled",
+   "seconds": 0.8
+  },
+  {
+   "name": "sparkle",
+   "prompt": "soft magical sparkle twinkle",
+   "seconds": 1.2
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "emotional majestic ocean background music, gentle piano and soft strings with a warm swell, whale encounter mood, sparse for voice-over, no vocals",
+  "seconds": 58
+ }
+}
