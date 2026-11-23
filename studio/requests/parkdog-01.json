@@ -1,0 +1,62 @@
+{
+ "id": "parkdog-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "단풍이 물든 공원 한쪽, 어르신들이 쓰는 공중걷기 운동기구에 하얀 강아지 한 마리가 올라타 있는데요,"
+  },
+  {
+   "seg": "B",
+   "spoken": "발판 위에 얌전히 앉아서 앞으로 쭉, 뒤로 쭉, 그네를 타듯 왔다 갔다 합니다."
+  },
+  {
+   "seg": "C",
+   "spoken": "무서워할 법도 한데 내려올 생각은 전혀 없고, 표정은 오히려 진지 그 자체."
+  },
+  {
+   "seg": "D",
+   "spoken": "옆에 사람이 오가도 아랑곳하지 않고, 혼자만의 운동 시간을 즐기는 중이에요."
+  },
+  {
+   "seg": "E",
+   "spoken": "오늘 운동은 이걸로 충분하다는 듯 계속 흔들흔들. 근데.. 운동한 건 강아지일까요, 밀어준 사람일까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "swing",
+   "prompt": "playful cartoon swing whoosh back and forth, light",
+   "seconds": 1.2
+  },
+  {
+   "name": "creak",
+   "prompt": "metal exercise machine gentle creak, short",
+   "seconds": 1.0
+  },
+  {
+   "name": "ding",
+   "prompt": "cute cartoon sparkle ding",
+   "seconds": 0.8
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "cheerful playful comedic background music, bouncy pizzicato and ukulele, sunny autumn park mood, steady swinging rhythm, sparse for voice-over, no vocals",
+  "seconds": 40
+ }
+}
