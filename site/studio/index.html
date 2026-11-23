@@ -241,7 +241,7 @@
       <h2>휴대폰 ↔ PC 연동</h2>
       <p class="note">찜·사용·지운 후보, 업로드 체크(보관함), 레퍼런스가 모든 기기에서 똑같이 보이게 해요. 기기마다 아래 연동 키를 한 번씩 넣어주세요.</p>
       <div class="row">
-        <input type="password" class="grow" id="ghToken" placeholder="github_pat_로 시작하는 연동 키" autocomplete="off">
+        <input type="password" class="grow" id="ghToken" placeholder="연동 키 또는 연결 링크를 붙여넣기" autocomplete="off">
         <button class="btn" id="btnSaveTok">저장 · 연동</button>
       </div>
       <div class="status" id="tokStatus"></div>
@@ -738,7 +738,9 @@
   $("syncBadge").addEventListener("click", function(){ syncNow(true); });
   $("ghToken").value = tok;
   $("btnSaveTok").addEventListener("click", async function(){
-    tok = $("ghToken").value.trim(); saveRaw("st_ghtok", tok);
+    var raw = $("ghToken").value.trim(), sm = /setup=([A-Za-z0-9+/_-]+)/.exec(raw);
+    if (sm){ if (applySetup(sm[1])) $("tokStatus").textContent = "✅ 연결 링크로 키를 넣었어요."; return; }
+    tok = raw; saveRaw("st_ghtok", tok);
     $("tokStatus").textContent = tok ? "연동 중…" : "연동 키를 지웠어요. 이 기기는 연동이 꺼져요.";
     if (tok){ await syncNow(true); if (!/오류/.test($("syncBadge").textContent)) $("tokStatus").textContent = "✅ 연동됐어요! 다른 기기에도 같은 키를 넣어주세요."; }
     else badge("☁ 연동 꺼짐");
@@ -750,7 +752,7 @@
   $("btnLinkCopy").addEventListener("click", async function(){
     if (!state.key && !tok){ toast("먼저 이 기기에 키를 넣어주세요"); return; }
     var code = b64e(JSON.stringify({k: state.key || "", t: tok || ""})).replace(/=+$/, "");
-    var ok = await copyText(location.origin + location.pathname + "#setup=" + code);
+    var ok = await copyText(location.origin + location.pathname + "?setup=" + code.replace(/\+/g, "-").replace(/\//g, "_"));
     toast(ok ? "연결 링크 복사됨 → 휴대폰으로 보내서 누르세요" : "복사 실패");
   });
   (function(){
@@ -766,20 +768,25 @@
       var ob = document.getElementById("openExt");
       if (ob) ob.addEventListener("click", function(){ location.href = "kakaotalk://web/openExternal?url=" + encodeURIComponent(fullHref); });
     }
-    var m = /^#setup=([A-Za-z0-9+/_-]+)/.exec(location.hash);
+    var m = /[?#&]setup=([A-Za-z0-9+/_-]+)/.exec(location.search + location.hash);
     if (!m) return;
     if (inKakao){
-      // 카톡 안에서 누른 연결 링크는 사파리(기본 브라우저)로 넘겨서 거기에 저장
+      // 카톡 안에서 누른 연결 링크는 사파리(기본 브라우저)로 넘겨서 거기에도 저장
       location.href = "kakaotalk://web/openExternal?url=" + encodeURIComponent(fullHref);
     }
+    applySetup(m[1]);
+    history.replaceState(null, "", location.pathname);
+  })();
+  function applySetup(code){
     try{
-      var d = JSON.parse(b64d(m[1].replace(/-/g, "+").replace(/_/g, "/")));
+      var d = JSON.parse(b64d(code.replace(/-/g, "+").replace(/_/g, "/")));
       if (d.k){ state.key = d.k; saveRaw("st_key", d.k); $("apiKey").value = d.k; $("needKey").hidden = true; }
       if (d.t){ tok = d.t; saveRaw("st_ghtok", d.t); $("ghToken").value = d.t; }
       toast("이 기기 연결 완료!");
-    }catch(e){ toast("연결 링크가 올바르지 않아요"); }
-    history.replaceState(null, "", location.pathname);
-  })();
+      setTimeout(function(){ syncNow(true); }, 300);
+      return true;
+    }catch(e){ toast("연결 링크가 올바르지 않아요"); return false; }
+  }
   try{ if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
 
   function slim(v){
