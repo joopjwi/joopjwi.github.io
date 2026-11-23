@@ -1,0 +1,75 @@
+{
+ "id": "coil-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.1
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "10톤짜리 강철 코일을 트레일러에서 굴려 차 위로 떨어뜨리면 어떻게 될까요? 충돌 시뮬레이션으로 실험해 봤는데요, 첫 번째 닷지 듀랑고는 코일을 맞자마자 지붕이 그대로 내려앉습니다."
+  },
+  {
+   "seg": "B",
+   "spoken": "포드 익스플로러도 버티지 못했고,"
+  },
+  {
+   "seg": "C",
+   "spoken": "튼튼하기로 유명한 랜드로버 디펜더마저 코일 아래 그대로 깔려버리고,"
+  },
+  {
+   "seg": "D",
+   "spoken": "BMW X7은 맞는 순간 차체가 종이처럼 접혀버립니다."
+  },
+  {
+   "seg": "E",
+   "spoken": "벤츠 GLS도 결과는 마찬가지."
+  },
+  {
+   "seg": "F",
+   "spoken": "그럼 그 단단하다던 테슬라 사이버트럭은 어떨까요? 정면으로 맞서 보지만, 결국 차체가 버티지 못하고 찌그러져 버리는데요,"
+  },
+  {
+   "seg": "G",
+   "spoken": "마지막은 볼보 XC90. 똑같이 코일을 맞았는데, 오히려 코일이 튕겨 나가버립니다. 근데.. 볼보가 버틴 건 운일까요, 실력일까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "crush",
+   "prompt": "heavy metal car roof crushing impact, crunch",
+   "seconds": 1.2
+  },
+  {
+   "name": "whoosh",
+   "prompt": "quick whoosh transition swish",
+   "seconds": 0.7
+  },
+  {
+   "name": "suspense",
+   "prompt": "short dramatic tension hit, low boom",
+   "seconds": 1.5
+  },
+  {
+   "name": "clang",
+   "prompt": "heavy steel object bouncing off metal, loud clang",
+   "seconds": 1.0
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "tense energetic crash test background music, driving percussion and low synth bass, suspenseful and punchy, sparse for voice-over, no vocals",
+  "seconds": 56
+ }
+}
