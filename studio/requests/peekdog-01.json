@@ -1,0 +1,66 @@
+{
+ "id": "peekdog-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "이 집 닥스훈트 알로에게는 공놀이를 하자고 조르는 아주 특별한 방법이 있는데요,"
+  },
+  {
+   "seg": "B",
+   "spoken": "먼저 공을 엄마 앞까지 데굴데굴 굴려 놓고,"
+  },
+  {
+   "seg": "C",
+   "spoken": "쏙 하고 소파 뒤로 숨어버립니다. 그러고는 고개만 빼꼼 내밀고 엄마를 빤히 쳐다보는데요,"
+  },
+  {
+   "seg": "D",
+   "spoken": "엄마가 공을 던져주는 순간,"
+  },
+  {
+   "seg": "E",
+   "spoken": "기다렸다는 듯 쏜살같이 달려가서 공을 물고 돌아오고,"
+  },
+  {
+   "seg": "F",
+   "spoken": "또다시 공을 툭 내려놓고 소파 뒤로 숨어서 빼꼼. 근데.. 엄마는 이 놀이를 하루에 몇 번이나 해줘야 할까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "roll",
+   "prompt": "small rubber ball rolling on carpet, soft",
+   "seconds": 1.0
+  },
+  {
+   "name": "peek",
+   "prompt": "cute cartoon peek boop sound, playful",
+   "seconds": 0.6
+  },
+  {
+   "name": "whoosh",
+   "prompt": "quick cartoon zoom whoosh, running fast",
+   "seconds": 0.7
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "cute playful comedic background music, bouncy pizzicato and glockenspiel, sneaky peekaboo feeling, light tempo, sparse for voice-over, no vocals",
+  "seconds": 36
+ }
+}
