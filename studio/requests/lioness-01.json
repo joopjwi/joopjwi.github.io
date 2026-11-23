@@ -1,0 +1,100 @@
+{
+ "id": "lioness-01",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.5,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.06
+  }
+ },
+ "chunks": [
+  {
+   "seg": "S1",
+   "spoken": "물웅덩이 앞에서 고개를 숙인 암사자. 그런데 물을 한 모금도 마시지 못합니다."
+  },
+  {
+   "seg": "S2",
+   "spoken": "위턱 깊숙이 뼈가 박혀서, 2주 가까이 아무것도 먹지 못했던 거예요."
+  },
+  {
+   "seg": "S3",
+   "spoken": "이를 본 야생동물 레인저가 마취총을 쏘고,"
+  },
+  {
+   "seg": "S4",
+   "spoken": "잠든 사자의 입을 벌려 그 자리에서 수술을 시작합니다. 몇 번을 두드린 끝에 뼈가 빠져나왔는데, 표면이 시커멓게 변해 있었어요."
+  },
+  {
+   "seg": "S5",
+   "spoken": "하이에나가 오지 못하게 밤새 곁을 지켰지만,"
+  },
+  {
+   "seg": "S6",
+   "spoken": "다음 날, 사자는 숨소리마저 희미한 채 꼼짝도 하지 않습니다."
+  },
+  {
+   "seg": "S7",
+   "spoken": "차로 그늘을 만들고, 관으로 물을 조금씩 흘려 넣고,"
+  },
+  {
+   "seg": "S8",
+   "spoken": "나무 그늘로 옮겨 몸에 물을 끼얹어 열을 식혀 주자,"
+  },
+  {
+   "seg": "S9",
+   "spoken": "사자가 눈을 뜨고, 자기를 돌봐 준 사람을 가만히 바라봅니다."
+  },
+  {
+   "seg": "S10",
+   "spoken": "일어서려다 주저앉기를 몇 번,"
+  },
+  {
+   "seg": "S11",
+   "spoken": "꼬박 하루가 지난 밤, 마침내 스스로 일어선 사자."
+  },
+  {
+   "seg": "S12",
+   "spoken": "비틀비틀 걸어간 곳은 바로 물가였어요. 근데.. 이 사자, 자기를 살려 준 사람을 기억할까요?"
+  }
+ ],
+ "sfx": [
+  {
+   "name": "dart",
+   "prompt": "tranquilizer dart gun shot, muffled pop",
+   "seconds": 0.7
+  },
+  {
+   "name": "clink",
+   "prompt": "metal tool tapping on bone, few clinks",
+   "seconds": 1.2
+  },
+  {
+   "name": "night",
+   "prompt": "african savanna night ambience, distant hyena call",
+   "seconds": 3.0
+  },
+  {
+   "name": "heartbeat",
+   "prompt": "slow faint heartbeat, two beats",
+   "seconds": 1.5
+  },
+  {
+   "name": "sparkle",
+   "prompt": "soft magical sparkle twinkle",
+   "seconds": 1.2
+  },
+  {
+   "name": "pop",
+   "prompt": "cute cartoon pop bubble sound",
+   "seconds": 0.5
+  }
+ ],
+ "music": {
+  "prompt": "emotional cinematic wildlife rescue background music, soft piano and warm strings, tense in the middle then building to a hopeful uplifting ending, sparse for voice-over, no vocals",
+  "seconds": 60
+ }
+}
