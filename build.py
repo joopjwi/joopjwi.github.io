@@ -242,7 +242,7 @@ def main():
         "User-agent: OAI-SearchBot\nAllow: /\n\n"
         "User-agent: Claude-User\nAllow: /\n\n"
         "User-agent: Perplexity-User\nAllow: /\n\n"
-        f"User-agent: *\nAllow: /\nDisallow: /data/\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
+        f"User-agent: *\nAllow: /\nDisallow: /data/\nDisallow: /deals/\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
     write_api_pages()
     print(f"페이지 생성: 상품 {len(catalog)}개, 픽 {len(picks_index)}개, 사이트맵 {len(urls)}개 URL")
 

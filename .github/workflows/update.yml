@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
   pages: write
   id-token: write
 
@@ -135,3 +136,45 @@ jobs:
           echo "쿠팡 데이터 갱신 실패 - site/api/status.json 확인"
           cat site/api/status.json || true
           exit 1
+
+  deals:
+    # 특가 단톡용 가격 비교. TOP 100 API 호출과 겹치지 않게 65분 이상 띄운 뒤 실행
+    needs: update
+    if: github.event_name != 'push' && inputs.build_only != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 직전 API 호출 후 66분 대기
+        run: |
+          python - <<'PY'
+          import json, time
+          from datetime import datetime, timezone
+          s = json.load(open("site/data/api_state.json"))
+          last = datetime.fromisoformat(s["lastApiRun"])
+          wait = 66 * 60 - (datetime.now(timezone.utc) - last).total_seconds()
+          print(f"대기 {max(0, int(wait))}초")
+          if wait > 0:
+              time.sleep(wait)
+          PY
+      - name: 특가 찾기
+        env:
+          COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
+          COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
+          COUPANG_SUB_ID: ${{ secrets.COUPANG_SUB_ID }}
+        run: python deals.py
+      - name: 저장
+        run: |
+          git config user.name "joopjwi-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/data/deals site/data/api_state.json site/deals
+          git diff --cached --quiet || git commit -m "줍쥐 특가 단톡 $(TZ=Asia/Seoul date +%F)"
+          git pull --rebase origin main
+          git push
+      - name: 단톡 메시지 페이지 배포
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update.yml -R ${{ github.repository }} -f build_only=true
