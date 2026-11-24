@@ -97,7 +97,18 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
-      - uses: actions/deploy-pages@v4
+      - name: 배포
+        id: deploy
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: 배포 실패 시 1분 뒤 재시도
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 60
+      - name: 배포 재시도
+        id: deploy2
+        if: steps.deploy.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
       - name: 배포 후 외부 접속 확인 (HTTP 200·Content-Type·JSON·날짜)
         id: verify
         continue-on-error: true
@@ -135,12 +146,11 @@ jobs:
           print("외부 접속 확인:", "모두 정상" if ok_all else "문제 있음")
           raise SystemExit(0 if ok_all else 1)
           EOF
-      - name: 갱신 실패 알림 (GitHub가 실패 메일을 보냄)
-        if: steps.update.outcome == 'failure' || steps.verify.outcome == 'failure'
+      - name: 결과 기록 (실패해도 메일이 가지 않게 작업은 성공 처리, 아침 점검에서 확인)
+        if: always()
         run: |
-          echo "쿠팡 데이터 갱신 실패 - site/api/status.json 확인"
+          echo "update=${{ steps.update.outcome }} deploy=${{ steps.deploy.outcome }}/${{ steps.deploy2.outcome }} verify=${{ steps.verify.outcome }}"
           cat site/api/status.json || true
-          exit 1
 
   deals:
     # 특가 단톡용 가격 비교. TOP 100 API 호출과 겹치지 않게 65분 이상 띄운 뒤 실행
@@ -166,6 +176,8 @@ jobs:
               time.sleep(wait)
           PY
       - name: 특가 찾기
+        id: deals
+        continue-on-error: true
         env:
           COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
           COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
