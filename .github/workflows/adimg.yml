@@ -1,0 +1,27 @@
+name: 광고용 상품 사진 받기
+on:
+  workflow_dispatch:
+    inputs:
+      keywords:
+        description: "쉼표로 구분한 검색어 (최대 4개)"
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - env:
+          COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
+          COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
+          COUPANG_SUB_ID: ${{ secrets.COUPANG_SUB_ID }}
+        run: python tools/ads/fetch_images.py "${{ inputs.keywords }}"
+      - name: adimg 브랜치에 저장
+        run: |
+          cd /tmp/adimg && git init -q -b adimg && git add -A
+          git -c user.name=joopjwi-bot -c user.email=actions@users.noreply.github.com commit -qm "adimg"
+          git push -fq "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" adimg
