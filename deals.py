@@ -295,7 +295,8 @@ def make_image(o, now):
     """단톡에 같이 올릴 상품 카드 이미지 (2열 그리드)."""
     from PIL import Image, ImageDraw, ImageFont
     items = [dict(d, badge=f"↓{d['dropPct']}%", sub=f"{won(d['prev'])}") for d in o["drops"]] + \
-            [dict(d, badge="5일 최저", sub="") for d in o["lows"]]
+            [dict(d, badge="5일 최저", sub=won(max(d["days"].values())) if max(d["days"].values()) > d["price"] else "")
+             for d in o["lows"]]
     if not items:
         return None
     F = lambda name, size: ImageFont.truetype(str(FONT_DIR / name), size)
