@@ -199,25 +199,27 @@ def short(name, n=28):
 
 
 def message(o, now):
-    md = f"{now.month}월 {now.day}일"
-    lines = [f"🐭 {md} 줍쥐 특가", ""]
+    hm = o["checkedAt"].split(" ")[1]
+    lines = ["✨놓치면 후회할 최저가 득템", ""]
     if o["drops"]:
-        lines.append("📉 어제보다 가격 내린 템")
+        lines += ["👉👉 어제보다 가격 내린 템", ""]
         for i, d in enumerate(o["drops"], 1):
             tag = " ❄️" if d["group"] == "겨울템" else ""
             lines += [f"{i}. {short(d['name'])}{tag}",
-                      f"   {won(d['prev'])} → {won(d['price'])} (↓{d['dropPct']}%)",
-                      f"   {d['url']}", ""]
+                      f"{won(d['prev'])} → {won(d['price'])} (↓{d['dropPct']}%)",
+                      d["url"]]
+        lines += ["", ""]
     if o["lows"]:
-        lines.append("🔻 최근 5일 중 가장 싼 날")
+        lines += ["👉👉 최근 5일 중 가장 싼 날", ""]
         for i, d in enumerate(o["lows"], 1):
             lines += [f"{i}. {short(d['name'])}",
-                      f"   오늘 {won(d['price'])} (기록 {len(d['days'])}일 중 최저)",
-                      f"   {d['url']}", ""]
+                      f"오늘 {won(d['price'])} (기록 {len(d['days'])}일 중 최저)",
+                      d["url"]]
+        lines += ["", ""]
     if not o["drops"] and not o["lows"]:
-        lines += ["오늘은 크게 내린 상품이 없어요. 내일 다시 알려드릴게요!", ""]
-    lines += [f"※ {o['checkedAt']} 기준 가격이라 바뀔 수 있어요.",
-              "※ 쿠팡 파트너스 활동으로 수수료를 받을 수 있어요."]
+        lines += ["오늘은 크게 내린 상품이 없어요. 내일 다시 알려드릴게요!", "", ""]
+    lines += [f"*{o['date']} {hm} 기준 가격이라 바뀔 수 있어요. 빠르게 확인하세요.",
+              "*쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."]
     return "\n".join(lines)
 
 
