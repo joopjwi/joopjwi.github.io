@@ -182,7 +182,9 @@ jobs:
           COUPANG_ACCESS_KEY: ${{ secrets.COUPANG_ACCESS_KEY }}
           COUPANG_SECRET_KEY: ${{ secrets.COUPANG_SECRET_KEY }}
           COUPANG_SUB_ID: ${{ secrets.COUPANG_SUB_ID }}
-        run: python deals.py
+        run: |
+          pip install -q pillow
+          python deals.py
       - name: 저장
         run: |
           git config user.name "joopjwi-bot"

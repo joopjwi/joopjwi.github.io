@@ -272,8 +272,105 @@ def message(o, now):
     return "\n".join(lines)
 
 
+FONT_DIR = U.ROOT / "tools" / "reels" / "fonts"
+LIME, PURPLE, DEEP = (223, 255, 0), (102, 37, 232), (43, 21, 80)
+
+
+def fetch_img(d):
+    import io
+    import urllib.request
+    from PIL import Image
+    local = os.environ.get("DEALS_IMG_DIR")
+    try:
+        if local and os.path.exists(f"{local}/{d['id']}.jpg"):
+            return Image.open(f"{local}/{d['id']}.jpg").convert("RGB")
+        url = re.sub(r"/thumbnails/remote/\d+x\d+ex/", "/thumbnails/remote/600x600ex/", d["image"])
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        return Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=15).read())).convert("RGB")
+    except Exception:
+        return None
+
+
+def make_image(o, now):
+    """단톡에 같이 올릴 상품 카드 이미지 (2열 그리드)."""
+    from PIL import Image, ImageDraw, ImageFont
+    items = [dict(d, badge=f"↓{d['dropPct']}%", sub=f"{won(d['prev'])}") for d in o["drops"]] + \
+            [dict(d, badge="5일 최저", sub="") for d in o["lows"]]
+    if not items:
+        return None
+    F = lambda name, size: ImageFont.truetype(str(FONT_DIR / name), size)
+    title_f, name_f, price_f = F("BMDoHyeon.ttf", 64), F("Pretendard-SemiBold.otf", 34), F("Pretendard-Black.otf", 46)
+    old_f, badge_f, foot_f = F("Pretendard-Bold.otf", 28), F("Pretendard-ExtraBold.otf", 30), F("Pretendard-SemiBold.otf", 26)
+    W, M, G = 1080, 40, 28
+    cw = (W - 2 * M - G) // 2
+    ch = cw + 210
+    rows = (len(items) + 1) // 2
+    H = 250 + rows * (ch + G) + 110
+    im = Image.new("RGB", (W, H), DEEP)
+    dr = ImageDraw.Draw(im)
+    dr.text((W // 2, 95), f"{now.month}월 {now.day}일 최저가 득템", font=title_f, fill=LIME, anchor="mm")
+    dr.text((W // 2, 175), "어제보다 내린 템 · 최근 5일 최저가", font=foot_f, fill=(220, 210, 255), anchor="mm")
+    for i, d in enumerate(items):
+        x = M + (i % 2) * (cw + G)
+        y = 230 + (i // 2) * (ch + G)
+        dr.rounded_rectangle((x, y, x + cw, y + ch), 28, fill="white")
+        pic = fetch_img(d)
+        box = cw - 40
+        if pic:
+            pic.thumbnail((box, box))
+            im.paste(pic, (x + 20 + (box - pic.width) // 2, y + 20 + (box - pic.height) // 2))
+        else:
+            dr.rounded_rectangle((x + 20, y + 20, x + 20 + box, y + 20 + box), 20, fill=(240, 240, 245))
+        # 뱃지
+        bw = int(dr.textlength(d["badge"], font=badge_f)) + 36
+        dr.rounded_rectangle((x + 20, y + 20, x + 20 + bw, y + 72), 26,
+                             fill=(255, 59, 48) if d["badge"].startswith("↓") else PURPLE)
+        dr.text((x + 20 + bw // 2, y + 46), d["badge"], font=badge_f, fill="white", anchor="mm")
+        # 이름 (최대 2줄)
+        name, lines, cur = re.sub(r"\s+", " ", d["name"]), [], ""
+        for ch_ in name:
+            if dr.textlength(cur + ch_, font=name_f) > cw - 40:
+                lines.append(cur)
+                cur = ch_
+                if len(lines) == 2:
+                    break
+            else:
+                cur += ch_
+        if len(lines) < 2 and cur:
+            lines.append(cur)
+        elif len(lines) == 2 and len("".join(lines)) < len(name):
+            lines[1] = lines[1][:-1] + "…"
+        ty = y + cw - 5
+        for ln in lines[:2]:
+            dr.text((x + 22, ty), ln, font=name_f, fill=(30, 30, 35))
+            ty += 44
+        py = y + cw + 108
+        dr.text((x + 22, py), won(d["price"]), font=price_f, fill=DEEP)
+        if d["sub"]:
+            pw = dr.textlength(won(d["price"]), font=price_f)
+            ox, oy = x + 22 + pw + 14, py + 14
+            dr.text((ox, oy), d["sub"], font=old_f, fill=(150, 150, 160))
+            tw = dr.textlength(d["sub"], font=old_f)
+            dr.line((ox, oy + 18, ox + tw, oy + 18), fill=(150, 150, 160), width=3)
+    dr.text((W // 2, H - 60), f"{o['checkedAt']} 기준 · 가격은 바뀔 수 있어요 · 줍쥐", font=foot_f,
+            fill=(200, 190, 240), anchor="mm")
+    out = PAGE.parent / "today.png"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    im.save(out, optimize=True)
+    im.save(DATA / f"{o['date']}.png", optimize=True)
+    return out
+
+
 def write_page(msg, o):
     PAGE.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        has_img = make_image(o, datetime.now(U.KST)) is not None
+    except Exception as e:
+        print("이미지 생성 실패:", e)
+        has_img = False
+    img = (f'<p>👇 이미지를 길게 눌러 저장한 뒤 단톡에 올리세요</p>'
+           f'<img src="today.png?v={o["checkedAt"].replace(" ", "")}" '
+           f'style="width:100%;border-radius:12px;margin-bottom:14px">') if has_img else ""
     PAGE.write_text(f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
 <title>줍쥐 특가 단톡 {o['date']}</title>
@@ -283,7 +380,7 @@ textarea{{width:100%;height:65vh;box-sizing:border-box;border-radius:12px;paddin
 button{{width:100%;margin-top:12px;padding:16px;border:0;border-radius:12px;background:#DFFF00;color:#2B1550;font-size:17px;font-weight:800}}</style>
 </head><body><h1>🐭 {o['date']} 단톡 메시지</h1>
 <p>하락 {o['allDrops']}개 · 5일 최저 {o['allLows']}개 중 골랐어요 (수집 {o['collected']}개)</p>
-<textarea id="t">{html.escape(msg)}</textarea>
+{img}<textarea id="t">{html.escape(msg)}</textarea>
 <button onclick="navigator.clipboard.writeText(document.getElementById('t').value).then(()=>this.textContent='복사됐어요 ✅')">전체 복사</button>
 </body></html>""", encoding="utf-8")
 
