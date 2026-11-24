@@ -60,6 +60,40 @@ DATA = U.DATA / "deals"
 PAGE = U.ROOT / "site" / "deals" / "index.html"
 
 
+DEEPLINK_PATH = "/v2/providers/affiliate_open_api/apis/openapi/v1/deeplink"
+
+
+def shorten(items, access, secret):
+    """쿠팡 공식 딥링크 API로 짧은 링크(link.coupang.com/a/...) 발급. 1회 최대 20개, 실패하면 원래 링크 유지."""
+    import urllib.request
+    todo = [d for d in items if "/a/" not in d["url"]][:20]
+    if not todo:
+        return 0
+    def orig(d):
+        m = re.search(r"itemId=(\d+)", d["url"])
+        q = f"?itemId={m.group(1)}&vendorItemId={d['vid']}" if m and d.get("vid") else ""
+        return f"https://www.coupang.com/vp/products/{d['id']}{q}"
+    body = json.dumps({"coupangUrls": [orig(d) for d in todo], "subId": U.SUB_ID}).encode()
+    req = urllib.request.Request(U.DOMAIN + DEEPLINK_PATH, data=body, method="POST", headers={
+        "Authorization": U.auth_header("POST", DEEPLINK_PATH, "", access, secret),
+        "Content-Type": "application/json;charset=UTF-8"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as res:
+            r = json.loads(res.read().decode("utf-8"))
+        if str(r.get("rCode")) != "0":
+            raise RuntimeError(r.get("rMessage"))
+        n = 0
+        for d, x in zip(todo, r.get("data") or []):
+            if (x.get("shortenUrl") or "").startswith("https://link.coupang.com/"):
+                d["longUrl"], d["url"] = d["url"], x["shortenUrl"]
+                n += 1
+        print(f"짧은 링크 {n}개 발급")
+        return n
+    except Exception as e:
+        print("짧은 링크 발급 실패 (긴 링크 유지):", e)
+        return 0
+
+
 def item_key(url):
     m = re.search(r"vendorItemId=(\d+)", url or "")
     return m.group(1) if m else ""
@@ -73,6 +107,19 @@ def main():
     access, secret = os.environ["COUPANG_ACCESS_KEY"], os.environ["COUPANG_SECRET_KEY"]
     now = datetime.now(U.KST)
     today = now.strftime("%Y-%m-%d")
+    # 오늘 이미 돌았고 65분이 안 지났으면 재수집 없이 링크만 짧게 바꿈 (API 1회)
+    state0 = U.load_json(U.DATA / "api_state.json", {})
+    last = state0.get("lastDealsRun")
+    latest = U.load_json(DATA / "latest.json", {})
+    if last and latest.get("date") == today and (now - datetime.fromisoformat(last)).total_seconds() < 65 * 60:
+        shorten(latest["drops"] + latest["lows"], access, secret)
+        U.save_json(DATA / f"{today}.json", latest)
+        U.save_json(DATA / "latest.json", latest)
+        msg = message(latest, now)
+        (DATA / f"{today}.txt").write_text(msg, encoding="utf-8")
+        write_page(msg, latest)
+        print(msg)
+        return
     hist = U.load_json(DATA / "history.json", {})
     main_hist = U.load_json(U.DATA / "history.json", {})   # TOP 100 쪽 1만원 이하 기록도 참고
     seen = {}
@@ -169,6 +216,8 @@ def main():
     pick_drops = balance(drops, 8)
     pick_lows = balance(lows, 5)
 
+    calls += 1
+    shorten(pick_drops + pick_lows, access, secret)
     out = {"date": today, "checkedAt": now.strftime("%Y-%m-%d %H:%M"), "calls": calls,
            "collected": len(seen), "drops": pick_drops, "lows": pick_lows,
            "allDrops": len(drops), "allLows": len(lows), "keywords": [k for k, _, _ in kws]}
