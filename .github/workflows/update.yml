@@ -94,7 +94,7 @@ jobs:
           mkdir -p site/studio/done
           git clone -q --depth 1 -b studio-done https://github.com/${{ github.repository }}.git /tmp/sd 2>/dev/null && cp /tmp/sd/*.mp4 /tmp/sd/*.jpg /tmp/sd/done.json site/studio/done/ 2>/dev/null || true
           ls site/studio/done
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: site
       - uses: actions/deploy-pages@v4
