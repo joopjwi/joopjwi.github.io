@@ -1,0 +1,177 @@
+{
+ "date": "2026-11-27",
+ "dateLabel": "11월 27일 (금)",
+ "dataCheckedAt": "2026-11-27 06:29",
+ "intro": "샤워 후 흥건한 욕실 바닥, 5,990원으로 막는다고?",
+ "outro": "가격은 바뀔 수 있으니까, 저장해두고 프로필 링크에서 번호로 바로 줍쥐!",
+ "items": [
+  {
+   "id": "9468621015",
+   "short": "규조토 발매트",
+   "script": "1번! 발 물기 뚝뚝 떨어지죠? 빨아 쓰는 규조토 발매트 5,990원!"
+  },
+  {
+   "id": "9081588126",
+   "short": "루프밴드",
+   "script": "2번! 연말엔 집에서 홈트! 라텍스 루프밴드 4종 세트 8,980원 하던 게 오늘 6,980원!"
+  },
+  {
+   "id": "216551398",
+   "short": "우산꽂이",
+   "script": "3번! 현관 우산 자꾸 쓰러지죠? 리템 자석형 우산꽂이 5,970원!"
+  },
+  {
+   "id": "72986941",
+   "short": "온습도계",
+   "script": "4번! 난방 틀면 집이 건조하죠? 카스 디지털 온습도계 9,890원!"
+  },
+  {
+   "id": "7099276857",
+   "short": "생수",
+   "script": "5번! 생수는 미리 쟁여 둬야죠. 풀무원 워터루틴 2L 6병 4,080원!"
+  }
+ ],
+ "chunks": [
+  {
+   "scene": "intro",
+   "display": "샤워 후 흥건한 욕실 바닥,",
+   "spoken": "샤워 후 흥건한 욕실 바닥,"
+  },
+  {
+   "scene": "intro",
+   "display": "5,990원으로 막는다고?",
+   "spoken": "오천구백구십원으로 막는다고?"
+  },
+  {
+   "scene": 1,
+   "display": "1번!",
+   "spoken": "일번!"
+  },
+  {
+   "scene": 1,
+   "display": "발 물기 뚝뚝 떨어지죠?",
+   "spoken": "발 물기 뚝뚝 떨어지죠?"
+  },
+  {
+   "scene": 1,
+   "display": "빨아 쓰는 규조토 발매트",
+   "spoken": "빨아 쓰는 규조토 발매트"
+  },
+  {
+   "scene": 1,
+   "display": "5,990원!",
+   "spoken": "오천구백구십원!"
+  },
+  {
+   "scene": 2,
+   "display": "2번!",
+   "spoken": "이번!"
+  },
+  {
+   "scene": 2,
+   "display": "연말엔 집에서 홈트!",
+   "spoken": "연말엔 집에서 홈트!"
+  },
+  {
+   "scene": 2,
+   "display": "라텍스 루프밴드 4종 세트",
+   "spoken": "라텍스 루프밴드 사 종 세트"
+  },
+  {
+   "scene": 2,
+   "display": "8,980원 하던 게",
+   "spoken": "팔천구백팔십원 하던 게"
+  },
+  {
+   "scene": 2,
+   "display": "오늘 6,980원!",
+   "spoken": "오늘 육천구백팔십원!"
+  },
+  {
+   "scene": 3,
+   "display": "3번!",
+   "spoken": "삼번!"
+  },
+  {
+   "scene": 3,
+   "display": "현관 우산 자꾸 쓰러지죠?",
+   "spoken": "현관 우산 자꾸 쓰러지죠?"
+  },
+  {
+   "scene": 3,
+   "display": "리템 자석형 우산꽂이",
+   "spoken": "리템 자석형 우산꽂이"
+  },
+  {
+   "scene": 3,
+   "display": "5,970원!",
+   "spoken": "오천구백칠십원!"
+  },
+  {
+   "scene": 4,
+   "display": "4번!",
+   "spoken": "사번!"
+  },
+  {
+   "scene": 4,
+   "display": "난방 틀면 집이 건조하죠?",
+   "spoken": "난방 틀면 집이 건조하죠?"
+  },
+  {
+   "scene": 4,
+   "display": "카스 디지털 온습도계",
+   "spoken": "카스 디지털 온습도계"
+  },
+  {
+   "scene": 4,
+   "display": "9,890원!",
+   "spoken": "구천팔백구십원!"
+  },
+  {
+   "scene": 5,
+   "display": "5번!",
+   "spoken": "오번!"
+  },
+  {
+   "scene": 5,
+   "display": "생수는 미리 쟁여 둬야죠.",
+   "spoken": "생수는 미리 쟁여 둬야죠."
+  },
+  {
+   "scene": 5,
+   "display": "풀무원 워터루틴 2L 6병",
+   "spoken": "풀무원 워터루틴 이 리터 여섯 병"
+  },
+  {
+   "scene": 5,
+   "display": "4,080원!",
+   "spoken": "사천팔십원!"
+  },
+  {
+   "scene": "outro",
+   "display": "가격은 바뀔 수 있으니까,",
+   "spoken": "가격은 바뀔 수 있으니까,"
+  },
+  {
+   "scene": "outro",
+   "display": "저장해두고 프로필 링크에서",
+   "spoken": "저장해두고 프로필 링크에서"
+  },
+  {
+   "scene": "outro",
+   "display": "번호로 바로 줍쥐!",
+   "spoken": "번호로 바로 줍쥐!"
+  }
+ ],
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.25,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ }
+}
