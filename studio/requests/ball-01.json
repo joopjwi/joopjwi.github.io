@@ -1,0 +1,26 @@
+{
+ "id": "ball-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "공 하나 때문에 이렇게까지 한다고?"},
+  {"seg": "B", "spoken": "공이 수로에 빠지자, 한 친구가 엎드려서 손을 쭉 뻗어보지만"},
+  {"seg": "C", "spoken": "아슬아슬하게 닿지 않고, 공은 물살을 타고 둥둥 떠내려갑니다."},
+  {"seg": "D", "spoken": "급하게 앞질러 뛰어가는 두 사람."},
+  {"seg": "E", "spoken": "그리고 시작된 작전. 한 명이 수로 위에 다리를 쩍 벌리고 서서"},
+  {"seg": "F", "spoken": "친구의 다리를 붙잡고 거꾸로 매달아 내립니다."},
+  {"seg": "G", "spoken": "물에 닿을락 말락, 공이 떠내려오기만 기다리는데요."},
+  {"seg": "H", "spoken": "드디어 공이 도착! 손을 뻗어서 잡았다!"},
+  {"seg": "I", "spoken": "공은 무사히 구출했는데.."},
+  {"seg": "J", "spoken": "문제는 이제 친구를 어떻게 다시 올리냐는 거죠."},
+  {"seg": "K", "spoken": "버둥버둥, 친구 얼굴은 점점 물에 가까워지고.."},
+  {"seg": "L", "spoken": "근데.. 여러분이라면 이 친구 믿고 거꾸로 매달릴 수 있나요?"}
+ ],
+ "sfx": [
+  {"name": "splash", "prompt": "small ball dropping into water plop", "seconds": 0.8},
+  {"name": "run", "prompt": "comedic fast running footsteps cartoon", "seconds": 1.5},
+  {"name": "tension", "prompt": "comedic suspense drum roll short", "seconds": 2.0},
+  {"name": "success", "prompt": "short cheerful success jingle", "seconds": 1.2},
+  {"name": "uhoh", "prompt": "comedic uh-oh descending trombone wah wah", "seconds": 1.5}
+ ],
+ "music": {"prompt": "funny upbeat comedic background music, bouncy pizzicato and light drums, playful mischief mood, sparse for voice-over, no vocals", "seconds": 55}
+}
