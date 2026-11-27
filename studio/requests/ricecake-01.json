@@ -1,0 +1,24 @@
+{
+ "id": "ricecake-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "쌀가루로 이런 떡을 만든다고요?"},
+  {"seg": "B", "spoken": "나무 틀 위에 고운 쌀가루를 수북이 붓고, 톱니 모양 판으로 쓱 긁어내면"},
+  {"seg": "C", "spoken": "순식간에 네모난 칸들이 줄지어 생겨납니다."},
+  {"seg": "D", "spoken": "그 안에 달콤한 소를 하나하나 꾹꾹 채워 넣고"},
+  {"seg": "E", "spoken": "다시 체에 거른 쌀가루를 소복하게 덮어줍니다."},
+  {"seg": "F", "spoken": "평평하게 깎아낸 뒤, 무늬 판을 얹고 망치로 톡톡."},
+  {"seg": "G", "spoken": "판을 들어 올리니, 평안하고 즐거우라는 글자가 새겨졌네요."},
+  {"seg": "H", "spoken": "칸마다 칼집을 넣어 가지런히 나누고"},
+  {"seg": "I", "spoken": "그대로 찜통에 넣어 뜨거운 김으로 쪄냅니다."},
+  {"seg": "J", "spoken": "가루 한 톨 흐트러지지 않는 달인의 손놀림."},
+  {"seg": "K", "spoken": "근데.. 이 떡, 한 상자에 얼마면 사 드실래요?"}
+ ],
+ "sfx": [
+  {"name": "tap", "prompt": "wooden mallet tapping on wooden board, two light taps", "seconds": 0.8},
+  {"name": "steam", "prompt": "steam hiss from steamer pot, short", "seconds": 1.5},
+  {"name": "ding", "prompt": "cash register cha-ching sound", "seconds": 1.0},
+  {"name": "sparkle", "prompt": "magical sparkle reveal chime short", "seconds": 1.0}
+ ],
+ "music": {"prompt": "gentle asian traditional background music, guzheng and soft percussion with light modern beat, calm craftsmanship vibe, sparse for voice-over, no vocals", "seconds": 55}
+}
