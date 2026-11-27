@@ -49,6 +49,7 @@ def main(video, meta_path):
     sh("git", "push", "-fq", REPO, "studio-done", cwd=d)
     sh("gh", "api", "-X", "POST", "repos/joopjwi/joopjwi.github.io/actions/workflows/update.yml/dispatches",
        "-f", "ref=main", "-f", "inputs[build_only]=true")
+    shutil.rmtree(work, ignore_errors=True)
     print(f"올림: {vid} ({len(items)}개 보관) → 재배포 요청")
 
 
