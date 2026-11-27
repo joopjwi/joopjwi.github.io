@@ -1,0 +1,23 @@
+{
+ "id": "blue-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "얼마를 주면 여기서 뛸 수 있나요?"},
+  {"seg": "B", "spoken": "발밑은 아찔한 절벽, 그 아래로 하늘색 바다가 펼쳐져 있습니다."},
+  {"seg": "C", "spoken": "가장자리에 서서 숨을 고르고, 한참을 망설이는데요."},
+  {"seg": "D", "spoken": "드디어 한 발, 두 발, 절벽 끝으로 걸어가더니"},
+  {"seg": "E", "spoken": "그대로 하늘색 바다로 풍덩."},
+  {"seg": "F", "spoken": "그리고 여기, 빙하 위에 생긴 하늘색 웅덩이."},
+  {"seg": "G", "spoken": "컵을 쓱 담갔다 빼니, 물속까지 훤히 보일 만큼 맑은데요."},
+  {"seg": "H", "spoken": "그 자리에서 한 모금 들이켜는데, 보기만 해도 이가 시려 옵니다."},
+  {"seg": "I", "spoken": "이런 하늘색 물 보면, 뛰어들거나 한 모금 마셔보고 싶지 않나요?"},
+  {"seg": "J", "spoken": "근데.. 여러분이라면 얼마 받으면 뛰실 건가요?"}
+ ],
+ "sfx": [
+  {"name": "wind", "prompt": "strong wind gust on high cliff, short", "seconds": 2.0},
+  {"name": "splash", "prompt": "person plunging into deep sea water big splash", "seconds": 1.5},
+  {"name": "bubble", "prompt": "underwater bubbles gurgle short", "seconds": 1.2},
+  {"name": "gulp", "prompt": "refreshing gulp drink ahh sound", "seconds": 1.0}
+ ],
+ "music": {"prompt": "fresh cool chill summer background music, airy synth and light beat, refreshing ocean vibe, sparse for voice-over, no vocals", "seconds": 50}
+}
