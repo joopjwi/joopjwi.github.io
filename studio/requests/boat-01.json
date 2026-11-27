@@ -1,0 +1,24 @@
+{
+ "id": "boat-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "나무판자 몇 장으로 배를 만든다고요?"},
+  {"seg": "B", "spoken": "먼저 판자들을 생선 가시처럼 쭉 늘어놓고"},
+  {"seg": "C", "spoken": "한 장 한 장 나란히 붙여서 넓은 바닥을 만듭니다."},
+  {"seg": "D", "spoken": "그 위에 선을 긋고 잘라내니, 순식간에 나뭇잎 모양이 됐는데요."},
+  {"seg": "E", "spoken": "구멍을 파고 못을 하나하나 박아서 단단히 고정하고"},
+  {"seg": "F", "spoken": "양옆으로 판자를 세워 올리니, 점점 배 모양이 나오기 시작합니다."},
+  {"seg": "G", "spoken": "안쪽에는 갈비뼈 같은 나무를 촘촘히 덧대고"},
+  {"seg": "H", "spoken": "뱃머리는 하얀 판으로 감싸서 꼼꼼하게 마무리."},
+  {"seg": "I", "spoken": "도면도 없이 손 감각만으로 완성한 나무배."},
+  {"seg": "J", "spoken": "보기만 해도 장인 그 자체인데요."},
+  {"seg": "K", "spoken": "근데.. 이 배, 여러분이라면 얼마에 사실 건가요?"}
+ ],
+ "sfx": [
+  {"name": "hammer", "prompt": "single hammer hitting nail into wood", "seconds": 0.6},
+  {"name": "saw", "prompt": "short hand saw cutting wood", "seconds": 1.2},
+  {"name": "whoosh", "prompt": "quick soft whoosh transition", "seconds": 0.6},
+  {"name": "ding", "prompt": "cash register cha-ching sound", "seconds": 1.0}
+ ],
+ "music": {"prompt": "warm inspiring acoustic background music, guitar and light percussion, craftsmanship documentary vibe, sparse for voice-over, no vocals", "seconds": 55}
+}
