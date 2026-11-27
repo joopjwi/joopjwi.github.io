@@ -1,0 +1,24 @@
+{
+ "id": "kungfu-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "무림 고수들은 진짜 이렇게 훈련할까요?"},
+  {"seg": "B", "spoken": "중국의 한 무술 사원에 들어간 여성, 첫 수업은 나무에 다리 붙이기부터."},
+  {"seg": "C", "spoken": "스님이 다리를 머리 위까지 쭉 밀어 올리는데, 표정이 점점 일그러집니다."},
+  {"seg": "D", "spoken": "다음은 벽에 다리를 붙이고, 머리 위엔 그릇까지 올린 채 버티기."},
+  {"seg": "E", "spoken": "계단은 걸어서 오르는 게 아니라, 엎드려서 기어 올라가고"},
+  {"seg": "F", "spoken": "발차기는 하늘을 찌를 듯 높이, 몇 번이고 반복합니다."},
+  {"seg": "G", "spoken": "팔이 멍투성이가 돼도 훈련은 멈추지 않는데요."},
+  {"seg": "H", "spoken": "이번엔 봉으로 다리를 툭툭 치면서 몸을 단련하고"},
+  {"seg": "I", "spoken": "스님의 발차기까지 그대로 버텨냅니다."},
+  {"seg": "J", "spoken": "마지막엔 양손에 벽돌까지."},
+  {"seg": "K", "spoken": "고통 없이는 강한 정신도 없다, 이게 바로 무림 고수의 길이라고 하네요."},
+  {"seg": "L", "spoken": "근데.. 여러분은 며칠이나 버틸 수 있을 것 같나요?"}
+ ],
+ "sfx": [
+  {"name": "hit", "prompt": "martial arts punch impact hit, short", "seconds": 0.6},
+  {"name": "whoosh", "prompt": "fast kung fu kick whoosh", "seconds": 0.6},
+  {"name": "gong", "prompt": "chinese gong single hit", "seconds": 2.0}
+ ],
+ "music": {"prompt": "epic chinese martial arts background music, erhu and taiko drums with guzheng, determined training montage, sparse for voice-over, no vocals", "seconds": 55}
+}
