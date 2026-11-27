@@ -1,0 +1,20 @@
+{
+ "id": "bottle-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "구명조끼 없이 물에 뜨는 방법, 진짜 있을까요?"},
+  {"seg": "B", "spoken": "빈 페트병과 티셔츠만 있으면 됩니다."},
+  {"seg": "C", "spoken": "옷자락을 페트병 입구에 밀어 넣고 뚜껑을 꽉 잠그면 끝."},
+  {"seg": "D", "spoken": "이렇게 여러 개를 몸에 빙 둘러 달아주고"},
+  {"seg": "E", "spoken": "그대로 바다에 풍덩."},
+  {"seg": "F", "spoken": "힘을 빼고 누우니까 진짜로 둥둥 떠 있습니다."},
+  {"seg": "G", "spoken": "다만 이건 위급할 때 쓰는 생존 요령일 뿐, 물놀이할 땐 꼭 구명조끼 입으세요."},
+  {"seg": "H", "spoken": "근데.. 여러분은 이 방법 알고 계셨나요?"}
+ ],
+ "sfx": [
+  {"name": "twist", "prompt": "plastic bottle cap twist close sound, short", "seconds": 0.8},
+  {"name": "splash", "prompt": "person jumping into sea water splash", "seconds": 1.2},
+  {"name": "pop", "prompt": "cute cartoon pop bubble sound", "seconds": 0.5}
+ ],
+ "music": {"prompt": "bright cheerful summer beach background music, ukulele and light percussion, fun tips vibe, sparse for voice-over, no vocals", "seconds": 35}
+}
