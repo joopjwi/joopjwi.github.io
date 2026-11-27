@@ -1,0 +1,24 @@
+{
+ "id": "beer-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "독일 맥주 축제 현장, 한 직원이 맥주잔을 하나씩 모으기 시작합니다."},
+  {"seg": "B", "spoken": "한 잔에 1리터, 꽉 채우면 한 잔 무게만 2킬로가 넘는 잔인데요."},
+  {"seg": "C", "spoken": "아래에 두 줄, 그 위에 또 한 줄, 맨 꼭대기에 한 잔까지 올려서 맥주 탑을 완성하더니"},
+  {"seg": "D", "spoken": "그걸 통째로 번쩍 들고 사람들 사이로 사라집니다."},
+  {"seg": "E", "spoken": "여기 또 다른 직원도 만만치 않습니다."},
+  {"seg": "F", "spoken": "열 잔이 훌쩍 넘는 맥주를 양팔로 끌어안고 번쩍."},
+  {"seg": "G", "spoken": "붐비는 천막 안을 흘리지도 않고 성큼성큼 걸어가는데요."},
+  {"seg": "H", "spoken": "테이블에 도착하자 손님들 환호가 터집니다."},
+  {"seg": "I", "spoken": "이 정도면 거의 역도 선수 아닌가요?"},
+  {"seg": "J", "spoken": "근데.. 이런 사람은 시급 얼마 받아야 할까요?"}
+ ],
+ "sfx": [
+  {"name": "clink", "prompt": "beer glass mugs clinking together, short", "seconds": 1.0},
+  {"name": "whoosh", "prompt": "quick soft whoosh transition", "seconds": 0.6},
+  {"name": "lift", "prompt": "heavy lifting effort cartoon boing rise sound, short", "seconds": 1.0},
+  {"name": "cheer", "prompt": "small crowd cheering and clapping in beer hall, short", "seconds": 2.5},
+  {"name": "ding", "prompt": "cash register cha-ching sound", "seconds": 1.0}
+ ],
+ "music": {"prompt": "upbeat bavarian oktoberfest polka style background music, accordion and brass, playful energetic, sparse for voice-over, no vocals", "seconds": 50}
+}
