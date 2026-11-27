@@ -1,0 +1,68 @@
+{
+ "id": "snowdog-03",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "눈 오는 날 강아지 유형, 첫 번째."
+  },
+  {
+   "seg": "B",
+   "spoken": "주인이 눈 쌓인 지붕 위로 장난감을 휙 던져줍니다."
+  },
+  {
+   "seg": "C",
+   "spoken": "평소 같았으면 벌써 물고 돌아왔을 시간인데"
+  },
+  {
+   "seg": "D",
+   "spoken": "눈 때문에 발이 쭉쭉 미끄러져서 앞으로 나가질 못해요."
+  },
+  {
+   "seg": "E",
+   "spoken": "제자리에서 헛발질만 계속하는데도 포기하지 않는 댕댕이."
+  },
+  {
+   "seg": "F",
+   "spoken": "한 발 한 발 버티더니 결국 장난감을 향해 출발!"
+  },
+  {
+   "seg": "G",
+   "spoken": "그리고 두 번째 유형."
+  },
+  {
+   "seg": "H",
+   "spoken": "눈 구덩이에 쏙 들어가 앉은 골댕이."
+  },
+  {
+   "seg": "I",
+   "spoken": "처음엔 두리번두리번, 눈 구경하느라 바쁘더니"
+  },
+  {
+   "seg": "J",
+   "spoken": "점점 눈꺼풀이 무거워지고"
+  },
+  {
+   "seg": "K",
+   "spoken": "결국 눈 이불 덮고 꾸벅꾸벅. 여기가 침대인 줄 아나 봐요."
+  },
+  {
+   "seg": "L",
+   "spoken": "한 마리는 열정, 한 마리는 꿀잠."
+  },
+  {
+   "seg": "M",
+   "spoken": "근데.. 여러분 강아지는 어느 쪽인가요?"
+  }
+ ]
+}
