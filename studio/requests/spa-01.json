@@ -1,0 +1,23 @@
+{
+ "id": "spa-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "오늘은 두 댕댕이가 같이 스파 받는 날."},
+  {"seg": "B", "spoken": "나란히 누워서 눈에는 시원한 아이패치부터 착."},
+  {"seg": "C", "spoken": "머리 위로 싱잉볼이 울리니, 벌써 표정이 몽롱해지는데요."},
+  {"seg": "D", "spoken": "말랑한 젤리 마사지기로 얼굴을 꾹꾹 눌러주고"},
+  {"seg": "E", "spoken": "오징어 머리 마사지기까지 등장하자 둘 다 눈이 스르르."},
+  {"seg": "F", "spoken": "깃털로 살살 간지럽혀 주고, 이번엔 한 마리씩 귀 마사지."},
+  {"seg": "G", "spoken": "시바는 눈을 지그시 감더니 입꼬리가 씩 올라가고"},
+  {"seg": "H", "spoken": "하얀 친구는 너무 좋아서 아예 활짝 웃어버립니다."},
+  {"seg": "I", "spoken": "빗질에 지압 롤러, 발바닥 크림까지 바르면 풀코스 완성."},
+  {"seg": "J", "spoken": "이 정도면 사람보다 팔자가 좋은 거 아닌가요?"},
+  {"seg": "K", "spoken": "근데.. 여러분도 이런 스파 받고 싶지 않나요?"}
+ ],
+ "sfx": [
+  {"name": "bowl", "prompt": "singing bowl ring, soft and resonant", "seconds": 2.5},
+  {"name": "sparkle", "prompt": "magical sparkle chime short", "seconds": 1.0},
+  {"name": "pop", "prompt": "cute cartoon pop bubble sound", "seconds": 0.5}
+ ],
+ "music": {"prompt": "cute relaxing spa background music, soft harp and gentle marimba, cozy healing pet vibe, sparse for voice-over, no vocals", "seconds": 55}
+}
