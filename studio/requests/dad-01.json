@@ -1,0 +1,23 @@
+{
+ "id": "dad-01",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "부모는 아무나 하는 게 아닙니다."},
+  {"seg": "B", "spoken": "깊이 잠든 줄 알았던 아빠, 아기가 꿈틀하자마자 벌떡 일어납니다."},
+  {"seg": "C", "spoken": "헤드셋 끼고 게임하던 아빠는 침대 끝으로 가는 아기를 보자마자 몸을 날리고"},
+  {"seg": "D", "spoken": "소파에서 미끄러지는 아들은 다리를 번쩍 잡아서 그대로 끌어올립니다."},
+  {"seg": "E", "spoken": "지진으로 집이 흔들리던 순간, 아빠는 방으로 뛰어 들어와 가족을 온몸으로 감쌉니다."},
+  {"seg": "F", "spoken": "넘어지는 판자가 아이들을 덮치기 직전, 몸을 던져서 막아내고"},
+  {"seg": "G", "spoken": "미끄럼틀 아래로 쏜살같이 전력 질주."},
+  {"seg": "H", "spoken": "물가로 걸어가는 아이를 보자 망설임 없이 물속까지 뛰어듭니다."},
+  {"seg": "I", "spoken": "위험한 순간을 귀신같이 알아채는 아빠의 촉, 정말 대단하지 않나요?"},
+  {"seg": "J", "spoken": "근데.. 여러분 아빠도 이런 촉 있으신가요?"}
+ ],
+ "sfx": [
+  {"name": "hit", "prompt": "short dramatic whoosh impact hit, cinematic", "seconds": 0.8},
+  {"name": "rumble", "prompt": "low earthquake rumble shaking, short", "seconds": 2.0},
+  {"name": "splash", "prompt": "person running into shallow water splash", "seconds": 1.2},
+  {"name": "tension", "prompt": "short suspense riser swell", "seconds": 1.5}
+ ],
+ "music": {"prompt": "warm emotional uplifting piano and soft strings with light pulse, heartfelt family moments, sparse for voice-over, no vocals", "seconds": 50}
+}
