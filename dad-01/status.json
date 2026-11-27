@@ -1,0 +1,11 @@
+{
+ "id": "dad-01",
+ "tts": "ok",
+ "sfx": {
+  "hit": "ok",
+  "rumble": "ok",
+  "splash": "ok",
+  "tension": "ok"
+ },
+ "music": "ok"
+}

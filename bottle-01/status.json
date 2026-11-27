@@ -1,0 +1,10 @@
+{
+ "id": "bottle-01",
+ "tts": "ok",
+ "sfx": {
+  "twist": "ok",
+  "splash": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

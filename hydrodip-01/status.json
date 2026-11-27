@@ -1,0 +1,12 @@
+{
+ "id": "hydrodip-01",
+ "tts": "ok",
+ "sfx": {
+  "whoosh": "ok",
+  "spray": "ok",
+  "dip": "ok",
+  "reveal": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

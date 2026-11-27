@@ -1,0 +1,11 @@
+{
+ "id": "parkdog-01",
+ "tts": "ok",
+ "sfx": {
+  "swing": "ok",
+  "creak": "ok",
+  "ding": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

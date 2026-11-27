@@ -1,0 +1,11 @@
+{
+ "id": "snowdog-01",
+ "tts": "ok",
+ "sfx": {
+  "pop": "ok",
+  "snore": "ok",
+  "scratch": "ok",
+  "ding": "ok"
+ },
+ "music": "ok"
+}

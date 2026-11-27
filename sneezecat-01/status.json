@@ -1,0 +1,12 @@
+{
+ "id": "sneezecat-01",
+ "tts": "ok",
+ "sfx": {
+  "tickle": "ok",
+  "sneeze": "ok",
+  "slurp": "ok",
+  "ding": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

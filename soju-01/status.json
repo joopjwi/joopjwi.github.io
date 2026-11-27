@@ -1,0 +1,12 @@
+{
+ "id": "soju-01",
+ "tts": "ok",
+ "sfx": {
+  "sneak": "ok",
+  "glug": "ok",
+  "rewind": "ok",
+  "record": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

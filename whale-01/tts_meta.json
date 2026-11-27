@@ -1,0 +1,9 @@
+{
+ "rawDuration": 59.4,
+ "duration": 52.5,
+ "cuts": 22,
+ "words": 108,
+ "expectedWords": 108,
+ "voiceId": "vn80HZNY7EsdYzoFRYZm",
+ "model": "eleven_multilingual_v2"
+}

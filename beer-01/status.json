@@ -1,0 +1,12 @@
+{
+ "id": "beer-01",
+ "tts": "ok",
+ "sfx": {
+  "clink": "ok",
+  "whoosh": "ok",
+  "lift": "ok",
+  "cheer": "ok",
+  "ding": "ok"
+ },
+ "music": "ok"
+}

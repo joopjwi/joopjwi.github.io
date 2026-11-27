@@ -1,0 +1,12 @@
+{
+ "id": "sea-01",
+ "tts": "ok",
+ "sfx": {
+  "crash": "ok",
+  "whoosh": "ok",
+  "wave": "ok",
+  "suspense": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

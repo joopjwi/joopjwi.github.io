@@ -1,0 +1,12 @@
+{
+ "id": "melon-01",
+ "tts": "ok",
+ "sfx": {
+  "sizzle": "ok",
+  "whoosh": "ok",
+  "squish": "ok",
+  "reveal": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

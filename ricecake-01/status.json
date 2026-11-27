@@ -1,0 +1,11 @@
+{
+ "id": "ricecake-01",
+ "tts": "ok",
+ "sfx": {
+  "tap": "ok",
+  "steam": "ok",
+  "ding": "ok",
+  "sparkle": "ok"
+ },
+ "music": "ok"
+}

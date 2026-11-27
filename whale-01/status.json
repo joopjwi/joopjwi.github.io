@@ -1,0 +1,12 @@
+{
+ "id": "whale-01",
+ "tts": "ok",
+ "sfx": {
+  "blow": "ok",
+  "underwater": "ok",
+  "snip": "ok",
+  "sparkle": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

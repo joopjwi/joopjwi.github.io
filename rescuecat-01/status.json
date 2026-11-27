@@ -1,0 +1,11 @@
+{
+ "id": "rescuecat-01",
+ "tts": "ok",
+ "sfx": {
+  "hiss": "ok",
+  "drip": "ok",
+  "sparkle": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

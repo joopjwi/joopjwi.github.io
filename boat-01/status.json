@@ -1,0 +1,11 @@
+{
+ "id": "boat-01",
+ "tts": "ok",
+ "sfx": {
+  "hammer": "ok",
+  "saw": "ok",
+  "whoosh": "ok",
+  "ding": "ok"
+ },
+ "music": "ok"
+}

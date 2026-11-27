@@ -1,0 +1,12 @@
+{
+ "id": "tardog-01",
+ "tts": "ok",
+ "sfx": {
+  "suspense": "ok",
+  "squelch": "ok",
+  "siren": "ok",
+  "success": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

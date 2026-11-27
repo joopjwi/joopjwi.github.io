@@ -1,0 +1,12 @@
+{
+ "id": "coil-01",
+ "tts": "ok",
+ "sfx": {
+  "crush": "ok",
+  "whoosh": "ok",
+  "suspense": "ok",
+  "clang": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

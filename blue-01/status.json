@@ -1,0 +1,11 @@
+{
+ "id": "blue-01",
+ "tts": "ok",
+ "sfx": {
+  "wind": "ok",
+  "splash": "ok",
+  "bubble": "ok",
+  "gulp": "ok"
+ },
+ "music": "ok"
+}

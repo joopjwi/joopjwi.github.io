@@ -1,0 +1,12 @@
+{
+ "id": "weld-01",
+ "tts": "ok",
+ "sfx": {
+  "zap": "ok",
+  "click": "ok",
+  "hum": "ok",
+  "reveal": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}

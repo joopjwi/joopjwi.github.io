@@ -1,0 +1,15 @@
+{
+ "id": "voice-samples-01",
+ "tts": "skipped",
+ "sfx": {},
+ "music": "skipped",
+ "samples": {
+  "1_Sarah": "ok",
+  "2_Jessica": "ok",
+  "3_Laura": "ok",
+  "4_Alice": "ok",
+  "5_Lily": "ok",
+  "6_Matilda": "ok"
+ },
+ "voices": 29
+}

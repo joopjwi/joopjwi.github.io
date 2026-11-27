@@ -1,0 +1,10 @@
+{
+ "id": "kungfu-01",
+ "tts": "ok",
+ "sfx": {
+  "hit": "ok",
+  "whoosh": "ok",
+  "gong": "ok"
+ },
+ "music": "ok"
+}

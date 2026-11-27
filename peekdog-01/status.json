@@ -1,0 +1,11 @@
+{
+ "id": "peekdog-01",
+ "tts": "ok",
+ "sfx": {
+  "roll": "ok",
+  "peek": "ok",
+  "whoosh": "ok",
+  "pop": "ok"
+ },
+ "music": "ok"
+}
