@@ -1,0 +1,64 @@
+{
+ "id": "snowdog-02",
+ "tts": {
+  "voiceId": "vn80HZNY7EsdYzoFRYZm",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.08
+  }
+ },
+ "chunks": [
+  {
+   "seg": "A",
+   "spoken": "눈 오는 날 강아지 유형, 첫 번째."
+  },
+  {
+   "seg": "B",
+   "spoken": "눈 구덩이에 쏙 들어가 앉은 골댕이. 눈 속에 파묻힌 게 오히려 편안해 보입니다."
+  },
+  {
+   "seg": "C",
+   "spoken": "처음엔 두리번두리번, 눈 구경하느라 바쁘고 얼굴에 눈이 묻어도 신경 하나 안 쓰는데요."
+  },
+  {
+   "seg": "D",
+   "spoken": "그런데 점점 눈꺼풀이 무거워지더니"
+  },
+  {
+   "seg": "E",
+   "spoken": "결국 눈 이불 덮고 꾸벅꾸벅. 여기가 침대인 줄 아나 봐요."
+  },
+  {
+   "seg": "F",
+   "spoken": "그리고 두 번째 유형."
+  },
+  {
+   "seg": "G",
+   "spoken": "차 위에 폴짝 올라온 강아지가"
+  },
+  {
+   "seg": "H",
+   "spoken": "앞유리에 쌓인 눈을 앞발로 박박 긁어냅니다. 이쪽 긁고, 저쪽 긁고, 쉬지를 않아요."
+  },
+  {
+   "seg": "I",
+   "spoken": "마치 주인 대신 눈을 치워주는 것처럼요."
+  },
+  {
+   "seg": "J",
+   "spoken": "다 치웠다 싶으니까 뒤도 안 돌아보고 쿨하게 퇴근."
+  },
+  {
+   "seg": "K",
+   "spoken": "한 마리는 꿀잠, 한 마리는 열일."
+  },
+  {
+   "seg": "L",
+   "spoken": "근데.. 여러분 강아지는 어느 쪽인가요?"
+  }
+ ]
+}
