@@ -1,0 +1,23 @@
+{
+ "id": "baby-02",
+ "tts": {"voiceId": "vn80HZNY7EsdYzoFRYZm","model": "eleven_multilingual_v2","voiceSettings": {"stability": 0.4,"similarity_boost": 0.8,"style": 0.35,"use_speaker_boost": true,"speed": 1.08}},
+ "chunks": [
+  {"seg": "A", "spoken": "몸만 컸지 아직 아기인 동물들, 첫 번째."},
+  {"seg": "B", "spoken": "숲속 진흙탕에 털썩 주저앉은 커다란 곰."},
+  {"seg": "C", "spoken": "물 호스를 두 손으로 꼭 붙잡고, 이리 뿌리고 저리 뿌리고."},
+  {"seg": "D", "spoken": "급기야 진흙 목욕까지 하면서 혼자 신이 났는데요."},
+  {"seg": "E", "spoken": "다 놀았다 싶으니까 친구들한테 쪼르르 달려갑니다."},
+  {"seg": "F", "spoken": "그리고 두 번째, 상자만 보면 일단 들어가는 셰퍼드."},
+  {"seg": "G", "spoken": "어릴 땐 가방 대신 이 상자에 쏙 들어가서 여행을 다녔다는데"},
+  {"seg": "H", "spoken": "그래서인지 지금도 상자에 들어가면 어디 놀러 가는 줄 아는 것 같아요."},
+  {"seg": "I", "spoken": "몸은 이미 상자보다 훨씬 커졌는데도 꾸역꾸역 들어가서 뿌듯한 표정."},
+  {"seg": "J", "spoken": "결국 상자가 버티질 못하자, 납작해진 상자 위에라도 앉아서 기다립니다."},
+  {"seg": "K", "spoken": "근데.. 여러분 반려동물도 이런 아기 시절 습관 있나요?"}
+ ],
+ "sfx": [
+  {"name": "splash", "prompt": "playful water splashing in mud puddle", "seconds": 1.5},
+  {"name": "pop", "prompt": "cute cartoon pop bubble sound", "seconds": 0.5},
+  {"name": "crunch", "prompt": "cardboard box squish collapse comedic", "seconds": 1.0}
+ ],
+ "music": {"prompt": "cute heartwarming playful background music, ukulele and glockenspiel with soft claps, adorable animal moments, sparse for voice-over, no vocals", "seconds": 55}
+}
